@@ -50,7 +50,7 @@
 
 ## 代表样本
 
-`data/curated/replay_candidates.jsonl` 共 31 小局。
+`data/curated/replay_candidates.jsonl` 共 42 小局。
 主样本按 CSV 的 2024 / LCK / Summer / playoffs=1 筛选得到 31 小局；补充有跨源上下文的代表比赛。
 该文件是待验收复盘候选集，不是通过逐手录像核验的黄金测试集。
 

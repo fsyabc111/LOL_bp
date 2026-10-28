@@ -45,6 +45,25 @@ python3 -m unittest discover -s tests -v
 - 同一系列赛不可拆到训练和测试两侧。尚未冻结训练/验证/测试划分，也没有训练推荐模型。
 - 机制事实、统计观察、推断与 unknown 分开保存；“未取得”不等于“能力不存在”。
 
+## 比赛上下文与规则证据
+
+已从固定的 GPTilt / Leaguepedia 派生快照关联42小局、11系列赛：2024 LCK Summer Playoffs 31局，以及2026 LPL/LCK/Worlds各一个系列赛。38局通过Riot game id加日期/队伍/阵容集合交叉检查，4局通过日期、双方队名和英雄集合唯一匹配。该状态确认源记录关联，不表示官方/录像独立验收。
+
+Parquet读取是唯一可选外部依赖。本轮实际验证使用Python3.12和fastparquet，版本见 `requirements/data-context.txt`；CSV、静态、规则管道及单元测试仍只需要标准库。
+
+```sh
+python3.12 -m venv .venv
+.venv/bin/python -m pip install -r requirements/data-context.txt
+.venv/bin/python scripts/collect_match_context.py --download
+python3 scripts/build_dataset.py
+```
+
+已有 `data/raw/match-context/` 缓存时省略 `--download`，固定Parquet哈希不符会失败。该命令更新源关联清单；再次运行build才会将最新上下文同步到SQLite与候选集。
+
+规则证据由 `scripts/collect_rules_evidence.py` 采集，结构化事实经过来源阅读后另存 `rules.json` / `patches.json`。重跑只追加未审核快照，不自动改变现有事实或将新的HTTP200判为有效规则。初次迁移可用 `--migrate-only` 离线执行；旧事实绑定旧哈希，新规则修订必须重新核验。
+
+详细证据和访问失败见 [比赛上下文核验](../research/match-context-verification.md)、[规则与补丁证据](../research/dataset-rules-evidence.md)。来源归属见 [SOURCES.md](../../data/SOURCES.md)。2026 OE的16.xx与上下文的26.xx保留为未消解差异，不覆盖原值。
+
 ## 原始数据与再分发
 
 本仓库不上传用户原始年度文件、第三方大快照、整份规则书、图片或凭证。可复现脚本和来源清单不代表上游提供了永久可用性或额外使用许可。不同来源的许可与署名分别记录，不能把本仓库代码的许可扩大到第三方数据和 Riot 游戏资产。

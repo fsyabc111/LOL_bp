@@ -1,0 +1,470 @@
+{
+  "schema_version": 1,
+  "status_vocabulary": [
+    "observed",
+    "inferred",
+    "unknown"
+  ],
+  "templates": [
+    {
+      "id": "snake_20",
+      "actions": [
+        {
+          "step": 1,
+          "action": "ban",
+          "draft_team": "A"
+        },
+        {
+          "step": 2,
+          "action": "ban",
+          "draft_team": "B"
+        },
+        {
+          "step": 3,
+          "action": "ban",
+          "draft_team": "A"
+        },
+        {
+          "step": 4,
+          "action": "ban",
+          "draft_team": "B"
+        },
+        {
+          "step": 5,
+          "action": "ban",
+          "draft_team": "A"
+        },
+        {
+          "step": 6,
+          "action": "ban",
+          "draft_team": "B"
+        },
+        {
+          "step": 7,
+          "action": "pick",
+          "draft_team": "A"
+        },
+        {
+          "step": 8,
+          "action": "pick",
+          "draft_team": "B"
+        },
+        {
+          "step": 9,
+          "action": "pick",
+          "draft_team": "B"
+        },
+        {
+          "step": 10,
+          "action": "pick",
+          "draft_team": "A"
+        },
+        {
+          "step": 11,
+          "action": "pick",
+          "draft_team": "A"
+        },
+        {
+          "step": 12,
+          "action": "pick",
+          "draft_team": "B"
+        },
+        {
+          "step": 13,
+          "action": "ban",
+          "draft_team": "B"
+        },
+        {
+          "step": 14,
+          "action": "ban",
+          "draft_team": "A"
+        },
+        {
+          "step": 15,
+          "action": "ban",
+          "draft_team": "B"
+        },
+        {
+          "step": 16,
+          "action": "ban",
+          "draft_team": "A"
+        },
+        {
+          "step": 17,
+          "action": "pick",
+          "draft_team": "B"
+        },
+        {
+          "step": 18,
+          "action": "pick",
+          "draft_team": "A"
+        },
+        {
+          "step": 19,
+          "action": "pick",
+          "draft_team": "A"
+        },
+        {
+          "step": 20,
+          "action": "pick",
+          "draft_team": "B"
+        }
+      ],
+      "note": "A/B indicate draft position; map binding belongs to each rule record."
+    }
+  ],
+  "rules": [
+    {
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "competition": "LCK",
+      "year": 2024,
+      "stage": "Summer Playoffs",
+      "applicability_status": "inferred",
+      "source_caveat": "Official authored Korean rulebook obtained from third-party mirror; revision 2023-12-18 effective 2024-01-17. Summer-specific amendments not located.",
+      "draft_template": {
+        "value": "snake_20",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "lck_2024_mirror",
+            "locator": "p50 §7.7.4"
+          }
+        ]
+      },
+      "draft_team_A": {
+        "value": "blue",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "lck_2024_mirror",
+            "locator": "p50 §7.7.4"
+          }
+        ]
+      },
+      "draft_team_B": {
+        "value": "red",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "lck_2024_mirror",
+            "locator": "p50 §7.7.4"
+          }
+        ]
+      },
+      "series_format": {
+        "value": "best_of_5",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "lck_2024_mirror",
+            "locator": "p39-40 §6.2.3.1"
+          }
+        ]
+      },
+      "cross_game_ban_scope": {
+        "value": null,
+        "status": "unknown",
+        "note": "No Fearless provision observed; absence alone does not prove no later amendment."
+      },
+      "selection_error": {
+        "value": "notify before opponent next lock; referee may restore draft to erroneous action",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "lck_2024_mirror",
+            "locator": "p50 §7.7.5"
+          }
+        ]
+      },
+      "event_disabled_champions": {
+        "value": null,
+        "status": "unknown"
+      },
+      "unresolved": [
+        "Summer amendments",
+        "event-specific disabled champions and patch/hotfix build",
+        "explicit confirmation of no cross-game restriction"
+      ]
+    },
+    {
+      "rule_id": "lck_2026_from_2026_07_29",
+      "competition": "LCK",
+      "year": 2026,
+      "effective_from": "2026-07-29",
+      "applicability_status": "observed",
+      "draft_template": {
+        "value": "snake_20",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "lck_2026_rules",
+            "locator": "p37 §7.7.1.1"
+          }
+        ]
+      },
+      "draft_team_A": {
+        "value": "first_pick",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "lck_2026_rules",
+            "locator": "p37 §7.7.1.1"
+          }
+        ]
+      },
+      "draft_team_B": {
+        "value": "second_pick",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "lck_2026_rules",
+            "locator": "p37 §7.7.1.1"
+          }
+        ]
+      },
+      "cross_game_ban_scope": {
+        "value": "picks_by_both_teams_for_remainder_of_match",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "lck_2026_rules",
+            "locator": "p37 §7.7.1.2.1-2"
+          }
+        ]
+      },
+      "standard_bans_carry_over": {
+        "value": false,
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "lck_2026_rules",
+            "locator": "p37 §7.7.1.2.2 example and §7.7.1.2.5"
+          }
+        ]
+      },
+      "fearless_pick_error": {
+        "value": "restore draft to error point; penalty possible",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "lck_2026_rules",
+            "locator": "p37 §7.7.1.2.3"
+          }
+        ]
+      },
+      "fearless_ban_error": {
+        "value": "ban opportunity lost; no separate penalty",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "lck_2026_rules",
+            "locator": "p37 §7.7.1.2.4"
+          }
+        ]
+      },
+      "remake_fearless_consumption": {
+        "value": {
+          "prior_games": "preserved",
+          "remade_game_picks": "not_consumed"
+        },
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "lck_2026_rules",
+            "locator": "p44 §8.5.2"
+          }
+        ]
+      },
+      "scope": {
+        "value": [
+          "regular rounds 1-2",
+          "regular rounds 3-4",
+          "season play-in",
+          "season playoffs",
+          "Road to MSI"
+        ],
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "lck_2026_event",
+            "locator": "p20-22 §4.1.1,4.2.1,4.3.1; p26 §5.1"
+          }
+        ]
+      },
+      "first_selection": {
+        "value": "map side and pick position chosen independently by opposing teams",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "lck_2026_event",
+            "locator": "p7 §2.6"
+          }
+        ]
+      },
+      "subsequent_game_selection_right": {
+        "value": "previous_game_loser",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "lck_2026_event",
+            "locator": "p7 §2.6.1.2"
+          }
+        ]
+      },
+      "exception": {
+        "value": "season Grand Final game1 upper bracket winner receives both pick position and side",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "lck_2026_event",
+            "locator": "p24 §4.3.2.8"
+          }
+        ]
+      },
+      "event_disabled_champions": {
+        "value": null,
+        "status": "unknown"
+      },
+      "unresolved": [
+        "Earlier 2026 revision required for rounds 1-2 historical match applicability; do not retroactively assume this July revision applied."
+      ]
+    },
+    {
+      "rule_id": "first_selection_global_2026",
+      "competition": [
+        "LPL",
+        "LCK",
+        "Worlds"
+      ],
+      "year": 2026,
+      "applicability_status": "observed",
+      "first_selection": {
+        "value": "holder chooses map_side or draft_position; opponent chooses remaining dimension",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "season_start_2026",
+            "locator": "Introducing First Selection"
+          }
+        ]
+      },
+      "map_side_implies_first_pick": {
+        "value": false,
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "season_start_2026",
+            "locator": "Introducing First Selection"
+          }
+        ]
+      },
+      "regional_rollout": {
+        "value": "all regions from season start",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "season_start_2026",
+            "locator": "Introducing First Selection"
+          }
+        ]
+      },
+      "draft_template": {
+        "value": null,
+        "status": "unknown"
+      },
+      "cross_game_ban_scope": {
+        "value": null,
+        "status": "unknown",
+        "note": "Global First Selection article does not establish event-specific Fearless rules."
+      }
+    },
+    {
+      "rule_id": "worlds_2026",
+      "competition": "Worlds",
+      "year": 2026,
+      "applicability_status": "observed",
+      "patch": {
+        "value": "26.20",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "worlds_2026_rules",
+            "locator": "p15 §5.1"
+          }
+        ]
+      },
+      "first_selection": {
+        "value": "holder selects side or pick position; opponent selects other dimension",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "worlds_2026_rules",
+            "locator": "p9 §4.1.4.1"
+          }
+        ]
+      },
+      "subsequent_game_selection_right": {
+        "value": "previous_game_loser",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "worlds_2026_rules",
+            "locator": "p10 §4.1.4.6"
+          }
+        ]
+      },
+      "exception": {
+        "value": "Play-In Round4 game1 team from Round2 Match1 receives dual selection",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "worlds_2026_rules",
+            "locator": "p9 §4.1.4.2.2"
+          }
+        ]
+      },
+      "draft_template": {
+        "value": null,
+        "status": "unknown",
+        "note": "International rules §4.5.4 references Appendix Figure4; figure not independently interpreted."
+      },
+      "cross_game_ban_scope": {
+        "value": null,
+        "status": "unknown",
+        "note": "Downloaded Worlds event-specific PDF does not explicitly define Fearless. 2025 announcement is not silently applied to 2026."
+      },
+      "event_disabled_champions": {
+        "value": null,
+        "status": "unknown",
+        "note": "§5.1 allows official restrictions and says teams receive a list; that list not obtained."
+      },
+      "unresolved": [
+        "Worlds Fearless application and full consumption rules",
+        "event disabled list",
+        "hotfix build",
+        "PDF §4.1.3.1.3 says 2025 champion despite 2026 title; preserve source defect"
+      ]
+    },
+    {
+      "rule_id": "lpl_2026_unverified",
+      "competition": "LPL",
+      "year": 2026,
+      "applicability_status": "unknown",
+      "draft_template": {
+        "value": null,
+        "status": "unknown"
+      },
+      "cross_game_ban_scope": {
+        "value": null,
+        "status": "unknown"
+      },
+      "event_disabled_champions": {
+        "value": null,
+        "status": "unknown"
+      },
+      "unresolved": [
+        "LPL-specific 2026 rulebook not found in official public library; First Selection global announcement alone cannot fill Fearless rules"
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
-  "candidate_games": 31,
-  "context_linked_games": 0,
-  "context_sha256": null,
+  "candidate_games": 42,
+  "context_linked_games": 42,
+  "context_sha256": "48ce1a6ab624b68c077a1eb2da2b474a8995c85aedd25f002b58cb436f9cdba1",
   "issue_counts": {
     "no_unique_recorded_winner": 1,
     "unknown_ban_slots": 23

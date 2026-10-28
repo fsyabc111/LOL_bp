@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "patches": [
+    {
+      "id": "14.16",
+      "official_display_patch": "14.16",
+      "official_notes_source": "patch_14_16",
+      "notes_snapshot_status": "wrong_content_http_200",
+      "ddragon_version": {
+        "value": "14.16.1",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "ddragon_14_16_1",
+            "locator": "$.version"
+          }
+        ]
+      },
+      "display_to_asset_mapping_status": "inferred",
+      "mapping_note": "Matching major/minor and official packaging docs support candidate only; this is not proof of tournament hotfix/build identity.",
+      "tournament_patch_confirmation": "unknown",
+      "hotfix_status": "unknown"
+    },
+    {
+      "id": "26.20",
+      "official_display_patch": "26.20",
+      "official_notes_source": "patch_26_20",
+      "notes_snapshot_status": "wrong_content_http_200",
+      "event_patch": {
+        "value": "26.20",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "worlds_2026_rules",
+            "locator": "p15 §5.1"
+          }
+        ]
+      },
+      "ddragon_version": {
+        "value": "16.20.1",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "ddragon_16_20_1",
+            "locator": "$.version"
+          }
+        ]
+      },
+      "display_to_asset_mapping_status": "unverified",
+      "mapping_note": "26.20 official display and 16.20.1 asset both observed; no authoritative explicit equivalence obtained. Do not subtract 10 as a normalization rule.",
+      "hotfix_status": "unknown"
+    }
+  ],
+  "unresolved": [
+    "Official patch note full local snapshots and dated hotfix sections",
+    "14.16 tournament server build for 2024 LCK Summer playoffs",
+    "26.20 to 16.20 explicit official mapping",
+    "asset snapshot does not guarantee tournament gameplay identity"
+  ]
+}

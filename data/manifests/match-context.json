@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-28T11:53:57.787580+00:00",
+  "source_revision": "04787d28f0661cff22568c3abc5f39a406906b6d",
+  "source": "GPTilt / Leaguepedia-derived",
+  "license": "CC-BY-SA-3.0 per publisher data card",
+  "selected_2026_series": {
+    "LPL": "LPL/2026 Season/Grand Finals_Finals_1",
+    "LCK": "LCK/2026 Season/Season Playoffs_Finals_1",
+    "WLDs": "2026 Season World Championship/Play-In_Round 3_1"
+  },
+  "records": 42,
+  "matched": 42,
+  "source_game_rows": 138402,
+  "latest_source_datetime": "2026-10-25 00:34:00",
+  "snapshots": [
+    {
+      "path": "data/raw/match-context/README.md",
+      "sha256": "fb55d43fb4e4813c677c017f67e0a5466b3c480a09b133e3e3ea02bbe26a299f",
+      "bytes": 8595
+    },
+    {
+      "path": "data/raw/match-context/access-attempts.json",
+      "sha256": "a79a0ee56c66d47f0422e3744739931de13e2f8b85aa3ef033c5f1dc3595a020",
+      "bytes": 437
+    },
+    {
+      "path": "data/raw/match-context/acquisitions.json",
+      "sha256": "c41785526e75aadab5c9cc9c3be5ea75961bd6664ef44c150499ce78401601bf",
+      "bytes": 1171
+    },
+    {
+      "path": "data/raw/match-context/games.parquet",
+      "sha256": "71b9c84e140f213cdda57ceb65807137ea8281bf56ac580c8459ae9c59d32cac",
+      "bytes": 9264061
+    },
+    {
+      "path": "data/raw/match-context/leaguepedia-response.txt",
+      "sha256": "2938e9f1284180959e33ab1718d0793a72ff6e4cdb8108c34dcd14e69446de5c",
+      "bytes": 17
+    },
+    {
+      "path": "data/raw/match-context/matches.parquet",
+      "sha256": "2eab5d78107c70dba6d9f8f548a83b2bd4bc1c929e2355883f717be90a796191",
+      "bytes": 2139433
+    },
+    {
+      "path": "data/raw/match-context/selected-source-records.json",
+      "sha256": "f1dc6336af675b4b731402ae77a11aff63fd2ed27fa145a7ae3b52723aae586f",
+      "bytes": 49862
+    }
+  ],
+  "acquisitions": [
+    {
+      "path": "data/raw/match-context/games.parquet",
+      "source_url": "https://huggingface.co/datasets/gptilt/lol-esports-matches/resolve/04787d28f0661cff22568c3abc5f39a406906b6d/games/games.parquet",
+      "retrieved_at": "2026-10-28T11:53:22.024828+00:00",
+      "http_status": 200,
+      "sha256": "71b9c84e140f213cdda57ceb65807137ea8281bf56ac580c8459ae9c59d32cac",
+      "bytes": 9264061
+    },
+    {
+      "path": "data/raw/match-context/matches.parquet",
+      "source_url": "https://huggingface.co/datasets/gptilt/lol-esports-matches/resolve/04787d28f0661cff22568c3abc5f39a406906b6d/matches/matches.parquet",
+      "retrieved_at": "2026-10-28T11:53:24.300017+00:00",
+      "http_status": 200,
+      "sha256": "2eab5d78107c70dba6d9f8f548a83b2bd4bc1c929e2355883f717be90a796191",
+      "bytes": 2139433
+    },
+    {
+      "path": "data/raw/match-context/README.md",
+      "source_url": "https://huggingface.co/datasets/gptilt/lol-esports-matches/resolve/04787d28f0661cff22568c3abc5f39a406906b6d/README.md",
+      "retrieved_at": "2026-10-28T11:53:25.358352+00:00",
+      "http_status": 200,
+      "sha256": "fb55d43fb4e4813c677c017f67e0a5466b3c480a09b133e3e3ea02bbe26a299f",
+      "bytes": 8595
+    }
+  ],
+  "bp_order_verified": 0,
+  "limitations": [
+    "GPTilt picks are role ordered, never draft order",
+    "Source snapshots share Leaguepedia upstream; linkage is not independent truth verification"
+  ]
+}

@@ -1,0 +1,6 @@
+# Optional Parquet reader; actual context acquisition validated with Python 3.12.
+# Base CSV audit, static acquisition, rules acquisition and offline tests need only stdlib.
+pandas==2.2.3
+fastparquet==2026.9.0
+cramjam==2.14.0
+fsspec==2026.9.0
