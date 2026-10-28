@@ -18,7 +18,8 @@ python3 -m unittest discover -s tests -p test_bp_validator.py
 3. **序列检查**：20 步数量、每步行动方与 ban/pick 类型须与模板一致；pick 不可为空；同一局不可重复英雄；每侧 pick 与 ban 的多重集合须等于 OE 最终列。空 ban 只能对应 OE 的空槽，不推断原因。
 4. **英雄身份**：在候选静态版本的英文目录中按 aliases/name 解析为数字 ID（如 MonkeyKing 与 Wukong 视为同一英雄）；无法解析时退回去空格、去标点的小写名称比较。
 5. **跨局规则**：仅当 `cross_game_ban_scope` 为 observed 的“双方前局 pick 在本系列赛后续局不可选”，且本系列赛所有前序局都在样本中，才执行检查；重复 pick 判为违规，禁用已消耗英雄按规则只记录为损失的 ban。重开局在当前来源中没有记录，标 `remake_status=unknown_not_recorded_in_sources`。规则未知时只列出 `observed_pick_repeats`，不做合法性结论。
-6. **来源独立性**：只有 `vod_manual`、`official_broadcast`、`leaguepedia_picks_and_bans` 类型、带 `locator` 的证据才能使结果为 `verified`。每局最多一条证据，多条记录为 `conflicting_evidence_records`，不自动挑选。
+6. **同队连选**：证据可声明 `unordered_step_groups`（Leaguepedia 为 8–9、10–11、18–19 步）；与 OE 比较时组内按集合比较，另报逐字结果。
+7. **来源独立性**：只有 `vod_manual`、`official_broadcast`、`leaguepedia_picks_and_bans` 类型、带 `locator` 的证据才能使结果为 `verified`。每局最多一条证据，多条记录为 `conflicting_evidence_records`，不自动挑选。
 
 ## OE 列假设
 
@@ -39,13 +40,14 @@ python3 -m unittest discover -s tests -p test_bp_validator.py
 
 ## 2026-10-29 运行结果
 
-本轮仍未取得任何独立逐手来源：沙箱内访问 lol.fandom.com、gol.gg、huggingface.co 均在 TLS 握手阶段被断开，与站点本身的 403 不同，属于本地网络限制，未尝试绕过。因此 `bp_sequences.jsonl` 不存在，42 局均为 `no_independent_sequence`，bp_verified 与 replay_ready 仍为 0。
+`bp_sequences.jsonl` 由 [Leaguepedia 采集](oe-order-golden-set.md)生成，共 2,376 局；其中 42 局样本之外的 2,334 局只用于 OE 顺序测量，验证器只统计数量。
 
-可以确认的部分：
+样本 42 局：
 
-- 35 局可以确定模板及 A/B 映射，生成 OE 列假设，内部检查（步数、重复、集合）均无错误；7 局（2026 LPL 与 Worlds）因模板未知被阻止。
-- 2024 LCK 31 局的 firstPick=1 全部在蓝方，与 2024 规则书“A=蓝方”一致；2026 年 11 局中先手 6 次在红方，与 First Selection 拆分地图边与先后选的说明一致。这是 OE 列与规则的一致性，不是顺序验证。
-- 2026 LCK 决赛 4 局在已观察的 Fearless 规则下检查通过，前序局齐全，无重复 pick，没有禁用已消耗英雄。
-- 2024 LCK 季后赛各系列赛中 23 局与前序局有重复 pick，与当时未采用 Fearless 相符；规则字段仍为 unknown，不据此写入规则事实。2026 LPL 与 Worlds 在样本内没有重复 pick，同样不升格为规则证据。
+- **verified 35 局**：2024 LCK 夏季季后赛 31 局，加 2026 LCK 决赛 4 局。逐步行动方、集合、无重复均通过；2026 LCK 决赛同时通过已观察 Fearless 规则检查。这 35 局 OE 列与 Leaguepedia 逐步一致。
+- **blocked 7 局**：2026 LPL 决赛 4 局、Worlds 入围赛 3 局。逐手证据已有，但规则书中的模板仍为 unknown；Leaguepedia 显示实际按蛇形进行，这是观察证据，不能替代规则条款。
+- 2024 LCK 季后赛有 23 局与前序局重复 pick，与当时未采用 Fearless 相符；规则字段仍为 unknown，不据此写入规则事实。
 
-15 项验证器单元测试覆盖：独立证据通过、OE 顺序差异只报告、OE 列不能自证、缺 locator、行动方错误、步数和空 pick、重复与集合不符、空 ban 对齐、firstPick 映射、模板未知与规则不适用、多条证据冲突、Fearless 违规与禁用已消耗英雄、前序局缺失、未知规则只描述，以及英雄别名。
+bp_verified 为 35，但 replay_ready 仍为 0：所有样本的规则完整性（赛事禁用名单、2024 夏季修订等）和静态版本映射仍未就绪。
+
+验证器单元测试覆盖：独立证据通过、OE 顺序差异只报告、同队连选组内顺序容忍、OE 列不能自证、缺 locator、行动方错误、步数和空 pick、重复与集合不符、空 ban 对齐、firstPick 映射、模板未知与规则不适用、多条证据冲突、Fearless 违规与禁用已消耗英雄、前序局缺失、未知规则只描述，以及英雄别名。

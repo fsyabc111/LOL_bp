@@ -1,0 +1,177 @@
+{
+  "by_year_league": [
+    {
+      "all_steps_equal_rate": 1.0,
+      "ban_order_equal_rate": 1.0,
+      "compared": 31,
+      "equal_modulo_unordered_groups_rate": 1.0,
+      "evidence_rejected": 0,
+      "examples": [],
+      "first_pick_side_agree_rate": 1.0,
+      "games": 31,
+      "league_raw": "LCK",
+      "pick_order_equal_modulo_groups_rate": 1.0,
+      "step_disagreements": {},
+      "year": "2024"
+    },
+    {
+      "all_steps_equal_rate": 1.0,
+      "ban_order_equal_rate": 1.0,
+      "compared": 476,
+      "equal_modulo_unordered_groups_rate": 1.0,
+      "evidence_rejected": 0,
+      "examples": [],
+      "first_pick_side_agree_rate": 1.0,
+      "games": 476,
+      "league_raw": "LCK",
+      "pick_order_equal_modulo_groups_rate": 1.0,
+      "step_disagreements": {},
+      "year": "2025"
+    },
+    {
+      "all_steps_equal_rate": 1.0,
+      "ban_order_equal_rate": 1.0,
+      "compared": 664,
+      "equal_modulo_unordered_groups_rate": 1.0,
+      "evidence_rejected": 0,
+      "examples": [],
+      "first_pick_side_agree_rate": 1.0,
+      "games": 664,
+      "league_raw": "LPL",
+      "pick_order_equal_modulo_groups_rate": 1.0,
+      "step_disagreements": {},
+      "year": "2025"
+    },
+    {
+      "all_steps_equal_rate": 1.0,
+      "ban_order_equal_rate": 1.0,
+      "compared": 96,
+      "equal_modulo_unordered_groups_rate": 1.0,
+      "evidence_rejected": 0,
+      "examples": [],
+      "first_pick_side_agree_rate": 1.0,
+      "games": 96,
+      "league_raw": "WLDs",
+      "pick_order_equal_modulo_groups_rate": 1.0,
+      "step_disagreements": {},
+      "year": "2025"
+    },
+    {
+      "all_steps_equal_rate": 0.9977,
+      "ban_order_equal_rate": 1.0,
+      "compared": 429,
+      "equal_modulo_unordered_groups_rate": 1.0,
+      "evidence_rejected": 0,
+      "examples": [],
+      "first_pick_side_agree_rate": 1.0,
+      "games": 429,
+      "league_raw": "LCK",
+      "pick_order_equal_modulo_groups_rate": 1.0,
+      "step_disagreements": {},
+      "year": "2026"
+    },
+    {
+      "all_steps_equal_rate": 0.9903,
+      "ban_order_equal_rate": 1.0,
+      "compared": 616,
+      "equal_modulo_unordered_groups_rate": 0.9935,
+      "evidence_rejected": 1,
+      "examples": [
+        {
+          "differing_steps_modulo_groups": [
+            8,
+            9,
+            12
+          ],
+          "locator": "LPL/2026 Season/Split 2/Picks and Bans rev 4415784 table row 58 (Week 3: Invictus Gaming vs Top Esports)",
+          "oe_gameid": "13231-13231_game_2"
+        },
+        {
+          "differing_steps_modulo_groups": [
+            7,
+            11,
+            12,
+            17,
+            18,
+            19
+          ],
+          "locator": "LPL/2026 Season/Split 2 Playoffs/Picks and Bans rev 4455291 table row 58 (Play-In: EDward Gaming vs Ninjas in Pyjamas)",
+          "oe_gameid": "13281-13281_game_3"
+        },
+        {
+          "differing_steps_modulo_groups": [
+            10,
+            11,
+            18,
+            19
+          ],
+          "locator": "LPL/2026 Season/Split 2 Playoffs/Picks and Bans rev 4455291 table row 55 (Play-In: Weibo Gaming vs LGD Gaming)",
+          "oe_gameid": "13282-13282_game_1"
+        },
+        {
+          "differing_steps_modulo_groups": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            17,
+            18
+          ],
+          "locator": "LPL/2026 Season/Split 3/Picks and Bans rev 4491106 table row 158 (Week 1: ThunderTalk Gaming vs Bilibili Gaming)",
+          "oe_gameid": "13369-13369_game_3"
+        }
+      ],
+      "first_pick_side_agree_rate": 1.0,
+      "games": 617,
+      "league_raw": "LPL",
+      "pick_order_equal_modulo_groups_rate": 0.9935,
+      "step_disagreements": {
+        "10": 2,
+        "11": 3,
+        "12": 3,
+        "17": 2,
+        "18": 3,
+        "19": 2,
+        "7": 1,
+        "8": 2,
+        "9": 2
+      },
+      "year": "2026"
+    },
+    {
+      "all_steps_equal_rate": 1.0,
+      "ban_order_equal_rate": 1.0,
+      "compared": 63,
+      "equal_modulo_unordered_groups_rate": 1.0,
+      "evidence_rejected": 0,
+      "examples": [],
+      "first_pick_side_agree_rate": 1.0,
+      "games": 63,
+      "league_raw": "WLDs",
+      "pick_order_equal_modulo_groups_rate": 1.0,
+      "step_disagreements": {},
+      "year": "2026"
+    }
+  ],
+  "evidence_independence_note": "Leaguepedia tables are community-entered and not proven independent of OE upstreams; VOD spot checks remain advisable.",
+  "input_sha256": {
+    "data/curated/bp_sequences.jsonl": "eb9ad2fa0de73704383edb8f8d88cc3750f52fa7f3ee3a00b064a0b01fd22433",
+    "data/curated/rules.json": "834eb20b9aeab8e6d373225cbfdb43d1c2fc1e7d711eb6042497647414dc64f8",
+    "data/curated/static/14.16.1/en_US/champion.json": "1909e4ba100281250ca5387c3d3aa40b69987db32bcd656155c8cf16064afbaa",
+    "data/curated/static/16.20.1/en_US/champion.json": "24b5df775dfa86f1a94b54d1e321eb36e66ac4824f1cde6b6e47263357a9e432"
+  },
+  "overall": {
+    "all_steps_equal": 2368,
+    "all_steps_equal_rate": 0.9971,
+    "compared": 2375,
+    "equal_modulo_unordered_groups": 2371,
+    "equal_modulo_unordered_groups_rate": 0.9983,
+    "evidence_rejected": 1,
+    "first_pick_side_agree": 2375,
+    "first_pick_side_agree_rate": 1.0,
+    "games": 2376
+  },
+  "schema_version": 1,
+  "skipped": {}
+}

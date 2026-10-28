@@ -1,6 +1,6 @@
 {
   "input_sha256": {
-    "data/curated/bp-validation.json": "c20f53317280bc74546a55066079c9ca916ca6585aa7235e9a40f21a85413eee",
+    "data/curated/bp-validation.json": "0ca3469afb9b4900a3830144139d8426d393f18ae16a25431a681ff4ab4112a7",
     "data/curated/match_context.jsonl": "48ce1a6ab624b68c077a1eb2da2b474a8995c85aedd25f002b58cb436f9cdba1",
     "data/curated/patches.json": "35e6f47fe96078bb9ff2e58cd37435c01847165f4039955ba0eeff4eda2927f8",
     "data/curated/replay_candidates.jsonl": "2ea1719504bfbe41524627b4e6f54339b4603806db260f67cc142af2483d371b",
@@ -147,7 +147,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
+        "bp_validator_status": "blocked",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -306,7 +306,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
+        "bp_validator_status": "blocked",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -465,7 +465,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
+        "bp_validator_status": "blocked",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -624,7 +624,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
+        "bp_validator_status": "blocked",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -647,8 +647,7 @@
     {
       "blockers": [
         "static_version_mapping_numeric_candidate_event_build_unverified",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -781,8 +780,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -804,8 +803,7 @@
     {
       "blockers": [
         "static_version_mapping_numeric_candidate_event_build_unverified",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -938,8 +936,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -961,8 +959,7 @@
     {
       "blockers": [
         "static_version_mapping_numeric_candidate_event_build_unverified",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -1095,8 +1092,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -1118,8 +1115,7 @@
     {
       "blockers": [
         "static_version_mapping_numeric_candidate_event_build_unverified",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -1252,8 +1248,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -1411,7 +1407,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
+        "bp_validator_status": "blocked",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -1570,7 +1566,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
+        "bp_validator_status": "blocked",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -1729,7 +1725,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
+        "bp_validator_status": "blocked",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -1752,8 +1748,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -1878,8 +1873,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -1901,8 +1896,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -2027,8 +2021,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -2050,8 +2044,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -2176,8 +2169,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -2199,8 +2192,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -2325,8 +2317,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -2348,8 +2340,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -2474,8 +2465,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -2497,8 +2488,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -2623,8 +2613,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -2646,8 +2636,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -2772,8 +2761,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -2795,8 +2784,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -2921,8 +2909,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -2944,8 +2932,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -3070,8 +3057,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -3093,8 +3080,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -3219,8 +3205,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -3242,8 +3228,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -3368,8 +3353,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -3391,8 +3376,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -3517,8 +3501,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -3540,8 +3524,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -3666,8 +3649,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -3689,8 +3672,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -3815,8 +3797,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -3838,8 +3820,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -3964,8 +3945,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -3987,8 +3968,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -4113,8 +4093,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -4136,8 +4116,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -4262,8 +4241,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -4285,8 +4264,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -4411,8 +4389,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -4434,8 +4412,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -4560,8 +4537,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -4583,8 +4560,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -4709,8 +4685,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -4732,8 +4708,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -4853,8 +4828,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -4876,8 +4851,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -5002,8 +4976,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -5025,8 +4999,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -5151,8 +5124,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -5174,8 +5147,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -5300,8 +5272,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -5323,8 +5295,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -5449,8 +5420,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -5472,8 +5443,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -5598,8 +5568,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -5621,8 +5591,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -5747,8 +5716,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -5770,8 +5739,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -5896,8 +5864,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -5919,8 +5887,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -6045,8 +6012,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -6068,8 +6035,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -6194,8 +6160,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -6217,8 +6183,7 @@
     {
       "blockers": [
         "static_version_mapping_inferred",
-        "applicable_rules_incomplete_or_inferred",
-        "bp_order_not_verified"
+        "applicable_rules_incomplete_or_inferred"
       ],
       "candidate_rules": [
         {
@@ -6343,8 +6308,8 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "no_independent_sequence",
-        "bp_verified": false,
+        "bp_validator_status": "verified",
+        "bp_verified": true,
         "context": true,
         "entities_same_candidate_version": true,
         "replay_ready": false,
@@ -6368,16 +6333,17 @@
   "summary": {
     "blocker_counts": {
       "applicable_rules_incomplete_or_inferred": 42,
-      "bp_order_not_verified": 42,
+      "bp_order_not_verified": 7,
       "static_version_mapping_inferred": 31,
       "static_version_mapping_numeric_candidate_event_build_unverified": 11
     },
     "bp_validator_status_counts": {
-      "no_independent_sequence": 42
+      "blocked": 7,
+      "verified": 35
     },
     "games": 42,
     "readiness_counts": {
-      "bp_verified": 0,
+      "bp_verified": 35,
       "context": 42,
       "entities_same_candidate_version": 42,
       "rules_complete": 0,

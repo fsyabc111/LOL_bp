@@ -1,0 +1,814 @@
+{
+  "link_stats": [
+    {
+      "ambiguous": 0,
+      "linked": 31,
+      "parse_errors": 0,
+      "rows": 31,
+      "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 109,
+      "parse_errors": 0,
+      "rows": 109,
+      "title": "LCK/2025 Season/Cup/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 143,
+      "parse_errors": 0,
+      "rows": 143,
+      "title": "LCK/2025 Season/Rounds 1-2/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 18,
+      "parse_errors": 0,
+      "rows": 18,
+      "title": "LCK/2025 Season/Road to MSI/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 145,
+      "parse_errors": 0,
+      "rows": 145,
+      "title": "LCK/2025 Season/Rounds 3-5/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 21,
+      "parse_errors": 0,
+      "rows": 21,
+      "title": "LCK/2025 Season/Season Play-In/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 40,
+      "parse_errors": 0,
+      "rows": 40,
+      "title": "LCK/2025 Season/Season Playoffs/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 125,
+      "parse_errors": 0,
+      "rows": 125,
+      "title": "LCK/2026 Season/Cup/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 131,
+      "parse_errors": 0,
+      "rows": 131,
+      "title": "LCK/2026 Season/Rounds 1-2/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 20,
+      "parse_errors": 0,
+      "rows": 20,
+      "title": "LCK/2026 Season/Road to MSI/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 98,
+      "parse_errors": 0,
+      "rows": 99,
+      "title": "LCK/2026 Season/Rounds 3-4/Picks and Bans",
+      "unmatched": 1
+    },
+    {
+      "ambiguous": 0,
+      "linked": 14,
+      "parse_errors": 0,
+      "rows": 14,
+      "title": "LCK/2026 Season/Season Play-In/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 41,
+      "parse_errors": 0,
+      "rows": 41,
+      "title": "LCK/2026 Season/Season Playoffs/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 88,
+      "parse_errors": 0,
+      "rows": 88,
+      "title": "LPL/2025 Season/Split 1/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 42,
+      "parse_errors": 0,
+      "rows": 42,
+      "title": "LPL/2025 Season/Split 1 Playoffs/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 60,
+      "parse_errors": 0,
+      "rows": 60,
+      "title": "LPL/2025 Season/Split 2 Placements/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 171,
+      "parse_errors": 0,
+      "rows": 171,
+      "title": "LPL/2025 Season/Split 2/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 71,
+      "parse_errors": 0,
+      "rows": 71,
+      "title": "LPL/2025 Season/Split 2 Playoffs/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 159,
+      "parse_errors": 0,
+      "rows": 159,
+      "title": "LPL/2025 Season/Split 3/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 12,
+      "parse_errors": 0,
+      "rows": 12,
+      "title": "LPL/2025 Season/Regional Finals/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 73,
+      "parse_errors": 0,
+      "rows": 73,
+      "title": "LPL/2025 Season/Grand Finals/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 137,
+      "parse_errors": 0,
+      "rows": 137,
+      "title": "LPL/2026 Season/Split 1/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 77,
+      "parse_errors": 0,
+      "rows": 77,
+      "title": "LPL/2026 Season/Split 1 Playoffs/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 114,
+      "parse_errors": 0,
+      "rows": 114,
+      "title": "LPL/2026 Season/Split 2/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 68,
+      "parse_errors": 0,
+      "rows": 68,
+      "title": "LPL/2026 Season/Split 2 Playoffs/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 166,
+      "parse_errors": 0,
+      "rows": 167,
+      "title": "LPL/2026 Season/Split 3/Picks and Bans",
+      "unmatched": 1
+    },
+    {
+      "ambiguous": 0,
+      "linked": 12,
+      "parse_errors": 0,
+      "rows": 12,
+      "title": "LPL/2026 Season/Regional Finals/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 55,
+      "parse_errors": 0,
+      "rows": 55,
+      "title": "LPL/2026 Season/Grand Finals/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 4,
+      "parse_errors": 0,
+      "rows": 4,
+      "title": "2025 Season World Championship/Play-In/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 80,
+      "parse_errors": 0,
+      "rows": 80,
+      "title": "2025 Season World Championship/Main Event/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 22,
+      "parse_errors": 0,
+      "rows": 22,
+      "title": "2026 Season World Championship/Play-In/Picks and Bans",
+      "unmatched": 0
+    },
+    {
+      "ambiguous": 0,
+      "linked": 29,
+      "parse_errors": 0,
+      "rows": 29,
+      "title": "2026 Season World Championship/Main Event/Picks and Bans",
+      "unmatched": 0
+    }
+  ],
+  "pages": [
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:03:03Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 301002,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475.json",
+      "retrieved_at": "2026-10-28T18:03:05Z",
+      "revid": 3939913,
+      "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+      "status": "success",
+      "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:03:18Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 1014370,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/31c02f36216353ac0892b512029b3239284ecd780970f7f04f01d2b5905daca4.json",
+      "retrieved_at": "2026-10-28T18:03:22Z",
+      "revid": 4135395,
+      "sha256": "31c02f36216353ac0892b512029b3239284ecd780970f7f04f01d2b5905daca4",
+      "status": "success",
+      "title": "LCK/2025 Season/Cup/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2025+Season%2FCup%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:03:30Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 1284267,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/1869c97150a61f20d6ad44e93a985ce2c28ade9da81b346886a322618af47da2.json",
+      "retrieved_at": "2026-10-28T18:03:34Z",
+      "revid": 4136908,
+      "sha256": "1869c97150a61f20d6ad44e93a985ce2c28ade9da81b346886a322618af47da2",
+      "status": "success",
+      "title": "LCK/2025 Season/Rounds 1-2/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2025+Season%2FRounds+1-2%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:03:42Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 202931,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/9290ad09ee731c619fcf99d591b00669f22cc88ca494d11e9c85a1c1ce7b6203.json",
+      "retrieved_at": "2026-10-28T18:03:45Z",
+      "revid": 4213720,
+      "sha256": "9290ad09ee731c619fcf99d591b00669f22cc88ca494d11e9c85a1c1ce7b6203",
+      "status": "success",
+      "title": "LCK/2025 Season/Road to MSI/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2025+Season%2FRoad+to+MSI%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:03:53Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 1132558,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/37ef60bb74f86596dd26938c6bba5ffe0620110866cd6bc26b88a6602afc48d3.json",
+      "retrieved_at": "2026-10-28T18:03:59Z",
+      "revid": 4234374,
+      "sha256": "37ef60bb74f86596dd26938c6bba5ffe0620110866cd6bc26b88a6602afc48d3",
+      "status": "success",
+      "title": "LCK/2025 Season/Rounds 3-5/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2025+Season%2FRounds+3-5%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:04:07Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 226396,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/62c3ff000a3184e472ef99dac827b577eed78b03cd2e0ef99c1ea630d8320e64.json",
+      "retrieved_at": "2026-10-28T18:04:10Z",
+      "revid": 4277131,
+      "sha256": "62c3ff000a3184e472ef99dac827b577eed78b03cd2e0ef99c1ea630d8320e64",
+      "status": "success",
+      "title": "LCK/2025 Season/Season Play-In/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2025+Season%2FSeason+Play-In%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:04:18Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 365005,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/33510bdfe5abacc3faf4532fe06b8c32020998b32f5acd147251c5c010027cca.json",
+      "retrieved_at": "2026-10-28T18:04:22Z",
+      "revid": 4277132,
+      "sha256": "33510bdfe5abacc3faf4532fe06b8c32020998b32f5acd147251c5c010027cca",
+      "status": "success",
+      "title": "LCK/2025 Season/Season Playoffs/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2025+Season%2FSeason+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:04:30Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 985982,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/2313c484c478dc914fff1adaeb164f037f1963a89bfa6ef181c1595f8e627217.json",
+      "retrieved_at": "2026-10-28T18:04:36Z",
+      "revid": 4352161,
+      "sha256": "2313c484c478dc914fff1adaeb164f037f1963a89bfa6ef181c1595f8e627217",
+      "status": "success",
+      "title": "LCK/2026 Season/Cup/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2026+Season%2FCup%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:04:44Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 1032179,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/e62dd178ac8a37f35fc5f35bf4b7db784fb7b4634d92c9eaf9b6d9e76bed4292.json",
+      "retrieved_at": "2026-10-28T18:04:51Z",
+      "revid": 4413674,
+      "sha256": "e62dd178ac8a37f35fc5f35bf4b7db784fb7b4634d92c9eaf9b6d9e76bed4292",
+      "status": "success",
+      "title": "LCK/2026 Season/Rounds 1-2/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2026+Season%2FRounds+1-2%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:04:59Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 218065,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/b48f7cd5e2c4159129c3aec14754e684045c02c8556a2fa7ddf0dbb58629f604.json",
+      "retrieved_at": "2026-10-28T18:05:01Z",
+      "revid": 4464665,
+      "sha256": "b48f7cd5e2c4159129c3aec14754e684045c02c8556a2fa7ddf0dbb58629f604",
+      "status": "success",
+      "title": "LCK/2026 Season/Road to MSI/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2026+Season%2FRoad+to+MSI%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:05:09Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 797936,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/5716e682fde1a1b09275586707bc74a37b18210c3710121de0e9e792c9b9dfd5.json",
+      "retrieved_at": "2026-10-28T18:05:15Z",
+      "revid": 4495097,
+      "sha256": "5716e682fde1a1b09275586707bc74a37b18210c3710121de0e9e792c9b9dfd5",
+      "status": "success",
+      "title": "LCK/2026 Season/Rounds 3-4/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2026+Season%2FRounds+3-4%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:05:23Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 258401,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/aa1340f96f38acf2b95314a02fb4b3924f1e7f721db67cb8a615e7dafc1094bd.json",
+      "retrieved_at": "2026-10-28T18:05:24Z",
+      "revid": 4517324,
+      "sha256": "aa1340f96f38acf2b95314a02fb4b3924f1e7f721db67cb8a615e7dafc1094bd",
+      "status": "success",
+      "title": "LCK/2026 Season/Season Play-In/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2026+Season%2FSeason+Play-In%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:05:32Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 686085,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/e897fec7fe9a56dd4dbca6c35f5c188891038b5825c339e288e81af197ebd071.json",
+      "retrieved_at": "2026-10-28T18:05:35Z",
+      "revid": 4519514,
+      "sha256": "e897fec7fe9a56dd4dbca6c35f5c188891038b5825c339e288e81af197ebd071",
+      "status": "success",
+      "title": "LCK/2026 Season/Season Playoffs/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2026+Season%2FSeason+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:05:43Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 711149,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/5d2898866f4a01b7ca45381d4e752e67d977479075eba1c8ee16a28d128f66bc.json",
+      "retrieved_at": "2026-10-28T18:05:48Z",
+      "revid": 4028524,
+      "sha256": "5d2898866f4a01b7ca45381d4e752e67d977479075eba1c8ee16a28d128f66bc",
+      "status": "success",
+      "title": "LPL/2025 Season/Split 1/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LPL%2F2025+Season%2FSplit+1%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:05:56Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 371714,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/57b183f6c43bcafabcf28de4c38d4442f9d885546f4b6b18261c65b4c30c554a.json",
+      "retrieved_at": "2026-10-28T18:05:58Z",
+      "revid": 4068885,
+      "sha256": "57b183f6c43bcafabcf28de4c38d4442f9d885546f4b6b18261c65b4c30c554a",
+      "status": "success",
+      "title": "LPL/2025 Season/Split 1 Playoffs/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LPL%2F2025+Season%2FSplit+1+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:06:06Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 494360,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/7780ee6062f1bc20e7b1b7c3bff0727dd9d25458891396a4ee9b655d6cbb3e49.json",
+      "retrieved_at": "2026-10-28T18:06:10Z",
+      "revid": 4134738,
+      "sha256": "7780ee6062f1bc20e7b1b7c3bff0727dd9d25458891396a4ee9b655d6cbb3e49",
+      "status": "success",
+      "title": "LPL/2025 Season/Split 2 Placements/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LPL%2F2025+Season%2FSplit+2+Placements%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:06:18Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 1455210,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/84a2ae0179f0e284d0a2965bb1329d44f3f3a547896cb87824db7b4c3ae23b0c.json",
+      "retrieved_at": "2026-10-28T18:06:22Z",
+      "revid": 4148694,
+      "sha256": "84a2ae0179f0e284d0a2965bb1329d44f3f3a547896cb87824db7b4c3ae23b0c",
+      "status": "success",
+      "title": "LPL/2025 Season/Split 2/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LPL%2F2025+Season%2FSplit+2%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:06:30Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 574615,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/79462b55062e51238bc906c9465e349f6e6d4605ac49139674fe6178f0353e8d.json",
+      "retrieved_at": "2026-10-28T18:06:34Z",
+      "revid": 4202319,
+      "sha256": "79462b55062e51238bc906c9465e349f6e6d4605ac49139674fe6178f0353e8d",
+      "status": "success",
+      "title": "LPL/2025 Season/Split 2 Playoffs/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LPL%2F2025+Season%2FSplit+2+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:06:42Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 1204180,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/027d0b5fbf7e024dcbf4bbee945c02e5fd7babe2b1ed93165b3b306e2d840d0c.json",
+      "retrieved_at": "2026-10-28T18:06:48Z",
+      "revid": 4234322,
+      "sha256": "027d0b5fbf7e024dcbf4bbee945c02e5fd7babe2b1ed93165b3b306e2d840d0c",
+      "status": "success",
+      "title": "LPL/2025 Season/Split 3/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LPL%2F2025+Season%2FSplit+3%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:06:56Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 144989,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/4a839be0f84582528c0e6a193c37f4a008b3a788527832be4e473a4937547b8b.json",
+      "retrieved_at": "2026-10-28T18:06:59Z",
+      "revid": 4293563,
+      "sha256": "4a839be0f84582528c0e6a193c37f4a008b3a788527832be4e473a4937547b8b",
+      "status": "success",
+      "title": "LPL/2025 Season/Regional Finals/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LPL%2F2025+Season%2FRegional+Finals%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:07:07Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 589299,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/6baed7815ca05b8579b32e1890660d3eb0450c058982a1d3c9b6e9872a4c2411.json",
+      "retrieved_at": "2026-10-28T18:07:11Z",
+      "revid": 4277180,
+      "sha256": "6baed7815ca05b8579b32e1890660d3eb0450c058982a1d3c9b6e9872a4c2411",
+      "status": "success",
+      "title": "LPL/2025 Season/Grand Finals/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LPL%2F2025+Season%2FGrand+Finals%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:07:19Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 1048803,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/df35f92172ae594316f94b30d9e9025942fcad073f85697897e86e3f75c56a67.json",
+      "retrieved_at": "2026-10-28T18:07:25Z",
+      "revid": 4352130,
+      "sha256": "df35f92172ae594316f94b30d9e9025942fcad073f85697897e86e3f75c56a67",
+      "status": "success",
+      "title": "LPL/2026 Season/Split 1/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LPL%2F2026+Season%2FSplit+1%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:07:33Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 618895,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/ba02227a2873641f9af11e2adc447e130f4ce3882ece034dbc257a21146922e5.json",
+      "retrieved_at": "2026-10-28T18:07:38Z",
+      "revid": 4378220,
+      "sha256": "ba02227a2873641f9af11e2adc447e130f4ce3882ece034dbc257a21146922e5",
+      "status": "success",
+      "title": "LPL/2026 Season/Split 1 Playoffs/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LPL%2F2026+Season%2FSplit+1+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:07:46Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 881583,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/0d2e0a62c628ed04e09d1a9fde030d7b23331861cc0698ea36d083f59bf8c4ac.json",
+      "retrieved_at": "2026-10-28T18:07:53Z",
+      "revid": 4415784,
+      "sha256": "0d2e0a62c628ed04e09d1a9fde030d7b23331861cc0698ea36d083f59bf8c4ac",
+      "status": "success",
+      "title": "LPL/2026 Season/Split 2/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LPL%2F2026+Season%2FSplit+2%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:08:01Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 552902,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/d38bc21c1eac79ad1c401617f0bf31b14f56c4b36a6181ff4598545343a22bdd.json",
+      "retrieved_at": "2026-10-28T18:08:07Z",
+      "revid": 4455291,
+      "sha256": "d38bc21c1eac79ad1c401617f0bf31b14f56c4b36a6181ff4598545343a22bdd",
+      "status": "success",
+      "title": "LPL/2026 Season/Split 2 Playoffs/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LPL%2F2026+Season%2FSplit+2+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:08:15Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 1264930,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/6eabbadb83dbc0ae6fd71fc73d61c6f3cefcc17050182b03ccefdbb055c90d20.json",
+      "retrieved_at": "2026-10-28T18:08:24Z",
+      "revid": 4491106,
+      "sha256": "6eabbadb83dbc0ae6fd71fc73d61c6f3cefcc17050182b03ccefdbb055c90d20",
+      "status": "success",
+      "title": "LPL/2026 Season/Split 3/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LPL%2F2026+Season%2FSplit+3%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:08:32Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 145176,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/82d31bc2b08b45a354160593ddd06428ff24a4bbd3988787d3ef557fa692b020.json",
+      "retrieved_at": "2026-10-28T18:08:34Z",
+      "revid": 4533214,
+      "sha256": "82d31bc2b08b45a354160593ddd06428ff24a4bbd3988787d3ef557fa692b020",
+      "status": "success",
+      "title": "LPL/2026 Season/Regional Finals/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LPL%2F2026+Season%2FRegional+Finals%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:08:42Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 555249,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/af215d52448b095a3920fdd62678e150957c754166a19f7513f59f69a4b697fc.json",
+      "retrieved_at": "2026-10-28T18:08:44Z",
+      "revid": 4519182,
+      "sha256": "af215d52448b095a3920fdd62678e150957c754166a19f7513f59f69a4b697fc",
+      "status": "success",
+      "title": "LPL/2026 Season/Grand Finals/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=LPL%2F2026+Season%2FGrand+Finals%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:08:52Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 53779,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/eb4990d68673b715bbb5a0983585b14ecc9d5228b47b0a33afc0f5775d3b53d7.json",
+      "retrieved_at": "2026-10-28T18:08:54Z",
+      "revid": 4303764,
+      "sha256": "eb4990d68673b715bbb5a0983585b14ecc9d5228b47b0a33afc0f5775d3b53d7",
+      "status": "success",
+      "title": "2025 Season World Championship/Play-In/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=2025+Season+World+Championship%2FPlay-In%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:09:02Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 618749,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/d0664abaebd11d8c28649e3879f83990d120278286560fced02366344102c81c.json",
+      "retrieved_at": "2026-10-28T18:09:05Z",
+      "revid": 4303781,
+      "sha256": "d0664abaebd11d8c28649e3879f83990d120278286560fced02366344102c81c",
+      "status": "success",
+      "title": "2025 Season World Championship/Main Event/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=2025+Season+World+Championship%2FMain+Event%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:09:13Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 187387,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/6b8ce29e4450dab5be78adc2ea660a50b2e917ac647d9c9e3b466598a70806e7.json",
+      "retrieved_at": "2026-10-28T18:09:14Z",
+      "revid": 4548989,
+      "sha256": "6b8ce29e4450dab5be78adc2ea660a50b2e917ac647d9c9e3b466598a70806e7",
+      "status": "success",
+      "title": "2026 Season World Championship/Play-In/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=2026+Season+World+Championship%2FPlay-In%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:09:22Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 241898,
+      "raw_path": "data/raw/leaguepedia-pb/sha256/107049832fa0bf4717b8af36d8e62ea8efa5e7482d52dac386ec6aac33ed99c9.json",
+      "retrieved_at": "2026-10-28T18:09:24Z",
+      "revid": 4549289,
+      "sha256": "107049832fa0bf4717b8af36d8e62ea8efa5e7482d52dac386ec6aac33ed99c9",
+      "status": "success",
+      "title": "2026 Season World Championship/Main Event/Picks and Bans",
+      "url": "https://lol.fandom.com/api.php?action=parse&page=2026+Season+World+Championship%2FMain+Event%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+    }
+  ],
+  "schema_version": 1,
+  "summary": {
+    "linked": 2376,
+    "pages": 32,
+    "rows": 2378,
+    "success": 32
+  },
+  "user_agent": "LOL_bp-research/0.1 (personal research; github.com/fsyabc111/LOL_bp)"
+}

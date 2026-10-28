@@ -10,7 +10,8 @@
 - [当前覆盖报告](docs/data/local-audit.md)：已扫描 2023–2026 年本地文件；区分可用赛果、时间截面和未验收 BP 顺序。
 - [首批数据集状态与缺口](docs/data/dataset-status.md)：5,406小局、42局代表样本、固定版本静态资料及后续验收项。
 - [样本集成索引](docs/data/sample-index.md)：比赛、系列赛、英雄身份、候选补丁和规则的逐局关联及未就绪原因。
-- [逐手 BP 验证器](docs/data/bp-validation.md)：按规则模板、最终阵容和 Fearless 检查独立逐手证据；目前尚无独立来源，42局均未验证。
+- [逐手 BP 验证器](docs/data/bp-validation.md)：按规则模板、最终阵容和 Fearless 检查独立逐手证据；样本 42 局中 35 局逐手验证通过。
+- [OE 选禁顺序黄金集](docs/data/oe-order-golden-set.md)：Leaguepedia 2,376 局逐手表对照，OE 列顺序一致率 99.83%。
 - 已实现本地数据审计与规范化管道；应用界面、推荐模型和 Agent 尚未实现。数据来源真实性、完整赛程及逐手 BP 仍需分项验收。
 - 技术框架、评分权重、采样阈值和最终主数据源尚未确定。
 

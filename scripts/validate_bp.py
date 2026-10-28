@@ -110,11 +110,19 @@ def cross_game(game, context, rule, prior_games, champions):
     return result
 
 
-def order_agreement(evidence_steps, hypothesis_steps):
+def order_agreement(evidence_steps, hypothesis_steps, unordered_groups=()):
+    """Compare per step; same-team picks a source does not order are compared as a group."""
     if not hypothesis_steps: return None
-    by_step = {s['step']: s for s in hypothesis_steps}
-    differing = [s['step'] for s in evidence_steps if by_step.get(s['step'], {}).get('champion') != s.get('champion')]
-    return {'all_steps_equal': not differing, 'differing_steps': differing}
+    by_step = {s['step']: s.get('champion') for s in hypothesis_steps}
+    differing = [s['step'] for s in evidence_steps if by_step.get(s['step']) != s.get('champion')]
+    grouped = {step: tuple(group) for group in unordered_groups for step in group}
+    evidence = {s['step']: s.get('champion') for s in evidence_steps}
+    def same(step):
+        group = grouped.get(step, (step,))
+        return Counter(evidence.get(g) for g in group) == Counter(by_step.get(g) for g in group)
+    modulo = sorted(step for step in differing if not same(step))
+    return {'all_steps_equal': not differing, 'differing_steps': differing,
+            'equal_modulo_unordered_groups': not modulo, 'differing_steps_modulo_groups': modulo}
 
 
 def validate_game(game, context, rules, champions, prior_games, evidence):
@@ -140,7 +148,7 @@ def validate_game(game, context, rules, champions, prior_games, evidence):
         if not source.get('locator'): errors.append({'code': 'source_locator_missing'})
         if record['cross_game'].get('status') == 'violation': errors.append({'code': 'cross_game_rule_violation'})
         record['evidence'] = {'source': source, 'errors': errors,
-                              'oe_column_order_agreement': order_agreement(item.get('steps', []), hypothesis) if not errors else None}
+                              'oe_column_order_agreement': order_agreement(item.get('steps', []), hypothesis, item.get('unordered_step_groups', [])) if not errors else None}
         record['status'] = 'rejected' if errors else 'verified'
     return record
 
@@ -153,8 +161,9 @@ def validate(root):
     rules, patches = read_json(root / INPUTS[2]), read_json(root / INPUTS[3])
     catalogs, _ = load_catalogs(root, read_json(root / INPUTS[4]))
     sequences = read_jsonl(root / SEQUENCES) if (root / SEQUENCES).is_file() else []
-    unknown = sorted({s['oe_gameid'] for s in sequences} - {g['oe_gameid'] for g in games})
-    if unknown: raise ValueError(f'sequence evidence for games outside the sample: {unknown}')
+    # Evidence beyond the replay sample (e.g. the OE-order golden set) is measured by measure_oe_order.py.
+    in_sample = {g['oe_gameid'] for g in games}
+    outside = sum(s['oe_gameid'] not in in_sample for s in sequences)
     by_series = {}
     for game in games:
         context = contexts.get(game['oe_gameid'], {})
@@ -171,7 +180,7 @@ def validate(root):
     hashed = INPUTS + ([SEQUENCES] if (root / SEQUENCES).is_file() else [])
     return {'schema_version': 1, 'input_sha256': {p: digest(root / p) for p in hashed},
             'independent_source_types': sorted(INDEPENDENT_SOURCE_TYPES), 'records': records,
-            'summary': {'games': len(records), 'status_counts': dict(sorted(Counter(r['status'] for r in records).items())),
+            'summary': {'games': len(records), 'evidence_outside_sample': outside, 'status_counts': dict(sorted(Counter(r['status'] for r in records).items())),
                         'cross_game_counts': dict(sorted(Counter(r['cross_game']['status'] for r in records).items())),
                         'oe_hypothesis_internal_errors': sum(bool(r['oe_column_hypothesis'] and r['oe_column_hypothesis']['errors']) for r in records)}}
 

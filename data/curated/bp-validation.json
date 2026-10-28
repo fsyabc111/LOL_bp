@@ -5,6 +5,7 @@
     "vod_manual"
   ],
   "input_sha256": {
+    "data/curated/bp_sequences.jsonl": "eb9ad2fa0de73704383edb8f8d88cc3750f52fa7f3ee3a00b064a0b01fd22433",
     "data/curated/match_context.jsonl": "48ce1a6ab624b68c077a1eb2da2b474a8995c85aedd25f002b58cb436f9cdba1",
     "data/curated/patches.json": "35e6f47fe96078bb9ff2e58cd37435c01847165f4039955ba0eeff4eda2927f8",
     "data/curated/replay_candidates.jsonl": "2ea1719504bfbe41524627b4e6f54339b4603806db260f67cc142af2483d371b",
@@ -14,8 +15,7 @@
   "records": [
     {
       "blockers": [
-        "draft_template_unknown",
-        "independent_sequence_missing"
+        "draft_template_unknown"
       ],
       "cross_game": {
         "observed_pick_repeats": [],
@@ -25,12 +25,11 @@
       "oe_column_hypothesis": null,
       "oe_gameid": "13505-13505_game_1",
       "rule_id": null,
-      "status": "no_independent_sequence"
+      "status": "blocked"
     },
     {
       "blockers": [
-        "draft_template_unknown",
-        "independent_sequence_missing"
+        "draft_template_unknown"
       ],
       "cross_game": {
         "observed_pick_repeats": [],
@@ -40,12 +39,11 @@
       "oe_column_hypothesis": null,
       "oe_gameid": "13505-13505_game_2",
       "rule_id": null,
-      "status": "no_independent_sequence"
+      "status": "blocked"
     },
     {
       "blockers": [
-        "draft_template_unknown",
-        "independent_sequence_missing"
+        "draft_template_unknown"
       ],
       "cross_game": {
         "observed_pick_repeats": [],
@@ -55,12 +53,11 @@
       "oe_column_hypothesis": null,
       "oe_gameid": "13505-13505_game_3",
       "rule_id": null,
-      "status": "no_independent_sequence"
+      "status": "blocked"
     },
     {
       "blockers": [
-        "draft_template_unknown",
-        "independent_sequence_missing"
+        "draft_template_unknown"
       ],
       "cross_game": {
         "observed_pick_repeats": [],
@@ -70,12 +67,10 @@
       "oe_column_hypothesis": null,
       "oe_gameid": "13505-13505_game_4",
       "rule_id": null,
-      "status": "no_independent_sequence"
+      "status": "blocked"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "bans_on_consumed": [],
         "pick_repeats": [],
@@ -85,6 +80,28 @@
       "draft_sides": {
         "A": "Red",
         "B": "Blue"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2026 Season/Season Playoffs/Picks and Bans rev 4519514 table row 2 (Finals: Gen.G vs Hanwha Life Esports)",
+          "retrieved_at": "2026-10-28T18:05:35Z",
+          "revid": 4519514,
+          "row_links": [
+            "/wiki/LCK/2026_Season/Season_Playoffs/Scoreboards/Round_3_to_Finals",
+            "https://youtu.be/fQFeYy7ZqPU?t=10250"
+          ],
+          "sha256": "e897fec7fe9a56dd4dbca6c35f5c188891038b5825c339e288e81af197ebd071",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2026 Season/Season Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2026+Season%2FSeason+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -214,12 +231,10 @@
       },
       "oe_gameid": "LOLTMNT02_462565",
       "rule_id": "lck_2026_from_2026_07_29",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "bans_on_consumed": [],
         "pick_repeats": [],
@@ -229,6 +244,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2026 Season/Season Playoffs/Picks and Bans rev 4519514 table row 4 (Finals: Gen.G vs Hanwha Life Esports)",
+          "retrieved_at": "2026-10-28T18:05:35Z",
+          "revid": 4519514,
+          "row_links": [
+            "/wiki/LCK/2026_Season/Season_Playoffs/Scoreboards/Round_3_to_Finals",
+            "https://youtu.be/fQFeYy7ZqPU?t=3091"
+          ],
+          "sha256": "e897fec7fe9a56dd4dbca6c35f5c188891038b5825c339e288e81af197ebd071",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2026 Season/Season Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2026+Season%2FSeason+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -358,12 +395,10 @@
       },
       "oe_gameid": "LOLTMNT02_463372",
       "rule_id": "lck_2026_from_2026_07_29",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "bans_on_consumed": [],
         "pick_repeats": [],
@@ -373,6 +408,28 @@
       "draft_sides": {
         "A": "Red",
         "B": "Blue"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2026 Season/Season Playoffs/Picks and Bans rev 4519514 table row 3 (Finals: Gen.G vs Hanwha Life Esports)",
+          "retrieved_at": "2026-10-28T18:05:35Z",
+          "revid": 4519514,
+          "row_links": [
+            "/wiki/LCK/2026_Season/Season_Playoffs/Scoreboards/Round_3_to_Finals",
+            "https://youtu.be/fQFeYy7ZqPU?t=6930"
+          ],
+          "sha256": "e897fec7fe9a56dd4dbca6c35f5c188891038b5825c339e288e81af197ebd071",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2026 Season/Season Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2026+Season%2FSeason+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -502,12 +559,10 @@
       },
       "oe_gameid": "LOLTMNT02_463373",
       "rule_id": "lck_2026_from_2026_07_29",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "bans_on_consumed": [],
         "pick_repeats": [],
@@ -517,6 +572,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2026 Season/Season Playoffs/Picks and Bans rev 4519514 table row 1 (Finals: Gen.G vs Hanwha Life Esports)",
+          "retrieved_at": "2026-10-28T18:05:35Z",
+          "revid": 4519514,
+          "row_links": [
+            "/wiki/LCK/2026_Season/Season_Playoffs/Scoreboards/Round_3_to_Finals",
+            "https://youtu.be/fQFeYy7ZqPU?t=13268"
+          ],
+          "sha256": "e897fec7fe9a56dd4dbca6c35f5c188891038b5825c339e288e81af197ebd071",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2026 Season/Season Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2026+Season%2FSeason+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -646,12 +723,11 @@
       },
       "oe_gameid": "LOLTMNT02_463374",
       "rule_id": "lck_2026_from_2026_07_29",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
       "blockers": [
-        "draft_template_unknown",
-        "independent_sequence_missing"
+        "draft_template_unknown"
       ],
       "cross_game": {
         "observed_pick_repeats": [],
@@ -661,12 +737,11 @@
       "oe_column_hypothesis": null,
       "oe_gameid": "LOLTMNT02_480507",
       "rule_id": null,
-      "status": "no_independent_sequence"
+      "status": "blocked"
     },
     {
       "blockers": [
-        "draft_template_unknown",
-        "independent_sequence_missing"
+        "draft_template_unknown"
       ],
       "cross_game": {
         "observed_pick_repeats": [],
@@ -676,12 +751,11 @@
       "oe_column_hypothesis": null,
       "oe_gameid": "LOLTMNT02_480508",
       "rule_id": null,
-      "status": "no_independent_sequence"
+      "status": "blocked"
     },
     {
       "blockers": [
-        "draft_template_unknown",
-        "independent_sequence_missing"
+        "draft_template_unknown"
       ],
       "cross_game": {
         "observed_pick_repeats": [],
@@ -691,12 +765,10 @@
       "oe_column_hypothesis": null,
       "oe_gameid": "LOLTMNT02_480511",
       "rule_id": null,
-      "status": "no_independent_sequence"
+      "status": "blocked"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [
           "id:22",
@@ -708,6 +780,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 30 (Round 1: BNK FEARX vs Dplus Kia)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards",
+            "https://www.youtube.com/live/YdBvUiXZu88?t=5888"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -837,12 +931,10 @@
       },
       "oe_gameid": "LOLTMNT03_137726",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [
           "id:12",
@@ -857,6 +949,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 28 (Round 1: Dplus Kia vs BNK FEARX)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards",
+            "https://www.youtube.com/live/YdBvUiXZu88?t=13395"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -986,12 +1100,10 @@
       },
       "oe_gameid": "LOLTMNT03_137737",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [],
         "status": "rule_unknown"
@@ -999,6 +1111,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 31 (Round 1: Dplus Kia vs BNK FEARX)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards",
+            "https://www.youtube.com/live/YdBvUiXZu88?t=2641"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -1128,12 +1262,10 @@
       },
       "oe_gameid": "LOLTMNT03_138505",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [
           "id:12",
@@ -1149,6 +1281,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 29 (Round 1: BNK FEARX vs Dplus Kia)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards",
+            "https://www.youtube.com/live/YdBvUiXZu88?t=9073"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -1278,12 +1432,10 @@
       },
       "oe_gameid": "LOLTMNT03_138521",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [],
         "status": "rule_unknown"
@@ -1291,6 +1443,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 27 (Round 1: T1 vs KT Rolster)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards",
+            "https://www.youtube.com/live/6hxvy2RXN2U?t=2432"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -1420,12 +1594,10 @@
       },
       "oe_gameid": "LOLTMNT03_138902",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [
           "id:113",
@@ -1442,6 +1614,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 25 (Round 1: T1 vs KT Rolster)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards",
+            "https://www.youtube.com/live/6hxvy2RXN2U?t=8950"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -1571,12 +1765,10 @@
       },
       "oe_gameid": "LOLTMNT03_138906",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [
           "id:113",
@@ -1590,6 +1782,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 26 (Round 1: KT Rolster vs T1)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards",
+            "https://www.youtube.com/live/6hxvy2RXN2U?t=5837"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -1719,12 +1933,10 @@
       },
       "oe_gameid": "LOLTMNT03_139091",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [
           "id:113",
@@ -1737,6 +1949,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 24 (Round 1: KT Rolster vs T1)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards",
+            "https://www.youtube.com/live/6hxvy2RXN2U?t=12317"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -1866,12 +2100,10 @@
       },
       "oe_gameid": "LOLTMNT03_139097",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [
           "id:115",
@@ -1882,6 +2114,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 19 (Round 2: T1 vs Hanwha Life Esports)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards/Round_2",
+            "https://www.youtube.com/live/FLVtEl1oBnQ?t=6356"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -2011,12 +2265,10 @@
       },
       "oe_gameid": "LOLTMNT03_142511",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [
           "id:113",
@@ -2030,6 +2282,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 18 (Round 2: T1 vs Hanwha Life Esports)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards/Round_2",
+            "https://www.youtube.com/live/FLVtEl1oBnQ?t=10009"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -2159,12 +2433,10 @@
       },
       "oe_gameid": "LOLTMNT03_142514",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [],
         "status": "rule_unknown"
@@ -2172,6 +2444,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 23 (Round 2: Gen.G vs Dplus Kia)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards/Round_2",
+            "https://www.youtube.com/live/m7As2_4ibL8?t=3218"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -2301,12 +2595,10 @@
       },
       "oe_gameid": "LOLTMNT03_143238",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [
           "id:115",
@@ -2320,6 +2612,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 22 (Round 2: Dplus Kia vs Gen.G)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards/Round_2",
+            "https://www.youtube.com/live/m7As2_4ibL8?t=6789"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -2449,12 +2763,10 @@
       },
       "oe_gameid": "LOLTMNT03_143239",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [
           "id:115",
@@ -2468,6 +2780,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 21 (Round 2: Dplus Kia vs Gen.G)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards/Round_2",
+            "https://www.youtube.com/live/m7As2_4ibL8?t=9935"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -2597,12 +2931,10 @@
       },
       "oe_gameid": "LOLTMNT03_143242",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [],
         "status": "rule_unknown"
@@ -2610,6 +2942,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 20 (Round 2: Hanwha Life Esports vs T1)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards/Round_2",
+            "https://www.youtube.com/live/FLVtEl1oBnQ?t=3130"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -2739,12 +3093,10 @@
       },
       "oe_gameid": "LOLTMNT03_143512",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [],
         "status": "rule_unknown"
@@ -2752,6 +3104,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 13 (Round 3: Gen.G vs Hanwha Life Esports)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards/Round_3_to_Finals",
+            "https://www.youtube.com/live/oYrdem6VFmI?t=3071"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -2881,12 +3255,10 @@
       },
       "oe_gameid": "LOLTMNT03_143986",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [
           "id:21",
@@ -2898,6 +3270,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 12 (Round 3: Gen.G vs Hanwha Life Esports)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards/Round_3_to_Finals",
+            "https://www.youtube.com/live/oYrdem6VFmI?t=6452"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -3027,12 +3421,10 @@
       },
       "oe_gameid": "LOLTMNT03_143993",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [
           "id:888",
@@ -3043,6 +3435,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 11 (Round 3: Hanwha Life Esports vs Gen.G)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards/Round_3_to_Finals",
+            "https://www.youtube.com/live/oYrdem6VFmI?t=9500"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -3172,12 +3586,10 @@
       },
       "oe_gameid": "LOLTMNT03_144116",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [
           "id:113",
@@ -3191,6 +3603,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 15 (Round 2: Dplus Kia vs T1)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards/Round_2",
+            "https://www.youtube.com/live/p30xTHNZxoE?t=9981"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -3320,12 +3754,10 @@
       },
       "oe_gameid": "LOLTMNT03_144583",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [
           "id:221",
@@ -3342,6 +3774,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 10 (Round 3: Hanwha Life Esports vs Gen.G)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards/Round_3_to_Finals",
+            "https://www.youtube.com/live/oYrdem6VFmI?t=12781"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -3471,12 +3925,10 @@
       },
       "oe_gameid": "LOLTMNT03_145002",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [],
         "status": "rule_unknown"
@@ -3484,6 +3936,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 17 (Round 2: Dplus Kia vs T1)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards/Round_2",
+            "https://www.youtube.com/live/p30xTHNZxoE?t=3477"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -3613,12 +4087,10 @@
       },
       "oe_gameid": "LOLTMNT03_145467",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [
           "id:115",
@@ -3630,6 +4102,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 16 (Round 2: T1 vs Dplus Kia)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards/Round_2",
+            "https://www.youtube.com/live/p30xTHNZxoE?t=6766"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -3759,12 +4253,10 @@
       },
       "oe_gameid": "LOLTMNT03_145472",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [
           "id:113",
@@ -3781,6 +4273,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 14 (Round 2: T1 vs Dplus Kia)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards/Round_2",
+            "https://www.youtube.com/live/p30xTHNZxoE?t=12921"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -3910,12 +4424,10 @@
       },
       "oe_gameid": "LOLTMNT03_145485",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [
           "id:113",
@@ -3927,6 +4439,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 8 (Round 3: T1 vs Hanwha Life Esports)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards/Round_3_to_Finals",
+            "https://www.youtube.com/live/2iryUJ8n3sc?t=8344"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -4056,12 +4590,10 @@
       },
       "oe_gameid": "LOLTMNT03_146452",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [
           "id:113",
@@ -4076,6 +4608,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 7 (Round 3: Hanwha Life Esports vs T1)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards/Round_3_to_Finals",
+            "https://www.youtube.com/live/2iryUJ8n3sc?t=12264"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -4205,12 +4759,10 @@
       },
       "oe_gameid": "LOLTMNT03_146454",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [
           "id:113",
@@ -4228,6 +4780,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 6 (Round 3: T1 vs Hanwha Life Esports)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards/Round_3_to_Finals",
+            "https://www.youtube.com/live/2iryUJ8n3sc?t=15070"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -4357,12 +4931,10 @@
       },
       "oe_gameid": "LOLTMNT03_146456",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [],
         "status": "rule_unknown"
@@ -4370,6 +4942,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 5 (Finals: Gen.G vs Hanwha Life Esports)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards/Round_3_to_Finals",
+            "https://www.youtube.com/live/aTwjlrnCprA?t=4403"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -4499,12 +5093,10 @@
       },
       "oe_gameid": "LOLTMNT03_146529",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [],
         "status": "rule_unknown"
@@ -4512,6 +5104,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 9 (Round 3: Hanwha Life Esports vs T1)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards/Round_3_to_Finals",
+            "https://www.youtube.com/live/2iryUJ8n3sc?t=5129"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -4641,12 +5255,10 @@
       },
       "oe_gameid": "LOLTMNT03_147323",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [
           "id:143",
@@ -4657,6 +5269,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 4 (Finals: Gen.G vs Hanwha Life Esports)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards/Round_3_to_Finals",
+            "https://www.youtube.com/live/aTwjlrnCprA?t=8654"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -4786,12 +5420,10 @@
       },
       "oe_gameid": "LOLTMNT03_147402",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [
           "id:12",
@@ -4804,6 +5436,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 3 (Finals: Hanwha Life Esports vs Gen.G)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards/Round_3_to_Finals",
+            "https://www.youtube.com/live/aTwjlrnCprA?t=12319"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -4933,12 +5587,10 @@
       },
       "oe_gameid": "LOLTMNT03_147403",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [
           "id:12",
@@ -4955,6 +5607,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 2 (Finals: Hanwha Life Esports vs Gen.G)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards/Round_3_to_Finals",
+            "https://www.youtube.com/live/aTwjlrnCprA?t=15677"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -5084,12 +5758,10 @@
       },
       "oe_gameid": "LOLTMNT03_147404",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     },
     {
-      "blockers": [
-        "independent_sequence_missing"
-      ],
+      "blockers": [],
       "cross_game": {
         "observed_pick_repeats": [
           "id:115",
@@ -5105,6 +5777,28 @@
       "draft_sides": {
         "A": "Blue",
         "B": "Red"
+      },
+      "evidence": {
+        "errors": [],
+        "oe_column_order_agreement": {
+          "all_steps_equal": true,
+          "differing_steps": [],
+          "differing_steps_modulo_groups": [],
+          "equal_modulo_unordered_groups": true
+        },
+        "source": {
+          "locator": "LCK/2024 Season/Summer Playoffs/Picks and Bans rev 3939913 table row 1 (Finals: Gen.G vs Hanwha Life Esports)",
+          "retrieved_at": "2026-10-28T18:03:05Z",
+          "revid": 3939913,
+          "row_links": [
+            "/wiki/LCK/2024_Season/Summer_Playoffs/Scoreboards/Round_3_to_Finals",
+            "https://www.youtube.com/live/aTwjlrnCprA?t=19518"
+          ],
+          "sha256": "b7e51cfa9e6b341c4879209f2162752e54c9f135f1c6f58e79b12692dab72475",
+          "source_type": "leaguepedia_picks_and_bans",
+          "title": "LCK/2024 Season/Summer Playoffs/Picks and Bans",
+          "url": "https://lol.fandom.com/api.php?action=parse&page=LCK%2F2024+Season%2FSummer+Playoffs%2FPicks+and+Bans&prop=text%7Crevid&format=json"
+        }
       },
       "oe_column_hypothesis": {
         "errors": [],
@@ -5234,7 +5928,7 @@
       },
       "oe_gameid": "LOLTMNT03_147405",
       "rule_id": "lck_2024_summer_playoffs_candidate",
-      "status": "no_independent_sequence"
+      "status": "verified"
     }
   ],
   "schema_version": 1,
@@ -5243,10 +5937,12 @@
       "pass": 4,
       "rule_unknown": 38
     },
+    "evidence_outside_sample": 2334,
     "games": 42,
     "oe_hypothesis_internal_errors": 0,
     "status_counts": {
-      "no_independent_sequence": 42
+      "blocked": 7,
+      "verified": 35
     }
   }
 }

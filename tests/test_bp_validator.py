@@ -37,6 +37,13 @@ class BPValidatorTests(unittest.TestCase):
         steps[6]['champion'],steps[9]['champion']=steps[9]['champion'],steps[6]['champion']
         r=self.run_one(g,[ev])
         self.assertEqual(r['status'],'verified');self.assertEqual(r['evidence']['oe_column_order_agreement']['differing_steps'],[7,10])
+    def test_unordered_group_order_difference_tolerated_only_within_group(self):
+        g=game();ev=evidence(g);ev['unordered_step_groups']=[[8,9]];steps=ev['steps']
+        steps[7]['champion'],steps[8]['champion']=steps[8]['champion'],steps[7]['champion']
+        agreement=self.run_one(g,[ev])['evidence']['oe_column_order_agreement']
+        self.assertFalse(agreement['all_steps_equal']);self.assertTrue(agreement['equal_modulo_unordered_groups'])
+        steps[9]['champion'],steps[10]['champion']=steps[10]['champion'],steps[9]['champion']
+        self.assertEqual(self.run_one(g,[ev])['evidence']['oe_column_order_agreement']['differing_steps_modulo_groups'],[10,11])
     def test_oe_columns_never_self_verify(self):
         g=game();r=self.run_one(g,[])
         self.assertEqual(r['status'],'no_independent_sequence');self.assertEqual(r['oe_column_hypothesis']['status'],'hypothesis_unverified')
