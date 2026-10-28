@@ -1,0 +1,2752 @@
+{
+  "entities": [
+    {
+      "cooldown": [
+        240
+      ],
+      "cooldownBurn": "240",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "移除身上的所有限制效果（压制效果和击飞效果除外）和召唤师技能的减益效果，并提供韧性。",
+      "effect": [
+        null,
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 1,
+      "key": "1",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "ARAM",
+        "TUTORIAL",
+        "KIWI",
+        "ULTBOOK",
+        "FIRSTBLOOD",
+        "SWIFTPLAY",
+        "CLASSIC",
+        "PRACTICETOOL",
+        "RUBY",
+        "RUBY_TRIAL_1",
+        "BRAWL",
+        "URF",
+        "KIWI_JADE",
+        "RUBY_TRIAL_3",
+        "ONEFORALL",
+        "ARSR",
+        "NEXUSBLITZ",
+        "DOOMBOTSTEEMO",
+        "RUBY_TRIAL_2"
+      ],
+      "name": "净化",
+      "range": [
+        200
+      ],
+      "rangeBurn": "200",
+      "resource": "无消耗",
+      "source_key": "SummonerBoost",
+      "summonerLevel": 9,
+      "tooltip": "移除你身上的所有控制类减益效果(<keyword>压制</keyword>和<keyword>浮空</keyword>除外)和召唤师技能减益效果，并提供持续{{ tenacityduration }}秒的{{ tenacityvalue*100 }}%韧性。",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        240
+      ],
+      "cooldownBurn": "240",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "使目标敌方英雄减速并将其造成的伤害削减。",
+      "effect": [
+        null,
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 3,
+      "key": "3",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "URF",
+        "PRACTICETOOL",
+        "CLASSIC",
+        "ULTBOOK",
+        "DOOMBOTSTEEMO",
+        "ARAM",
+        "RUBY_TRIAL_3",
+        "NEXUSBLITZ",
+        "SWIFTPLAY",
+        "ONEFORALL",
+        "TUTORIAL",
+        "RUBY",
+        "WIPMODEWIP",
+        "RUBY_TRIAL_2",
+        "WIPMODEWIP3",
+        "RUBY_TRIAL_1",
+        "ARSR"
+      ],
+      "name": "虚弱",
+      "range": [
+        650
+      ],
+      "rangeBurn": "650",
+      "resource": "无消耗",
+      "source_key": "SummonerExhaust",
+      "summonerLevel": 4,
+      "tooltip": "使目标敌方英雄<keyword>减速</keyword>{{ slow }}%并将其造成的伤害削减{{ damagereduction }}%，持续{{ debuffduration }}秒。",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        300
+      ],
+      "cooldownBurn": "300",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "使你朝着你的指针位置瞬间传送一小段距离。",
+      "effect": [
+        null,
+        [
+          400
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "400",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 4,
+      "key": "4",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "ARAM",
+        "TUTORIAL",
+        "KIWI",
+        "ULTBOOK",
+        "FIRSTBLOOD",
+        "SWIFTPLAY",
+        "CLASSIC",
+        "PRACTICETOOL",
+        "RUBY",
+        "RUBY_TRIAL_1",
+        "BRAWL",
+        "WIPMODEWIP4",
+        "URF",
+        "SNOWURF",
+        "KIWI_JADE",
+        "RUBY_TRIAL_3",
+        "ONEFORALL",
+        "ARSR",
+        "NEXUSBLITZ",
+        "DOOMBOTSTEEMO",
+        "RUBY_TRIAL_2"
+      ],
+      "name": "闪现",
+      "range": [
+        425
+      ],
+      "rangeBurn": "425",
+      "resource": "无消耗",
+      "source_key": "SummonerFlash",
+      "summonerLevel": 7,
+      "tooltip": "使你朝着你的指针位置瞬间传送一小段距离。",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        240
+      ],
+      "cooldownBurn": "240",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "在期间内获得移动速度并无视单位的碰撞体积。",
+      "effect": [
+        null,
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 6,
+      "key": "6",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "ARAM",
+        "TUTORIAL_MODULE_1",
+        "TUTORIAL",
+        "KIWI",
+        "ULTBOOK",
+        "FIRSTBLOOD",
+        "SWIFTPLAY",
+        "CLASSIC",
+        "PRACTICETOOL",
+        "RUBY",
+        "RUBY_TRIAL_1",
+        "BRAWL",
+        "URF",
+        "KIWI_JADE",
+        "RUBY_TRIAL_3",
+        "TUTORIAL_MODULE_2",
+        "ONEFORALL",
+        "ASSASSINATE",
+        "ARSR",
+        "NEXUSBLITZ",
+        "DOOMBOTSTEEMO",
+        "RUBY_TRIAL_2"
+      ],
+      "name": "幽灵疾步",
+      "range": [
+        200
+      ],
+      "rangeBurn": "200",
+      "resource": "无消耗",
+      "source_key": "SummonerHaste",
+      "summonerLevel": 1,
+      "tooltip": "获得<speed>{{ movespeedmod }}移动速度</speed>并进入<keyword>幽灵状态</keyword>，持续{{ duration }}秒。<br /><br /><keyword>幽灵</keyword>：无视其它单位的碰撞体积。",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        240
+      ],
+      "cooldownBurn": "240",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "为你和目标友军英雄回复生命值，并为你和目标友军英雄提供移动速度。",
+      "effect": [
+        null,
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 7,
+      "key": "7",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "ARAM",
+        "TUTORIAL_MODULE_1",
+        "TUTORIAL",
+        "KIWI",
+        "ULTBOOK",
+        "SWIFTPLAY",
+        "CLASSIC",
+        "PRACTICETOOL",
+        "RUBY",
+        "RUBY_TRIAL_1",
+        "BRAWL",
+        "URF",
+        "KIWI_JADE",
+        "RUBY_TRIAL_3",
+        "TUTORIAL_MODULE_2",
+        "ONEFORALL",
+        "ASSASSINATE",
+        "ARSR",
+        "NEXUSBLITZ",
+        "DOOMBOTSTEEMO",
+        "RUBY_TRIAL_2"
+      ],
+      "name": "治疗术",
+      "range": [
+        875
+      ],
+      "rangeBurn": "875",
+      "resource": "无消耗",
+      "source_key": "SummonerHeal",
+      "summonerLevel": 1,
+      "tooltip": "为你和目标友军英雄回复<healing>{{ totalheal }}生命值</healing>并提供持续{{ movespeedduration }}秒的<speed>{{ movespeed*100 }}%移动速度</speed>。<br /><br /><rules>如果在无目标状态下施放，就会作用于范围内伤势最重的一位友军英雄。<br />若目标近期已受到过其它【治疗术】的影响，则这次的治疗量减半。</rules>",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        15
+      ],
+      "cooldownBurn": "15",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "对野怪或小兵造成真实伤害。",
+      "effect": [
+        null,
+        [
+          15
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "15",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 11,
+      "key": "11",
+      "maxammo": "2",
+      "maxrank": 1,
+      "modes": [
+        "DOOMBOTSTEEMO",
+        "PRACTICETOOL",
+        "CLASSIC",
+        "SWIFTPLAY",
+        "URF",
+        "NEXUSBLITZ",
+        "ONEFORALL",
+        "TUTORIAL",
+        "ARSR"
+      ],
+      "name": "惩戒",
+      "range": [
+        500
+      ],
+      "rangeBurn": "500",
+      "resource": "无消耗",
+      "source_key": "SummonerSmite",
+      "summonerLevel": 3,
+      "tooltip": "对目标大型野怪或线上小兵造成<trueDamage>{{ smitebasedamage }}真实伤害</trueDamage>。<br /><br />对英雄宠物造成<trueDamage>{{ firstpvpdamage }}真实伤害</trueDamage>。",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        300
+      ],
+      "cooldownBurn": "300",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "在短暂引导后，成为不可被选取状态并行进到一个友方单位。升级至【解封的传送】，它会显著提升行进速度。 ",
+      "effect": [
+        null,
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 12,
+      "key": "12",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "CLASSIC",
+        "SWIFTPLAY",
+        "ULTBOOK",
+        "WIPMODEWIP4",
+        "DOOMBOTSTEEMO",
+        "PRACTICETOOL",
+        "ONEFORALL",
+        "RUBY",
+        "ARSR",
+        "RUBY_TRIAL_2",
+        "TUTORIAL",
+        "ASSASSINATE",
+        "RUBY_TRIAL_3",
+        "RUBY_TRIAL_1"
+      ],
+      "name": "传送",
+      "range": [
+        25000
+      ],
+      "rangeBurn": "25000",
+      "resource": "无消耗",
+      "source_key": "SummonerTeleport",
+      "summonerLevel": 7,
+      "tooltip": "在引导{{ channelduration }}秒后，变为<keyword>不可被选取</keyword>状态并行进到目标友方建筑物、小兵或守卫旁边。<br /><br />在{{ upgrademinute }}分钟时升级为【解封的传送】，可显著提升行进速度。",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        240
+      ],
+      "cooldownBurn": "240",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "回复你和友方英雄的法力值。",
+      "effect": [
+        null,
+        [
+          50
+        ],
+        [
+          25
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "50",
+        "25",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 13,
+      "key": "13",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "KIWI",
+        "FIRSTBLOOD",
+        "ARAM",
+        "KIWI_JADE"
+      ],
+      "name": "清晰术",
+      "range": [
+        600
+      ],
+      "rangeBurn": "600",
+      "resource": "无消耗",
+      "source_key": "SummonerMana",
+      "summonerLevel": 6,
+      "tooltip": "为你的英雄回复{{ e1 }}%的最大法力值，并为周围友军回复{{ e2 }}%最大法力值。",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        180
+      ],
+      "cooldownBurn": "180",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "对目标敌方英雄造成持续真实伤害并在持续期间降低目标受到的治疗效果。",
+      "effect": [
+        null,
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 14,
+      "key": "14",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "ARAM",
+        "TUTORIAL",
+        "KIWI",
+        "ULTBOOK",
+        "FIRSTBLOOD",
+        "SWIFTPLAY",
+        "CLASSIC",
+        "PRACTICETOOL",
+        "RUBY",
+        "RUBY_TRIAL_1",
+        "BRAWL",
+        "URF",
+        "KIWI_JADE",
+        "RUBY_TRIAL_3",
+        "ONEFORALL",
+        "ASSASSINATE",
+        "ARSR",
+        "NEXUSBLITZ",
+        "DOOMBOTSTEEMO",
+        "RUBY_TRIAL_2"
+      ],
+      "name": "引燃",
+      "range": [
+        600
+      ],
+      "rangeBurn": "600",
+      "resource": "无消耗",
+      "source_key": "SummonerDot",
+      "summonerLevel": 9,
+      "tooltip": "在5秒的持续时间里对目标敌方英雄持续造成共<trueDamage>{{ tooltiptruedamagecalculation }}真实伤害</trueDamage>并在持续期间施加<keyword>{{ grievousamount*100 }}%重伤</keyword>效果。<br /><br /><keyword>重伤</keyword>：降低治疗效果和生命回复的效能。<br /><br />",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        180
+      ],
+      "cooldownBurn": "180",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "获得一个临时护盾。",
+      "effect": [
+        null,
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 21,
+      "key": "21",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "ARAM",
+        "TUTORIAL",
+        "KIWI",
+        "ULTBOOK",
+        "FIRSTBLOOD",
+        "SWIFTPLAY",
+        "CLASSIC",
+        "PRACTICETOOL",
+        "RUBY",
+        "RUBY_TRIAL_1",
+        "BRAWL",
+        "URF",
+        "KIWI_JADE",
+        "RUBY_TRIAL_3",
+        "ONEFORALL",
+        "ASSASSINATE",
+        "ARSR",
+        "NEXUSBLITZ",
+        "DOOMBOTSTEEMO",
+        "RUBY_TRIAL_2"
+      ],
+      "name": "屏障",
+      "range": [
+        1200
+      ],
+      "rangeBurn": "1200",
+      "resource": "无消耗",
+      "source_key": "SummonerBarrier",
+      "summonerLevel": 4,
+      "tooltip": "获得<shield>{{ shieldstrength }}护盾值</shield>，持续{{ shieldduration }}秒。",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        10
+      ],
+      "cooldownBurn": "10",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "快速位移到魄罗之王旁边。",
+      "effect": [
+        null,
+        [
+          3000
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "3000",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 30,
+      "key": "30",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "KINGPORO"
+      ],
+      "name": "护驾！",
+      "range": [
+        200
+      ],
+      "rangeBurn": "200",
+      "resource": "无消耗",
+      "source_key": "SummonerPoroRecall",
+      "summonerLevel": 1,
+      "tooltip": "<span class=\"colorFFE076\">被动：</span>用魄罗命中一个敌方英雄，会为你的队伍提供一层魄罗印记。当魄罗印记达到10层时，你的队伍就可以召唤出魄罗之王来与你们并肩作战。在魄罗之王处于活跃状态时，双方队伍都无法获得魄罗印记。<br /><br /><span class=\"colorFFE076\">主动：</span>快速冲刺到魄罗之王的身旁。只能在己方召唤了魄罗之王时施放。 <br /><br /><i><span class=\"colorFDD017\">“魄罗们才是扣人心弦的焦点。而你们只是抱大腿的。”</span></i></mainText>",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        20
+      ],
+      "cooldownBurn": "20",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "把一个魄罗投向你的敌人。如果它命中了一名敌人，那么你接下来就可以快速位移到被命中的敌人旁边。",
+      "effect": [
+        null,
+        [
+          20
+        ],
+        [
+          10
+        ],
+        [
+          3
+        ],
+        [
+          5
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "20",
+        "10",
+        "3",
+        "5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 31,
+      "key": "31",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "KINGPORO"
+      ],
+      "name": "魄罗投掷",
+      "range": [
+        2500
+      ],
+      "rangeBurn": "2500",
+      "resource": "无消耗",
+      "source_key": "SummonerPoroThrow",
+      "summonerLevel": 1,
+      "tooltip": "将一个魄罗投向远处，对命中的第一个敌方单位造成{{ f2 }}真实伤害，并提供目标的<span class=\"coloree91d7\">真实视野</span>。<br /><br />如果这个技能命中了一个敌人，那么在接下来的3秒里可以再次施放此技能，来冲到被命中的目标旁边，多造成{{ f2 }}真实伤害，并缩短下一个【魄罗投掷】{{ e4 }}秒冷却时间。<br /><br />魄罗们不会被法术护盾或各种墙体所格挡，因为它们是萌萌哒小动物，而不是技能！<br /><br /><i><span class=\"colorFDD017\">“魄罗们是符文大陆空气动力学的一个科研模型。”</span></i></mainText>",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        80
+      ],
+      "cooldownBurn": "80",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "沿直线扔出一个雪球。如果雪球命中了一个敌人，那么这个敌人会被【标记】，提供真实视野，并且你的英雄接下来可以快速突进到被【标记】的目标旁边。",
+      "effect": [
+        null,
+        [
+          10
+        ],
+        [
+          5
+        ],
+        [
+          3
+        ],
+        [
+          25
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "10",
+        "5",
+        "3",
+        "25",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 32,
+      "key": "32",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "KIWI",
+        "KIWI_JADE",
+        "ARAM",
+        "FIRSTBLOOD"
+      ],
+      "name": "标记",
+      "range": [
+        1600
+      ],
+      "rangeBurn": "1600",
+      "resource": "无消耗",
+      "source_key": "SummonerSnowball",
+      "summonerLevel": 6,
+      "tooltip": "向远处扔出一个【雪球】，对命中的首个敌方单位造成{{ tooltipdamagetotal }}真实伤害并提供目标的<span class=\"coloree91d7\">真实视野</span>。如果【雪球】命中一名敌人，则能够在{{ e3 }}秒里再次施放该技能，使英雄向被标记的单位冲刺，同时额外造成{{ tooltipdamagetotal }}真实伤害。向目标冲刺时，标记的冷却时间会缩减{{ e4 }}%。<br /><br /><span class=\"colorFFFF00\">标记不会被法术护盾或者飞行道具拦截技所阻挡。</span>",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        80
+      ],
+      "cooldownBurn": "80",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "沿直线扔出一个雪球。如果雪球命中了一个敌人，那么这个敌人会被【标记】，提供真实视野，并且你的英雄接下来可以快速突进到被【标记】的目标旁边。",
+      "effect": [
+        null,
+        [
+          10
+        ],
+        [
+          5
+        ],
+        [
+          3
+        ],
+        [
+          25
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "10",
+        "5",
+        "3",
+        "25",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 39,
+      "key": "39",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "SNOWURF"
+      ],
+      "name": "标记",
+      "range": [
+        8000
+      ],
+      "rangeBurn": "8000",
+      "resource": "无消耗",
+      "source_key": "SummonerSnowURFSnowball_Mark",
+      "summonerLevel": 6,
+      "tooltip": "向远处扔出一个【雪球】，对命中的首个敌方单位造成{{ tooltipdamagetotal }}真实伤害并提供目标的<span class=\"coloree91d7\">真实视野</span>。如果【雪球】命中一名敌人，则能够在{{ e3 }}秒里再次施放该技能，使英雄向被标记的单位冲刺，同时额外造成{{ tooltipdamagetotal }}真实伤害。向目标冲刺时，标记的冷却时间会缩减{{ e4 }}%。<br /><br /><span class=\"colorFFFF00\">标记不会被法术护盾或者飞行道具拦截技所阻挡。</span>",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        0
+      ],
+      "cooldownBurn": "0",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "&nbsp;",
+      "datavalues": {},
+      "description": "这个栏位将在游戏开始后，被替换为所选的另一位英雄的终极技能。届时将有30秒的时间选择一个终极技能。请做好准备！",
+      "effect": [
+        null,
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 54,
+      "key": "54",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "ULTBOOK"
+      ],
+      "name": "占位",
+      "range": [
+        400
+      ],
+      "rangeBurn": "400",
+      "resource": "&nbsp;",
+      "source_key": "Summoner_UltBookPlaceholder",
+      "summonerLevel": 1,
+      "tooltip": "将被替换为你所选的终极技能。{{ spellmodifierdescriptionappend }}",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        0
+      ],
+      "cooldownBurn": "0",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "&nbsp;",
+      "datavalues": {},
+      "description": "这个栏位将在游戏开始后，被替换为所选的另一位英雄的终极技能并且你将获得【攻击惩戒】。届时将有30秒的时间选择一个终极技能。请做好准备！",
+      "effect": [
+        null,
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 55,
+      "key": "55",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "ULTBOOK"
+      ],
+      "name": "占位和攻击惩戒",
+      "range": [
+        400
+      ],
+      "rangeBurn": "400",
+      "resource": "&nbsp;",
+      "source_key": "Summoner_UltBookSmitePlaceholder",
+      "summonerLevel": 1,
+      "tooltip": "将被替换为你所选的终极技能。<br /><br />提供【攻击惩戒】。【攻击惩戒】将在你攻击霸符野怪、史诗级野怪和峡谷迅捷蟹时将其处决。<br /><br /><attention>【攻击惩戒】没有冷却时间。</attention>{{ spellmodifierdescriptionappend }}",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        210
+      ],
+      "cooldownBurn": "210",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "移除身上的所有限制效果和召唤师技能的减益效果，并在短时间内缩短新受到限制效果的持续时间。召唤师的决断：延长韧性增益的持续时间。",
+      "effect": [
+        null,
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 71,
+      "key": "71",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "JADE"
+      ],
+      "name": "净化",
+      "range": [
+        200
+      ],
+      "rangeBurn": "200",
+      "resource": "无消耗",
+      "source_key": "SummonerBoost_Jade",
+      "summonerLevel": 1,
+      "tooltip": "移除你的英雄身上的所有限制效果和召唤师技能的减益效果，并且若在接下来的{{ tenacitydurationfinalcalc }}秒里再次被施加以上效果，新效果的持续时间将减少65%。<br /><br />",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        210
+      ],
+      "cooldownBurn": "210",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "使目标英雄减速，并降低其攻击速度和造成的伤害。召唤师的愤怒：【虚弱】还会使目标的护甲和魔法抗性降低10。",
+      "effect": [
+        null,
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 73,
+      "key": "73",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "JADE"
+      ],
+      "name": "虚弱",
+      "range": [
+        550
+      ],
+      "rangeBurn": "550",
+      "resource": "无消耗",
+      "source_key": "SummonerExhaust_Jade",
+      "summonerLevel": 1,
+      "tooltip": "虚弱目标英雄，降低目标{{ damagereduction }}%的移动速度和造成的伤害，并使目标的攻击速度减少{{ attackspeedreduction }}%，持续2.5秒。<br /><br />",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        300
+      ],
+      "cooldownBurn": "300",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "使你朝着你的指针位置瞬间传送一小段距离。召唤师的感悟：【闪现】的冷却时间缩短15秒。",
+      "effect": [
+        null,
+        [
+          400
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "400",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 74,
+      "key": "74",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "JADE"
+      ],
+      "name": "闪现",
+      "range": [
+        425
+      ],
+      "rangeBurn": "425",
+      "resource": "无消耗",
+      "source_key": "SummonerFlash_Jade",
+      "summonerLevel": 1,
+      "tooltip": "使你朝着你的指针位置瞬间传送一小段距离。<br /><br />",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        60
+      ],
+      "cooldownBurn": "60",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "在短时间内将地图上任意一块区域显形给你的队伍。召唤师的感悟：被【洞察】显形的单位将持续可见5秒。",
+      "effect": [
+        null,
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 75,
+      "key": "75",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "JADE"
+      ],
+      "name": "洞察",
+      "range": [
+        25000
+      ],
+      "rangeBurn": "25000",
+      "resource": "无消耗",
+      "source_key": "SummonerClairvoyance_Jade",
+      "summonerLevel": 1,
+      "tooltip": "将地图上任意一块区域显形给你的队伍，持续5秒。<br /><br />",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        240
+      ],
+      "cooldownBurn": "240",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "期间获得移动速度并无视单位的碰撞体积。召唤师的愤怒：【幽灵疾步】提供的额外移动速度得到提升。",
+      "effect": [
+        null,
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 76,
+      "key": "76",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "JADE"
+      ],
+      "name": "幽灵疾步",
+      "range": [
+        200
+      ],
+      "rangeBurn": "200",
+      "resource": "无消耗",
+      "source_key": "SummonerHaste_Jade",
+      "summonerLevel": 1,
+      "tooltip": "获得<speed>{{ movespeedmodfinal }}移动速度</speed>并进入<keyword>幽灵状态</keyword>，持续{{ duration }}秒。<br /><br /><keyword>幽灵</keyword>：无视其它单位的碰撞体积。<br /><br />",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        300
+      ],
+      "cooldownBurn": "300",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "为你的英雄及附近的友军回复生命值。召唤师的决断：每级获得5生命值。",
+      "effect": [
+        null,
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 77,
+      "key": "77",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "JADE"
+      ],
+      "name": "治疗术",
+      "range": [
+        600
+      ],
+      "rangeBurn": "600",
+      "resource": "无消耗",
+      "source_key": "SummonerHeal_Jade",
+      "summonerLevel": 1,
+      "tooltip": "为你的英雄及附近的友军回复{{ totalheal }}生命值。<br /><br />",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        180
+      ],
+      "cooldownBurn": "180",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "使所有友方防御塔免疫伤害，并使防御塔的攻击速度加快100%，持续6秒。召唤师的决断：防御塔会对目标周围造成溅射伤害。",
+      "effect": [
+        null,
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 705,
+      "key": "705",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "JADE"
+      ],
+      "name": "强化要塞",
+      "range": [
+        25000
+      ],
+      "rangeBurn": "25000",
+      "resource": "无消耗",
+      "source_key": "SummonerFortify_Jade",
+      "summonerLevel": 1,
+      "tooltip": "<spellPassive>被动</spellPassive>：如果【强化要塞】未处于冷却阶段，对小兵附带造成<scaleAD>{{ bonusminiondamage }}额外伤害</scaleAD>。<br /><br /><spellActive>主动</spellActive>：使所有友方防御塔免疫伤害，并使防御塔的攻击速度加快{{ attackspeed*100 }}%，持续{{ duration }}秒。<br /><br />",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        270
+      ],
+      "cooldownBurn": "270",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "召唤一个临时信标，提升范围内友军的攻击力。召唤师的愤怒：【战争图腾】额外提供法术强度。",
+      "effect": [
+        null,
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 709,
+      "key": "709",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "JADE"
+      ],
+      "name": "战争图腾",
+      "range": [
+        25000
+      ],
+      "rangeBurn": "25000",
+      "resource": "无消耗",
+      "source_key": "SummonerRally_Jade",
+      "summonerLevel": 1,
+      "tooltip": "召唤一个拥有<scaleHealth>{{ hpcalc }}生命值</scaleHealth>的信标，持续15秒，并生成一道光环，使友军的<scaleAD>攻击力提升{{ adcalc }}</scaleAD>。<br /><br />",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        70
+      ],
+      "cooldownBurn": "70",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "对目标敌方小兵或宠物造成真实伤害。召唤师的决断：每次施放【惩戒】可获得10金币。",
+      "effect": [
+        null,
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 711,
+      "key": "711",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "JADE"
+      ],
+      "name": "惩戒",
+      "range": [
+        760
+      ],
+      "rangeBurn": "760",
+      "resource": "无消耗",
+      "source_key": "SummonerSmite_Jade",
+      "summonerLevel": 1,
+      "tooltip": "对目标敌方小兵或宠物造成{{ smitedamage }}真实伤害。<br /><br />",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        300
+      ],
+      "cooldownBurn": "300",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "短暂引导后，将英雄传送到友方小兵、防御塔或守卫旁边。召唤师的感悟：【传送】的引导时间缩短。",
+      "effect": [
+        null,
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 712,
+      "key": "712",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "JADE"
+      ],
+      "name": "传送",
+      "range": [
+        25000
+      ],
+      "rangeBurn": "25000",
+      "resource": "无消耗",
+      "source_key": "SummonerTeleport_Jade",
+      "summonerLevel": 1,
+      "tooltip": "引导{{ channeltimefinal }}秒后，将英雄传送到友方小兵、防御塔或守卫旁边。<br /><br />",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        135
+      ],
+      "cooldownBurn": "135",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "为附近所有的友方英雄回复法力值。召唤师的感悟：多回复25%法力值。",
+      "effect": [
+        null,
+        [
+          40
+        ],
+        [
+          40
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "40",
+        "40",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 713,
+      "key": "713",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "JADE"
+      ],
+      "name": "清晰术",
+      "range": [
+        600
+      ],
+      "rangeBurn": "600",
+      "resource": "无消耗",
+      "source_key": "SummonerMana_Jade",
+      "summonerLevel": 1,
+      "tooltip": "为你的英雄回复<scaleMana>{{ selfmanaactual }}%最大法力值</scaleMana>，并为周围友军回复<scaleMana>{{ allymanaactual }}%最大法力值</scaleMana>。<br /><br />",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        210
+      ],
+      "cooldownBurn": "210",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "对目标敌方英雄造成持续真实伤害并在持续期间降低目标受到的治疗效果。召唤师的愤怒：当【引燃】处于冷却阶段时，获得5法术强度和攻击力。",
+      "effect": [
+        null,
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 714,
+      "key": "714",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "JADE"
+      ],
+      "name": "引燃",
+      "range": [
+        600
+      ],
+      "rangeBurn": "600",
+      "resource": "无消耗",
+      "source_key": "SummonerDot_Jade",
+      "summonerLevel": 1,
+      "tooltip": "在5秒的持续时间里对目标敌方英雄持续造成共<trueDamage>{{ tooltiptruedamagecalculation }}真实伤害</trueDamage>并在持续期间施加<keyword>{{ grievousamount*100 }}%重伤</keyword>效果。<br /><br /><keyword>重伤</keyword>：降低治疗效果和生命回复的效能。<br /><br />",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        180
+      ],
+      "cooldownBurn": "180",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "暂时强化你的英雄，在持续时间内提升攻击速度和法术强度。召唤师的愤怒：将该攻击速度加成提升5%，该法术强度加成提升10%。",
+      "effect": [
+        null,
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 716,
+      "key": "716",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "JADE"
+      ],
+      "name": "战意激增",
+      "range": [
+        200
+      ],
+      "rangeBurn": "200",
+      "resource": "无消耗",
+      "source_key": "SummonerBattleCry_Jade",
+      "summonerLevel": 1,
+      "tooltip": "强化你的英雄，获得<attackSpeed>{{ totalasactual }}攻击速度</attackSpeed>和<scaleAP>{{ totalapactual }}法术强度</scaleAP>，持续12秒。<br /><br />",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        270
+      ],
+      "cooldownBurn": "270",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "晋升一名小兵，使其获得额外属性和强化光环，并且它在击杀单位后获取的金币将共享给为其施放晋升的召唤师。召唤师的愤怒：攻城骑士的额外攻击力光环也会影响英雄。",
+      "effect": [
+        null,
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 720,
+      "key": "720",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "JADE"
+      ],
+      "name": "晋升",
+      "range": [
+        4294967295
+      ],
+      "rangeBurn": "4294967295",
+      "resource": "无消耗",
+      "source_key": "SummonerSpell_Promote_Jade",
+      "summonerLevel": 1,
+      "tooltip": "将一名友方小兵晋升为<keywordMajor>攻城骑士</keywordMajor>，该单位拥有<healing>{{ unithealth }}生命值</healing>和<physicalDamage>{{ unitdamage }}攻击力</physicalDamage>，其击杀时获得的金币将共享给施放【晋升】的召唤师。<br /><br /><keywordMajor>攻城骑士</keywordMajor>拥有光环效果，为附近的小兵提供<physicalDamage>{{ damageaura }}攻击力</physicalDamage>和<scaleArmor>{{ armoraura }}护甲</scaleArmor>。<br /><br />",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        210
+      ],
+      "cooldownBurn": "210",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "获得一个短时长的护盾。召唤师的决断：【屏障】的护盾效果提升。",
+      "effect": [
+        null,
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 721,
+      "key": "721",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "JADE"
+      ],
+      "name": "屏障",
+      "range": [
+        1200
+      ],
+      "rangeBurn": "1200",
+      "resource": "无消耗",
+      "source_key": "SummonerBarrier_Jade",
+      "summonerLevel": 1,
+      "tooltip": "获得持续{{ shieldduration }}秒的<shield>{{ shieldstrengthfinal }}护盾值</shield>。<br /><br />",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        510
+      ],
+      "cooldownBurn": "510",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "立刻在本队的召唤师平台上复活你的英雄，并暂时提升英雄的移动速度。召唤师的感悟：【重生】会为使用者临时提供220-560生命值。",
+      "effect": [
+        null,
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 777,
+      "key": "777",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "JADE"
+      ],
+      "name": "重生",
+      "range": [
+        200
+      ],
+      "rangeBurn": "200",
+      "resource": "无消耗",
+      "source_key": "SummonerRevive_Jade",
+      "summonerLevel": 1,
+      "tooltip": "立刻在本队召唤师平台复活你的英雄，并提供<speed>+{{ spell.summonerrevive_jade:bonusmovespeed*100 }}%</speed>移动速度，该加成会在12秒里持续衰减。<br /><br />",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        45
+      ],
+      "cooldownBurn": "45",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "获得短暂的爆发性移动速度，这个移速会在逃离敌方英雄时提升。",
+      "effect": [
+        null,
+        [
+          20
+        ],
+        [
+          10
+        ],
+        [
+          3
+        ],
+        [
+          5
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "20",
+        "10",
+        "3",
+        "5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 2201,
+      "key": "2201",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "CHERRY"
+      ],
+      "name": "闪人",
+      "range": [
+        25000
+      ],
+      "rangeBurn": "25000",
+      "resource": "无消耗",
+      "source_key": "SummonerCherryHold",
+      "summonerLevel": 1,
+      "tooltip": "<keywordMajor>主动技能栏位：</keywordMajor>那些提供召唤师技能的强化符文将替代这个栏位。<br /><br />获得持续{{ duration }}秒的<moveSpeed>{{ basems*100 }}%移动速度</moveSpeed>，你身后的每个敌人都会使这个加成提升{{ bonusmsperenemybehind*100 }}%。",
+      "vars": []
+    },
+    {
+      "cooldown": [
+        0.25
+      ],
+      "cooldownBurn": "0.25",
+      "cost": [
+        0
+      ],
+      "costBurn": "0",
+      "costType": "无消耗",
+      "datavalues": {},
+      "description": "使英雄朝着你的指针悬停的位置瞬间传送一小段距离。",
+      "effect": [
+        null,
+        [
+          400
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "effectBurn": [
+        null,
+        "400",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "id": 2202,
+      "key": "2202",
+      "maxammo": "-1",
+      "maxrank": 1,
+      "modes": [
+        "CHERRY"
+      ],
+      "name": "闪现",
+      "range": [
+        425
+      ],
+      "rangeBurn": "425",
+      "resource": "无消耗",
+      "source_key": "SummonerCherryFlash",
+      "summonerLevel": 1,
+      "tooltip": "使英雄朝着你的指针所停的区域瞬间传送一小段距离。<br /><br />在一个完整回合内无法被再次施放<rules>(一个回合包括一个购买阶段和一个战斗阶段)。</rules>",
+      "vars": []
+    }
+  ],
+  "evidence_type": "observed",
+  "locale": "zh_CN",
+  "source_url": "https://ddragon.leagueoflegends.com/cdn/16.16.1/data/zh_CN/summoner.json",
+  "version": "16.16.1"
+}

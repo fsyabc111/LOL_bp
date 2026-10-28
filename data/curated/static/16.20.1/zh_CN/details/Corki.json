@@ -1,0 +1,610 @@
+{
+  "entities": [
+    {
+      "aliases": [
+        "Corki",
+        "英勇投弹手"
+      ],
+      "id": 42,
+      "locale": "zh_CN",
+      "name": "英勇投弹手",
+      "passive": {
+        "description": "库奇普通攻击的一部分伤害会转化为<trueDamage>真实伤害</trueDamage>。",
+        "name": "海克斯科技军备"
+      },
+      "resource_type": "法力",
+      "source_key": "Corki",
+      "spells": [
+        {
+          "cooldown": [
+            9,
+            8.5,
+            8,
+            7.5,
+            7
+          ],
+          "cooldownBurn": "9/8.5/8/7.5/7",
+          "cost": [
+            60,
+            65,
+            70,
+            75,
+            80
+          ],
+          "costBurn": "60/65/70/75/80",
+          "costType": " {{ abilityresourcename }}",
+          "description": "库奇向目标区域发射一枚闪光弹，对范围内的敌人造成魔法伤害。这个技能还会暂时让目标区域附近的非隐形的单位和英雄现形。",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "PhosphorusBomb",
+          "leveltip": {
+            "effect": [
+              "{{ basedamage }} -> {{ basedamageNL }}",
+              "{{ cooldown }} -> {{ cooldownNL }}",
+              "{{ cost }} -> {{ costNL }}"
+            ],
+            "label": [
+              "伤害",
+              "冷却时间",
+              "@AbilityResourceName@消耗"
+            ]
+          },
+          "maxrank": 5,
+          "name": "磷光炸弹",
+          "range": [
+            825,
+            825,
+            825,
+            825,
+            825
+          ],
+          "rangeBurn": "825",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "Q",
+          "tooltip": "库奇抛射一颗炸弹，造成<magicDamage>{{ totaldamage }}魔法伤害</magicDamage>。该区域及命中的敌方英雄会被显形{{ revealduration }}秒。{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "basedamage",
+            "basedamageNL",
+            "cooldown",
+            "cooldownNL",
+            "cost",
+            "costNL",
+            "revealduration",
+            "spellmodifierdescriptionappend",
+            "totaldamage"
+          ],
+          "vars": []
+        },
+        {
+          "cooldown": [
+            20,
+            18,
+            16,
+            14,
+            12
+          ],
+          "cooldownBurn": "20/18/16/14/12",
+          "cost": [
+            80,
+            85,
+            90,
+            95,
+            100
+          ],
+          "costBurn": "80/85/90/95/100",
+          "costType": " {{ abilityresourcename }}",
+          "description": "库奇飞行一小段距离，同时投下炸弹。炸弹会制造出一条毁灭与死亡的路径，对留在路径中的敌人造成伤害。",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "CarpetBomb",
+          "leveltip": {
+            "effect": [
+              "{{ basedamage }} -> {{ basedamageNL }}",
+              "{{ cooldown }} -> {{ cooldownNL }}",
+              "{{ cost }} -> {{ costNL }}"
+            ],
+            "label": [
+              "持续伤害",
+              "冷却时间",
+              "@AbilityResourceName@消耗"
+            ]
+          },
+          "maxrank": 5,
+          "name": "瓦尔基里俯冲",
+          "range": [
+            600,
+            600,
+            600,
+            600,
+            600
+          ],
+          "rangeBurn": "600",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "W",
+          "tooltip": "库奇飞越并烧焦一条路径，使其灼烧{{ trailduration }}秒。火焰中的敌人们在此期间至多受到<magicDamage>{{ maximumdamage }}魔法伤害</magicDamage>。{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "basedamage",
+            "basedamageNL",
+            "cooldown",
+            "cooldownNL",
+            "cost",
+            "costNL",
+            "maximumdamage",
+            "spellmodifierdescriptionappend",
+            "trailduration"
+          ],
+          "vars": []
+        },
+        {
+          "cooldown": [
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "cooldownBurn": "12",
+          "cost": [
+            50,
+            55,
+            60,
+            65,
+            70
+          ],
+          "costBurn": "50/55/60/65/70",
+          "costType": " {{ abilityresourcename }}",
+          "description": "库奇使用格林机枪扫射他面前锥形范围内的敌人，造成伤害并降低敌人护甲和魔法抗性。",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "GGun",
+          "leveltip": {
+            "effect": [
+              "{{ basedamage }} -> {{ basedamageNL }}",
+              "{{ shredmax*-1.000000 }} -> {{ shredmaxnl*-1.000000 }}",
+              "{{ cost }} -> {{ costNL }}"
+            ],
+            "label": [
+              "伤害",
+              "防御削减",
+              "@AbilityResourceName@消耗"
+            ]
+          },
+          "maxrank": 5,
+          "name": "格林机枪",
+          "range": [
+            600,
+            600,
+            600,
+            600,
+            600
+          ],
+          "rangeBurn": "600",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "E",
+          "tooltip": "库奇朝他的前方发射加特林机枪，在{{ sprayduration }}秒里持续造成共<physicalDamage>{{ totaldamage }}物理伤害</physicalDamage>并至多击碎<scaleArmor>{{ shredmax*-1 }}护甲</scaleArmor>和<scaleMR>魔法抗性</scaleMR>。{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "basedamage",
+            "basedamageNL",
+            "cost",
+            "costNL",
+            "shredmax*-1",
+            "shredmax*-1.000000",
+            "shredmaxnl*-1.000000",
+            "spellmodifierdescriptionappend",
+            "sprayduration",
+            "totaldamage"
+          ],
+          "vars": []
+        },
+        {
+          "cooldown": [
+            2,
+            2,
+            2
+          ],
+          "cooldownBurn": "2",
+          "cost": [
+            35,
+            35,
+            35
+          ],
+          "costBurn": "35",
+          "costType": " {{ abilityresourcename }}",
+          "description": "库奇朝着他的目标地点发射一枚导弹。导弹会在命中第一个敌人后爆炸，并对目标周围单位造成伤害。库奇每隔一段时间就会挂载一枚导弹，最多挂载7枚。每发射2枚导弹后，下一次就会发射超级导弹，造成额外伤害。",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "MissileBarrage",
+          "leveltip": {
+            "effect": [
+              "{{ basedamage }} -> {{ basedamageNL }}"
+            ],
+            "label": [
+              "伤害"
+            ]
+          },
+          "maxrank": 3,
+          "name": "火箭轰击",
+          "range": [
+            1225,
+            1225,
+            1225
+          ],
+          "rangeBurn": "1225",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "R",
+          "tooltip": "库奇发射一颗导弹，导弹会在命中第一个敌人时爆炸，对周围的敌人们造成<physicalDamage>{{ rsmallmissiledamage }}物理伤害</physicalDamage>。每第三颗导弹会转而造成<physicalDamage>{{ rbigmissiledamage }}物理伤害</physicalDamage>。<br /><br />这个技能至多有{{ maxammotooltip }}层充能。每次对英雄的普攻在命中时会使充能时间缩短<attention>{{ attackrefund }}</attention>秒。{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "attackrefund",
+            "basedamage",
+            "basedamageNL",
+            "cost",
+            "maxammotooltip",
+            "rbigmissiledamage",
+            "rsmallmissiledamage",
+            "spellmodifierdescriptionappend"
+          ],
+          "vars": []
+        }
+      ],
+      "stats": {
+        "armor": 27,
+        "armorperlevel": 4.5,
+        "attackdamage": 52,
+        "attackdamageperlevel": 0,
+        "attackrange": 550,
+        "attackspeed": 0.644,
+        "attackspeedperlevel": 2.8,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 610,
+        "hpperlevel": 100,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 325,
+        "mp": 350,
+        "mpperlevel": 40,
+        "mpregen": 7.4,
+        "mpregenperlevel": 0.7,
+        "spellblock": 33,
+        "spellblockperlevel": 1.1
+      },
+      "tags": [
+        "Marksman",
+        "Mage"
+      ],
+      "title": "库奇"
+    }
+  ],
+  "evidence_type": "observed",
+  "locale": "zh_CN",
+  "source_url": "https://ddragon.leagueoflegends.com/cdn/16.20.1/data/zh_CN/champion/Corki.json",
+  "version": "16.20.1"
+}

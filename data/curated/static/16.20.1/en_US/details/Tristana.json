@@ -1,0 +1,623 @@
+{
+  "entities": [
+    {
+      "aliases": [
+        "Tristana",
+        "Tristana"
+      ],
+      "id": 18,
+      "locale": "en_US",
+      "name": "Tristana",
+      "passive": {
+        "description": "Increases Tristana's Attack Range as she levels.",
+        "name": "Draw a Bead"
+      },
+      "resource_type": "Mana",
+      "source_key": "Tristana",
+      "spells": [
+        {
+          "cooldown": [
+            20,
+            19,
+            18,
+            17,
+            16
+          ],
+          "cooldownBurn": "20/19/18/17/16",
+          "cost": [
+            15,
+            20,
+            25,
+            30,
+            35
+          ],
+          "costBurn": "15/20/25/30/35",
+          "costType": " {{ abilityresourcename }}",
+          "description": "Tristana fires her weapon rapidly, increasing her Attack Speed for a short time.",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "TristanaQ",
+          "leveltip": {
+            "effect": [
+              "{{ attackspeedmod*100.000000 }}% -> {{ attackspeedmodnl*100.000000 }}%",
+              "{{ cooldown }} -> {{ cooldownNL }}",
+              "{{ cost }} -> {{ costNL }}"
+            ],
+            "label": [
+              "Attack Speed",
+              "Cooldown",
+              "@AbilityResourceName@ Cost"
+            ]
+          },
+          "maxrank": 5,
+          "name": "Rapid Fire",
+          "range": [
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "rangeBurn": "20",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "Q",
+          "tooltip": "Tristana goes full-auto, gaining <attackSpeed>{{ attackspeedmod*100 }}% Attack Speed</attackSpeed> for {{ buffduration }} seconds.{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "attackspeedmod*100",
+            "attackspeedmod*100.000000",
+            "attackspeedmodnl*100.000000",
+            "buffduration",
+            "cooldown",
+            "cooldownNL",
+            "cost",
+            "costNL",
+            "spellmodifierdescriptionappend"
+          ],
+          "vars": []
+        },
+        {
+          "cooldown": [
+            22,
+            20,
+            18,
+            16,
+            14
+          ],
+          "cooldownBurn": "22/20/18/16/14",
+          "cost": [
+            30,
+            35,
+            40,
+            45,
+            50
+          ],
+          "costBurn": "30/35/40/45/50",
+          "costType": " {{ abilityresourcename }}",
+          "description": "Tristana fires at the ground to propel her to a distant location, dealing damage and slowing surrounding units for a brief period where she lands.",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "TristanaW",
+          "leveltip": {
+            "effect": [
+              "{{ basedamage }} -> {{ basedamageNL }}",
+              "{{ cooldown }} -> {{ cooldownNL }}",
+              "{{ cost }} -> {{ costNL }}"
+            ],
+            "label": [
+              "Damage",
+              "Cooldown",
+              "@AbilityResourceName@ Cost"
+            ]
+          },
+          "maxrank": 5,
+          "name": "Rocket Jump",
+          "range": [
+            900,
+            900,
+            900,
+            900,
+            900
+          ],
+          "rangeBurn": "900",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "W",
+          "tooltip": "Tristana launches herself, dealing <magicDamage>{{ landingdamage }} magic damage</magicDamage> and <status>Slowing</status> by {{ slowmod*-100 }}% for {{ slowduration }} seconds upon landing.<br /><br />Champion takedowns and max stack <spellName>Explosive Charge</spellName> detonations on champions refresh this Ability's Cooldown.{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "basedamage",
+            "basedamageNL",
+            "cooldown",
+            "cooldownNL",
+            "cost",
+            "costNL",
+            "landingdamage",
+            "slowduration",
+            "slowmod*-100",
+            "spellmodifierdescriptionappend"
+          ],
+          "vars": []
+        },
+        {
+          "cooldown": [
+            16,
+            15.5,
+            15,
+            14.5,
+            14
+          ],
+          "cooldownBurn": "16/15.5/15/14.5/14",
+          "cost": [
+            50,
+            55,
+            60,
+            65,
+            70
+          ],
+          "costBurn": "50/55/60/65/70",
+          "costType": " {{ abilityresourcename }}",
+          "description": "When Tristana kills a unit, her cannonballs burst into shrapnel, dealing damage to surrounding enemies. Can be activated to place a bomb on a target enemy that explodes after a short duration dealing damage to surrounding units.",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "TristanaE",
+          "leveltip": {
+            "effect": [
+              "{{ passivebasedamage }} -> {{ passivebasedamageNL }}",
+              "{{ activebasedamage }} -> {{ activebasedamageNL }}",
+              "{{ cooldown }} -> {{ cooldownNL }}",
+              "{{ cost }} -> {{ costNL }}"
+            ],
+            "label": [
+              "Passive Explosion Damage",
+              "Base Charge Damage",
+              "Cooldown",
+              "@AbilityResourceName@ Cost"
+            ]
+          },
+          "maxrank": 5,
+          "name": "Explosive Charge",
+          "range": [
+            550,
+            550,
+            550,
+            550,
+            550
+          ],
+          "rangeBurn": "550",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "E",
+          "tooltip": "<spellPassive>Passive: </spellPassive>Tristana's Attacks that kill enemies deal <magicDamage>{{ passivedamage }} magic damage</magicDamage> to surrounding enemies.<br /><br /><spellActive>Active:</spellActive> Tristana attaches a bomb to an enemy or turret that deals <physicalDamage>{{ activedamage }} physical damage</physicalDamage> to surrounding enemies after {{ activeduration }} seconds. The damage is increased by {{ activeperstackamp*100 }}% each time Tristana hits an Attack or Ability (max 4 stacks).<br /><br />At {{ activemaxstacks }} stacks, the bomb explodes immediately (max <physicalDamage>{{ activemaxdamage }} physical damage</physicalDamage>).{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "activebasedamage",
+            "activebasedamageNL",
+            "activedamage",
+            "activeduration",
+            "activemaxdamage",
+            "activemaxstacks",
+            "activeperstackamp*100",
+            "cooldown",
+            "cooldownNL",
+            "cost",
+            "costNL",
+            "passivebasedamage",
+            "passivebasedamageNL",
+            "passivedamage",
+            "spellmodifierdescriptionappend"
+          ],
+          "vars": []
+        },
+        {
+          "cooldown": [
+            100,
+            100,
+            100
+          ],
+          "cooldownBurn": "100",
+          "cost": [
+            100,
+            100,
+            100
+          ],
+          "costBurn": "100",
+          "costType": " {{ abilityresourcename }}",
+          "description": "Tristana loads a massive cannonball into her weapon and fires it at an enemy unit. This deals Magic Damage and knocks the target back. If the target is carrying the Explosive Charge bomb, the bomb detonation radius is doubled.",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "TristanaR",
+          "leveltip": {
+            "effect": [
+              "{{ basedamage }} -> {{ basedamageNL }}",
+              "{{ knockbackdistance }} -> {{ knockbackdistanceNL }}",
+              "{{ stunduration }} -> {{ stundurationNL }}"
+            ],
+            "label": [
+              "Damage",
+              "Knockback Distance",
+              "Stun Duration:"
+            ]
+          },
+          "maxrank": 3,
+          "name": "Buster Shot",
+          "range": [
+            550,
+            550,
+            550
+          ],
+          "rangeBurn": "550",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "R",
+          "tooltip": "Tristana fires a massive cannonball, dealing <magicDamage>{{ damagecalc }} magic damage</magicDamage> to the target, <status>Knocking Back</status> and <status>Stunning</status> them and surrounding enemies for {{ stunduration }} seconds.{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "basedamage",
+            "basedamageNL",
+            "cost",
+            "damagecalc",
+            "knockbackdistance",
+            "knockbackdistanceNL",
+            "spellmodifierdescriptionappend",
+            "stunduration",
+            "stundurationNL"
+          ],
+          "vars": []
+        }
+      ],
+      "stats": {
+        "armor": 30,
+        "armorperlevel": 4,
+        "attackdamage": 60,
+        "attackdamageperlevel": 0,
+        "attackrange": 550,
+        "attackspeed": 0.656,
+        "attackspeedperlevel": 1.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 640,
+        "hpperlevel": 102,
+        "hpregen": 4,
+        "hpregenperlevel": 0.5,
+        "movespeed": 325,
+        "mp": 300,
+        "mpperlevel": 32,
+        "mpregen": 7.2,
+        "mpregenperlevel": 0.45,
+        "spellblock": 33,
+        "spellblockperlevel": 1.1
+      },
+      "tags": [
+        "Marksman",
+        "Assassin"
+      ],
+      "title": "the Yordle Gunner"
+    }
+  ],
+  "evidence_type": "observed",
+  "locale": "en_US",
+  "source_url": "https://ddragon.leagueoflegends.com/cdn/16.20.1/data/en_US/champion/Tristana.json",
+  "version": "16.20.1"
+}

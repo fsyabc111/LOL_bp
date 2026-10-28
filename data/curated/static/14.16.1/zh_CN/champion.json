@@ -1,0 +1,6351 @@
+{
+  "entities": [
+    {
+      "aliases": [
+        "Annie",
+        "黑暗之女"
+      ],
+      "id": 1,
+      "locale": "zh_CN",
+      "name": "黑暗之女",
+      "resource_type": "法力",
+      "source_key": "Annie",
+      "stats": {
+        "armor": 19,
+        "armorperlevel": 4.7,
+        "attackdamage": 50,
+        "attackdamageperlevel": 2.65,
+        "attackrange": 625,
+        "attackspeed": 0.61,
+        "attackspeedperlevel": 1.36,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 560,
+        "hpperlevel": 102,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 335,
+        "mp": 418,
+        "mpperlevel": 25,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "title": "安妮"
+    },
+    {
+      "aliases": [
+        "Olaf",
+        "狂战士"
+      ],
+      "id": 2,
+      "locale": "zh_CN",
+      "name": "狂战士",
+      "resource_type": "法力",
+      "source_key": "Olaf",
+      "stats": {
+        "armor": 35,
+        "armorperlevel": 4.2,
+        "attackdamage": 68,
+        "attackdamageperlevel": 4.7,
+        "attackrange": 125,
+        "attackspeed": 0.694,
+        "attackspeedperlevel": 2.7,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 645,
+        "hpperlevel": 119,
+        "hpregen": 6.5,
+        "hpregenperlevel": 0.6,
+        "movespeed": 350,
+        "mp": 316,
+        "mpperlevel": 50,
+        "mpregen": 7.5,
+        "mpregenperlevel": 0.6,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "title": "奥拉夫"
+    },
+    {
+      "aliases": [
+        "Galio",
+        "正义巨像"
+      ],
+      "id": 3,
+      "locale": "zh_CN",
+      "name": "正义巨像",
+      "resource_type": "法力",
+      "source_key": "Galio",
+      "stats": {
+        "armor": 24,
+        "armorperlevel": 4.7,
+        "attackdamage": 59,
+        "attackdamageperlevel": 3.5,
+        "attackrange": 150,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 1.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 632,
+        "hpperlevel": 126,
+        "hpregen": 8,
+        "hpregenperlevel": 0.8,
+        "movespeed": 340,
+        "mp": 500,
+        "mpperlevel": 40,
+        "mpregen": 9.5,
+        "mpregenperlevel": 0.7,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Tank",
+        "Mage"
+      ],
+      "title": "加里奥"
+    },
+    {
+      "aliases": [
+        "TwistedFate",
+        "卡牌大师"
+      ],
+      "id": 4,
+      "locale": "zh_CN",
+      "name": "卡牌大师",
+      "resource_type": "法力",
+      "source_key": "TwistedFate",
+      "stats": {
+        "armor": 21,
+        "armorperlevel": 4.35,
+        "attackdamage": 52,
+        "attackdamageperlevel": 2.5,
+        "attackrange": 525,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 604,
+        "hpperlevel": 108,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.6,
+        "movespeed": 330,
+        "mp": 333,
+        "mpperlevel": 39,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage",
+        "Marksman"
+      ],
+      "title": "崔斯特"
+    },
+    {
+      "aliases": [
+        "XinZhao",
+        "德邦总管"
+      ],
+      "id": 5,
+      "locale": "zh_CN",
+      "name": "德邦总管",
+      "resource_type": "法力",
+      "source_key": "XinZhao",
+      "stats": {
+        "armor": 35,
+        "armorperlevel": 4.7,
+        "attackdamage": 63,
+        "attackdamageperlevel": 3,
+        "attackrange": 175,
+        "attackspeed": 0.645,
+        "attackspeedperlevel": 3.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 640,
+        "hpperlevel": 106,
+        "hpregen": 8,
+        "hpregenperlevel": 0.7,
+        "movespeed": 345,
+        "mp": 274,
+        "mpperlevel": 55,
+        "mpregen": 7.25,
+        "mpregenperlevel": 0.45,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "title": "赵信"
+    },
+    {
+      "aliases": [
+        "Urgot",
+        "无畏战车"
+      ],
+      "id": 6,
+      "locale": "zh_CN",
+      "name": "无畏战车",
+      "resource_type": "法力",
+      "source_key": "Urgot",
+      "stats": {
+        "armor": 36,
+        "armorperlevel": 5,
+        "attackdamage": 63,
+        "attackdamageperlevel": 4,
+        "attackrange": 350,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 3.75,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 655,
+        "hpperlevel": 102,
+        "hpregen": 7.5,
+        "hpregenperlevel": 0.7,
+        "movespeed": 330,
+        "mp": 340,
+        "mpperlevel": 45,
+        "mpregen": 7.25,
+        "mpregenperlevel": 0.8,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "title": "厄加特"
+    },
+    {
+      "aliases": [
+        "Leblanc",
+        "诡术妖姬"
+      ],
+      "id": 7,
+      "locale": "zh_CN",
+      "name": "诡术妖姬",
+      "resource_type": "法力",
+      "source_key": "Leblanc",
+      "stats": {
+        "armor": 22,
+        "armorperlevel": 4.7,
+        "attackdamage": 55,
+        "attackdamageperlevel": 2.2,
+        "attackrange": 525,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 2.35,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 598,
+        "hpperlevel": 111,
+        "hpregen": 7.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 340,
+        "mp": 400,
+        "mpperlevel": 25,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Assassin",
+        "Mage"
+      ],
+      "title": "乐芙兰"
+    },
+    {
+      "aliases": [
+        "Vladimir",
+        "猩红收割者"
+      ],
+      "id": 8,
+      "locale": "zh_CN",
+      "name": "猩红收割者",
+      "resource_type": "猩红冲刺",
+      "source_key": "Vladimir",
+      "stats": {
+        "armor": 27,
+        "armorperlevel": 4.5,
+        "attackdamage": 55,
+        "attackdamageperlevel": 3,
+        "attackrange": 450,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 2,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 607,
+        "hpperlevel": 110,
+        "hpregen": 7,
+        "hpregenperlevel": 0.6,
+        "movespeed": 330,
+        "mp": 2,
+        "mpperlevel": 0,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage",
+        "Fighter"
+      ],
+      "title": "弗拉基米尔"
+    },
+    {
+      "aliases": [
+        "Fiddlesticks",
+        "远古恐惧"
+      ],
+      "id": 9,
+      "locale": "zh_CN",
+      "name": "远古恐惧",
+      "resource_type": "法力",
+      "source_key": "Fiddlesticks",
+      "stats": {
+        "armor": 34,
+        "armorperlevel": 4.7,
+        "attackdamage": 55,
+        "attackdamageperlevel": 2.65,
+        "attackrange": 480,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2.11,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 650,
+        "hpperlevel": 106,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.6,
+        "movespeed": 335,
+        "mp": 500,
+        "mpperlevel": 28,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "title": "费德提克"
+    },
+    {
+      "aliases": [
+        "Kayle",
+        "正义天使"
+      ],
+      "id": 10,
+      "locale": "zh_CN",
+      "name": "正义天使",
+      "resource_type": "法力",
+      "source_key": "Kayle",
+      "stats": {
+        "armor": 26,
+        "armorperlevel": 4.2,
+        "attackdamage": 50,
+        "attackdamageperlevel": 2.5,
+        "attackrange": 175,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 1.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 670,
+        "hpperlevel": 92,
+        "hpregen": 5,
+        "hpregenperlevel": 0.5,
+        "movespeed": 335,
+        "mp": 330,
+        "mpperlevel": 50,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 22,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage",
+        "Marksman"
+      ],
+      "title": "凯尔"
+    },
+    {
+      "aliases": [
+        "MasterYi",
+        "无极剑圣"
+      ],
+      "id": 11,
+      "locale": "zh_CN",
+      "name": "无极剑圣",
+      "resource_type": "法力",
+      "source_key": "MasterYi",
+      "stats": {
+        "armor": 33,
+        "armorperlevel": 4.7,
+        "attackdamage": 65,
+        "attackdamageperlevel": 2.5,
+        "attackrange": 175,
+        "attackspeed": 0.679,
+        "attackspeedperlevel": 2.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 669,
+        "hpperlevel": 105,
+        "hpregen": 7.5,
+        "hpregenperlevel": 0.65,
+        "movespeed": 355,
+        "mp": 251,
+        "mpperlevel": 42,
+        "mpregen": 7.25,
+        "mpregenperlevel": 0.45,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Assassin",
+        "Fighter"
+      ],
+      "title": "易"
+    },
+    {
+      "aliases": [
+        "Alistar",
+        "牛头酋长"
+      ],
+      "id": 12,
+      "locale": "zh_CN",
+      "name": "牛头酋长",
+      "resource_type": "法力",
+      "source_key": "Alistar",
+      "stats": {
+        "armor": 47,
+        "armorperlevel": 4.7,
+        "attackdamage": 62,
+        "attackdamageperlevel": 3.75,
+        "attackrange": 125,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2.125,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 685,
+        "hpperlevel": 120,
+        "hpregen": 8.5,
+        "hpregenperlevel": 0.85,
+        "movespeed": 330,
+        "mp": 350,
+        "mpperlevel": 40,
+        "mpregen": 8.5,
+        "mpregenperlevel": 0.8,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Tank",
+        "Support"
+      ],
+      "title": "阿利斯塔"
+    },
+    {
+      "aliases": [
+        "Ryze",
+        "符文法师"
+      ],
+      "id": 13,
+      "locale": "zh_CN",
+      "name": "符文法师",
+      "resource_type": "法力",
+      "source_key": "Ryze",
+      "stats": {
+        "armor": 22,
+        "armorperlevel": 4.2,
+        "attackdamage": 58,
+        "attackdamageperlevel": 3,
+        "attackrange": 550,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 2.11,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 645,
+        "hpperlevel": 124,
+        "hpregen": 8,
+        "hpregenperlevel": 0.8,
+        "movespeed": 340,
+        "mp": 300,
+        "mpperlevel": 70,
+        "mpregen": 8,
+        "mpregenperlevel": 1,
+        "spellblock": 32,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage"
+      ],
+      "title": "瑞兹"
+    },
+    {
+      "aliases": [
+        "Sion",
+        "亡灵战神"
+      ],
+      "id": 14,
+      "locale": "zh_CN",
+      "name": "亡灵战神",
+      "resource_type": "法力",
+      "source_key": "Sion",
+      "stats": {
+        "armor": 32,
+        "armorperlevel": 4.2,
+        "attackdamage": 68,
+        "attackdamageperlevel": 4,
+        "attackrange": 175,
+        "attackspeed": 0.679,
+        "attackspeedperlevel": 1.3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 655,
+        "hpperlevel": 87,
+        "hpregen": 7.5,
+        "hpregenperlevel": 0.8,
+        "movespeed": 345,
+        "mp": 400,
+        "mpperlevel": 52,
+        "mpregen": 8,
+        "mpregenperlevel": 0.6,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Tank",
+        "Fighter"
+      ],
+      "title": "赛恩"
+    },
+    {
+      "aliases": [
+        "Sivir",
+        "战争女神"
+      ],
+      "id": 15,
+      "locale": "zh_CN",
+      "name": "战争女神",
+      "resource_type": "法力",
+      "source_key": "Sivir",
+      "stats": {
+        "armor": 30,
+        "armorperlevel": 4.45,
+        "attackdamage": 58,
+        "attackdamageperlevel": 2.5,
+        "attackrange": 500,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 600,
+        "hpperlevel": 104,
+        "hpregen": 3.25,
+        "hpregenperlevel": 0.55,
+        "movespeed": 335,
+        "mp": 340,
+        "mpperlevel": 45,
+        "mpregen": 6,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman"
+      ],
+      "title": "希维尔"
+    },
+    {
+      "aliases": [
+        "Soraka",
+        "众星之子"
+      ],
+      "id": 16,
+      "locale": "zh_CN",
+      "name": "众星之子",
+      "resource_type": "法力",
+      "source_key": "Soraka",
+      "stats": {
+        "armor": 32,
+        "armorperlevel": 5,
+        "attackdamage": 50,
+        "attackdamageperlevel": 3,
+        "attackrange": 550,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2.14,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 605,
+        "hpperlevel": 88,
+        "hpregen": 2.5,
+        "hpregenperlevel": 0.5,
+        "movespeed": 325,
+        "mp": 425,
+        "mpperlevel": 40,
+        "mpregen": 11.5,
+        "mpregenperlevel": 0.4,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "title": "索拉卡"
+    },
+    {
+      "aliases": [
+        "Teemo",
+        "迅捷斥候"
+      ],
+      "id": 17,
+      "locale": "zh_CN",
+      "name": "迅捷斥候",
+      "resource_type": "法力",
+      "source_key": "Teemo",
+      "stats": {
+        "armor": 24,
+        "armorperlevel": 4.95,
+        "attackdamage": 54,
+        "attackdamageperlevel": 3,
+        "attackrange": 500,
+        "attackspeed": 0.69,
+        "attackspeedperlevel": 3.38,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 598,
+        "hpperlevel": 104,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.65,
+        "movespeed": 330,
+        "mp": 334,
+        "mpperlevel": 25,
+        "mpregen": 9.6,
+        "mpregenperlevel": 0.45,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman",
+        "Mage"
+      ],
+      "title": "提莫"
+    },
+    {
+      "aliases": [
+        "Tristana",
+        "麦林炮手"
+      ],
+      "id": 18,
+      "locale": "zh_CN",
+      "name": "麦林炮手",
+      "resource_type": "法力",
+      "source_key": "Tristana",
+      "stats": {
+        "armor": 30,
+        "armorperlevel": 4.5,
+        "attackdamage": 59,
+        "attackdamageperlevel": 3.7,
+        "attackrange": 525,
+        "attackspeed": 0.656,
+        "attackspeedperlevel": 1.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 640,
+        "hpperlevel": 102,
+        "hpregen": 4,
+        "hpregenperlevel": 0.65,
+        "movespeed": 325,
+        "mp": 300,
+        "mpperlevel": 32,
+        "mpregen": 7.2,
+        "mpregenperlevel": 0.45,
+        "spellblock": 28,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman",
+        "Assassin"
+      ],
+      "title": "崔丝塔娜"
+    },
+    {
+      "aliases": [
+        "Warwick",
+        "祖安怒兽"
+      ],
+      "id": 19,
+      "locale": "zh_CN",
+      "name": "祖安怒兽",
+      "resource_type": "法力",
+      "source_key": "Warwick",
+      "stats": {
+        "armor": 33,
+        "armorperlevel": 4.4,
+        "attackdamage": 65,
+        "attackdamageperlevel": 3,
+        "attackrange": 125,
+        "attackspeed": 0.638,
+        "attackspeedperlevel": 2.3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 620,
+        "hpperlevel": 99,
+        "hpregen": 4,
+        "hpregenperlevel": 0.75,
+        "movespeed": 335,
+        "mp": 280,
+        "mpperlevel": 35,
+        "mpregen": 7.45,
+        "mpregenperlevel": 0.6,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "title": "沃里克"
+    },
+    {
+      "aliases": [
+        "Nunu",
+        "雪原双子"
+      ],
+      "id": 20,
+      "locale": "zh_CN",
+      "name": "雪原双子",
+      "resource_type": "法力",
+      "source_key": "Nunu",
+      "stats": {
+        "armor": 29,
+        "armorperlevel": 4.2,
+        "attackdamage": 61,
+        "attackdamageperlevel": 3,
+        "attackrange": 125,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2.25,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 610,
+        "hpperlevel": 90,
+        "hpregen": 5,
+        "hpregenperlevel": 0.8,
+        "movespeed": 345,
+        "mp": 280,
+        "mpperlevel": 42,
+        "mpregen": 7,
+        "mpregenperlevel": 0.5,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Tank",
+        "Mage"
+      ],
+      "title": "努努和威朗普"
+    },
+    {
+      "aliases": [
+        "MissFortune",
+        "赏金猎人"
+      ],
+      "id": 21,
+      "locale": "zh_CN",
+      "name": "赏金猎人",
+      "resource_type": "法力",
+      "source_key": "MissFortune",
+      "stats": {
+        "armor": 28,
+        "armorperlevel": 4.2,
+        "attackdamage": 55,
+        "attackdamageperlevel": 2.4,
+        "attackrange": 550,
+        "attackspeed": 0.656,
+        "attackspeedperlevel": 3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 640,
+        "hpperlevel": 103,
+        "hpregen": 3.75,
+        "hpregenperlevel": 0.65,
+        "movespeed": 325,
+        "mp": 300,
+        "mpperlevel": 40,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman",
+        "Mage"
+      ],
+      "title": "厄运小姐"
+    },
+    {
+      "aliases": [
+        "Ashe",
+        "寒冰射手"
+      ],
+      "id": 22,
+      "locale": "zh_CN",
+      "name": "寒冰射手",
+      "resource_type": "法力",
+      "source_key": "Ashe",
+      "stats": {
+        "armor": 26,
+        "armorperlevel": 4.6,
+        "attackdamage": 59,
+        "attackdamageperlevel": 2.95,
+        "attackrange": 600,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 3.33,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 640,
+        "hpperlevel": 101,
+        "hpregen": 3.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 325,
+        "mp": 280,
+        "mpperlevel": 35,
+        "mpregen": 7,
+        "mpregenperlevel": 0.65,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman",
+        "Support"
+      ],
+      "title": "艾希"
+    },
+    {
+      "aliases": [
+        "Tryndamere",
+        "蛮族之王"
+      ],
+      "id": 23,
+      "locale": "zh_CN",
+      "name": "蛮族之王",
+      "resource_type": "怒气",
+      "source_key": "Tryndamere",
+      "stats": {
+        "armor": 33,
+        "armorperlevel": 4.3,
+        "attackdamage": 66,
+        "attackdamageperlevel": 4,
+        "attackrange": 175,
+        "attackspeed": 0.67,
+        "attackspeedperlevel": 3.4,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 696,
+        "hpperlevel": 108,
+        "hpregen": 8.5,
+        "hpregenperlevel": 0.9,
+        "movespeed": 345,
+        "mp": 100,
+        "mpperlevel": 0,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "title": "泰达米尔"
+    },
+    {
+      "aliases": [
+        "Jax",
+        "武器大师"
+      ],
+      "id": 24,
+      "locale": "zh_CN",
+      "name": "武器大师",
+      "resource_type": "法力",
+      "source_key": "Jax",
+      "stats": {
+        "armor": 36,
+        "armorperlevel": 4.2,
+        "attackdamage": 68,
+        "attackdamageperlevel": 4.25,
+        "attackrange": 125,
+        "attackspeed": 0.638,
+        "attackspeedperlevel": 3.4,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 665,
+        "hpperlevel": 100,
+        "hpregen": 8.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 350,
+        "mp": 339,
+        "mpperlevel": 52,
+        "mpregen": 7.6,
+        "mpregenperlevel": 0.7,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter"
+      ],
+      "title": "贾克斯"
+    },
+    {
+      "aliases": [
+        "Morgana",
+        "堕落天使"
+      ],
+      "id": 25,
+      "locale": "zh_CN",
+      "name": "堕落天使",
+      "resource_type": "法力",
+      "source_key": "Morgana",
+      "stats": {
+        "armor": 25,
+        "armorperlevel": 5,
+        "attackdamage": 56,
+        "attackdamageperlevel": 3.5,
+        "attackrange": 450,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 1.53,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 630,
+        "hpperlevel": 104,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.4,
+        "movespeed": 335,
+        "mp": 340,
+        "mpperlevel": 60,
+        "mpregen": 11,
+        "mpregenperlevel": 0.4,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "title": "莫甘娜"
+    },
+    {
+      "aliases": [
+        "Zilean",
+        "时光守护者"
+      ],
+      "id": 26,
+      "locale": "zh_CN",
+      "name": "时光守护者",
+      "resource_type": "法力",
+      "source_key": "Zilean",
+      "stats": {
+        "armor": 24,
+        "armorperlevel": 5,
+        "attackdamage": 52,
+        "attackdamageperlevel": 3,
+        "attackrange": 550,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 2.13,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 574,
+        "hpperlevel": 96,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.5,
+        "movespeed": 335,
+        "mp": 452,
+        "mpperlevel": 50,
+        "mpregen": 11.35,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "title": "基兰"
+    },
+    {
+      "aliases": [
+        "Singed",
+        "炼金术士"
+      ],
+      "id": 27,
+      "locale": "zh_CN",
+      "name": "炼金术士",
+      "resource_type": "法力",
+      "source_key": "Singed",
+      "stats": {
+        "armor": 34,
+        "armorperlevel": 4.7,
+        "attackdamage": 63,
+        "attackdamageperlevel": 3.4,
+        "attackrange": 125,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 1.9,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 650,
+        "hpperlevel": 99,
+        "hpregen": 9.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 345,
+        "mp": 330,
+        "mpperlevel": 45,
+        "mpregen": 7.5,
+        "mpregenperlevel": 0.55,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Tank",
+        "Mage"
+      ],
+      "title": "辛吉德"
+    },
+    {
+      "aliases": [
+        "Evelynn",
+        "痛苦之拥"
+      ],
+      "id": 28,
+      "locale": "zh_CN",
+      "name": "痛苦之拥",
+      "resource_type": "法力",
+      "source_key": "Evelynn",
+      "stats": {
+        "armor": 37,
+        "armorperlevel": 4.7,
+        "attackdamage": 61,
+        "attackdamageperlevel": 3,
+        "attackrange": 125,
+        "attackspeed": 0.667,
+        "attackspeedperlevel": 2.1,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 642,
+        "hpperlevel": 98,
+        "hpregen": 8.5,
+        "hpregenperlevel": 0.75,
+        "movespeed": 335,
+        "mp": 315,
+        "mpperlevel": 42,
+        "mpregen": 8.11,
+        "mpregenperlevel": 0.6,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Assassin",
+        "Mage"
+      ],
+      "title": "伊芙琳"
+    },
+    {
+      "aliases": [
+        "Twitch",
+        "瘟疫之源"
+      ],
+      "id": 29,
+      "locale": "zh_CN",
+      "name": "瘟疫之源",
+      "resource_type": "法力",
+      "source_key": "Twitch",
+      "stats": {
+        "armor": 27,
+        "armorperlevel": 4.2,
+        "attackdamage": 59,
+        "attackdamageperlevel": 3.1,
+        "attackrange": 550,
+        "attackspeed": 0.679,
+        "attackspeedperlevel": 3.38,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 630,
+        "hpperlevel": 104,
+        "hpregen": 3.75,
+        "hpregenperlevel": 0.6,
+        "movespeed": 330,
+        "mp": 300,
+        "mpperlevel": 40,
+        "mpregen": 7.25,
+        "mpregenperlevel": 0.7,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman",
+        "Assassin"
+      ],
+      "title": "图奇"
+    },
+    {
+      "aliases": [
+        "Karthus",
+        "死亡颂唱者"
+      ],
+      "id": 30,
+      "locale": "zh_CN",
+      "name": "死亡颂唱者",
+      "resource_type": "法力",
+      "source_key": "Karthus",
+      "stats": {
+        "armor": 21,
+        "armorperlevel": 4.7,
+        "attackdamage": 46,
+        "attackdamageperlevel": 3.25,
+        "attackrange": 450,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2.11,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 620,
+        "hpperlevel": 110,
+        "hpregen": 6.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 335,
+        "mp": 467,
+        "mpperlevel": 31,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage"
+      ],
+      "title": "卡尔萨斯"
+    },
+    {
+      "aliases": [
+        "Chogath",
+        "虚空恐惧"
+      ],
+      "id": 31,
+      "locale": "zh_CN",
+      "name": "虚空恐惧",
+      "resource_type": "法力",
+      "source_key": "Chogath",
+      "stats": {
+        "armor": 38,
+        "armorperlevel": 5,
+        "attackdamage": 69,
+        "attackdamageperlevel": 4.2,
+        "attackrange": 125,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 1.44,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 644,
+        "hpperlevel": 94,
+        "hpregen": 9,
+        "hpregenperlevel": 0.85,
+        "movespeed": 345,
+        "mp": 270,
+        "mpperlevel": 60,
+        "mpregen": 7.2,
+        "mpregenperlevel": 0.45,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Tank",
+        "Mage"
+      ],
+      "title": "科加斯"
+    },
+    {
+      "aliases": [
+        "Amumu",
+        "殇之木乃伊"
+      ],
+      "id": 32,
+      "locale": "zh_CN",
+      "name": "殇之木乃伊",
+      "resource_type": "法力",
+      "source_key": "Amumu",
+      "stats": {
+        "armor": 33,
+        "armorperlevel": 4,
+        "attackdamage": 57,
+        "attackdamageperlevel": 3.8,
+        "attackrange": 125,
+        "attackspeed": 0.736,
+        "attackspeedperlevel": 2.18,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 685,
+        "hpperlevel": 94,
+        "hpregen": 9,
+        "hpregenperlevel": 0.85,
+        "movespeed": 335,
+        "mp": 285,
+        "mpperlevel": 40,
+        "mpregen": 7.4,
+        "mpregenperlevel": 0.55,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Tank",
+        "Support"
+      ],
+      "title": "阿木木"
+    },
+    {
+      "aliases": [
+        "Rammus",
+        "披甲龙龟"
+      ],
+      "id": 33,
+      "locale": "zh_CN",
+      "name": "披甲龙龟",
+      "resource_type": "法力",
+      "source_key": "Rammus",
+      "stats": {
+        "armor": 40,
+        "armorperlevel": 5.5,
+        "attackdamage": 55,
+        "attackdamageperlevel": 2.75,
+        "attackrange": 125,
+        "attackspeed": 0.656,
+        "attackspeedperlevel": 2.215,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 675,
+        "hpperlevel": 94,
+        "hpregen": 8,
+        "hpregenperlevel": 0.55,
+        "movespeed": 335,
+        "mp": 310,
+        "mpperlevel": 33,
+        "mpregen": 7.85,
+        "mpregenperlevel": 0.5,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Tank"
+      ],
+      "title": "拉莫斯"
+    },
+    {
+      "aliases": [
+        "Anivia",
+        "冰晶凤凰"
+      ],
+      "id": 34,
+      "locale": "zh_CN",
+      "name": "冰晶凤凰",
+      "resource_type": "法力",
+      "source_key": "Anivia",
+      "stats": {
+        "armor": 21,
+        "armorperlevel": 4.9,
+        "attackdamage": 51,
+        "attackdamageperlevel": 3.2,
+        "attackrange": 600,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 1.68,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 550,
+        "hpperlevel": 92,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 325,
+        "mp": 495,
+        "mpperlevel": 45,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage"
+      ],
+      "title": "艾尼维亚"
+    },
+    {
+      "aliases": [
+        "Shaco",
+        "恶魔小丑"
+      ],
+      "id": 35,
+      "locale": "zh_CN",
+      "name": "恶魔小丑",
+      "resource_type": "法力",
+      "source_key": "Shaco",
+      "stats": {
+        "armor": 30,
+        "armorperlevel": 4,
+        "attackdamage": 63,
+        "attackdamageperlevel": 3,
+        "attackrange": 125,
+        "attackspeed": 0.694,
+        "attackspeedperlevel": 3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 630,
+        "hpperlevel": 99,
+        "hpregen": 8.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 345,
+        "mp": 297,
+        "mpperlevel": 40,
+        "mpregen": 6,
+        "mpregenperlevel": 0.35,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Assassin"
+      ],
+      "title": "萨科"
+    },
+    {
+      "aliases": [
+        "DrMundo",
+        "祖安狂人"
+      ],
+      "id": 36,
+      "locale": "zh_CN",
+      "name": "祖安狂人",
+      "resource_type": "无",
+      "source_key": "DrMundo",
+      "stats": {
+        "armor": 32,
+        "armorperlevel": 3.7,
+        "attackdamage": 61,
+        "attackdamageperlevel": 2.5,
+        "attackrange": 125,
+        "attackspeed": 0.67,
+        "attackspeedperlevel": 3.3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 613,
+        "hpperlevel": 103,
+        "hpregen": 7,
+        "hpregenperlevel": 0.5,
+        "movespeed": 345,
+        "mp": 0,
+        "mpperlevel": 0,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "spellblock": 29,
+        "spellblockperlevel": 2.3
+      },
+      "tags": [
+        "Tank",
+        "Fighter"
+      ],
+      "title": "蒙多医生"
+    },
+    {
+      "aliases": [
+        "Sona",
+        "琴瑟仙女"
+      ],
+      "id": 37,
+      "locale": "zh_CN",
+      "name": "琴瑟仙女",
+      "resource_type": "法力",
+      "source_key": "Sona",
+      "stats": {
+        "armor": 26,
+        "armorperlevel": 4.2,
+        "attackdamage": 49,
+        "attackdamageperlevel": 3,
+        "attackrange": 550,
+        "attackspeed": 0.644,
+        "attackspeedperlevel": 2.3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 550,
+        "hpperlevel": 91,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 325,
+        "mp": 340,
+        "mpperlevel": 45,
+        "mpregen": 11.5,
+        "mpregenperlevel": 0.4,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "title": "娑娜"
+    },
+    {
+      "aliases": [
+        "Kassadin",
+        "虚空行者"
+      ],
+      "id": 38,
+      "locale": "zh_CN",
+      "name": "虚空行者",
+      "resource_type": "法力",
+      "source_key": "Kassadin",
+      "stats": {
+        "armor": 19,
+        "armorperlevel": 4,
+        "attackdamage": 59,
+        "attackdamageperlevel": 3.9,
+        "attackrange": 150,
+        "attackspeed": 0.64,
+        "attackspeedperlevel": 3.7,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 646,
+        "hpperlevel": 119,
+        "hpregen": 6,
+        "hpregenperlevel": 0.5,
+        "movespeed": 335,
+        "mp": 400,
+        "mpperlevel": 87,
+        "mpregen": 6,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Assassin",
+        "Mage"
+      ],
+      "title": "卡萨丁"
+    },
+    {
+      "aliases": [
+        "Irelia",
+        "刀锋舞者"
+      ],
+      "id": 39,
+      "locale": "zh_CN",
+      "name": "刀锋舞者",
+      "resource_type": "法力",
+      "source_key": "Irelia",
+      "stats": {
+        "armor": 36,
+        "armorperlevel": 4.7,
+        "attackdamage": 65,
+        "attackdamageperlevel": 3.5,
+        "attackrange": 200,
+        "attackspeed": 0.656,
+        "attackspeedperlevel": 2.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 630,
+        "hpperlevel": 115,
+        "hpregen": 6,
+        "hpregenperlevel": 0.85,
+        "movespeed": 335,
+        "mp": 350,
+        "mpperlevel": 50,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "title": "艾瑞莉娅"
+    },
+    {
+      "aliases": [
+        "Janna",
+        "风暴之怒"
+      ],
+      "id": 40,
+      "locale": "zh_CN",
+      "name": "风暴之怒",
+      "resource_type": "法力",
+      "source_key": "Janna",
+      "stats": {
+        "armor": 28,
+        "armorperlevel": 4.5,
+        "attackdamage": 47,
+        "attackdamageperlevel": 2.5,
+        "attackrange": 550,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 570,
+        "hpperlevel": 90,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 325,
+        "mp": 360,
+        "mpperlevel": 50,
+        "mpregen": 11.5,
+        "mpregenperlevel": 0.4,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "title": "迦娜"
+    },
+    {
+      "aliases": [
+        "Gangplank",
+        "海洋之灾"
+      ],
+      "id": 41,
+      "locale": "zh_CN",
+      "name": "海洋之灾",
+      "resource_type": "法力",
+      "source_key": "Gangplank",
+      "stats": {
+        "armor": 31,
+        "armorperlevel": 4.7,
+        "attackdamage": 64,
+        "attackdamageperlevel": 3.7,
+        "attackrange": 125,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 3.2,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 630,
+        "hpperlevel": 114,
+        "hpregen": 6,
+        "hpregenperlevel": 0.6,
+        "movespeed": 345,
+        "mp": 280,
+        "mpperlevel": 60,
+        "mpregen": 7.5,
+        "mpregenperlevel": 0.7,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter"
+      ],
+      "title": "普朗克"
+    },
+    {
+      "aliases": [
+        "Corki",
+        "英勇投弹手"
+      ],
+      "id": 42,
+      "locale": "zh_CN",
+      "name": "英勇投弹手",
+      "resource_type": "法力",
+      "source_key": "Corki",
+      "stats": {
+        "armor": 30,
+        "armorperlevel": 4.5,
+        "attackdamage": 52,
+        "attackdamageperlevel": 2.5,
+        "attackrange": 550,
+        "attackspeed": 0.644,
+        "attackspeedperlevel": 2.8,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 610,
+        "hpperlevel": 100,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 325,
+        "mp": 350,
+        "mpperlevel": 54,
+        "mpregen": 7.4,
+        "mpregenperlevel": 0.7,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman",
+        "Mage"
+      ],
+      "title": "库奇"
+    },
+    {
+      "aliases": [
+        "Karma",
+        "天启者"
+      ],
+      "id": 43,
+      "locale": "zh_CN",
+      "name": "天启者",
+      "resource_type": "法力",
+      "source_key": "Karma",
+      "stats": {
+        "armor": 28,
+        "armorperlevel": 5,
+        "attackdamage": 51,
+        "attackdamageperlevel": 3.3,
+        "attackrange": 525,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2.3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 630,
+        "hpperlevel": 109,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 335,
+        "mp": 374,
+        "mpperlevel": 40,
+        "mpregen": 13,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "title": "卡尔玛"
+    },
+    {
+      "aliases": [
+        "Taric",
+        "瓦洛兰之盾"
+      ],
+      "id": 44,
+      "locale": "zh_CN",
+      "name": "瓦洛兰之盾",
+      "resource_type": "法力",
+      "source_key": "Taric",
+      "stats": {
+        "armor": 40,
+        "armorperlevel": 4.3,
+        "attackdamage": 55,
+        "attackdamageperlevel": 3.5,
+        "attackrange": 150,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 645,
+        "hpperlevel": 99,
+        "hpregen": 6,
+        "hpregenperlevel": 0.5,
+        "movespeed": 340,
+        "mp": 300,
+        "mpperlevel": 60,
+        "mpregen": 8.5,
+        "mpregenperlevel": 0.8,
+        "spellblock": 28,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Support",
+        "Tank"
+      ],
+      "title": "塔里克"
+    },
+    {
+      "aliases": [
+        "Veigar",
+        "邪恶小法师"
+      ],
+      "id": 45,
+      "locale": "zh_CN",
+      "name": "邪恶小法师",
+      "resource_type": "法力",
+      "source_key": "Veigar",
+      "stats": {
+        "armor": 18,
+        "armorperlevel": 5.2,
+        "attackdamage": 52,
+        "attackdamageperlevel": 2.7,
+        "attackrange": 550,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2.24,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 580,
+        "hpperlevel": 108,
+        "hpregen": 6.5,
+        "hpregenperlevel": 0.6,
+        "movespeed": 340,
+        "mp": 490,
+        "mpperlevel": 26,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 32,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage"
+      ],
+      "title": "维迦"
+    },
+    {
+      "aliases": [
+        "Trundle",
+        "巨魔之王"
+      ],
+      "id": 48,
+      "locale": "zh_CN",
+      "name": "巨魔之王",
+      "resource_type": "法力",
+      "source_key": "Trundle",
+      "stats": {
+        "armor": 37,
+        "armorperlevel": 3.9,
+        "attackdamage": 68,
+        "attackdamageperlevel": 4,
+        "attackrange": 175,
+        "attackspeed": 0.67,
+        "attackspeedperlevel": 2.9,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 650,
+        "hpperlevel": 110,
+        "hpregen": 6,
+        "hpregenperlevel": 0.75,
+        "movespeed": 350,
+        "mp": 340,
+        "mpperlevel": 45,
+        "mpregen": 7.5,
+        "mpregenperlevel": 0.6,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "title": "特朗德尔"
+    },
+    {
+      "aliases": [
+        "Swain",
+        "诺克萨斯统领"
+      ],
+      "id": 50,
+      "locale": "zh_CN",
+      "name": "诺克萨斯统领",
+      "resource_type": "法力",
+      "source_key": "Swain",
+      "stats": {
+        "armor": 26,
+        "armorperlevel": 5.2,
+        "attackdamage": 58,
+        "attackdamageperlevel": 2.7,
+        "attackrange": 525,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2.11,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 595,
+        "hpperlevel": 99,
+        "hpregen": 7,
+        "hpregenperlevel": 0.65,
+        "movespeed": 330,
+        "mp": 468,
+        "mpperlevel": 29,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "title": "斯维因"
+    },
+    {
+      "aliases": [
+        "Caitlyn",
+        "皮城女警"
+      ],
+      "id": 51,
+      "locale": "zh_CN",
+      "name": "皮城女警",
+      "resource_type": "法力",
+      "source_key": "Caitlyn",
+      "stats": {
+        "armor": 27,
+        "armorperlevel": 4.7,
+        "attackdamage": 60,
+        "attackdamageperlevel": 3.8,
+        "attackrange": 650,
+        "attackspeed": 0.681,
+        "attackspeedperlevel": 4,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 580,
+        "hpperlevel": 107,
+        "hpregen": 3.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 325,
+        "mp": 315,
+        "mpperlevel": 40,
+        "mpregen": 7.4,
+        "mpregenperlevel": 0.7,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman"
+      ],
+      "title": "凯特琳"
+    },
+    {
+      "aliases": [
+        "Blitzcrank",
+        "蒸汽机器人"
+      ],
+      "id": 53,
+      "locale": "zh_CN",
+      "name": "蒸汽机器人",
+      "resource_type": "法力",
+      "source_key": "Blitzcrank",
+      "stats": {
+        "armor": 37,
+        "armorperlevel": 4.7,
+        "attackdamage": 62,
+        "attackdamageperlevel": 3.5,
+        "attackrange": 125,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 1.13,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 600,
+        "hpperlevel": 109,
+        "hpregen": 7.5,
+        "hpregenperlevel": 0.75,
+        "movespeed": 325,
+        "mp": 267,
+        "mpperlevel": 40,
+        "mpregen": 8.5,
+        "mpregenperlevel": 0.8,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Tank",
+        "Support"
+      ],
+      "title": "布里茨"
+    },
+    {
+      "aliases": [
+        "Malphite",
+        "熔岩巨兽"
+      ],
+      "id": 54,
+      "locale": "zh_CN",
+      "name": "熔岩巨兽",
+      "resource_type": "法力",
+      "source_key": "Malphite",
+      "stats": {
+        "armor": 37,
+        "armorperlevel": 4.95,
+        "attackdamage": 62,
+        "attackdamageperlevel": 4,
+        "attackrange": 125,
+        "attackspeed": 0.736,
+        "attackspeedperlevel": 3.4,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 644,
+        "hpperlevel": 104,
+        "hpregen": 7,
+        "hpregenperlevel": 0.55,
+        "movespeed": 335,
+        "mp": 280,
+        "mpperlevel": 60,
+        "mpregen": 7.3,
+        "mpregenperlevel": 0.55,
+        "spellblock": 28,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Tank",
+        "Mage"
+      ],
+      "title": "墨菲特"
+    },
+    {
+      "aliases": [
+        "Katarina",
+        "不祥之刃"
+      ],
+      "id": 55,
+      "locale": "zh_CN",
+      "name": "不祥之刃",
+      "resource_type": "无",
+      "source_key": "Katarina",
+      "stats": {
+        "armor": 28,
+        "armorperlevel": 4.7,
+        "attackdamage": 58,
+        "attackdamageperlevel": 3.2,
+        "attackrange": 125,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 2.74,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 672,
+        "hpperlevel": 108,
+        "hpregen": 7.5,
+        "hpregenperlevel": 0.7,
+        "movespeed": 335,
+        "mp": 0,
+        "mpperlevel": 0,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Assassin",
+        "Mage"
+      ],
+      "title": "卡特琳娜"
+    },
+    {
+      "aliases": [
+        "Nocturne",
+        "永恒梦魇"
+      ],
+      "id": 56,
+      "locale": "zh_CN",
+      "name": "永恒梦魇",
+      "resource_type": "法力",
+      "source_key": "Nocturne",
+      "stats": {
+        "armor": 38,
+        "armorperlevel": 4.7,
+        "attackdamage": 62,
+        "attackdamageperlevel": 2.6,
+        "attackrange": 125,
+        "attackspeed": 0.721,
+        "attackspeedperlevel": 2.7,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 655,
+        "hpperlevel": 109,
+        "hpregen": 7,
+        "hpregenperlevel": 0.75,
+        "movespeed": 345,
+        "mp": 275,
+        "mpperlevel": 35,
+        "mpregen": 7,
+        "mpregenperlevel": 0.45,
+        "spellblock": 32,
+        "spellblockperlevel": 1.55
+      },
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "title": "魔腾"
+    },
+    {
+      "aliases": [
+        "Maokai",
+        "扭曲树精"
+      ],
+      "id": 57,
+      "locale": "zh_CN",
+      "name": "扭曲树精",
+      "resource_type": "法力",
+      "source_key": "Maokai",
+      "stats": {
+        "armor": 35,
+        "armorperlevel": 5.2,
+        "attackdamage": 64,
+        "attackdamageperlevel": 3.3,
+        "attackrange": 125,
+        "attackspeed": 0.8,
+        "attackspeedperlevel": 2.125,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 635,
+        "hpperlevel": 109,
+        "hpregen": 5,
+        "hpregenperlevel": 0.75,
+        "movespeed": 330,
+        "mp": 375,
+        "mpperlevel": 43,
+        "mpregen": 6,
+        "mpregenperlevel": 0.6,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Tank",
+        "Support"
+      ],
+      "title": "茂凯"
+    },
+    {
+      "aliases": [
+        "Renekton",
+        "荒漠屠夫"
+      ],
+      "id": 58,
+      "locale": "zh_CN",
+      "name": "荒漠屠夫",
+      "resource_type": "怒气",
+      "source_key": "Renekton",
+      "stats": {
+        "armor": 35,
+        "armorperlevel": 5.2,
+        "attackdamage": 69,
+        "attackdamageperlevel": 4.15,
+        "attackrange": 125,
+        "attackspeed": 0.665,
+        "attackspeedperlevel": 2.75,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 660,
+        "hpperlevel": 111,
+        "hpregen": 8,
+        "hpregenperlevel": 0.75,
+        "movespeed": 345,
+        "mp": 100,
+        "mpperlevel": 0,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "spellblock": 28,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "title": "雷克顿"
+    },
+    {
+      "aliases": [
+        "JarvanIV",
+        "德玛西亚皇子"
+      ],
+      "id": 59,
+      "locale": "zh_CN",
+      "name": "德玛西亚皇子",
+      "resource_type": "法力",
+      "source_key": "JarvanIV",
+      "stats": {
+        "armor": 36,
+        "armorperlevel": 5.2,
+        "attackdamage": 64,
+        "attackdamageperlevel": 3,
+        "attackrange": 175,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 2.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 640,
+        "hpperlevel": 104,
+        "hpregen": 8,
+        "hpregenperlevel": 0.7,
+        "movespeed": 340,
+        "mp": 300,
+        "mpperlevel": 55,
+        "mpregen": 6.5,
+        "mpregenperlevel": 0.45,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "title": "嘉文四世"
+    },
+    {
+      "aliases": [
+        "Elise",
+        "蜘蛛女皇"
+      ],
+      "id": 60,
+      "locale": "zh_CN",
+      "name": "蜘蛛女皇",
+      "resource_type": "法力",
+      "source_key": "Elise",
+      "stats": {
+        "armor": 30,
+        "armorperlevel": 5.2,
+        "attackdamage": 55,
+        "attackdamageperlevel": 3,
+        "attackrange": 550,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 1.75,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 650,
+        "hpperlevel": 109,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.6,
+        "movespeed": 330,
+        "mp": 324,
+        "mpperlevel": 50,
+        "mpregen": 6,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Assassin",
+        "Mage"
+      ],
+      "title": "伊莉丝"
+    },
+    {
+      "aliases": [
+        "Orianna",
+        "发条魔灵"
+      ],
+      "id": 61,
+      "locale": "zh_CN",
+      "name": "发条魔灵",
+      "resource_type": "法力",
+      "source_key": "Orianna",
+      "stats": {
+        "armor": 20,
+        "armorperlevel": 4.2,
+        "attackdamage": 44,
+        "attackdamageperlevel": 2.6,
+        "attackrange": 525,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 3.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 585,
+        "hpperlevel": 110,
+        "hpregen": 7,
+        "hpregenperlevel": 0.55,
+        "movespeed": 325,
+        "mp": 418,
+        "mpperlevel": 25,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 26,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "title": "奥莉安娜"
+    },
+    {
+      "aliases": [
+        "MonkeyKing",
+        "齐天大圣"
+      ],
+      "id": 62,
+      "locale": "zh_CN",
+      "name": "齐天大圣",
+      "resource_type": "法力",
+      "source_key": "MonkeyKing",
+      "stats": {
+        "armor": 31,
+        "armorperlevel": 4.7,
+        "attackdamage": 66,
+        "attackdamageperlevel": 3.5,
+        "attackrange": 175,
+        "attackspeed": 0.69,
+        "attackspeedperlevel": 3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 610,
+        "hpperlevel": 99,
+        "hpregen": 3.5,
+        "hpregenperlevel": 0.65,
+        "movespeed": 340,
+        "mp": 300,
+        "mpperlevel": 65,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 28,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "title": "孙悟空"
+    },
+    {
+      "aliases": [
+        "Brand",
+        "复仇焰魂"
+      ],
+      "id": 63,
+      "locale": "zh_CN",
+      "name": "复仇焰魂",
+      "resource_type": "法力",
+      "source_key": "Brand",
+      "stats": {
+        "armor": 27,
+        "armorperlevel": 4.2,
+        "attackdamage": 57,
+        "attackdamageperlevel": 3,
+        "attackrange": 550,
+        "attackspeed": 0.681,
+        "attackspeedperlevel": 2,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 570,
+        "hpperlevel": 105,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 340,
+        "mp": 469,
+        "mpperlevel": 21,
+        "mpregen": 10.65,
+        "mpregenperlevel": 0.6,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "title": "布兰德"
+    },
+    {
+      "aliases": [
+        "LeeSin",
+        "盲僧"
+      ],
+      "id": 64,
+      "locale": "zh_CN",
+      "name": "盲僧",
+      "resource_type": "能量",
+      "source_key": "LeeSin",
+      "stats": {
+        "armor": 36,
+        "armorperlevel": 4.9,
+        "attackdamage": 66,
+        "attackdamageperlevel": 3.7,
+        "attackrange": 125,
+        "attackspeed": 0.651,
+        "attackspeedperlevel": 3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 645,
+        "hpperlevel": 108,
+        "hpregen": 7.5,
+        "hpregenperlevel": 0.7,
+        "movespeed": 345,
+        "mp": 200,
+        "mpperlevel": 0,
+        "mpregen": 50,
+        "mpregenperlevel": 0,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "title": "李青"
+    },
+    {
+      "aliases": [
+        "Vayne",
+        "暗夜猎手"
+      ],
+      "id": 67,
+      "locale": "zh_CN",
+      "name": "暗夜猎手",
+      "resource_type": "法力",
+      "source_key": "Vayne",
+      "stats": {
+        "armor": 23,
+        "armorperlevel": 4.6,
+        "attackdamage": 60,
+        "attackdamageperlevel": 2.35,
+        "attackrange": 550,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 3.3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 550,
+        "hpperlevel": 103,
+        "hpregen": 3.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 330,
+        "mp": 232,
+        "mpperlevel": 35,
+        "mpregen": 7,
+        "mpregenperlevel": 0.4,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman",
+        "Assassin"
+      ],
+      "title": "薇恩"
+    },
+    {
+      "aliases": [
+        "Rumble",
+        "机械公敌"
+      ],
+      "id": 68,
+      "locale": "zh_CN",
+      "name": "机械公敌",
+      "resource_type": "热量",
+      "source_key": "Rumble",
+      "stats": {
+        "armor": 36,
+        "armorperlevel": 4.7,
+        "attackdamage": 64,
+        "attackdamageperlevel": 3.2,
+        "attackrange": 125,
+        "attackspeed": 0.644,
+        "attackspeedperlevel": 1.85,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 625,
+        "hpperlevel": 105,
+        "hpregen": 7,
+        "hpregenperlevel": 0.6,
+        "movespeed": 345,
+        "mp": 150,
+        "mpperlevel": 0,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "spellblock": 28,
+        "spellblockperlevel": 1.55
+      },
+      "tags": [
+        "Fighter",
+        "Mage"
+      ],
+      "title": "兰博"
+    },
+    {
+      "aliases": [
+        "Cassiopeia",
+        "魔蛇之拥"
+      ],
+      "id": 69,
+      "locale": "zh_CN",
+      "name": "魔蛇之拥",
+      "resource_type": "法力",
+      "source_key": "Cassiopeia",
+      "stats": {
+        "armor": 18,
+        "armorperlevel": 4.7,
+        "attackdamage": 53,
+        "attackdamageperlevel": 3,
+        "attackrange": 550,
+        "attackspeed": 0.647,
+        "attackspeedperlevel": 1.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 630,
+        "hpperlevel": 104,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.5,
+        "movespeed": 328,
+        "mp": 400,
+        "mpperlevel": 40,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 32,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage"
+      ],
+      "title": "卡西奥佩娅"
+    },
+    {
+      "aliases": [
+        "Skarner",
+        "上古领主"
+      ],
+      "id": 72,
+      "locale": "zh_CN",
+      "name": "上古领主",
+      "resource_type": "法力",
+      "source_key": "Skarner",
+      "stats": {
+        "armor": 33,
+        "armorperlevel": 4.8,
+        "attackdamage": 63,
+        "attackdamageperlevel": 3,
+        "attackrange": 150,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 630,
+        "hpperlevel": 110,
+        "hpregen": 7.5,
+        "hpregenperlevel": 0.75,
+        "movespeed": 335,
+        "mp": 320,
+        "mpperlevel": 40,
+        "mpregen": 7.2,
+        "mpregenperlevel": 0.75,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Tank",
+        "Fighter"
+      ],
+      "title": "斯卡纳"
+    },
+    {
+      "aliases": [
+        "Heimerdinger",
+        "大发明家"
+      ],
+      "id": 74,
+      "locale": "zh_CN",
+      "name": "大发明家",
+      "resource_type": "法力",
+      "source_key": "Heimerdinger",
+      "stats": {
+        "armor": 19,
+        "armorperlevel": 4.2,
+        "attackdamage": 56,
+        "attackdamageperlevel": 2.7,
+        "attackrange": 550,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 1.36,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 558,
+        "hpperlevel": 101,
+        "hpregen": 7,
+        "hpregenperlevel": 0.55,
+        "movespeed": 340,
+        "mp": 385,
+        "mpperlevel": 20,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "title": "黑默丁格"
+    },
+    {
+      "aliases": [
+        "Nasus",
+        "沙漠死神"
+      ],
+      "id": 75,
+      "locale": "zh_CN",
+      "name": "沙漠死神",
+      "resource_type": "法力",
+      "source_key": "Nasus",
+      "stats": {
+        "armor": 34,
+        "armorperlevel": 4.7,
+        "attackdamage": 67,
+        "attackdamageperlevel": 4,
+        "attackrange": 125,
+        "attackspeed": 0.638,
+        "attackspeedperlevel": 3.48,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 631,
+        "hpperlevel": 104,
+        "hpregen": 9,
+        "hpregenperlevel": 0.9,
+        "movespeed": 350,
+        "mp": 326,
+        "mpperlevel": 62,
+        "mpregen": 7.45,
+        "mpregenperlevel": 0.5,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "title": "内瑟斯"
+    },
+    {
+      "aliases": [
+        "Nidalee",
+        "狂野女猎手"
+      ],
+      "id": 76,
+      "locale": "zh_CN",
+      "name": "狂野女猎手",
+      "resource_type": "法力",
+      "source_key": "Nidalee",
+      "stats": {
+        "armor": 32,
+        "armorperlevel": 5,
+        "attackdamage": 58,
+        "attackdamageperlevel": 3.5,
+        "attackrange": 525,
+        "attackspeed": 0.638,
+        "attackspeedperlevel": 3.22,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 610,
+        "hpperlevel": 109,
+        "hpregen": 6,
+        "hpregenperlevel": 0.6,
+        "movespeed": 335,
+        "mp": 295,
+        "mpperlevel": 45,
+        "mpregen": 6,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.45
+      },
+      "tags": [
+        "Assassin",
+        "Mage"
+      ],
+      "title": "奈德丽"
+    },
+    {
+      "aliases": [
+        "Udyr",
+        "兽灵行者"
+      ],
+      "id": 77,
+      "locale": "zh_CN",
+      "name": "兽灵行者",
+      "resource_type": "法力",
+      "source_key": "Udyr",
+      "stats": {
+        "armor": 31,
+        "armorperlevel": 4.7,
+        "attackdamage": 62,
+        "attackdamageperlevel": 4,
+        "attackrange": 125,
+        "attackspeed": 0.65,
+        "attackspeedperlevel": 3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 664,
+        "hpperlevel": 92,
+        "hpregen": 6,
+        "hpregenperlevel": 0.75,
+        "movespeed": 350,
+        "mp": 271,
+        "mpperlevel": 50,
+        "mpregen": 7.5,
+        "mpregenperlevel": 0.45,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "title": "乌迪尔"
+    },
+    {
+      "aliases": [
+        "Poppy",
+        "圣锤之毅"
+      ],
+      "id": 78,
+      "locale": "zh_CN",
+      "name": "圣锤之毅",
+      "resource_type": "法力",
+      "source_key": "Poppy",
+      "stats": {
+        "armor": 38,
+        "armorperlevel": 4.7,
+        "attackdamage": 64,
+        "attackdamageperlevel": 4,
+        "attackrange": 125,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 610,
+        "hpperlevel": 104,
+        "hpregen": 8,
+        "hpregenperlevel": 0.8,
+        "movespeed": 345,
+        "mp": 280,
+        "mpperlevel": 40,
+        "mpregen": 7,
+        "mpregenperlevel": 0.7,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Tank",
+        "Fighter"
+      ],
+      "title": "波比"
+    },
+    {
+      "aliases": [
+        "Gragas",
+        "酒桶"
+      ],
+      "id": 79,
+      "locale": "zh_CN",
+      "name": "酒桶",
+      "resource_type": "法力",
+      "source_key": "Gragas",
+      "stats": {
+        "armor": 38,
+        "armorperlevel": 5,
+        "attackdamage": 64,
+        "attackdamageperlevel": 3.5,
+        "attackrange": 125,
+        "attackspeed": 0.675,
+        "attackspeedperlevel": 2.05,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 640,
+        "hpperlevel": 115,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.5,
+        "movespeed": 330,
+        "mp": 400,
+        "mpperlevel": 47,
+        "mpregen": 6,
+        "mpregenperlevel": 0.8,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Mage"
+      ],
+      "title": "古拉加斯"
+    },
+    {
+      "aliases": [
+        "Pantheon",
+        "不屈之枪"
+      ],
+      "id": 80,
+      "locale": "zh_CN",
+      "name": "不屈之枪",
+      "resource_type": "法力",
+      "source_key": "Pantheon",
+      "stats": {
+        "armor": 40,
+        "armorperlevel": 4.95,
+        "attackdamage": 64,
+        "attackdamageperlevel": 3.3,
+        "attackrange": 175,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 2.95,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 650,
+        "hpperlevel": 109,
+        "hpregen": 6,
+        "hpregenperlevel": 0.65,
+        "movespeed": 345,
+        "mp": 317,
+        "mpperlevel": 31,
+        "mpregen": 7.35,
+        "mpregenperlevel": 0.45,
+        "spellblock": 28,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "title": "潘森"
+    },
+    {
+      "aliases": [
+        "Ezreal",
+        "探险家"
+      ],
+      "id": 81,
+      "locale": "zh_CN",
+      "name": "探险家",
+      "resource_type": "法力",
+      "source_key": "Ezreal",
+      "stats": {
+        "armor": 24,
+        "armorperlevel": 4.7,
+        "attackdamage": 62,
+        "attackdamageperlevel": 2.75,
+        "attackrange": 550,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 600,
+        "hpperlevel": 102,
+        "hpregen": 4,
+        "hpregenperlevel": 0.65,
+        "movespeed": 325,
+        "mp": 375,
+        "mpperlevel": 70,
+        "mpregen": 8.5,
+        "mpregenperlevel": 1,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman",
+        "Mage"
+      ],
+      "title": "伊泽瑞尔"
+    },
+    {
+      "aliases": [
+        "Mordekaiser",
+        "铁铠冥魂"
+      ],
+      "id": 82,
+      "locale": "zh_CN",
+      "name": "铁铠冥魂",
+      "resource_type": "护盾",
+      "source_key": "Mordekaiser",
+      "stats": {
+        "armor": 37,
+        "armorperlevel": 4.2,
+        "attackdamage": 61,
+        "attackdamageperlevel": 4,
+        "attackrange": 175,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 1,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 645,
+        "hpperlevel": 104,
+        "hpregen": 5,
+        "hpregenperlevel": 0.75,
+        "movespeed": 335,
+        "mp": 100,
+        "mpperlevel": 0,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Mage"
+      ],
+      "title": "莫德凯撒"
+    },
+    {
+      "aliases": [
+        "Yorick",
+        "牧魂人"
+      ],
+      "id": 83,
+      "locale": "zh_CN",
+      "name": "牧魂人",
+      "resource_type": "法力",
+      "source_key": "Yorick",
+      "stats": {
+        "armor": 39,
+        "armorperlevel": 5.2,
+        "attackdamage": 62,
+        "attackdamageperlevel": 5,
+        "attackrange": 175,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 650,
+        "hpperlevel": 114,
+        "hpregen": 8,
+        "hpregenperlevel": 0.8,
+        "movespeed": 340,
+        "mp": 300,
+        "mpperlevel": 60,
+        "mpregen": 7.5,
+        "mpregenperlevel": 0.75,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "title": "约里克"
+    },
+    {
+      "aliases": [
+        "Akali",
+        "离群之刺"
+      ],
+      "id": 84,
+      "locale": "zh_CN",
+      "name": "离群之刺",
+      "resource_type": "能量",
+      "source_key": "Akali",
+      "stats": {
+        "armor": 23,
+        "armorperlevel": 4.7,
+        "attackdamage": 62,
+        "attackdamageperlevel": 3.3,
+        "attackrange": 125,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 3.2,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 600,
+        "hpperlevel": 119,
+        "hpregen": 9,
+        "hpregenperlevel": 0.9,
+        "movespeed": 345,
+        "mp": 200,
+        "mpperlevel": 0,
+        "mpregen": 50,
+        "mpregenperlevel": 0,
+        "spellblock": 37,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Assassin"
+      ],
+      "title": "阿卡丽"
+    },
+    {
+      "aliases": [
+        "Kennen",
+        "狂暴之心"
+      ],
+      "id": 85,
+      "locale": "zh_CN",
+      "name": "狂暴之心",
+      "resource_type": "能量",
+      "source_key": "Kennen",
+      "stats": {
+        "armor": 29,
+        "armorperlevel": 4.95,
+        "attackdamage": 48,
+        "attackdamageperlevel": 3.75,
+        "attackrange": 550,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 3.4,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 580,
+        "hpperlevel": 98,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.65,
+        "movespeed": 335,
+        "mp": 200,
+        "mpperlevel": 0,
+        "mpregen": 50,
+        "mpregenperlevel": 0,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage"
+      ],
+      "title": "凯南"
+    },
+    {
+      "aliases": [
+        "Garen",
+        "德玛西亚之力"
+      ],
+      "id": 86,
+      "locale": "zh_CN",
+      "name": "德玛西亚之力",
+      "resource_type": "无",
+      "source_key": "Garen",
+      "stats": {
+        "armor": 38,
+        "armorperlevel": 4.2,
+        "attackdamage": 69,
+        "attackdamageperlevel": 4.5,
+        "attackrange": 175,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 3.65,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 690,
+        "hpperlevel": 98,
+        "hpregen": 8,
+        "hpregenperlevel": 0.5,
+        "movespeed": 340,
+        "mp": 0,
+        "mpperlevel": 0,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "spellblock": 32,
+        "spellblockperlevel": 1.55
+      },
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "title": "盖伦"
+    },
+    {
+      "aliases": [
+        "Leona",
+        "曙光女神"
+      ],
+      "id": 89,
+      "locale": "zh_CN",
+      "name": "曙光女神",
+      "resource_type": "法力",
+      "source_key": "Leona",
+      "stats": {
+        "armor": 47,
+        "armorperlevel": 4.8,
+        "attackdamage": 60,
+        "attackdamageperlevel": 3,
+        "attackrange": 125,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2.9,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 646,
+        "hpperlevel": 101,
+        "hpregen": 8.5,
+        "hpregenperlevel": 0.85,
+        "movespeed": 335,
+        "mp": 302,
+        "mpperlevel": 40,
+        "mpregen": 6,
+        "mpregenperlevel": 0.8,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Tank",
+        "Support"
+      ],
+      "title": "蕾欧娜"
+    },
+    {
+      "aliases": [
+        "Malzahar",
+        "虚空先知"
+      ],
+      "id": 90,
+      "locale": "zh_CN",
+      "name": "虚空先知",
+      "resource_type": "法力",
+      "source_key": "Malzahar",
+      "stats": {
+        "armor": 18,
+        "armorperlevel": 4.7,
+        "attackdamage": 55,
+        "attackdamageperlevel": 3,
+        "attackrange": 500,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 1.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 580,
+        "hpperlevel": 101,
+        "hpregen": 6,
+        "hpregenperlevel": 0.6,
+        "movespeed": 335,
+        "mp": 375,
+        "mpperlevel": 28,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage"
+      ],
+      "title": "玛尔扎哈"
+    },
+    {
+      "aliases": [
+        "Talon",
+        "刀锋之影"
+      ],
+      "id": 91,
+      "locale": "zh_CN",
+      "name": "刀锋之影",
+      "resource_type": "法力",
+      "source_key": "Talon",
+      "stats": {
+        "armor": 30,
+        "armorperlevel": 4.7,
+        "attackdamage": 68,
+        "attackdamageperlevel": 3.1,
+        "attackrange": 125,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2.9,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 658,
+        "hpperlevel": 109,
+        "hpregen": 8.5,
+        "hpregenperlevel": 0.75,
+        "movespeed": 335,
+        "mp": 400,
+        "mpperlevel": 37,
+        "mpregen": 7.6,
+        "mpregenperlevel": 0.8,
+        "spellblock": 39,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Assassin"
+      ],
+      "title": "泰隆"
+    },
+    {
+      "aliases": [
+        "Riven",
+        "放逐之刃"
+      ],
+      "id": 92,
+      "locale": "zh_CN",
+      "name": "放逐之刃",
+      "resource_type": "无",
+      "source_key": "Riven",
+      "stats": {
+        "armor": 33,
+        "armorperlevel": 4.4,
+        "attackdamage": 64,
+        "attackdamageperlevel": 3,
+        "attackrange": 125,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 3.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 630,
+        "hpperlevel": 100,
+        "hpregen": 8.5,
+        "hpregenperlevel": 0.5,
+        "movespeed": 340,
+        "mp": 0,
+        "mpperlevel": 0,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "title": "锐雯"
+    },
+    {
+      "aliases": [
+        "KogMaw",
+        "深渊巨口"
+      ],
+      "id": 96,
+      "locale": "zh_CN",
+      "name": "深渊巨口",
+      "resource_type": "法力",
+      "source_key": "KogMaw",
+      "stats": {
+        "armor": 24,
+        "armorperlevel": 4.45,
+        "attackdamage": 61,
+        "attackdamageperlevel": 3.1,
+        "attackrange": 500,
+        "attackspeed": 0.665,
+        "attackspeedperlevel": 2.65,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 635,
+        "hpperlevel": 99,
+        "hpregen": 3.75,
+        "hpregenperlevel": 0.55,
+        "movespeed": 330,
+        "mp": 325,
+        "mpperlevel": 40,
+        "mpregen": 8.75,
+        "mpregenperlevel": 0.7,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman",
+        "Mage"
+      ],
+      "title": "克格莫"
+    },
+    {
+      "aliases": [
+        "Shen",
+        "暮光之眼"
+      ],
+      "id": 98,
+      "locale": "zh_CN",
+      "name": "暮光之眼",
+      "resource_type": "能量",
+      "source_key": "Shen",
+      "stats": {
+        "armor": 34,
+        "armorperlevel": 4.2,
+        "attackdamage": 64,
+        "attackdamageperlevel": 3,
+        "attackrange": 125,
+        "attackspeed": 0.751,
+        "attackspeedperlevel": 3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 610,
+        "hpperlevel": 99,
+        "hpregen": 8.5,
+        "hpregenperlevel": 0.75,
+        "movespeed": 340,
+        "mp": 400,
+        "mpperlevel": 0,
+        "mpregen": 50,
+        "mpregenperlevel": 0,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Tank"
+      ],
+      "title": "慎"
+    },
+    {
+      "aliases": [
+        "Lux",
+        "光辉女郎"
+      ],
+      "id": 99,
+      "locale": "zh_CN",
+      "name": "光辉女郎",
+      "resource_type": "法力",
+      "source_key": "Lux",
+      "stats": {
+        "armor": 21,
+        "armorperlevel": 5.2,
+        "attackdamage": 54,
+        "attackdamageperlevel": 3.3,
+        "attackrange": 550,
+        "attackspeed": 0.669,
+        "attackspeedperlevel": 3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 580,
+        "hpperlevel": 99,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 330,
+        "mp": 480,
+        "mpperlevel": 23.5,
+        "mpregen": 7,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "title": "拉克丝"
+    },
+    {
+      "aliases": [
+        "Xerath",
+        "远古巫灵"
+      ],
+      "id": 101,
+      "locale": "zh_CN",
+      "name": "远古巫灵",
+      "resource_type": "法力",
+      "source_key": "Xerath",
+      "stats": {
+        "armor": 22,
+        "armorperlevel": 4.7,
+        "attackdamage": 55,
+        "attackdamageperlevel": 3,
+        "attackrange": 525,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 1.36,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 596,
+        "hpperlevel": 106,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 340,
+        "mp": 400,
+        "mpperlevel": 22,
+        "mpregen": 6.85,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "title": "泽拉斯"
+    },
+    {
+      "aliases": [
+        "Shyvana",
+        "龙血武姬"
+      ],
+      "id": 102,
+      "locale": "zh_CN",
+      "name": "龙血武姬",
+      "resource_type": "怒气",
+      "source_key": "Shyvana",
+      "stats": {
+        "armor": 38,
+        "armorperlevel": 4.55,
+        "attackdamage": 66,
+        "attackdamageperlevel": 3,
+        "attackrange": 125,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 2.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 665,
+        "hpperlevel": 104,
+        "hpregen": 8.5,
+        "hpregenperlevel": 0.8,
+        "movespeed": 350,
+        "mp": 100,
+        "mpperlevel": 0,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Mage"
+      ],
+      "title": "希瓦娜"
+    },
+    {
+      "aliases": [
+        "Ahri",
+        "九尾妖狐"
+      ],
+      "id": 103,
+      "locale": "zh_CN",
+      "name": "九尾妖狐",
+      "resource_type": "法力",
+      "source_key": "Ahri",
+      "stats": {
+        "armor": 21,
+        "armorperlevel": 4.7,
+        "attackdamage": 53,
+        "attackdamageperlevel": 3,
+        "attackrange": 550,
+        "attackspeed": 0.668,
+        "attackspeedperlevel": 2.2,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 590,
+        "hpperlevel": 104,
+        "hpregen": 2.5,
+        "hpregenperlevel": 0.6,
+        "movespeed": 330,
+        "mp": 418,
+        "mpperlevel": 25,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage",
+        "Assassin"
+      ],
+      "title": "阿狸"
+    },
+    {
+      "aliases": [
+        "Graves",
+        "法外狂徒"
+      ],
+      "id": 104,
+      "locale": "zh_CN",
+      "name": "法外狂徒",
+      "resource_type": "法力",
+      "source_key": "Graves",
+      "stats": {
+        "armor": 33,
+        "armorperlevel": 4.6,
+        "attackdamage": 68,
+        "attackdamageperlevel": 4,
+        "attackrange": 425,
+        "attackspeed": 0.475,
+        "attackspeedperlevel": 3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 625,
+        "hpperlevel": 106,
+        "hpregen": 8,
+        "hpregenperlevel": 0.7,
+        "movespeed": 340,
+        "mp": 325,
+        "mpperlevel": 40,
+        "mpregen": 8,
+        "mpregenperlevel": 0.7,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Marksman"
+      ],
+      "title": "格雷福斯"
+    },
+    {
+      "aliases": [
+        "Fizz",
+        "潮汐海灵"
+      ],
+      "id": 105,
+      "locale": "zh_CN",
+      "name": "潮汐海灵",
+      "resource_type": "法力",
+      "source_key": "Fizz",
+      "stats": {
+        "armor": 22,
+        "armorperlevel": 4.6,
+        "attackdamage": 58,
+        "attackdamageperlevel": 3,
+        "attackrange": 175,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 3.1,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 640,
+        "hpperlevel": 106,
+        "hpregen": 8,
+        "hpregenperlevel": 0.7,
+        "movespeed": 335,
+        "mp": 317,
+        "mpperlevel": 52,
+        "mpregen": 6,
+        "mpregenperlevel": 0.8,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Assassin",
+        "Fighter"
+      ],
+      "title": "菲兹"
+    },
+    {
+      "aliases": [
+        "Volibear",
+        "不灭狂雷"
+      ],
+      "id": 106,
+      "locale": "zh_CN",
+      "name": "不灭狂雷",
+      "resource_type": "法力",
+      "source_key": "Volibear",
+      "stats": {
+        "armor": 31,
+        "armorperlevel": 5.2,
+        "attackdamage": 60,
+        "attackdamageperlevel": 3.5,
+        "attackrange": 150,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 650,
+        "hpperlevel": 104,
+        "hpregen": 9,
+        "hpregenperlevel": 0.75,
+        "movespeed": 340,
+        "mp": 350,
+        "mpperlevel": 70,
+        "mpregen": 6.25,
+        "mpregenperlevel": 0.5,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "title": "沃利贝尔"
+    },
+    {
+      "aliases": [
+        "Rengar",
+        "傲之追猎者"
+      ],
+      "id": 107,
+      "locale": "zh_CN",
+      "name": "傲之追猎者",
+      "resource_type": "残暴",
+      "source_key": "Rengar",
+      "stats": {
+        "armor": 34,
+        "armorperlevel": 4.2,
+        "attackdamage": 68,
+        "attackdamageperlevel": 3,
+        "attackrange": 125,
+        "attackspeed": 0.667,
+        "attackspeedperlevel": 3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 590,
+        "hpperlevel": 104,
+        "hpregen": 6,
+        "hpregenperlevel": 0.5,
+        "movespeed": 345,
+        "mp": 4,
+        "mpperlevel": 0,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Assassin",
+        "Fighter"
+      ],
+      "title": "雷恩加尔"
+    },
+    {
+      "aliases": [
+        "Varus",
+        "惩戒之箭"
+      ],
+      "id": 110,
+      "locale": "zh_CN",
+      "name": "惩戒之箭",
+      "resource_type": "法力",
+      "source_key": "Varus",
+      "stats": {
+        "armor": 27,
+        "armorperlevel": 4.6,
+        "attackdamage": 59,
+        "attackdamageperlevel": 3.4,
+        "attackrange": 575,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 3.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 600,
+        "hpperlevel": 105,
+        "hpregen": 3.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 330,
+        "mp": 360,
+        "mpperlevel": 40,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman",
+        "Mage"
+      ],
+      "title": "韦鲁斯"
+    },
+    {
+      "aliases": [
+        "Nautilus",
+        "深海泰坦"
+      ],
+      "id": 111,
+      "locale": "zh_CN",
+      "name": "深海泰坦",
+      "resource_type": "法力",
+      "source_key": "Nautilus",
+      "stats": {
+        "armor": 39,
+        "armorperlevel": 4.95,
+        "attackdamage": 61,
+        "attackdamageperlevel": 3.3,
+        "attackrange": 175,
+        "attackspeed": 0.706,
+        "attackspeedperlevel": 1,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 646,
+        "hpperlevel": 100,
+        "hpregen": 8.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 325,
+        "mp": 400,
+        "mpperlevel": 47,
+        "mpregen": 8.65,
+        "mpregenperlevel": 0.5,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Tank",
+        "Support"
+      ],
+      "title": "诺提勒斯"
+    },
+    {
+      "aliases": [
+        "Viktor",
+        "机械先驱"
+      ],
+      "id": 112,
+      "locale": "zh_CN",
+      "name": "机械先驱",
+      "resource_type": "法力",
+      "source_key": "Viktor",
+      "stats": {
+        "armor": 23,
+        "armorperlevel": 5.2,
+        "attackdamage": 53,
+        "attackdamageperlevel": 3,
+        "attackrange": 525,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 2.11,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 600,
+        "hpperlevel": 104,
+        "hpregen": 8,
+        "hpregenperlevel": 0.65,
+        "movespeed": 335,
+        "mp": 405,
+        "mpperlevel": 45,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage"
+      ],
+      "title": "维克托"
+    },
+    {
+      "aliases": [
+        "Sejuani",
+        "北地之怒"
+      ],
+      "id": 113,
+      "locale": "zh_CN",
+      "name": "北地之怒",
+      "resource_type": "法力",
+      "source_key": "Sejuani",
+      "stats": {
+        "armor": 34,
+        "armorperlevel": 5.45,
+        "attackdamage": 66,
+        "attackdamageperlevel": 4,
+        "attackrange": 150,
+        "attackspeed": 0.688,
+        "attackspeedperlevel": 3.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 630,
+        "hpperlevel": 114,
+        "hpregen": 8.5,
+        "hpregenperlevel": 1,
+        "movespeed": 340,
+        "mp": 400,
+        "mpperlevel": 40,
+        "mpregen": 7,
+        "mpregenperlevel": 0.7,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Tank"
+      ],
+      "title": "瑟庄妮"
+    },
+    {
+      "aliases": [
+        "Fiora",
+        "无双剑姬"
+      ],
+      "id": 114,
+      "locale": "zh_CN",
+      "name": "无双剑姬",
+      "resource_type": "法力",
+      "source_key": "Fiora",
+      "stats": {
+        "armor": 33,
+        "armorperlevel": 4.7,
+        "attackdamage": 66,
+        "attackdamageperlevel": 3.3,
+        "attackrange": 150,
+        "attackspeed": 0.69,
+        "attackspeedperlevel": 3.2,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 620,
+        "hpperlevel": 99,
+        "hpregen": 8.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 345,
+        "mp": 300,
+        "mpperlevel": 60,
+        "mpregen": 8,
+        "mpregenperlevel": 0.7,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "title": "菲奥娜"
+    },
+    {
+      "aliases": [
+        "Ziggs",
+        "爆破鬼才"
+      ],
+      "id": 115,
+      "locale": "zh_CN",
+      "name": "爆破鬼才",
+      "resource_type": "法力",
+      "source_key": "Ziggs",
+      "stats": {
+        "armor": 21,
+        "armorperlevel": 4.7,
+        "attackdamage": 55,
+        "attackdamageperlevel": 3.1,
+        "attackrange": 550,
+        "attackspeed": 0.656,
+        "attackspeedperlevel": 2,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 606,
+        "hpperlevel": 106,
+        "hpregen": 6.5,
+        "hpregenperlevel": 0.6,
+        "movespeed": 325,
+        "mp": 480,
+        "mpperlevel": 23.5,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage"
+      ],
+      "title": "吉格斯"
+    },
+    {
+      "aliases": [
+        "Lulu",
+        "仙灵女巫"
+      ],
+      "id": 117,
+      "locale": "zh_CN",
+      "name": "仙灵女巫",
+      "resource_type": "法力",
+      "source_key": "Lulu",
+      "stats": {
+        "armor": 26,
+        "armorperlevel": 4.9,
+        "attackdamage": 47,
+        "attackdamageperlevel": 2.6,
+        "attackrange": 550,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2.25,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 595,
+        "hpperlevel": 92,
+        "hpregen": 6,
+        "hpregenperlevel": 0.6,
+        "movespeed": 330,
+        "mp": 350,
+        "mpperlevel": 55,
+        "mpregen": 11,
+        "mpregenperlevel": 0.6,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "title": "璐璐"
+    },
+    {
+      "aliases": [
+        "Draven",
+        "荣耀行刑官"
+      ],
+      "id": 119,
+      "locale": "zh_CN",
+      "name": "荣耀行刑官",
+      "resource_type": "法力",
+      "source_key": "Draven",
+      "stats": {
+        "armor": 29,
+        "armorperlevel": 4.5,
+        "attackdamage": 62,
+        "attackdamageperlevel": 3.6,
+        "attackrange": 550,
+        "attackspeed": 0.679,
+        "attackspeedperlevel": 2.7,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 675,
+        "hpperlevel": 104,
+        "hpregen": 3.75,
+        "hpregenperlevel": 0.7,
+        "movespeed": 330,
+        "mp": 361,
+        "mpperlevel": 39,
+        "mpregen": 8.05,
+        "mpregenperlevel": 0.65,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman"
+      ],
+      "title": "德莱文"
+    },
+    {
+      "aliases": [
+        "Hecarim",
+        "战争之影"
+      ],
+      "id": 120,
+      "locale": "zh_CN",
+      "name": "战争之影",
+      "resource_type": "法力",
+      "source_key": "Hecarim",
+      "stats": {
+        "armor": 32,
+        "armorperlevel": 5.45,
+        "attackdamage": 66,
+        "attackdamageperlevel": 3.7,
+        "attackrange": 175,
+        "attackspeed": 0.67,
+        "attackspeedperlevel": 2.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 625,
+        "hpperlevel": 106,
+        "hpregen": 7,
+        "hpregenperlevel": 0.75,
+        "movespeed": 345,
+        "mp": 280,
+        "mpperlevel": 40,
+        "mpregen": 7,
+        "mpregenperlevel": 0.8,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "title": "赫卡里姆"
+    },
+    {
+      "aliases": [
+        "Khazix",
+        "虚空掠夺者"
+      ],
+      "id": 121,
+      "locale": "zh_CN",
+      "name": "虚空掠夺者",
+      "resource_type": "法力",
+      "source_key": "Khazix",
+      "stats": {
+        "armor": 36,
+        "armorperlevel": 4.2,
+        "attackdamage": 60,
+        "attackdamageperlevel": 3.1,
+        "attackrange": 125,
+        "attackspeed": 0.668,
+        "attackspeedperlevel": 2.7,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 643,
+        "hpperlevel": 99,
+        "hpregen": 7.5,
+        "hpregenperlevel": 0.75,
+        "movespeed": 350,
+        "mp": 327,
+        "mpperlevel": 40,
+        "mpregen": 7.59,
+        "mpregenperlevel": 0.5,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Assassin"
+      ],
+      "title": "卡兹克"
+    },
+    {
+      "aliases": [
+        "Darius",
+        "诺克萨斯之手"
+      ],
+      "id": 122,
+      "locale": "zh_CN",
+      "name": "诺克萨斯之手",
+      "resource_type": "法力",
+      "source_key": "Darius",
+      "stats": {
+        "armor": 39,
+        "armorperlevel": 5.2,
+        "attackdamage": 64,
+        "attackdamageperlevel": 5,
+        "attackrange": 175,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 1,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 652,
+        "hpperlevel": 114,
+        "hpregen": 10,
+        "hpregenperlevel": 0.95,
+        "movespeed": 340,
+        "mp": 263,
+        "mpperlevel": 58,
+        "mpregen": 6.6,
+        "mpregenperlevel": 0.35,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "title": "德莱厄斯"
+    },
+    {
+      "aliases": [
+        "Jayce",
+        "未来守护者"
+      ],
+      "id": 126,
+      "locale": "zh_CN",
+      "name": "未来守护者",
+      "resource_type": "法力",
+      "source_key": "Jayce",
+      "stats": {
+        "armor": 22,
+        "armorperlevel": 5,
+        "attackdamage": 59,
+        "attackdamageperlevel": 4.25,
+        "attackrange": 125,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 590,
+        "hpperlevel": 109,
+        "hpregen": 6,
+        "hpregenperlevel": 0.6,
+        "movespeed": 335,
+        "mp": 375,
+        "mpperlevel": 45,
+        "mpregen": 6,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman",
+        "Fighter"
+      ],
+      "title": "杰斯"
+    },
+    {
+      "aliases": [
+        "Lissandra",
+        "冰霜女巫"
+      ],
+      "id": 127,
+      "locale": "zh_CN",
+      "name": "冰霜女巫",
+      "resource_type": "法力",
+      "source_key": "Lissandra",
+      "stats": {
+        "armor": 22,
+        "armorperlevel": 4.9,
+        "attackdamage": 55,
+        "attackdamageperlevel": 2.7,
+        "attackrange": 550,
+        "attackspeed": 0.656,
+        "attackspeedperlevel": 1.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 620,
+        "hpperlevel": 110,
+        "hpregen": 7,
+        "hpregenperlevel": 0.55,
+        "movespeed": 325,
+        "mp": 475,
+        "mpperlevel": 30,
+        "mpregen": 8,
+        "mpregenperlevel": 0.4,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage"
+      ],
+      "title": "丽桑卓"
+    },
+    {
+      "aliases": [
+        "Diana",
+        "皎月女神"
+      ],
+      "id": 131,
+      "locale": "zh_CN",
+      "name": "皎月女神",
+      "resource_type": "法力",
+      "source_key": "Diana",
+      "stats": {
+        "armor": 31,
+        "armorperlevel": 4.3,
+        "attackdamage": 57,
+        "attackdamageperlevel": 3,
+        "attackrange": 150,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 640,
+        "hpperlevel": 109,
+        "hpregen": 6.5,
+        "hpregenperlevel": 0.85,
+        "movespeed": 345,
+        "mp": 375,
+        "mpperlevel": 25,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "title": "黛安娜"
+    },
+    {
+      "aliases": [
+        "Quinn",
+        "德玛西亚之翼"
+      ],
+      "id": 133,
+      "locale": "zh_CN",
+      "name": "德玛西亚之翼",
+      "resource_type": "法力",
+      "source_key": "Quinn",
+      "stats": {
+        "armor": 28,
+        "armorperlevel": 4.7,
+        "attackdamage": 59,
+        "attackdamageperlevel": 2.7,
+        "attackrange": 525,
+        "attackspeed": 0.668,
+        "attackspeedperlevel": 3.1,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 565,
+        "hpperlevel": 107,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 330,
+        "mp": 269,
+        "mpperlevel": 35,
+        "mpregen": 7,
+        "mpregenperlevel": 0.4,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman",
+        "Assassin"
+      ],
+      "title": "奎因"
+    },
+    {
+      "aliases": [
+        "Syndra",
+        "暗黑元首"
+      ],
+      "id": 134,
+      "locale": "zh_CN",
+      "name": "暗黑元首",
+      "resource_type": "法力",
+      "source_key": "Syndra",
+      "stats": {
+        "armor": 25,
+        "armorperlevel": 4.6,
+        "attackdamage": 54,
+        "attackdamageperlevel": 2.9,
+        "attackrange": 550,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 2,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 563,
+        "hpperlevel": 104,
+        "hpregen": 6.5,
+        "hpregenperlevel": 0.6,
+        "movespeed": 330,
+        "mp": 480,
+        "mpperlevel": 40,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage"
+      ],
+      "title": "辛德拉"
+    },
+    {
+      "aliases": [
+        "AurelionSol",
+        "铸星龙王"
+      ],
+      "id": 136,
+      "locale": "zh_CN",
+      "name": "铸星龙王",
+      "resource_type": "法力",
+      "source_key": "AurelionSol",
+      "stats": {
+        "armor": 22,
+        "armorperlevel": 4,
+        "attackdamage": 58,
+        "attackdamageperlevel": 3.2,
+        "attackrange": 550,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 1.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 620,
+        "hpperlevel": 90,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 335,
+        "mp": 530,
+        "mpperlevel": 40,
+        "mpregen": 8,
+        "mpregenperlevel": 0.75,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage"
+      ],
+      "title": "奥瑞利安·索尔"
+    },
+    {
+      "aliases": [
+        "Kayn",
+        "影流之镰"
+      ],
+      "id": 141,
+      "locale": "zh_CN",
+      "name": "影流之镰",
+      "resource_type": "法力",
+      "source_key": "Kayn",
+      "stats": {
+        "armor": 38,
+        "armorperlevel": 4.5,
+        "attackdamage": 68,
+        "attackdamageperlevel": 3.3,
+        "attackrange": 175,
+        "attackspeed": 0.669,
+        "attackspeedperlevel": 2.7,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 655,
+        "hpperlevel": 109,
+        "hpregen": 8,
+        "hpregenperlevel": 0.75,
+        "movespeed": 340,
+        "mp": 410,
+        "mpperlevel": 50,
+        "mpregen": 11.5,
+        "mpregenperlevel": 0.95,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "title": "凯隐"
+    },
+    {
+      "aliases": [
+        "Zoe",
+        "暮光星灵"
+      ],
+      "id": 142,
+      "locale": "zh_CN",
+      "name": "暮光星灵",
+      "resource_type": "法力",
+      "source_key": "Zoe",
+      "stats": {
+        "armor": 21,
+        "armorperlevel": 4.7,
+        "attackdamage": 58,
+        "attackdamageperlevel": 3.3,
+        "attackrange": 550,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 2.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 630,
+        "hpperlevel": 106,
+        "hpregen": 7.5,
+        "hpregenperlevel": 0.6,
+        "movespeed": 340,
+        "mp": 425,
+        "mpperlevel": 25,
+        "mpregen": 8,
+        "mpregenperlevel": 0.65,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage"
+      ],
+      "title": "佐伊"
+    },
+    {
+      "aliases": [
+        "Zyra",
+        "荆棘之兴"
+      ],
+      "id": 143,
+      "locale": "zh_CN",
+      "name": "荆棘之兴",
+      "resource_type": "法力",
+      "source_key": "Zyra",
+      "stats": {
+        "armor": 29,
+        "armorperlevel": 4.2,
+        "attackdamage": 53,
+        "attackdamageperlevel": 3.2,
+        "attackrange": 575,
+        "attackspeed": 0.681,
+        "attackspeedperlevel": 2.11,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 574,
+        "hpperlevel": 93,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.5,
+        "movespeed": 340,
+        "mp": 418,
+        "mpperlevel": 25,
+        "mpregen": 7,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "title": "婕拉"
+    },
+    {
+      "aliases": [
+        "Kaisa",
+        "虚空之女"
+      ],
+      "id": 145,
+      "locale": "zh_CN",
+      "name": "虚空之女",
+      "resource_type": "法力",
+      "source_key": "Kaisa",
+      "stats": {
+        "armor": 25,
+        "armorperlevel": 4.2,
+        "attackdamage": 59,
+        "attackdamageperlevel": 2.6,
+        "attackrange": 525,
+        "attackspeed": 0.644,
+        "attackspeedperlevel": 1.8,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 640,
+        "hpperlevel": 102,
+        "hpregen": 3.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 335,
+        "mp": 345,
+        "mpperlevel": 40,
+        "mpregen": 8.2,
+        "mpregenperlevel": 0.7,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman",
+        "Mage"
+      ],
+      "title": "卡莎"
+    },
+    {
+      "aliases": [
+        "Seraphine",
+        "星籁歌姬"
+      ],
+      "id": 147,
+      "locale": "zh_CN",
+      "name": "星籁歌姬",
+      "resource_type": "法力",
+      "source_key": "Seraphine",
+      "stats": {
+        "armor": 26,
+        "armorperlevel": 4.2,
+        "attackdamage": 50,
+        "attackdamageperlevel": 3,
+        "attackrange": 525,
+        "attackspeed": 0.669,
+        "attackspeedperlevel": 2,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 570,
+        "hpperlevel": 90,
+        "hpregen": 6.5,
+        "hpregenperlevel": 0.6,
+        "movespeed": 330,
+        "mp": 360,
+        "mpperlevel": 25,
+        "mpregen": 11.5,
+        "mpregenperlevel": 0.95,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "title": "萨勒芬妮"
+    },
+    {
+      "aliases": [
+        "Gnar",
+        "迷失之牙"
+      ],
+      "id": 150,
+      "locale": "zh_CN",
+      "name": "迷失之牙",
+      "resource_type": "怒气",
+      "source_key": "Gnar",
+      "stats": {
+        "armor": 32,
+        "armorperlevel": 3.7,
+        "attackdamage": 57,
+        "attackdamageperlevel": 3.2,
+        "attackrange": 175,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 6,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 540,
+        "hpperlevel": 79,
+        "hpregen": 4.5,
+        "hpregenperlevel": 1.25,
+        "movespeed": 335,
+        "mp": 100,
+        "mpperlevel": 0,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "title": "纳尔"
+    },
+    {
+      "aliases": [
+        "Zac",
+        "生化魔人"
+      ],
+      "id": 154,
+      "locale": "zh_CN",
+      "name": "生化魔人",
+      "resource_type": "无",
+      "source_key": "Zac",
+      "stats": {
+        "armor": 33,
+        "armorperlevel": 4.7,
+        "attackdamage": 60,
+        "attackdamageperlevel": 3.4,
+        "attackrange": 175,
+        "attackspeed": 0.736,
+        "attackspeedperlevel": 1.6,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 685,
+        "hpperlevel": 109,
+        "hpregen": 5,
+        "hpregenperlevel": 0.5,
+        "movespeed": 340,
+        "mp": 0,
+        "mpperlevel": 0,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Tank",
+        "Fighter"
+      ],
+      "title": "扎克"
+    },
+    {
+      "aliases": [
+        "Yasuo",
+        "疾风剑豪"
+      ],
+      "id": 157,
+      "locale": "zh_CN",
+      "name": "疾风剑豪",
+      "resource_type": "剑意",
+      "source_key": "Yasuo",
+      "stats": {
+        "armor": 32,
+        "armorperlevel": 4.6,
+        "attackdamage": 60,
+        "attackdamageperlevel": 3,
+        "attackrange": 175,
+        "attackspeed": 0.697,
+        "attackspeedperlevel": 3.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 590,
+        "hpperlevel": 110,
+        "hpregen": 6.5,
+        "hpregenperlevel": 0.9,
+        "movespeed": 345,
+        "mp": 100,
+        "mpperlevel": 0,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "title": "亚索"
+    },
+    {
+      "aliases": [
+        "Velkoz",
+        "虚空之眼"
+      ],
+      "id": 161,
+      "locale": "zh_CN",
+      "name": "虚空之眼",
+      "resource_type": "法力",
+      "source_key": "Velkoz",
+      "stats": {
+        "armor": 22,
+        "armorperlevel": 4.7,
+        "attackdamage": 55,
+        "attackdamageperlevel": 3.1416,
+        "attackrange": 525,
+        "attackspeed": 0.643,
+        "attackspeedperlevel": 1.59,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 590,
+        "hpperlevel": 102,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 340,
+        "mp": 469,
+        "mpperlevel": 21,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "title": "维克兹"
+    },
+    {
+      "aliases": [
+        "Taliyah",
+        "岩雀"
+      ],
+      "id": 163,
+      "locale": "zh_CN",
+      "name": "岩雀",
+      "resource_type": "法力",
+      "source_key": "Taliyah",
+      "stats": {
+        "armor": 18,
+        "armorperlevel": 4.7,
+        "attackdamage": 58,
+        "attackdamageperlevel": 3.3,
+        "attackrange": 525,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 1.36,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 550,
+        "hpperlevel": 104,
+        "hpregen": 6.5,
+        "hpregenperlevel": 0.65,
+        "movespeed": 330,
+        "mp": 470,
+        "mpperlevel": 30,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "title": "塔莉垭"
+    },
+    {
+      "aliases": [
+        "Camille",
+        "青钢影"
+      ],
+      "id": 164,
+      "locale": "zh_CN",
+      "name": "青钢影",
+      "resource_type": "法力",
+      "source_key": "Camille",
+      "stats": {
+        "armor": 35,
+        "armorperlevel": 5,
+        "attackdamage": 68,
+        "attackdamageperlevel": 3.8,
+        "attackrange": 125,
+        "attackspeed": 0.644,
+        "attackspeedperlevel": 2.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 670,
+        "hpperlevel": 99,
+        "hpregen": 8.5,
+        "hpregenperlevel": 0.8,
+        "movespeed": 340,
+        "mp": 339,
+        "mpperlevel": 52,
+        "mpregen": 8.15,
+        "mpregenperlevel": 0.75,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "title": "卡蜜尔"
+    },
+    {
+      "aliases": [
+        "Akshan",
+        "影哨"
+      ],
+      "id": 166,
+      "locale": "zh_CN",
+      "name": "影哨",
+      "resource_type": "法力",
+      "source_key": "Akshan",
+      "stats": {
+        "armor": 26,
+        "armorperlevel": 4.7,
+        "attackdamage": 52,
+        "attackdamageperlevel": 3,
+        "attackrange": 500,
+        "attackspeed": 0.638,
+        "attackspeedperlevel": 4,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 630,
+        "hpperlevel": 107,
+        "hpregen": 3.75,
+        "hpregenperlevel": 0.65,
+        "movespeed": 330,
+        "mp": 350,
+        "mpperlevel": 40,
+        "mpregen": 8.2,
+        "mpregenperlevel": 0.7,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman",
+        "Assassin"
+      ],
+      "title": "阿克尚"
+    },
+    {
+      "aliases": [
+        "Belveth",
+        "虚空女皇"
+      ],
+      "id": 200,
+      "locale": "zh_CN",
+      "name": "虚空女皇",
+      "resource_type": "",
+      "source_key": "Belveth",
+      "stats": {
+        "armor": 32,
+        "armorperlevel": 4.7,
+        "attackdamage": 60,
+        "attackdamageperlevel": 1.5,
+        "attackrange": 150,
+        "attackspeed": 0.85,
+        "attackspeedperlevel": 0,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 610,
+        "hpperlevel": 99,
+        "hpregen": 6,
+        "hpregenperlevel": 0.6,
+        "movespeed": 340,
+        "mp": 60,
+        "mpperlevel": 0,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter"
+      ],
+      "title": "卑尔维斯"
+    },
+    {
+      "aliases": [
+        "Braum",
+        "弗雷尔卓德之心"
+      ],
+      "id": 201,
+      "locale": "zh_CN",
+      "name": "弗雷尔卓德之心",
+      "resource_type": "法力",
+      "source_key": "Braum",
+      "stats": {
+        "armor": 47,
+        "armorperlevel": 5.2,
+        "attackdamage": 55,
+        "attackdamageperlevel": 3.2,
+        "attackrange": 125,
+        "attackspeed": 0.644,
+        "attackspeedperlevel": 3.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 610,
+        "hpperlevel": 112,
+        "hpregen": 8.5,
+        "hpregenperlevel": 1,
+        "movespeed": 335,
+        "mp": 311,
+        "mpperlevel": 45,
+        "mpregen": 7,
+        "mpregenperlevel": 0.8,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Tank",
+        "Support"
+      ],
+      "title": "布隆"
+    },
+    {
+      "aliases": [
+        "Jhin",
+        "戏命师"
+      ],
+      "id": 202,
+      "locale": "zh_CN",
+      "name": "戏命师",
+      "resource_type": "法力",
+      "source_key": "Jhin",
+      "stats": {
+        "armor": 24,
+        "armorperlevel": 4.7,
+        "attackdamage": 59,
+        "attackdamageperlevel": 4.7,
+        "attackrange": 550,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 0,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 655,
+        "hpperlevel": 107,
+        "hpregen": 3.75,
+        "hpregenperlevel": 0.55,
+        "movespeed": 330,
+        "mp": 300,
+        "mpperlevel": 50,
+        "mpregen": 6,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman",
+        "Mage"
+      ],
+      "title": "烬"
+    },
+    {
+      "aliases": [
+        "Kindred",
+        "永猎双子"
+      ],
+      "id": 203,
+      "locale": "zh_CN",
+      "name": "永猎双子",
+      "resource_type": "法力",
+      "source_key": "Kindred",
+      "stats": {
+        "armor": 29,
+        "armorperlevel": 4.7,
+        "attackdamage": 65,
+        "attackdamageperlevel": 3.25,
+        "attackrange": 500,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 3.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 595,
+        "hpperlevel": 104,
+        "hpregen": 7,
+        "hpregenperlevel": 0.55,
+        "movespeed": 325,
+        "mp": 300,
+        "mpperlevel": 35,
+        "mpregen": 7,
+        "mpregenperlevel": 0.4,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman"
+      ],
+      "title": "千珏"
+    },
+    {
+      "aliases": [
+        "Zeri",
+        "祖安花火"
+      ],
+      "id": 221,
+      "locale": "zh_CN",
+      "name": "祖安花火",
+      "resource_type": "法力",
+      "source_key": "Zeri",
+      "stats": {
+        "armor": 24,
+        "armorperlevel": 4.2,
+        "attackdamage": 56,
+        "attackdamageperlevel": 2,
+        "attackrange": 500,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 2,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 600,
+        "hpperlevel": 110,
+        "hpregen": 3.25,
+        "hpregenperlevel": 0.7,
+        "movespeed": 330,
+        "mp": 250,
+        "mpperlevel": 45,
+        "mpregen": 6,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman"
+      ],
+      "title": "泽丽"
+    },
+    {
+      "aliases": [
+        "Jinx",
+        "暴走萝莉"
+      ],
+      "id": 222,
+      "locale": "zh_CN",
+      "name": "暴走萝莉",
+      "resource_type": "法力",
+      "source_key": "Jinx",
+      "stats": {
+        "armor": 26,
+        "armorperlevel": 4.7,
+        "attackdamage": 59,
+        "attackdamageperlevel": 2.9,
+        "attackrange": 525,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 1,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 630,
+        "hpperlevel": 105,
+        "hpregen": 3.75,
+        "hpregenperlevel": 0.5,
+        "movespeed": 325,
+        "mp": 260,
+        "mpperlevel": 50,
+        "mpregen": 6.7,
+        "mpregenperlevel": 1,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman"
+      ],
+      "title": "金克丝"
+    },
+    {
+      "aliases": [
+        "TahmKench",
+        "河流之王"
+      ],
+      "id": 223,
+      "locale": "zh_CN",
+      "name": "河流之王",
+      "resource_type": "法力",
+      "source_key": "TahmKench",
+      "stats": {
+        "armor": 42,
+        "armorperlevel": 4.7,
+        "attackdamage": 56,
+        "attackdamageperlevel": 3.2,
+        "attackrange": 175,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 2.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 640,
+        "hpperlevel": 103,
+        "hpregen": 6.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 335,
+        "mp": 325,
+        "mpperlevel": 50,
+        "mpregen": 8,
+        "mpregenperlevel": 1,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Tank",
+        "Support"
+      ],
+      "title": "塔姆"
+    },
+    {
+      "aliases": [
+        "Briar",
+        "狂厄蔷薇"
+      ],
+      "id": 233,
+      "locale": "zh_CN",
+      "name": "狂厄蔷薇",
+      "resource_type": "怒气",
+      "source_key": "Briar",
+      "stats": {
+        "armor": 30,
+        "armorperlevel": 4.2,
+        "attackdamage": 60,
+        "attackdamageperlevel": 3,
+        "attackrange": 125,
+        "attackspeed": 0.644,
+        "attackspeedperlevel": 2,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 590,
+        "hpperlevel": 95,
+        "hpregen": 0,
+        "hpregenperlevel": 0,
+        "movespeed": 340,
+        "mp": 0,
+        "mpperlevel": 0,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "title": "贝蕾亚"
+    },
+    {
+      "aliases": [
+        "Viego",
+        "破败之王"
+      ],
+      "id": 234,
+      "locale": "zh_CN",
+      "name": "破败之王",
+      "resource_type": "无",
+      "source_key": "Viego",
+      "stats": {
+        "armor": 34,
+        "armorperlevel": 5.2,
+        "attackdamage": 57,
+        "attackdamageperlevel": 3.5,
+        "attackrange": 200,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 2.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 630,
+        "hpperlevel": 109,
+        "hpregen": 7,
+        "hpregenperlevel": 0.7,
+        "movespeed": 345,
+        "mp": 10000,
+        "mpperlevel": 0,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "title": "佛耶戈"
+    },
+    {
+      "aliases": [
+        "Senna",
+        "涤魂圣枪"
+      ],
+      "id": 235,
+      "locale": "zh_CN",
+      "name": "涤魂圣枪",
+      "resource_type": "法力",
+      "source_key": "Senna",
+      "stats": {
+        "armor": 28,
+        "armorperlevel": 4.7,
+        "attackdamage": 50,
+        "attackdamageperlevel": 0,
+        "attackrange": 600,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 530,
+        "hpperlevel": 89,
+        "hpregen": 3.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 330,
+        "mp": 350,
+        "mpperlevel": 45,
+        "mpregen": 11.5,
+        "mpregenperlevel": 0.7,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Support",
+        "Marksman"
+      ],
+      "title": "赛娜"
+    },
+    {
+      "aliases": [
+        "Lucian",
+        "圣枪游侠"
+      ],
+      "id": 236,
+      "locale": "zh_CN",
+      "name": "圣枪游侠",
+      "resource_type": "法力",
+      "source_key": "Lucian",
+      "stats": {
+        "armor": 28,
+        "armorperlevel": 4.2,
+        "attackdamage": 60,
+        "attackdamageperlevel": 2.9,
+        "attackrange": 500,
+        "attackspeed": 0.638,
+        "attackspeedperlevel": 3.3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 641,
+        "hpperlevel": 100,
+        "hpregen": 3.75,
+        "hpregenperlevel": 0.65,
+        "movespeed": 335,
+        "mp": 320,
+        "mpperlevel": 43,
+        "mpregen": 7,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman",
+        "Assassin"
+      ],
+      "title": "卢锡安"
+    },
+    {
+      "aliases": [
+        "Zed",
+        "影流之主"
+      ],
+      "id": 238,
+      "locale": "zh_CN",
+      "name": "影流之主",
+      "resource_type": "能量",
+      "source_key": "Zed",
+      "stats": {
+        "armor": 32,
+        "armorperlevel": 4.7,
+        "attackdamage": 63,
+        "attackdamageperlevel": 3.4,
+        "attackrange": 125,
+        "attackspeed": 0.651,
+        "attackspeedperlevel": 3.3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 654,
+        "hpperlevel": 99,
+        "hpregen": 7,
+        "hpregenperlevel": 0.65,
+        "movespeed": 345,
+        "mp": 200,
+        "mpperlevel": 0,
+        "mpregen": 50,
+        "mpregenperlevel": 0,
+        "spellblock": 29,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Assassin"
+      ],
+      "title": "劫"
+    },
+    {
+      "aliases": [
+        "Kled",
+        "暴怒骑士"
+      ],
+      "id": 240,
+      "locale": "zh_CN",
+      "name": "暴怒骑士",
+      "resource_type": "勇气",
+      "source_key": "Kled",
+      "stats": {
+        "armor": 35,
+        "armorperlevel": 5.2,
+        "attackdamage": 65,
+        "attackdamageperlevel": 3.5,
+        "attackrange": 125,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 3.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 410,
+        "hpperlevel": 84,
+        "hpregen": 6,
+        "hpregenperlevel": 0.75,
+        "movespeed": 345,
+        "mp": 100,
+        "mpperlevel": 0,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "spellblock": 28,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter"
+      ],
+      "title": "克烈"
+    },
+    {
+      "aliases": [
+        "Ekko",
+        "时间刺客"
+      ],
+      "id": 245,
+      "locale": "zh_CN",
+      "name": "时间刺客",
+      "resource_type": "法力",
+      "source_key": "Ekko",
+      "stats": {
+        "armor": 32,
+        "armorperlevel": 4.2,
+        "attackdamage": 58,
+        "attackdamageperlevel": 3,
+        "attackrange": 125,
+        "attackspeed": 0.688,
+        "attackspeedperlevel": 3.3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 655,
+        "hpperlevel": 99,
+        "hpregen": 9,
+        "hpregenperlevel": 0.9,
+        "movespeed": 340,
+        "mp": 280,
+        "mpperlevel": 70,
+        "mpregen": 7,
+        "mpregenperlevel": 0.8,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Assassin",
+        "Mage"
+      ],
+      "title": "艾克"
+    },
+    {
+      "aliases": [
+        "Qiyana",
+        "元素女皇"
+      ],
+      "id": 246,
+      "locale": "zh_CN",
+      "name": "元素女皇",
+      "resource_type": "法力",
+      "source_key": "Qiyana",
+      "stats": {
+        "armor": 31,
+        "armorperlevel": 4.7,
+        "attackdamage": 66,
+        "attackdamageperlevel": 3.1,
+        "attackrange": 150,
+        "attackspeed": 0.688,
+        "attackspeedperlevel": 2.1,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 590,
+        "hpperlevel": 124,
+        "hpregen": 6,
+        "hpregenperlevel": 0.9,
+        "movespeed": 335,
+        "mp": 375,
+        "mpperlevel": 60,
+        "mpregen": 8,
+        "mpregenperlevel": 0.7,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Assassin"
+      ],
+      "title": "奇亚娜"
+    },
+    {
+      "aliases": [
+        "Vi",
+        "皮城执法官"
+      ],
+      "id": 254,
+      "locale": "zh_CN",
+      "name": "皮城执法官",
+      "resource_type": "法力",
+      "source_key": "Vi",
+      "stats": {
+        "armor": 30,
+        "armorperlevel": 4.7,
+        "attackdamage": 63,
+        "attackdamageperlevel": 3,
+        "attackrange": 125,
+        "attackspeed": 0.644,
+        "attackspeedperlevel": 2,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 655,
+        "hpperlevel": 99,
+        "hpregen": 10,
+        "hpregenperlevel": 1,
+        "movespeed": 340,
+        "mp": 295,
+        "mpperlevel": 65,
+        "mpregen": 8,
+        "mpregenperlevel": 0.65,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "title": "蔚"
+    },
+    {
+      "aliases": [
+        "Aatrox",
+        "暗裔剑魔"
+      ],
+      "id": 266,
+      "locale": "zh_CN",
+      "name": "暗裔剑魔",
+      "resource_type": "鲜血魔井",
+      "source_key": "Aatrox",
+      "stats": {
+        "armor": 38,
+        "armorperlevel": 4.8,
+        "attackdamage": 60,
+        "attackdamageperlevel": 5,
+        "attackrange": 175,
+        "attackspeed": 0.651,
+        "attackspeedperlevel": 2.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 650,
+        "hpperlevel": 114,
+        "hpregen": 3,
+        "hpregenperlevel": 0.5,
+        "movespeed": 345,
+        "mp": 0,
+        "mpperlevel": 0,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter"
+      ],
+      "title": "亚托克斯"
+    },
+    {
+      "aliases": [
+        "Nami",
+        "唤潮鲛姬"
+      ],
+      "id": 267,
+      "locale": "zh_CN",
+      "name": "唤潮鲛姬",
+      "resource_type": "法力",
+      "source_key": "Nami",
+      "stats": {
+        "armor": 29,
+        "armorperlevel": 5.2,
+        "attackdamage": 54,
+        "attackdamageperlevel": 3.1,
+        "attackrange": 550,
+        "attackspeed": 0.644,
+        "attackspeedperlevel": 2.61,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 560,
+        "hpperlevel": 88,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 335,
+        "mp": 365,
+        "mpperlevel": 43,
+        "mpregen": 11.5,
+        "mpregenperlevel": 0.4,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "title": "娜美"
+    },
+    {
+      "aliases": [
+        "Azir",
+        "沙漠皇帝"
+      ],
+      "id": 268,
+      "locale": "zh_CN",
+      "name": "沙漠皇帝",
+      "resource_type": "法力",
+      "source_key": "Azir",
+      "stats": {
+        "armor": 25,
+        "armorperlevel": 5,
+        "attackdamage": 52,
+        "attackdamageperlevel": 3.5,
+        "attackrange": 525,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 6,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 550,
+        "hpperlevel": 119,
+        "hpregen": 5,
+        "hpregenperlevel": 0.75,
+        "movespeed": 335,
+        "mp": 320,
+        "mpperlevel": 40,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage",
+        "Marksman"
+      ],
+      "title": "阿兹尔"
+    },
+    {
+      "aliases": [
+        "Yuumi",
+        "魔法猫咪"
+      ],
+      "id": 350,
+      "locale": "zh_CN",
+      "name": "魔法猫咪",
+      "resource_type": "法力",
+      "source_key": "Yuumi",
+      "stats": {
+        "armor": 25,
+        "armorperlevel": 4.2,
+        "attackdamage": 49,
+        "attackdamageperlevel": 3.1,
+        "attackrange": 425,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 1,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 500,
+        "hpperlevel": 69,
+        "hpregen": 5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 330,
+        "mp": 440,
+        "mpperlevel": 45,
+        "mpregen": 10,
+        "mpregenperlevel": 0.4,
+        "spellblock": 25,
+        "spellblockperlevel": 1.1
+      },
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "title": "悠米"
+    },
+    {
+      "aliases": [
+        "Samira",
+        "沙漠玫瑰"
+      ],
+      "id": 360,
+      "locale": "zh_CN",
+      "name": "沙漠玫瑰",
+      "resource_type": "法力",
+      "source_key": "Samira",
+      "stats": {
+        "armor": 26,
+        "armorperlevel": 4.7,
+        "attackdamage": 57,
+        "attackdamageperlevel": 3,
+        "attackrange": 500,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 3.3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 630,
+        "hpperlevel": 108,
+        "hpregen": 3.25,
+        "hpregenperlevel": 0.55,
+        "movespeed": 335,
+        "mp": 349,
+        "mpperlevel": 38,
+        "mpregen": 8.2,
+        "mpregenperlevel": 0.7,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman",
+        "Assassin"
+      ],
+      "title": "莎弥拉"
+    },
+    {
+      "aliases": [
+        "Thresh",
+        "魂锁典狱长"
+      ],
+      "id": 412,
+      "locale": "zh_CN",
+      "name": "魂锁典狱长",
+      "resource_type": "法力",
+      "source_key": "Thresh",
+      "stats": {
+        "armor": 33,
+        "armorperlevel": 0,
+        "attackdamage": 56,
+        "attackdamageperlevel": 2.2,
+        "attackrange": 450,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 3.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 600,
+        "hpperlevel": 120,
+        "hpregen": 7,
+        "hpregenperlevel": 0.55,
+        "movespeed": 330,
+        "mp": 274,
+        "mpperlevel": 44,
+        "mpregen": 6,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.55
+      },
+      "tags": [
+        "Support",
+        "Tank"
+      ],
+      "title": "锤石"
+    },
+    {
+      "aliases": [
+        "Illaoi",
+        "海兽祭司"
+      ],
+      "id": 420,
+      "locale": "zh_CN",
+      "name": "海兽祭司",
+      "resource_type": "法力",
+      "source_key": "Illaoi",
+      "stats": {
+        "armor": 35,
+        "armorperlevel": 5,
+        "attackdamage": 68,
+        "attackdamageperlevel": 5,
+        "attackrange": 125,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 656,
+        "hpperlevel": 115,
+        "hpregen": 9.5,
+        "hpregenperlevel": 0.8,
+        "movespeed": 350,
+        "mp": 350,
+        "mpperlevel": 60,
+        "mpregen": 7.5,
+        "mpregenperlevel": 0.75,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "title": "俄洛伊"
+    },
+    {
+      "aliases": [
+        "RekSai",
+        "虚空遁地兽"
+      ],
+      "id": 421,
+      "locale": "zh_CN",
+      "name": "虚空遁地兽",
+      "resource_type": "怒气",
+      "source_key": "RekSai",
+      "stats": {
+        "armor": 36,
+        "armorperlevel": 4.95,
+        "attackdamage": 58,
+        "attackdamageperlevel": 3,
+        "attackrange": 175,
+        "attackspeed": 0.667,
+        "attackspeedperlevel": 2,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 600,
+        "hpperlevel": 99,
+        "hpregen": 2.5,
+        "hpregenperlevel": 0.5,
+        "movespeed": 340,
+        "mp": 100,
+        "mpperlevel": 0,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "title": "雷克塞"
+    },
+    {
+      "aliases": [
+        "Ivern",
+        "翠神"
+      ],
+      "id": 427,
+      "locale": "zh_CN",
+      "name": "翠神",
+      "resource_type": "法力",
+      "source_key": "Ivern",
+      "stats": {
+        "armor": 27,
+        "armorperlevel": 4.7,
+        "attackdamage": 50,
+        "attackdamageperlevel": 3,
+        "attackrange": 475,
+        "attackspeed": 0.644,
+        "attackspeedperlevel": 3.4,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 630,
+        "hpperlevel": 99,
+        "hpregen": 7,
+        "hpregenperlevel": 0.85,
+        "movespeed": 330,
+        "mp": 450,
+        "mpperlevel": 60,
+        "mpregen": 6,
+        "mpregenperlevel": 0.75,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "title": "艾翁"
+    },
+    {
+      "aliases": [
+        "Kalista",
+        "复仇之矛"
+      ],
+      "id": 429,
+      "locale": "zh_CN",
+      "name": "复仇之矛",
+      "resource_type": "法力",
+      "source_key": "Kalista",
+      "stats": {
+        "armor": 24,
+        "armorperlevel": 5.2,
+        "attackdamage": 59,
+        "attackdamageperlevel": 3.25,
+        "attackrange": 525,
+        "attackspeed": 0.694,
+        "attackspeedperlevel": 4.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 600,
+        "hpperlevel": 114,
+        "hpregen": 4,
+        "hpregenperlevel": 0.75,
+        "movespeed": 330,
+        "mp": 300,
+        "mpperlevel": 45,
+        "mpregen": 6.3,
+        "mpregenperlevel": 0.4,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman"
+      ],
+      "title": "卡莉丝塔"
+    },
+    {
+      "aliases": [
+        "Bard",
+        "星界游神"
+      ],
+      "id": 432,
+      "locale": "zh_CN",
+      "name": "星界游神",
+      "resource_type": "法力",
+      "source_key": "Bard",
+      "stats": {
+        "armor": 34,
+        "armorperlevel": 5,
+        "attackdamage": 52,
+        "attackdamageperlevel": 3,
+        "attackrange": 500,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 2,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 630,
+        "hpperlevel": 103,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 330,
+        "mp": 350,
+        "mpperlevel": 50,
+        "mpregen": 6,
+        "mpregenperlevel": 0.45,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "title": "巴德"
+    },
+    {
+      "aliases": [
+        "Rakan",
+        "幻翎"
+      ],
+      "id": 497,
+      "locale": "zh_CN",
+      "name": "幻翎",
+      "resource_type": "法力",
+      "source_key": "Rakan",
+      "stats": {
+        "armor": 30,
+        "armorperlevel": 4.9,
+        "attackdamage": 62,
+        "attackdamageperlevel": 3.5,
+        "attackrange": 300,
+        "attackspeed": 0.635,
+        "attackspeedperlevel": 3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 610,
+        "hpperlevel": 99,
+        "hpregen": 5,
+        "hpregenperlevel": 0.5,
+        "movespeed": 335,
+        "mp": 315,
+        "mpperlevel": 50,
+        "mpregen": 8.75,
+        "mpregenperlevel": 0.5,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Support"
+      ],
+      "title": "洛"
+    },
+    {
+      "aliases": [
+        "Xayah",
+        "逆羽"
+      ],
+      "id": 498,
+      "locale": "zh_CN",
+      "name": "逆羽",
+      "resource_type": "法力",
+      "source_key": "Xayah",
+      "stats": {
+        "armor": 25,
+        "armorperlevel": 4.2,
+        "attackdamage": 60,
+        "attackdamageperlevel": 3.5,
+        "attackrange": 525,
+        "attackspeed": 0.658,
+        "attackspeedperlevel": 3.9,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 630,
+        "hpperlevel": 107,
+        "hpregen": 3.25,
+        "hpregenperlevel": 0.75,
+        "movespeed": 330,
+        "mp": 340,
+        "mpperlevel": 40,
+        "mpregen": 8.25,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman"
+      ],
+      "title": "霞"
+    },
+    {
+      "aliases": [
+        "Ornn",
+        "山隐之焰"
+      ],
+      "id": 516,
+      "locale": "zh_CN",
+      "name": "山隐之焰",
+      "resource_type": "法力",
+      "source_key": "Ornn",
+      "stats": {
+        "armor": 33,
+        "armorperlevel": 5.2,
+        "attackdamage": 69,
+        "attackdamageperlevel": 3.5,
+        "attackrange": 175,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 660,
+        "hpperlevel": 109,
+        "hpregen": 9,
+        "hpregenperlevel": 0.9,
+        "movespeed": 335,
+        "mp": 341,
+        "mpperlevel": 65,
+        "mpregen": 8,
+        "mpregenperlevel": 0.6,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Tank"
+      ],
+      "title": "奥恩"
+    },
+    {
+      "aliases": [
+        "Sylas",
+        "解脱者"
+      ],
+      "id": 517,
+      "locale": "zh_CN",
+      "name": "解脱者",
+      "resource_type": "法力",
+      "source_key": "Sylas",
+      "stats": {
+        "armor": 29,
+        "armorperlevel": 5.2,
+        "attackdamage": 61,
+        "attackdamageperlevel": 3,
+        "attackrange": 175,
+        "attackspeed": 0.645,
+        "attackspeedperlevel": 3.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 600,
+        "hpperlevel": 129,
+        "hpregen": 9,
+        "hpregenperlevel": 0.9,
+        "movespeed": 340,
+        "mp": 400,
+        "mpperlevel": 70,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 32,
+        "spellblockperlevel": 2.55
+      },
+      "tags": [
+        "Mage",
+        "Assassin"
+      ],
+      "title": "塞拉斯"
+    },
+    {
+      "aliases": [
+        "Neeko",
+        "万花通灵"
+      ],
+      "id": 518,
+      "locale": "zh_CN",
+      "name": "万花通灵",
+      "resource_type": "法力",
+      "source_key": "Neeko",
+      "stats": {
+        "armor": 21,
+        "armorperlevel": 5.2,
+        "attackdamage": 48,
+        "attackdamageperlevel": 2.5,
+        "attackrange": 550,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 3.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 610,
+        "hpperlevel": 104,
+        "hpregen": 7.5,
+        "hpregenperlevel": 0.75,
+        "movespeed": 340,
+        "mp": 450,
+        "mpperlevel": 30,
+        "mpregen": 7,
+        "mpregenperlevel": 0.7,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "title": "妮蔻"
+    },
+    {
+      "aliases": [
+        "Aphelios",
+        "残月之肃"
+      ],
+      "id": 523,
+      "locale": "zh_CN",
+      "name": "残月之肃",
+      "resource_type": "法力",
+      "source_key": "Aphelios",
+      "stats": {
+        "armor": 26,
+        "armorperlevel": 4.2,
+        "attackdamage": 55,
+        "attackdamageperlevel": 2.3,
+        "attackrange": 550,
+        "attackspeed": 0.64,
+        "attackspeedperlevel": 2.1,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 580,
+        "hpperlevel": 102,
+        "hpregen": 3.25,
+        "hpregenperlevel": 0.55,
+        "movespeed": 325,
+        "mp": 348,
+        "mpperlevel": 42,
+        "mpregen": 6.5,
+        "mpregenperlevel": 0.4,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman"
+      ],
+      "title": "厄斐琉斯"
+    },
+    {
+      "aliases": [
+        "Rell",
+        "镕铁少女"
+      ],
+      "id": 526,
+      "locale": "zh_CN",
+      "name": "镕铁少女",
+      "resource_type": "法力",
+      "source_key": "Rell",
+      "stats": {
+        "armor": 36,
+        "armorperlevel": 4.2,
+        "attackdamage": 55,
+        "attackdamageperlevel": 3,
+        "attackrange": 175,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 1.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 610,
+        "hpperlevel": 104,
+        "hpregen": 7.5,
+        "hpregenperlevel": 0.85,
+        "movespeed": 330,
+        "mp": 350,
+        "mpperlevel": 45,
+        "mpregen": 6,
+        "mpregenperlevel": 0.35,
+        "spellblock": 30,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Tank",
+        "Support"
+      ],
+      "title": "芮尔"
+    },
+    {
+      "aliases": [
+        "Pyke",
+        "血港鬼影"
+      ],
+      "id": 555,
+      "locale": "zh_CN",
+      "name": "血港鬼影",
+      "resource_type": "法力",
+      "source_key": "Pyke",
+      "stats": {
+        "armor": 47,
+        "armorperlevel": 4.7,
+        "attackdamage": 62,
+        "attackdamageperlevel": 2,
+        "attackrange": 150,
+        "attackspeed": 0.667,
+        "attackspeedperlevel": 2.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 670,
+        "hpperlevel": 110,
+        "hpregen": 7,
+        "hpregenperlevel": 0.5,
+        "movespeed": 330,
+        "mp": 415,
+        "mpperlevel": 50,
+        "mpregen": 8,
+        "mpregenperlevel": 1,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Support",
+        "Assassin"
+      ],
+      "title": "派克"
+    },
+    {
+      "aliases": [
+        "Vex",
+        "愁云使者"
+      ],
+      "id": 711,
+      "locale": "zh_CN",
+      "name": "愁云使者",
+      "resource_type": "法力",
+      "source_key": "Vex",
+      "stats": {
+        "armor": 23,
+        "armorperlevel": 4.45,
+        "attackdamage": 54,
+        "attackdamageperlevel": 2.75,
+        "attackrange": 550,
+        "attackspeed": 0.669,
+        "attackspeedperlevel": 1,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 590,
+        "hpperlevel": 104,
+        "hpregen": 6.5,
+        "hpregenperlevel": 0.6,
+        "movespeed": 335,
+        "mp": 490,
+        "mpperlevel": 32,
+        "mpregen": 6,
+        "mpregenperlevel": 0.8,
+        "spellblock": 28,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage"
+      ],
+      "title": "薇古丝"
+    },
+    {
+      "aliases": [
+        "Yone",
+        "封魔剑魂"
+      ],
+      "id": 777,
+      "locale": "zh_CN",
+      "name": "封魔剑魂",
+      "resource_type": "剑意",
+      "source_key": "Yone",
+      "stats": {
+        "armor": 33,
+        "armorperlevel": 4.6,
+        "attackdamage": 60,
+        "attackdamageperlevel": 2,
+        "attackrange": 175,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 3.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 620,
+        "hpperlevel": 105,
+        "hpregen": 7.5,
+        "hpregenperlevel": 0.75,
+        "movespeed": 345,
+        "mp": 500,
+        "mpperlevel": 0,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "title": "永恩"
+    },
+    {
+      "aliases": [
+        "Sett",
+        "腕豪"
+      ],
+      "id": 875,
+      "locale": "zh_CN",
+      "name": "腕豪",
+      "resource_type": "豪意",
+      "source_key": "Sett",
+      "stats": {
+        "armor": 33,
+        "armorperlevel": 5.2,
+        "attackdamage": 60,
+        "attackdamageperlevel": 4,
+        "attackrange": 125,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 1.75,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 670,
+        "hpperlevel": 114,
+        "hpregen": 7,
+        "hpregenperlevel": 0.5,
+        "movespeed": 340,
+        "mp": 0,
+        "mpperlevel": 0,
+        "mpregen": 0,
+        "mpregenperlevel": 0,
+        "spellblock": 28,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Tank"
+      ],
+      "title": "瑟提"
+    },
+    {
+      "aliases": [
+        "Lillia",
+        "含羞蓓蕾"
+      ],
+      "id": 876,
+      "locale": "zh_CN",
+      "name": "含羞蓓蕾",
+      "resource_type": "法力",
+      "source_key": "Lillia",
+      "stats": {
+        "armor": 22,
+        "armorperlevel": 5.2,
+        "attackdamage": 61,
+        "attackdamageperlevel": 3.1,
+        "attackrange": 325,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2.7,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 605,
+        "hpperlevel": 105,
+        "hpregen": 2.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 330,
+        "mp": 410,
+        "mpperlevel": 50,
+        "mpregen": 11.5,
+        "mpregenperlevel": 0.95,
+        "spellblock": 32,
+        "spellblockperlevel": 1.55
+      },
+      "tags": [
+        "Fighter",
+        "Mage"
+      ],
+      "title": "莉莉娅"
+    },
+    {
+      "aliases": [
+        "Gwen",
+        "灵罗娃娃"
+      ],
+      "id": 887,
+      "locale": "zh_CN",
+      "name": "灵罗娃娃",
+      "resource_type": "法力",
+      "source_key": "Gwen",
+      "stats": {
+        "armor": 39,
+        "armorperlevel": 5.2,
+        "attackdamage": 63,
+        "attackdamageperlevel": 3,
+        "attackrange": 150,
+        "attackspeed": 0.69,
+        "attackspeedperlevel": 2.25,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 620,
+        "hpperlevel": 115,
+        "hpregen": 9,
+        "hpregenperlevel": 0.9,
+        "movespeed": 340,
+        "mp": 330,
+        "mpperlevel": 40,
+        "mpregen": 7.5,
+        "mpregenperlevel": 0.7,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter"
+      ],
+      "title": "格温"
+    },
+    {
+      "aliases": [
+        "Renata",
+        "炼金男爵"
+      ],
+      "id": 888,
+      "locale": "zh_CN",
+      "name": "炼金男爵",
+      "resource_type": "法力",
+      "source_key": "Renata",
+      "stats": {
+        "armor": 27,
+        "armorperlevel": 4.7,
+        "attackdamage": 49,
+        "attackdamageperlevel": 3,
+        "attackrange": 550,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2.11,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 545,
+        "hpperlevel": 94,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 330,
+        "mp": 350,
+        "mpperlevel": 50,
+        "mpregen": 11.5,
+        "mpregenperlevel": 0.5,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "title": "烈娜塔 · 戈拉斯克"
+    },
+    {
+      "aliases": [
+        "Aurora",
+        "双界灵兔"
+      ],
+      "id": 893,
+      "locale": "zh_CN",
+      "name": "双界灵兔",
+      "resource_type": "法力",
+      "source_key": "Aurora",
+      "stats": {
+        "armor": 23,
+        "armorperlevel": 4.5,
+        "attackdamage": 53,
+        "attackdamageperlevel": 3,
+        "attackrange": 550,
+        "attackspeed": 0.668,
+        "attackspeedperlevel": 2,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 607,
+        "hpperlevel": 110,
+        "hpregen": 6,
+        "hpregenperlevel": 0.55,
+        "movespeed": 335,
+        "mp": 475,
+        "mpperlevel": 30,
+        "mpregen": 8,
+        "mpregenperlevel": 0.8,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage",
+        "Assassin"
+      ],
+      "title": "阿萝拉"
+    },
+    {
+      "aliases": [
+        "Nilah",
+        "不羁之悦"
+      ],
+      "id": 895,
+      "locale": "zh_CN",
+      "name": "不羁之悦",
+      "resource_type": "法力",
+      "source_key": "Nilah",
+      "stats": {
+        "armor": 27,
+        "armorperlevel": 4.5,
+        "attackdamage": 58,
+        "attackdamageperlevel": 2,
+        "attackrange": 225,
+        "attackspeed": 0.697,
+        "attackspeedperlevel": 3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 570,
+        "hpperlevel": 101,
+        "hpregen": 6,
+        "hpregenperlevel": 0.9,
+        "movespeed": 340,
+        "mp": 350,
+        "mpperlevel": 35,
+        "mpregen": 8.2,
+        "mpregenperlevel": 0.7,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "title": "尼菈"
+    },
+    {
+      "aliases": [
+        "KSante",
+        "纳祖芒荣耀"
+      ],
+      "id": 897,
+      "locale": "zh_CN",
+      "name": "纳祖芒荣耀",
+      "resource_type": "法力",
+      "source_key": "KSante",
+      "stats": {
+        "armor": 33,
+        "armorperlevel": 5.2,
+        "attackdamage": 64,
+        "attackdamageperlevel": 3.5,
+        "attackrange": 175,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 625,
+        "hpperlevel": 120,
+        "hpregen": 9.5,
+        "hpregenperlevel": 1,
+        "movespeed": 330,
+        "mp": 320,
+        "mpperlevel": 60,
+        "mpregen": 7,
+        "mpregenperlevel": 1,
+        "spellblock": 30,
+        "spellblockperlevel": 2.1
+      },
+      "tags": [
+        "Tank",
+        "Fighter"
+      ],
+      "title": "奎桑提"
+    },
+    {
+      "aliases": [
+        "Smolder",
+        "炽炎雏龙"
+      ],
+      "id": 901,
+      "locale": "zh_CN",
+      "name": "炽炎雏龙",
+      "resource_type": "法力",
+      "source_key": "Smolder",
+      "stats": {
+        "armor": 26,
+        "armorperlevel": 4.7,
+        "attackdamage": 60,
+        "attackdamageperlevel": 2.3,
+        "attackrange": 550,
+        "attackspeed": 0.638,
+        "attackspeedperlevel": 4,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 605,
+        "hpperlevel": 100,
+        "hpregen": 4.5,
+        "hpregenperlevel": 0.6,
+        "movespeed": 330,
+        "mp": 300,
+        "mpperlevel": 40,
+        "mpregen": 8.5,
+        "mpregenperlevel": 0.7,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Marksman",
+        "Mage"
+      ],
+      "title": "斯莫德"
+    },
+    {
+      "aliases": [
+        "Milio",
+        "明烛"
+      ],
+      "id": 902,
+      "locale": "zh_CN",
+      "name": "明烛",
+      "resource_type": "法力",
+      "source_key": "Milio",
+      "stats": {
+        "armor": 26,
+        "armorperlevel": 4.6,
+        "attackdamage": 48,
+        "attackdamageperlevel": 3.2,
+        "attackrange": 525,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 560,
+        "hpperlevel": 88,
+        "hpregen": 5,
+        "hpregenperlevel": 0.5,
+        "movespeed": 330,
+        "mp": 365,
+        "mpperlevel": 43,
+        "mpregen": 11.5,
+        "mpregenperlevel": 0.4,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Support",
+        "Mage"
+      ],
+      "title": "米利欧"
+    },
+    {
+      "aliases": [
+        "Hwei",
+        "异画师"
+      ],
+      "id": 910,
+      "locale": "zh_CN",
+      "name": "异画师",
+      "resource_type": "法力",
+      "source_key": "Hwei",
+      "stats": {
+        "armor": 21,
+        "armorperlevel": 4.7,
+        "attackdamage": 54,
+        "attackdamageperlevel": 3.3,
+        "attackrange": 550,
+        "attackspeed": 0.69,
+        "attackspeedperlevel": 2.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 580,
+        "hpperlevel": 109,
+        "hpregen": 5.5,
+        "hpregenperlevel": 0.55,
+        "movespeed": 330,
+        "mp": 480,
+        "mpperlevel": 30,
+        "mpregen": 7.5,
+        "mpregenperlevel": 0.75,
+        "spellblock": 30,
+        "spellblockperlevel": 1.3
+      },
+      "tags": [
+        "Mage",
+        "Support"
+      ],
+      "title": "彗"
+    },
+    {
+      "aliases": [
+        "Naafiri",
+        "百裂冥犬"
+      ],
+      "id": 950,
+      "locale": "zh_CN",
+      "name": "百裂冥犬",
+      "resource_type": "法力",
+      "source_key": "Naafiri",
+      "stats": {
+        "armor": 30,
+        "armorperlevel": 4.7,
+        "attackdamage": 55,
+        "attackdamageperlevel": 2.1,
+        "attackrange": 125,
+        "attackspeed": 0.663,
+        "attackspeedperlevel": 2.1,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 635,
+        "hpperlevel": 120,
+        "hpregen": 9,
+        "hpregenperlevel": 0.9,
+        "movespeed": 340,
+        "mp": 400,
+        "mpperlevel": 55,
+        "mpregen": 7.5,
+        "mpregenperlevel": 1,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Assassin",
+        "Fighter"
+      ],
+      "title": "纳亚菲利"
+    }
+  ],
+  "evidence_type": "observed",
+  "locale": "zh_CN",
+  "source_url": "https://ddragon.leagueoflegends.com/cdn/14.16.1/data/zh_CN/champion.json",
+  "version": "14.16.1"
+}

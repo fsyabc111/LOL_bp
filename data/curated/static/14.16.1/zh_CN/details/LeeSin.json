@@ -1,0 +1,617 @@
+{
+  "entities": [
+    {
+      "aliases": [
+        "LeeSin",
+        "盲僧"
+      ],
+      "id": 64,
+      "locale": "zh_CN",
+      "name": "盲僧",
+      "passive": {
+        "description": "在李青使用一次技能后，他的下两次攻击会获得攻速加成，且回复能量。",
+        "name": "疾风骤雨"
+      },
+      "resource_type": "能量",
+      "source_key": "LeeSin",
+      "spells": [
+        {
+          "cooldown": [
+            10,
+            9,
+            8,
+            7,
+            6
+          ],
+          "cooldownBurn": "10/9/8/7/6",
+          "cost": [
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "costBurn": "50",
+          "costType": " {{ abilityresourcename }}",
+          "description": "天音波：李青发出刺耳的声波定位敌人，对首个敌人造成物理伤害。如果天音波击中敌人，李青在接下来3秒可施放回音击。<br>回音击：李青冲向被天音波击中的敌人，造成基于该目标已损失生命值的物理伤害。",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "LeeSinQOne",
+          "leveltip": {
+            "effect": [
+              "{{ q1basedamage }} -> {{ q1basedamageNL }}",
+              "{{ q2basedamage }} -> {{ q2basedamageNL }}",
+              "{{ q2basedamage*2.000000 }} -> {{ q2basedamagenl*2.000000 }}",
+              "{{ cooldown }} -> {{ cooldownNL }}"
+            ],
+            "label": [
+              "天音波伤害",
+              "回音击 最小伤害",
+              "回音击 最大伤害",
+              "冷却时间"
+            ]
+          },
+          "maxrank": 5,
+          "name": "天音波/回音击",
+          "range": [
+            1100,
+            1100,
+            1100,
+            1100,
+            1100
+          ],
+          "rangeBurn": "1100",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "Q",
+          "tooltip": "李青发出刺耳的声波定位敌人，对命中的首个敌人造成<physicalDamage>{{ initialdamage }}物理伤害</physicalDamage>，提供目标的真实视野，并使李青可以在接下来的{{ reactivatetime }}秒内<recast>再次施放</recast>。<br /><br /><recast>再次施放：</recast>李青冲向被音波击中的敌人，造成<physicalDamage>{{ recastdamage }}到{{ empowereddamage }}物理伤害</physicalDamage>（基于目标已损失的生命值）。 {{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "cooldown",
+            "cooldownNL",
+            "cost",
+            "empowereddamage",
+            "initialdamage",
+            "q1basedamage",
+            "q1basedamageNL",
+            "q2basedamage",
+            "q2basedamage*2.000000",
+            "q2basedamageNL",
+            "q2basedamagenl*2.000000",
+            "reactivatetime",
+            "recastdamage",
+            "spellmodifierdescriptionappend"
+          ],
+          "vars": []
+        },
+        {
+          "cooldown": [
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "cooldownBurn": "12",
+          "cost": [
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "costBurn": "50",
+          "costType": " {{ abilityresourcename }}",
+          "description": "金钟罩：李青冲向目标友军，为他自身提供护盾值。如果该友军是一名英雄，则也会获得护盾值。在使用【金钟罩】后，李青可以施放【铁布衫】。<br>铁布衫：李青艰苦卓绝的训练让他能在战斗中激发潜能。李青获得生命偷取和法术吸血。",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "LeeSinWOne",
+          "leveltip": {
+            "effect": [
+              "{{ shieldvalue }} -> {{ shieldvalueNL }}",
+              "{{ lifestealandspellvamp }}% -> {{ lifestealandspellvampNL }}%"
+            ],
+            "label": [
+              "金钟罩伤害吸收",
+              "铁布衫生命偷取/法术吸血百分比"
+            ]
+          },
+          "maxrank": 5,
+          "name": "金钟罩/铁布衫",
+          "range": [
+            700,
+            700,
+            700,
+            700,
+            700
+          ],
+          "rangeBurn": "700",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "W",
+          "tooltip": "李青突进至一名友军或守卫处。如果目标友军是一名英雄，李青会为自己和目标友军提供持续{{ shieldduration }}秒的<shield>{{ shieldamount }}护盾值</shield>，并且这个技能的冷却时间会减少{{ w1cooldownrecovered*100 }}%。李青可以在接下来的{{ w1reactivatetime }}秒内<recast>再次施放</recast>此技能。<br /><br /><recast>再次施放：</recast>李青获得持续{{ lifestealandspellvamptime }}秒的{{ lifestealandspellvamp }}%生命偷取和法术吸血。{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "cost",
+            "lifestealandspellvamp",
+            "lifestealandspellvampNL",
+            "lifestealandspellvamptime",
+            "shieldamount",
+            "shieldduration",
+            "shieldvalue",
+            "shieldvalueNL",
+            "spellmodifierdescriptionappend",
+            "w1cooldownrecovered*100",
+            "w1reactivatetime"
+          ],
+          "vars": []
+        },
+        {
+          "cooldown": [
+            9,
+            9,
+            9,
+            9,
+            9
+          ],
+          "cooldownBurn": "9",
+          "cost": [
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "costBurn": "50",
+          "costType": " {{ abilityresourcename }}",
+          "description": "天雷破：李青猛击地面，施放冲击波，造成魔法伤害并使命中的敌方单位显形。如果天雷破命中了一名敌人，那么李青可以施放【摧筋断骨】。<br>摧筋断骨：李青致残被天雷破给伤害到的敌人，减少其移动速度。持续期间受影响单位的移动速度会逐渐恢复正常。",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "LeeSinEOne",
+          "leveltip": {
+            "effect": [
+              "{{ e1damage }} -> {{ e1damageNL }}",
+              "{{ slowamount }}% -> {{ slowamountNL }}%"
+            ],
+            "label": [
+              "天雷破伤害",
+              "摧筋断骨减速"
+            ]
+          },
+          "maxrank": 5,
+          "name": "天雷破/摧筋断骨",
+          "range": [
+            450,
+            450,
+            450,
+            450,
+            450
+          ],
+          "rangeBurn": "450",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "E",
+          "tooltip": "李青猛击地面，施放冲击波，造成<magicDamage>{{ initialdamage }}魔法伤害</magicDamage>并使命中的敌方单位显形{{ slowduration }}秒。如果这个技能命中了一名敌人，那么李青可以在接下来的{{ reactivatetime }}秒内<recast>再次施放</recast>此技能。<br /><br /><recast>再次施放：</recast>李青使被冲击波击中的敌人造成在{{ slowduration }}秒里持续衰减的{{ slowamount }}%<status>减速</status>。{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "cost",
+            "e1damage",
+            "e1damageNL",
+            "initialdamage",
+            "reactivatetime",
+            "slowamount",
+            "slowamountNL",
+            "slowduration",
+            "spellmodifierdescriptionappend"
+          ],
+          "vars": []
+        },
+        {
+          "cooldown": [
+            110,
+            85,
+            60
+          ],
+          "cooldownBurn": "110/85/60",
+          "cost": [
+            0,
+            0,
+            0
+          ],
+          "costBurn": "0",
+          "costType": "无消耗",
+          "description": "李青用强力的回旋踢击退敌方英雄，对目标以及被目标撞到的任何敌人造成物理伤害。 被目标撞到的敌人会被短暂击飞。这项技艺是春哥教他的，不过李青不能将玩家的英雄踢到地图外面去。",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "LeeSinR",
+          "leveltip": {
+            "effect": [
+              "{{ basedamage }} -> {{ basedamageNL }}",
+              "{{ percenthpcarrythrough }}% -> {{ percenthpcarrythroughNL }}%",
+              "{{ cooldown }} -> {{ cooldownNL }}"
+            ],
+            "label": [
+              "伤害",
+              "来自额外生命值的伤害",
+              "冷却时间"
+            ]
+          },
+          "maxrank": 3,
+          "name": "猛龙摆尾",
+          "range": [
+            375,
+            375,
+            375
+          ],
+          "rangeBurn": "375",
+          "resource": "无消耗",
+          "slot": "R",
+          "tooltip": "李青用一记强力的回旋踢<status>击退</status>一名敌方英雄，并造成<physicalDamage>{{ damage }}物理伤害</physicalDamage>。<br /><br />被目标撞到的敌方英雄会被短暂<status>击飞</status>并受到<physicalDamage>物理伤害，伤害值相当于{{ damage }}加上初始目标{{ percenthpcarrythrough }}%的额外生命值</physicalDamage>。{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "basedamage",
+            "basedamageNL",
+            "cooldown",
+            "cooldownNL",
+            "damage",
+            "percenthpcarrythrough",
+            "percenthpcarrythroughNL",
+            "spellmodifierdescriptionappend"
+          ],
+          "vars": []
+        }
+      ],
+      "stats": {
+        "armor": 36,
+        "armorperlevel": 4.9,
+        "attackdamage": 66,
+        "attackdamageperlevel": 3.7,
+        "attackrange": 125,
+        "attackspeed": 0.651,
+        "attackspeedperlevel": 3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 645,
+        "hpperlevel": 108,
+        "hpregen": 7.5,
+        "hpregenperlevel": 0.7,
+        "movespeed": 345,
+        "mp": 200,
+        "mpperlevel": 0,
+        "mpregen": 50,
+        "mpregenperlevel": 0,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "title": "李青"
+    }
+  ],
+  "evidence_type": "observed",
+  "locale": "zh_CN",
+  "source_url": "https://ddragon.leagueoflegends.com/cdn/14.16.1/data/zh_CN/champion/LeeSin.json",
+  "version": "14.16.1"
+}

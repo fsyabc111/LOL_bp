@@ -1,0 +1,616 @@
+{
+  "entities": [
+    {
+      "aliases": [
+        "Rell",
+        "Rell"
+      ],
+      "id": 526,
+      "locale": "en_US",
+      "name": "Rell",
+      "passive": {
+        "description": "Rell's Attacks and Abilities deal additional magic damage and steal Armor and Magic Resist on hit.",
+        "name": "Break the Mold"
+      },
+      "resource_type": "Mana",
+      "source_key": "Rell",
+      "spells": [
+        {
+          "cooldown": [
+            11,
+            10.5,
+            10,
+            9.5,
+            9
+          ],
+          "cooldownBurn": "11/10.5/10/9.5/9",
+          "cost": [
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "costBurn": "50",
+          "costType": " {{ abilityresourcename }}",
+          "description": "Rell deals magic damage to units in a line, breaking their shields and stunning them. ",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "RellQ",
+          "leveltip": {
+            "effect": [
+              "{{ basedamage }} -> {{ basedamageNL }}",
+              "{{ cooldown }} -> {{ cooldownNL }}"
+            ],
+            "label": [
+              "Damage",
+              "Cooldown"
+            ]
+          },
+          "maxrank": 5,
+          "name": "Shattering Strike",
+          "range": [
+            600,
+            600,
+            600,
+            600,
+            600
+          ],
+          "rangeBurn": "600",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "Q",
+          "tooltip": "Rell thrusts her lance, <status>Stunning</status> targets for {{ stunduration }} seconds, destroying all <shield>Shields</shield>, and dealing <magicDamage>{{ damage }} magic damage.</magicDamage>{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "basedamage",
+            "basedamageNL",
+            "cooldown",
+            "cooldownNL",
+            "cost",
+            "damage",
+            "spellmodifierdescriptionappend",
+            "stunduration"
+          ],
+          "vars": []
+        },
+        {
+          "cooldown": [
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "cooldownBurn": "10",
+          "cost": [
+            40,
+            40,
+            40,
+            40,
+            40
+          ],
+          "costBurn": "40",
+          "costType": " {{ abilityresourcename }}",
+          "description": "Mounted: Rell Dismounts, crashing down in her armor, Knocking enemies up and gaining a large Shield. While dismounted, she gains Armor, Magic Resist, Attack Speed, and Attack Range, but is Slowed.<br><br>Dismounted: Rell forms her Mount, gaining a burst of speed and Knocking Up the next enemy she attacks.<br><br>",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "RellW_Dismount",
+          "leveltip": {
+            "effect": [
+              "{{ crashdowndamage }} -> {{ crashdowndamageNL }}",
+              "{{ shieldbase }} -> {{ shieldbaseNL }}",
+              "{{ mountupdamage }} -> {{ mountupdamageNL }}",
+              "{{ mountedmovespeed }} -> {{ mountedmovespeedNL }}"
+            ],
+            "label": [
+              "Dismount Damage",
+              "Shield Amount",
+              "Flip Damage",
+              "Passive Move Speed"
+            ]
+          },
+          "maxrank": 5,
+          "name": "Ferromancy: Crash Down",
+          "range": [
+            450,
+            450,
+            450,
+            450,
+            450
+          ],
+          "rangeBurn": "450",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "W",
+          "tooltip": "<spellPassive>Passive - Mounted Alacrity:</spellPassive> Rell gains <speed>{{ spell.rellw_dismount:mountedmovespeed }} Move Speed</speed> while mounted.<br /><br /><spellActive>Active - Ferromancy: Crash Down:</spellActive> Rell leaps off her mount, <status>Knocking Up</status> enemies and dealing <magicDamage>{{ spell.rellw_dismount:dismountdamage }} magic damage</magicDamage>. Rell gains <shield>{{ spell.rellw_dismount:shield }} Shield</shield>, which lasts until she remounts.<br /><br />Rell then enters her armored form, gaining <scaleArmor>{{ spell.rellw_dismount:resistanceincrease*100 }}% increased Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR>, <attackSpeed>{{ spell.rellw_dismount:dismountedasboost*100 }}% Attack Speed</attackSpeed> and {{ spell.rellw_dismount:dismountedrangeboost }} Attack Range. In this armored form, she can use <spellName>Ferromancy: Mount Up</spellName>.{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "cost",
+            "crashdowndamage",
+            "crashdowndamageNL",
+            "mountedmovespeed",
+            "mountedmovespeedNL",
+            "mountupdamage",
+            "mountupdamageNL",
+            "shieldbase",
+            "shieldbaseNL",
+            "spell.rellw_dismount:dismountdamage",
+            "spell.rellw_dismount:dismountedasboost*100",
+            "spell.rellw_dismount:dismountedrangeboost",
+            "spell.rellw_dismount:mountedmovespeed",
+            "spell.rellw_dismount:resistanceincrease*100",
+            "spell.rellw_dismount:shield",
+            "spellmodifierdescriptionappend"
+          ],
+          "vars": []
+        },
+        {
+          "cooldown": [
+            14,
+            13,
+            12,
+            11,
+            10
+          ],
+          "cooldownBurn": "14/13/12/11/10",
+          "cost": [
+            40,
+            40,
+            40,
+            40,
+            40
+          ],
+          "costBurn": "40",
+          "costType": " {{ abilityresourcename }}",
+          "description": "Passive: Rell gains out of combat Move Speed.<br><br>Active: Rell and an ally gain ramping Move Speed, doubled toward enemies and each other. Her next Attack explodes, dealing magic damage.<br>",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "RellE",
+          "leveltip": {
+            "effect": [
+              "{{ percenthealthdamage*100.000000 }}% -> {{ percenthealthdamagenl*100.000000 }}%",
+              "{{ cooldown }} -> {{ cooldownNL }}"
+            ],
+            "label": [
+              "Damage",
+              "Cooldown"
+            ]
+          },
+          "maxrank": 5,
+          "name": "Full Tilt",
+          "range": [
+            1200,
+            1200,
+            1200,
+            1200,
+            1200
+          ],
+          "rangeBurn": "1200",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "E",
+          "tooltip": "Rell and an ally charge, gaining <speed>{{ minms*100 }}% Move Speed</speed>, increased to <speed>{{ maxms*100 }}%</speed> when facing enemy champions or each other for {{ duration }} seconds. Rell's next Attack or <spellName>Shattering Strike</spellName> explodes in an area for <magicDamage>{{ maxhealthdamagecalc }} max Health magic damage</magicDamage>.{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "cooldown",
+            "cooldownNL",
+            "cost",
+            "duration",
+            "maxhealthdamagecalc",
+            "maxms*100",
+            "minms*100",
+            "percenthealthdamage*100.000000",
+            "percenthealthdamagenl*100.000000",
+            "spellmodifierdescriptionappend"
+          ],
+          "vars": []
+        },
+        {
+          "cooldown": [
+            120,
+            100,
+            80
+          ],
+          "cooldownBurn": "120/100/80",
+          "cost": [
+            100,
+            100,
+            100
+          ],
+          "costBurn": "100",
+          "costType": " {{ abilityresourcename }}",
+          "description": "Rell explodes in a magnetic fury, violently Pulling nearby enemies toward herself. Then Rell constantly Drags nearby enemies toward herself for a short while, dealing magic damage over time.",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "RellR",
+          "leveltip": {
+            "effect": [
+              "{{ cooldown }} -> {{ cooldownNL }}",
+              "{{ basedamagepersecond*2.000000 }} -> {{ basedamagepersecondnl*2.000000 }}"
+            ],
+            "label": [
+              "Cooldown",
+              "Damage"
+            ]
+          },
+          "maxrank": 3,
+          "name": "Magnet Storm",
+          "range": [
+            200,
+            200,
+            200
+          ],
+          "rangeBurn": "200",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "R",
+          "tooltip": "Rell explodes in a magnetic fury, violently <status>Pulling</status> nearby enemies towards herself. Then Rell constantly <status>Drags</status> nearby enemies towards herself and deals <magicDamage>{{ totaldamage }} magic damage</magicDamage> over the next {{ duration }} seconds.{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "basedamagepersecond*2.000000",
+            "basedamagepersecondnl*2.000000",
+            "cooldown",
+            "cooldownNL",
+            "cost",
+            "duration",
+            "spellmodifierdescriptionappend",
+            "totaldamage"
+          ],
+          "vars": []
+        }
+      ],
+      "stats": {
+        "armor": 30,
+        "armorperlevel": 4,
+        "attackdamage": 55,
+        "attackdamageperlevel": 0,
+        "attackrange": 175,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 2,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 620,
+        "hpperlevel": 104,
+        "hpregen": 7.5,
+        "hpregenperlevel": 0.85,
+        "movespeed": 315,
+        "mp": 320,
+        "mpperlevel": 40,
+        "mpregen": 7,
+        "mpregenperlevel": 0.7,
+        "spellblock": 28,
+        "spellblockperlevel": 1.8
+      },
+      "tags": [
+        "Tank",
+        "Support"
+      ],
+      "title": "the Iron Maiden"
+    }
+  ],
+  "evidence_type": "observed",
+  "locale": "en_US",
+  "source_url": "https://ddragon.leagueoflegends.com/cdn/16.20.1/data/en_US/champion/Rell.json",
+  "version": "16.20.1"
+}

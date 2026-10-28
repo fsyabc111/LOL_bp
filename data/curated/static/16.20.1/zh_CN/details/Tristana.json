@@ -1,0 +1,623 @@
+{
+  "entities": [
+    {
+      "aliases": [
+        "Tristana",
+        "麦林炮手"
+      ],
+      "id": 18,
+      "locale": "zh_CN",
+      "name": "麦林炮手",
+      "passive": {
+        "description": "崔丝塔娜的射程随等级提升。",
+        "name": "瞄准"
+      },
+      "resource_type": "法力",
+      "source_key": "Tristana",
+      "spells": [
+        {
+          "cooldown": [
+            20,
+            19,
+            18,
+            17,
+            16
+          ],
+          "cooldownBurn": "20/19/18/17/16",
+          "cost": [
+            15,
+            20,
+            25,
+            30,
+            35
+          ],
+          "costBurn": "15/20/25/30/35",
+          "costType": " {{ abilityresourcename }}",
+          "description": "崔丝塔娜急速射击，短时间内提升攻击速度。",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "TristanaQ",
+          "leveltip": {
+            "effect": [
+              "{{ attackspeedmod*100.000000 }}% -> {{ attackspeedmodnl*100.000000 }}%",
+              "{{ cooldown }} -> {{ cooldownNL }}",
+              "{{ cost }} -> {{ costNL }}"
+            ],
+            "label": [
+              "攻击速度",
+              "冷却时间",
+              "@AbilityResourceName@消耗"
+            ]
+          },
+          "maxrank": 5,
+          "name": "急速射击",
+          "range": [
+            20,
+            20,
+            20,
+            20,
+            20
+          ],
+          "rangeBurn": "20",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "Q",
+          "tooltip": "崔丝塔娜开始全自动射击，获得持续{{ buffduration }}秒的<attackSpeed>{{ attackspeedmod*100 }}%攻击速度</attackSpeed>。{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "attackspeedmod*100",
+            "attackspeedmod*100.000000",
+            "attackspeedmodnl*100.000000",
+            "buffduration",
+            "cooldown",
+            "cooldownNL",
+            "cost",
+            "costNL",
+            "spellmodifierdescriptionappend"
+          ],
+          "vars": []
+        },
+        {
+          "cooldown": [
+            22,
+            20,
+            18,
+            16,
+            14
+          ],
+          "cooldownBurn": "22/20/18/16/14",
+          "cost": [
+            30,
+            35,
+            40,
+            45,
+            50
+          ],
+          "costBurn": "30/35/40/45/50",
+          "costType": " {{ abilityresourcename }}",
+          "description": "崔丝塔娜朝地面开火，跳跃至目标区域，落地造成伤害并减速附近敌人一小段时间。",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "TristanaW",
+          "leveltip": {
+            "effect": [
+              "{{ basedamage }} -> {{ basedamageNL }}",
+              "{{ cooldown }} -> {{ cooldownNL }}",
+              "{{ cost }} -> {{ costNL }}"
+            ],
+            "label": [
+              "伤害",
+              "冷却时间",
+              "@AbilityResourceName@消耗"
+            ]
+          },
+          "maxrank": 5,
+          "name": "火箭跳跃",
+          "range": [
+            900,
+            900,
+            900,
+            900,
+            900
+          ],
+          "rangeBurn": "900",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "W",
+          "tooltip": "崔丝塔娜将自己推送出去，在着陆时造成<magicDamage>{{ landingdamage }}魔法伤害</magicDamage>和持续{{ slowduration }}秒的{{ slowmod*-100 }}%<status>减速</status>。<br /><br />参与击杀后，或者满层<spellName>爆炸火花</spellName>爆炸后，会重置这个技能的冷却时间。{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "basedamage",
+            "basedamageNL",
+            "cooldown",
+            "cooldownNL",
+            "cost",
+            "costNL",
+            "landingdamage",
+            "slowduration",
+            "slowmod*-100",
+            "spellmodifierdescriptionappend"
+          ],
+          "vars": []
+        },
+        {
+          "cooldown": [
+            16,
+            15.5,
+            15,
+            14.5,
+            14
+          ],
+          "cooldownBurn": "16/15.5/15/14.5/14",
+          "cost": [
+            50,
+            55,
+            60,
+            65,
+            70
+          ],
+          "costBurn": "50/55/60/65/70",
+          "costType": " {{ abilityresourcename }}",
+          "description": "当崔丝塔娜杀死一个单位，加农炮弹会炸裂伤害周围的敌人。可通过主动施放这个技能来将一颗炸弹放置在目标身上，炸弹会在短时间内或被崔丝塔娜攻击数次后爆炸，爆炸时对目标及其附近的敌人造成伤害。",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "TristanaE",
+          "leveltip": {
+            "effect": [
+              "{{ passivebasedamage }} -> {{ passivebasedamageNL }}",
+              "{{ activebasedamage }} -> {{ activebasedamageNL }}",
+              "{{ cooldown }} -> {{ cooldownNL }}",
+              "{{ cost }} -> {{ costNL }}"
+            ],
+            "label": [
+              "被动爆炸伤害",
+              "基础火花伤害",
+              "冷却时间",
+              "@AbilityResourceName@消耗"
+            ]
+          },
+          "maxrank": 5,
+          "name": "爆炸火花",
+          "range": [
+            550,
+            550,
+            550,
+            550,
+            550
+          ],
+          "rangeBurn": "550",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "E",
+          "tooltip": "<spellPassive>被动：</spellPassive>崔丝塔娜的攻击在击杀敌人时会对周围敌人造成<magicDamage>{{ passivedamage }}魔法伤害</magicDamage>。<br /><br /><spellActive>主动：</spellActive>崔丝塔娜将一颗炸弹附着在一名敌人或防御塔上，来在{{ activeduration }}秒后对周围敌人造成<physicalDamage>{{ activedamage }}物理伤害</physicalDamage>。崔丝塔娜对带着炸弹的目标进行的每次攻击和技能都会使这个伤害提升{{ activeperstackamp*100 }}%(最多4层)。<br /><br />在{{ activemaxstacks }}层时，这个炸弹会立刻爆炸(最大值为<physicalDamage>{{ activemaxdamage }}物理伤害</physicalDamage>)。{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "activebasedamage",
+            "activebasedamageNL",
+            "activedamage",
+            "activeduration",
+            "activemaxdamage",
+            "activemaxstacks",
+            "activeperstackamp*100",
+            "cooldown",
+            "cooldownNL",
+            "cost",
+            "costNL",
+            "passivebasedamage",
+            "passivebasedamageNL",
+            "passivedamage",
+            "spellmodifierdescriptionappend"
+          ],
+          "vars": []
+        },
+        {
+          "cooldown": [
+            100,
+            100,
+            100
+          ],
+          "cooldownBurn": "100",
+          "cost": [
+            100,
+            100,
+            100
+          ],
+          "costBurn": "100",
+          "costType": " {{ abilityresourcename }}",
+          "description": "崔丝塔娜装填巨型加农炮弹攻击目标单位，造成巨大伤害并击退目标。如果目标携带着【爆炸火花】的炸弹，那么该炸弹的爆炸半径翻倍。",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "TristanaR",
+          "leveltip": {
+            "effect": [
+              "{{ basedamage }} -> {{ basedamageNL }}",
+              "{{ knockbackdistance }} -> {{ knockbackdistanceNL }}",
+              "{{ stunduration }} -> {{ stundurationNL }}"
+            ],
+            "label": [
+              "伤害",
+              "击退距离",
+              "晕眩时长："
+            ]
+          },
+          "maxrank": 3,
+          "name": "毁灭射击",
+          "range": [
+            550,
+            550,
+            550
+          ],
+          "rangeBurn": "550",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "R",
+          "tooltip": "崔丝塔娜发射一颗大型加农炮弹，对目标造成<magicDamage>{{ damagecalc }}魔法伤害</magicDamage>，并对其与周围敌人们施加<status>击退</status>和{{ stunduration }}秒<status>晕眩</status>。{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "basedamage",
+            "basedamageNL",
+            "cost",
+            "damagecalc",
+            "knockbackdistance",
+            "knockbackdistanceNL",
+            "spellmodifierdescriptionappend",
+            "stunduration",
+            "stundurationNL"
+          ],
+          "vars": []
+        }
+      ],
+      "stats": {
+        "armor": 30,
+        "armorperlevel": 4,
+        "attackdamage": 60,
+        "attackdamageperlevel": 0,
+        "attackrange": 550,
+        "attackspeed": 0.656,
+        "attackspeedperlevel": 1.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 640,
+        "hpperlevel": 102,
+        "hpregen": 4,
+        "hpregenperlevel": 0.5,
+        "movespeed": 325,
+        "mp": 300,
+        "mpperlevel": 32,
+        "mpregen": 7.2,
+        "mpregenperlevel": 0.45,
+        "spellblock": 33,
+        "spellblockperlevel": 1.1
+      },
+      "tags": [
+        "Marksman",
+        "Assassin"
+      ],
+      "title": "崔丝塔娜"
+    }
+  ],
+  "evidence_type": "observed",
+  "locale": "zh_CN",
+  "source_url": "https://ddragon.leagueoflegends.com/cdn/16.20.1/data/zh_CN/champion/Tristana.json",
+  "version": "16.20.1"
+}

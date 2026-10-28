@@ -1,0 +1,613 @@
+{
+  "entities": [
+    {
+      "aliases": [
+        "Vi",
+        "皮城执法官"
+      ],
+      "id": 254,
+      "locale": "zh_CN",
+      "name": "皮城执法官",
+      "passive": {
+        "description": "蔚持续为护盾充能。护盾会在蔚的技能命中一名敌人后激活。",
+        "name": "爆裂护盾"
+      },
+      "resource_type": "法力",
+      "source_key": "Vi",
+      "spells": [
+        {
+          "cooldown": [
+            12,
+            10.5,
+            9,
+            7.5,
+            6
+          ],
+          "cooldownBurn": "12/10.5/9/7.5/6",
+          "cost": [
+            50,
+            60,
+            70,
+            80,
+            90
+          ],
+          "costBurn": "50/60/70/80/90",
+          "costType": " {{ abilityresourcename }}",
+          "description": "蔚对她的拳套进行充能，并且释放一记粉碎性的勾拳，同时带着她前冲。被她命中的敌人会被击退，同时会被施加一层爆弹重拳的效果。",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              15,
+              15,
+              15,
+              15,
+              15
+            ],
+            [
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            [
+              5,
+              5,
+              5,
+              5,
+              5
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "15",
+            "6",
+            "5",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "ViQ",
+          "leveltip": {
+            "effect": [
+              "{{ mindamage }} -> {{ mindamageNL }}",
+              "{{ mindamage*2.500000 }} -> {{ mindamagenl*2.500000 }}",
+              "{{ cooldown }} -> {{ cooldownNL }}",
+              "{{ cost }} -> {{ costNL }}"
+            ],
+            "label": [
+              "最小伤害",
+              "最大伤害",
+              "冷却时间",
+              "@AbilityResourceName@消耗"
+            ]
+          },
+          "maxrank": 5,
+          "name": "强能冲拳",
+          "range": [
+            250,
+            250,
+            250,
+            250,
+            250
+          ],
+          "rangeBurn": "250",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "Q",
+          "tooltip": "<charge>开始蓄力：</charge>蔚开始积蓄一次强力的冲拳，自身<status>减速</status>{{ selfslow }}%。<br /><br /><release>释放：</release>蔚向前冲刺，基于蓄力时间造成<physicalDamage>{{ totaldamage }}到{{ maxdamagetooltip }}物理伤害</physicalDamage>，并对命中的所有敌人施加<spellName>爆弹重拳</spellName>。蔚会在与一名敌方英雄碰撞时停下，并将其<status>击</status><status>退</status>。{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "cooldown",
+            "cooldownNL",
+            "cost",
+            "costNL",
+            "maxdamagetooltip",
+            "mindamage",
+            "mindamage*2.500000",
+            "mindamageNL",
+            "mindamagenl*2.500000",
+            "selfslow",
+            "spellmodifierdescriptionappend",
+            "totaldamage"
+          ],
+          "vars": []
+        },
+        {
+          "cooldown": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cooldownBurn": "0",
+          "cost": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "costBurn": "0",
+          "costType": "被动",
+          "description": "蔚的出拳会打破她对手的护甲，造成额外伤害并为她提供额外攻击速度。",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "ViW",
+          "leveltip": {
+            "effect": [
+              "{{ maxhealthdamage }}% -> {{ maxhealthdamageNL }}%",
+              "{{ attackspeed }}% -> {{ attackspeedNL }}%"
+            ],
+            "label": [
+              "最大生命值伤害",
+              "攻击速度"
+            ]
+          },
+          "maxrank": 5,
+          "name": "爆弹重拳",
+          "range": [
+            750,
+            750,
+            750,
+            750,
+            750
+          ],
+          "rangeBurn": "750",
+          "resource": "被动",
+          "slot": "W",
+          "tooltip": "<spellPassive>被动：</spellPassive>对相同目标的每第三次攻击会造成额外<physicalDamage>{{ totaldamagetooltip }}最大生命值的物理伤害</physicalDamage>，移除目标<scaleArmor>{{ shredamount }}%护甲</scaleArmor>，并为蔚提供<attackSpeed>{{ attackspeed }}%攻击速度</attackSpeed>，持续{{ sharedbuffsduration }}秒。它还可缩短<spellName>爆裂护盾</spellName>{{ spell.vipassive:cdreductionon3hit }}秒冷却时间。{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "attackspeed",
+            "attackspeedNL",
+            "maxhealthdamage",
+            "maxhealthdamageNL",
+            "sharedbuffsduration",
+            "shredamount",
+            "spell.vipassive:cdreductionon3hit",
+            "spellmodifierdescriptionappend",
+            "totaldamagetooltip"
+          ],
+          "vars": []
+        },
+        {
+          "cooldown": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "cooldownBurn": "1",
+          "cost": [
+            26,
+            32,
+            38,
+            44,
+            50
+          ],
+          "costBurn": "26/32/38/44/50",
+          "costType": " {{ abilityresourcename }}",
+          "description": "蔚的下次攻击会爆裂，并透过她的目标，对目标身后的敌人造成伤害。",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              50,
+              50,
+              50,
+              50,
+              50
+            ],
+            [
+              1.5,
+              1.5,
+              1.5,
+              1.5,
+              1.5
+            ],
+            [
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            [
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "50",
+            "1.5",
+            "6",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "ViE",
+          "leveltip": {
+            "effect": [
+              "{{ basedamage }} -> {{ basedamageNL }}",
+              "{{ ammorechargetime }} -> {{ ammorechargetimeNL }}",
+              "{{ cost }} -> {{ costNL }}"
+            ],
+            "label": [
+              "基础伤害",
+              "充能时间",
+              "@AbilityResourceName@消耗"
+            ]
+          },
+          "maxrank": 5,
+          "name": "透体之劲",
+          "range": [
+            400,
+            400,
+            400,
+            400,
+            400
+          ],
+          "rangeBurn": "400",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "E",
+          "tooltip": "蔚的下次攻击对目标和目标后方的敌人造成<physicalDamage>{{ totaldamagetooltip }}物理伤害</physicalDamage>。<br /><br />这个技能有2层充能({{ ammorechargetime }}秒充能时间)。{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "ammorechargetime",
+            "ammorechargetimeNL",
+            "basedamage",
+            "basedamageNL",
+            "cost",
+            "costNL",
+            "spellmodifierdescriptionappend",
+            "totaldamagetooltip"
+          ],
+          "vars": []
+        },
+        {
+          "cooldown": [
+            140,
+            115,
+            90
+          ],
+          "cooldownBurn": "140/115/90",
+          "cost": [
+            100,
+            100,
+            100
+          ],
+          "costBurn": "100",
+          "costType": " {{ abilityresourcename }}",
+          "description": "蔚撞向一名敌人，将途中的人击退到两边。当她接触到目标时，她会将目标击飞到空中，然后跳上去，将目标轰到地面上。",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "ViR",
+          "leveltip": {
+            "effect": [
+              "{{ rbasedamage }} -> {{ rbasedamageNL }}",
+              "{{ cooldown }} -> {{ cooldownNL }}"
+            ],
+            "label": [
+              "基础伤害",
+              "冷却时间"
+            ]
+          },
+          "maxrank": 3,
+          "name": "天霸横空烈轰",
+          "range": [
+            800,
+            800,
+            800
+          ],
+          "rangeBurn": "800",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "R",
+          "tooltip": "蔚挑出一名敌方英雄，将其显形并不可阻挡地向其冲刺。在触碰到该英雄后，蔚会将其<status>击飞</status>{{ rstunduration }}秒，并造成<physicalDamage>{{ damage }}物理伤害</physicalDamage>。<br /><br />任何与蔚产生碰撞的敌人都会受到伤害、被震开并<status>晕眩</status>{{ secondarytargetstunduration }}秒。{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "cooldown",
+            "cooldownNL",
+            "cost",
+            "damage",
+            "rbasedamage",
+            "rbasedamageNL",
+            "rstunduration",
+            "secondarytargetstunduration",
+            "spellmodifierdescriptionappend"
+          ],
+          "vars": []
+        }
+      ],
+      "stats": {
+        "armor": 30,
+        "armorperlevel": 4.7,
+        "attackdamage": 61,
+        "attackdamageperlevel": 0,
+        "attackrange": 125,
+        "attackspeed": 0.644,
+        "attackspeedperlevel": 2,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 655,
+        "hpperlevel": 105,
+        "hpregen": 10,
+        "hpregenperlevel": 1,
+        "movespeed": 340,
+        "mp": 295,
+        "mpperlevel": 65,
+        "mpregen": 8,
+        "mpregenperlevel": 0.65,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "title": "蔚"
+    }
+  ],
+  "evidence_type": "observed",
+  "locale": "zh_CN",
+  "source_url": "https://ddragon.leagueoflegends.com/cdn/16.20.1/data/zh_CN/champion/Vi.json",
+  "version": "16.20.1"
+}

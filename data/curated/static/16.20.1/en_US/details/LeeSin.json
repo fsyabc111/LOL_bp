@@ -1,0 +1,616 @@
+{
+  "entities": [
+    {
+      "aliases": [
+        "LeeSin",
+        "Lee Sin"
+      ],
+      "id": 64,
+      "locale": "en_US",
+      "name": "Lee Sin",
+      "passive": {
+        "description": "After Lee Sin uses an ability, his next 2 basic attacks gain Attack Speed and return Energy.",
+        "name": "Flurry"
+      },
+      "resource_type": "Energy",
+      "source_key": "LeeSin",
+      "spells": [
+        {
+          "cooldown": [
+            10,
+            9,
+            8,
+            7,
+            6
+          ],
+          "cooldownBurn": "10/9/8/7/6",
+          "cost": [
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "costBurn": "50",
+          "costType": " {{ abilityresourcename }}",
+          "description": "Sonic Wave: Lee Sin projects a discordant wave of sound to locate his enemies, dealing physical damage to the first enemy it encounters. If Sonic Wave hits, Lee Sin can cast Resonating Strike for the next 3 seconds.<br>Resonating Strike: Lee Sin dashes to the enemy hit by Sonic Wave, dealing physical damage based on the target's missing Health.",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "LeeSinQOne",
+          "leveltip": {
+            "effect": [
+              "{{ q1basedamage }} -> {{ q1basedamageNL }}",
+              "{{ q2basedamage }} -> {{ q2basedamageNL }}",
+              "{{ q2basedamage*2.000000 }} -> {{ q2basedamagenl*2.000000 }}",
+              "{{ cooldown }} -> {{ cooldownNL }}"
+            ],
+            "label": [
+              "Sonic Wave Damage",
+              "Resonating Strike Minimum Base Damage",
+              "Resonating Strike Maximum Base Damage",
+              "Cooldown"
+            ]
+          },
+          "maxrank": 5,
+          "name": "Sonic Wave / Resonating Strike",
+          "range": [
+            1100,
+            1100,
+            1100,
+            1100,
+            1100
+          ],
+          "rangeBurn": "1100",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "Q",
+          "tooltip": "Lee Sin projects a discordant wave of sound, dealing <physicalDamage>{{ initialdamage }} physical damage</physicalDamage> to the first enemy hit, granting <keywordStealth>True Sight</keywordStealth> of them, and allows Lee Sin to <recast>Recast</recast> for the next {{ reactivatetime }} seconds.<br /><br /><recast>Recast:</recast> Lee Sin dashes to the enemy hit by the sound wave, dealing between <physicalDamage>{{ recastdamage }} to {{ empowereddamage }} physical damage</physicalDamage> scaling with the target's missing Health. {{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "cooldown",
+            "cooldownNL",
+            "cost",
+            "empowereddamage",
+            "initialdamage",
+            "q1basedamage",
+            "q1basedamageNL",
+            "q2basedamage",
+            "q2basedamage*2.000000",
+            "q2basedamageNL",
+            "q2basedamagenl*2.000000",
+            "reactivatetime",
+            "recastdamage",
+            "spellmodifierdescriptionappend"
+          ],
+          "vars": []
+        },
+        {
+          "cooldown": [
+            7,
+            7,
+            7,
+            7,
+            7
+          ],
+          "cooldownBurn": "7",
+          "cost": [
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "costBurn": "50",
+          "costType": " {{ abilityresourcename }}",
+          "description": "Safeguard: Lee Sin rushes to target ally, shielding himself from damage. If the ally is a champion, they are also shielded. After using Safeguard, Lee Sin can cast Iron Will.<br>Iron Will: Lee Sin's intense training allows him to thrive in battle. Lee Sin gains Omnivamp.",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "LeeSinWOne",
+          "leveltip": {
+            "effect": [
+              "{{ shieldvalue }} -> {{ shieldvalueNL }}",
+              "{{ lifestealandspellvamp }}% -> {{ lifestealandspellvampNL }}%"
+            ],
+            "label": [
+              "Safeguard Shield Absorption",
+              "Iron Will Omnivamp %"
+            ]
+          },
+          "maxrank": 5,
+          "name": "Safeguard / Iron Will",
+          "range": [
+            700,
+            700,
+            700,
+            700,
+            700
+          ],
+          "rangeBurn": "700",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "W",
+          "tooltip": "Lee Sin dashes to an ally or ward. If the target is a champion, Lee Sin grants them and himself <shield>{{ shieldamount }} Shield</shield> for {{ shieldduration }} seconds. Lee Sin may <recast>Recast</recast> for the next {{ w1reactivatetime }} seconds.<br /><br /><recast>Recast:</recast> Lee Sin gains {{ lifestealandspellvamp }}% Omnivamp for {{ lifestealandspellvamptime }} seconds.{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "cost",
+            "lifestealandspellvamp",
+            "lifestealandspellvampNL",
+            "lifestealandspellvamptime",
+            "shieldamount",
+            "shieldduration",
+            "shieldvalue",
+            "shieldvalueNL",
+            "spellmodifierdescriptionappend",
+            "w1reactivatetime"
+          ],
+          "vars": []
+        },
+        {
+          "cooldown": [
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "cooldownBurn": "8",
+          "cost": [
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "costBurn": "50",
+          "costType": " {{ abilityresourcename }}",
+          "description": "Tempest: Lee Sin smashes the ground, sending out a shockwave that deals magic damage and reveals enemy units hit. If Tempest hits an enemy, Lee Sin can cast cripple.<br>Cripple: Lee Sin cripples nearby enemies damaged by Tempest, reducing their Move Speed. Move Speed recovers gradually over the duration.",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "LeeSinEOne",
+          "leveltip": {
+            "effect": [
+              "{{ e1damage }} -> {{ e1damageNL }}",
+              "{{ slowamount }}% -> {{ slowamountNL }}%"
+            ],
+            "label": [
+              "Tempest Damage",
+              "Cripple Slow"
+            ]
+          },
+          "maxrank": 5,
+          "name": "Tempest / Cripple",
+          "range": [
+            450,
+            450,
+            450,
+            450,
+            450
+          ],
+          "rangeBurn": "450",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "E",
+          "tooltip": "Lee Sin smashes the ground, sending out a shockwave that deals <magicDamage>{{ initialdamage }} magic damage</magicDamage> and reveals them for {{ slowduration }} seconds. If this hits an enemy, Lee Sin can <recast>Recast</recast> for the next {{ reactivatetime }} seconds.<br /><br /><recast>Recast:</recast> Lee Sin <status>Slows</status> nearby enemies struck by the shockwave by {{ slowamount }}% decaying over {{ slowduration }} seconds.{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "cost",
+            "e1damage",
+            "e1damageNL",
+            "initialdamage",
+            "reactivatetime",
+            "slowamount",
+            "slowamountNL",
+            "slowduration",
+            "spellmodifierdescriptionappend"
+          ],
+          "vars": []
+        },
+        {
+          "cooldown": [
+            110,
+            85,
+            60
+          ],
+          "cooldownBurn": "110/85/60",
+          "cost": [
+            0,
+            0,
+            0
+          ],
+          "costBurn": "0",
+          "costType": "No Cost",
+          "description": "Lee Sin performs a powerful roundhouse kick launching his target back, dealing physical damage to the target and any enemies they collide with. Enemies the target collides with are knocked into the air for a short duration. This technique was taught to him by Jesse Perring, although Lee Sin does not kick players off the map.",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "LeeSinR",
+          "leveltip": {
+            "effect": [
+              "{{ basedamage }} -> {{ basedamageNL }}",
+              "{{ percenthpcarrythrough }}% -> {{ percenthpcarrythroughNL }}%",
+              "{{ cooldown }} -> {{ cooldownNL }}"
+            ],
+            "label": [
+              "Damage",
+              "Bonus Health Damage",
+              "Cooldown"
+            ]
+          },
+          "maxrank": 3,
+          "name": "Dragon's Rage",
+          "range": [
+            375,
+            375,
+            375
+          ],
+          "rangeBurn": "375",
+          "resource": "No Cost",
+          "slot": "R",
+          "tooltip": "Lee Sin performs a powerful roundhouse kick <status>Knocking Back</status> an enemy champion and dealing <physicalDamage>{{ damage }} physical damage</physicalDamage>.<br /><br />Enemies the target collides with are briefly <status>Knocked Up</status> and take <physicalDamage>{{ damage }} plus {{ percenthpcarrythrough }}% of the kicked enemy's bonus Health as physical damage</physicalDamage>.{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "basedamage",
+            "basedamageNL",
+            "cooldown",
+            "cooldownNL",
+            "damage",
+            "percenthpcarrythrough",
+            "percenthpcarrythroughNL",
+            "spellmodifierdescriptionappend"
+          ],
+          "vars": []
+        }
+      ],
+      "stats": {
+        "armor": 36,
+        "armorperlevel": 4.5,
+        "attackdamage": 66,
+        "attackdamageperlevel": 0,
+        "attackrange": 125,
+        "attackspeed": 0.651,
+        "attackspeedperlevel": 3,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 645,
+        "hpperlevel": 108,
+        "hpregen": 7.5,
+        "hpregenperlevel": 0.7,
+        "movespeed": 345,
+        "mp": 200,
+        "mpperlevel": 0,
+        "mpregen": 50,
+        "mpregenperlevel": 0,
+        "spellblock": 32,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Fighter",
+        "Assassin"
+      ],
+      "title": "the Blind Monk"
+    }
+  ],
+  "evidence_type": "observed",
+  "locale": "en_US",
+  "source_url": "https://ddragon.leagueoflegends.com/cdn/16.20.1/data/en_US/champion/LeeSin.json",
+  "version": "16.20.1"
+}

@@ -1,0 +1,620 @@
+{
+  "entities": [
+    {
+      "aliases": [
+        "Rell",
+        "镕铁少女"
+      ],
+      "id": 526,
+      "locale": "zh_CN",
+      "name": "镕铁少女",
+      "passive": {
+        "description": "芮尔的攻击和技能会在命中时窃取护甲和魔法抗性。",
+        "name": "溃敌沉力"
+      },
+      "resource_type": "法力",
+      "source_key": "Rell",
+      "spells": [
+        {
+          "cooldown": [
+            11,
+            10.5,
+            10,
+            9.5,
+            9
+          ],
+          "cooldownBurn": "11/10.5/10/9.5/9",
+          "cost": [
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "costBurn": "50",
+          "costType": " {{ abilityresourcename }}",
+          "description": "芮尔对一条直线上的单位们造成魔法伤害，打破他们的护盾并造成晕眩效果。 ",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "RellQ",
+          "leveltip": {
+            "effect": [
+              "{{ basedamage }} -> {{ basedamageNL }}",
+              "{{ cooldown }} -> {{ cooldownNL }}"
+            ],
+            "label": [
+              "伤害",
+              "冷却时间"
+            ]
+          },
+          "maxrank": 5,
+          "name": "裂阵",
+          "range": [
+            600,
+            600,
+            600,
+            600,
+            600
+          ],
+          "rangeBurn": "600",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "Q",
+          "tooltip": "芮尔戳刺她的骑枪，使目标们<status>晕眩</status>{{ stunduration }}秒、摧毁所有<shield>护盾</shield>，并造成<magicDamage>{{ damage }}魔法伤害</magicDamage>。{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "basedamage",
+            "basedamageNL",
+            "cooldown",
+            "cooldownNL",
+            "cost",
+            "damage",
+            "spellmodifierdescriptionappend",
+            "stunduration"
+          ],
+          "vars": []
+        },
+        {
+          "cooldown": [
+            11,
+            11,
+            11,
+            11,
+            11
+          ],
+          "cooldownBurn": "11",
+          "cost": [
+            40,
+            40,
+            40,
+            40,
+            40
+          ],
+          "costBurn": "40",
+          "costType": " {{ abilityresourcename }}",
+          "description": "骑乘状态：芮尔化马为甲，以披甲状态向下轰落，击飞敌人们并获得高额护盾值。在披甲状态下，她获得护甲、魔法抗性、攻击速度和攻击距离，但移动速度缓慢。<br><br>披甲状态：芮尔化甲为马，提供爆发性的移动速度并且她的下一次攻击会对敌人造成击飞效果。<br><br>",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "RellW_Dismount",
+          "leveltip": {
+            "effect": [
+              "{{ basedamage }} -> {{ basedamageNL }}",
+              "{{ shieldbase }} -> {{ shieldbaseNL }}",
+              "{{ flipattackdamagetooltiponly }} -> {{ flipattackdamagetooltiponlyNL }}"
+            ],
+            "label": [
+              "伤害",
+              "护盾值",
+              "挑翻伤害"
+            ]
+          },
+          "maxrank": 5,
+          "name": "驭铁术：轰落",
+          "range": [
+            450,
+            450,
+            450,
+            450,
+            450
+          ],
+          "rangeBurn": "450",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "W",
+          "tooltip": "芮尔化马为甲，<status>击飞</status>敌人{{ spell.rellw_dismount:stunduration }}秒并造成<magicDamage>{{ spell.rellw_dismount:dismountdamage }}魔法伤害</magicDamage>。芮尔获得<shield>{{ spell.rellw_dismount:shield }}护盾值</shield>，持续到她再次上马为止。<br /><br />芮尔随后进入披甲形态，获得<scaleArmor>{{ spell.rellw_dismount:resistanceincrease*100 }}%额外护甲</scaleArmor>和<scaleMR>魔法抗性</scaleMR>、<attackSpeed>{{ spell.rellw_dismount:dismountedasboost*100 }}%攻击速度</attackSpeed>和{{ spell.rellw_dismount:dismountedrangeboost }}攻击距离，但移动速度<status>减缓</status><slow>{{ spell.rellw_dismount:dismountedmspenalty*-100 }}%</slow>。在这个形态中，她可以使用<spellName>驭铁术：驾临</spellName>。{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "basedamage",
+            "basedamageNL",
+            "cost",
+            "flipattackdamagetooltiponly",
+            "flipattackdamagetooltiponlyNL",
+            "shieldbase",
+            "shieldbaseNL",
+            "spell.rellw_dismount:dismountdamage",
+            "spell.rellw_dismount:dismountedasboost*100",
+            "spell.rellw_dismount:dismountedmspenalty*-100",
+            "spell.rellw_dismount:dismountedrangeboost",
+            "spell.rellw_dismount:resistanceincrease*100",
+            "spell.rellw_dismount:shield",
+            "spell.rellw_dismount:stunduration",
+            "spellmodifierdescriptionappend"
+          ],
+          "vars": []
+        },
+        {
+          "cooldown": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ],
+          "cooldownBurn": "15",
+          "cost": [
+            40,
+            40,
+            40,
+            40,
+            40
+          ],
+          "costBurn": "40",
+          "costType": " {{ abilityresourcename }}",
+          "description": "被动：芮尔获得非战斗状态下的移动速度。<br><br>主动：芮尔和一名友军获得不断升温的移动速度，这个加成会在朝着敌人们和彼此移动时提升至双倍。她的下次攻击会爆炸，造成魔法伤害。<br>",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "RellE",
+          "leveltip": {
+            "effect": [
+              "{{ basedamage }} -> {{ basedamageNL }}",
+              "{{ basems*100.000000 }}% -> {{ basemsnl*100.000000 }}%",
+              "{{ maxms*100.000000 }}% -> {{ maxmsnl*100.000000 }}%"
+            ],
+            "label": [
+              "伤害",
+              "移动速度",
+              "最大移动速度"
+            ]
+          },
+          "maxrank": 5,
+          "name": "全速冲锋",
+          "range": [
+            1200,
+            1200,
+            1200,
+            1200,
+            1200
+          ],
+          "rangeBurn": "1200",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "E",
+          "tooltip": "<spellPassive>被动 - 铁骑疾行：</spellPassive>芮尔在骑乘状态时获得<speed>{{ passivemovespeed }}移动速度</speed>，这个加成在战斗中会削减至<speed>{{ combatmstooltiponly }}</speed>。<br /><br /><spellActive>主动 - 全速冲锋：</spellActive>芮尔和一名友军进行冲锋，获得在{{ duration }}秒里持续升温的<speed>至多{{ basems*100 }}%移动速度</speed>，这个加成会在朝着敌人们或与你的目标友军移动时翻倍至<speed>{{ maxms*100 }}%</speed>。<br /><br />此外，芮尔的下次攻击或<spellName>裂阵</spellName>会在一个区域内爆炸，造成<magicDamage>{{ damage }}外加{{ percenthealthdamage*100 }}%最大生命值的魔法伤害</magicDamage>。{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "basedamage",
+            "basedamageNL",
+            "basems*100",
+            "basems*100.000000",
+            "basemsnl*100.000000",
+            "combatmstooltiponly",
+            "cost",
+            "damage",
+            "duration",
+            "maxms*100",
+            "maxms*100.000000",
+            "maxmsnl*100.000000",
+            "passivemovespeed",
+            "percenthealthdamage*100",
+            "spellmodifierdescriptionappend"
+          ],
+          "vars": []
+        },
+        {
+          "cooldown": [
+            120,
+            100,
+            80
+          ],
+          "cooldownBurn": "120/100/80",
+          "cost": [
+            100,
+            100,
+            100
+          ],
+          "costBurn": "100",
+          "costType": " {{ abilityresourcename }}",
+          "description": "芮尔喷发出有磁性的怒火，粗暴地将附近敌方英雄向她拉拽。随后芮尔会持续将附近敌人向她拖曳一小段时间，并持续造成魔法伤害。",
+          "effect": [
+            null,
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "effectBurn": [
+            null,
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "evidence_type": "observed",
+          "formula_resolution": "unknown",
+          "id": "RellR",
+          "leveltip": {
+            "effect": [
+              "{{ cooldown }} -> {{ cooldownNL }}",
+              "{{ basedamagepersecond }} -> {{ basedamagepersecondNL }}"
+            ],
+            "label": [
+              "冷却时间",
+              "每秒伤害"
+            ]
+          },
+          "maxrank": 3,
+          "name": "极涌",
+          "range": [
+            200,
+            200,
+            200
+          ],
+          "rangeBurn": "200",
+          "resource": "{{ cost }} {{ abilityresourcename }}",
+          "slot": "R",
+          "tooltip": "芮尔喷发出有磁性的怒火，粗暴地将附近敌方英雄向她<status>拉拽</status>。随后芮尔会持续将附近敌人向她<status>拖曳</status>并在接来的{{ duration }}秒里持续造成共<magicDamage>{{ totaldamage }}魔法伤害</magicDamage>。{{ spellmodifierdescriptionappend }}",
+          "unresolved_placeholders": [
+            "abilityresourcename",
+            "basedamagepersecond",
+            "basedamagepersecondNL",
+            "cooldown",
+            "cooldownNL",
+            "cost",
+            "duration",
+            "spellmodifierdescriptionappend",
+            "totaldamage"
+          ],
+          "vars": []
+        }
+      ],
+      "stats": {
+        "armor": 36,
+        "armorperlevel": 4.2,
+        "attackdamage": 55,
+        "attackdamageperlevel": 3,
+        "attackrange": 175,
+        "attackspeed": 0.625,
+        "attackspeedperlevel": 1.5,
+        "crit": 0,
+        "critperlevel": 0,
+        "hp": 610,
+        "hpperlevel": 104,
+        "hpregen": 7.5,
+        "hpregenperlevel": 0.85,
+        "movespeed": 330,
+        "mp": 350,
+        "mpperlevel": 45,
+        "mpregen": 6,
+        "mpregenperlevel": 0.35,
+        "spellblock": 30,
+        "spellblockperlevel": 2.05
+      },
+      "tags": [
+        "Tank",
+        "Support"
+      ],
+      "title": "芮尔"
+    }
+  ],
+  "evidence_type": "observed",
+  "locale": "zh_CN",
+  "source_url": "https://ddragon.leagueoflegends.com/cdn/14.16.1/data/zh_CN/champion/Rell.json",
+  "version": "14.16.1"
+}
