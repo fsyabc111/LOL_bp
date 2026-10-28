@@ -1,0 +1,4 @@
+# Phase 1 local web app (replay and branches). Data pipeline scripts still need only stdlib.
+fastapi==0.115.6
+uvicorn==0.32.1
+httpx==0.28.1

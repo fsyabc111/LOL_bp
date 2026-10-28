@@ -11,3 +11,9 @@ __pycache__/
 /data/raw/
 /data/processed/
 /data/**/*.tmp
+
+# Phase 1 app: dependencies, build output and local branch store.
+/web/node_modules/
+/web/dist/
+/data/app/
+/web/*.tsbuildinfo
