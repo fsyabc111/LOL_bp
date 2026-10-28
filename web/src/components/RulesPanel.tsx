@@ -11,6 +11,7 @@ interface Props { detail: GameDetail; rules: Rules; champions: Record<string, Ch
 
 export function RulesPanel({ detail, rules, champions }: Props) {
   const source = detail.sequence_source;
+  const byName = Object.fromEntries(Object.values(champions).map((c) => [c.name.toLowerCase(), c]));
   return (
     <div className="panel">
       <h3>规则与证据</h3>
@@ -18,7 +19,7 @@ export function RulesPanel({ detail, rules, champions }: Props) {
         <dt>赛事</dt><dd>{rules.tournament ?? <span className="muted">未关联</span>}</dd>
         <dt>选禁模板</dt><dd>20 步蛇形 <Status field={rules.template} /></dd>
         <dt>跨局限制</dt><dd>{FEARLESS[rules.fearless.value] ?? rules.fearless.value} <Status field={rules.fearless} /></dd>
-        <dt>赛事禁用</dt><dd>{rules.disabled_champions.value.length ? rules.disabled_champions.value.join('、') : '无记录'} <Status field={rules.disabled_champions} /></dd>
+        <dt>赛事禁用</dt><dd>{rules.disabled_champions.value.length ? rules.disabled_champions.value.map((n) => byName[n.toLowerCase()]?.name_zh ?? n).join('、') : (rules.disabled_champions.status === 'unknown' ? '未取得' : '无')} <Status field={rules.disabled_champions} /></dd>
         <dt>顺序来源</dt>
         <dd>
           {source.type === 'leaguepedia'

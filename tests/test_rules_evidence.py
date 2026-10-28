@@ -6,7 +6,7 @@ import tempfile
 import unittest
 import urllib.error
 
-from scripts.collect_rules_evidence import add_collection, collect_source, migrate_manifest, save_bytes
+from scripts.collect_rules_evidence import add_collection, collect_source, migrate_manifest, pin_new_sources, save_bytes
 
 
 class Response:
@@ -76,6 +76,12 @@ class RulesEvidenceTests(unittest.TestCase):
                 if isinstance(error, TimeoutError):
                     self.assertNotIn('retrieved_at_utc', record)
 
+    def test_pin_adds_only_new_successful_sources(self):
+        manifest = {'sources': [{'source_id': 'old', 'sha256': 'a'}]}
+        records = [{'source_id': 'old', 'status': 200, 'sha256': 'b'}, {'source_id': 'new', 'status': 200, 'sha256': 'c'},
+                   {'source_id': 'failed', 'status': 404, 'sha256': 'd'}]
+        pin_new_sources(manifest, records)
+        self.assertEqual([(s['source_id'], s['sha256']) for s in manifest['sources']], [('old', 'a'), ('new', 'c')])
     def test_corrupt_existing_content_addressed_bytes_rejected(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

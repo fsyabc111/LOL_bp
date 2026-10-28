@@ -79,6 +79,6 @@ python3 scripts/assemble_sample.py
 
 成功输出仍可用于离线样本索引；只读取manifest成功清单并验证原始/派生哈希，不按目录里“有文件”就判定有效。`--offline` 可从原始缓存重建，当前缺两份缓存仍会明确非零退出；该命令会重写manifest的运行状态，保留正式网络失败证据时应在临时副本中做重建验证。详细计数、缺口及字段限制见[静态资料说明](static-data.md)。
 
-建议顺序：收集上下文 → 构建CSV/SQLite → 收集静态资料 → 采集Leaguepedia逐手表（`collect_leaguepedia_pb.py`，需要SQLite）→ 测量OE顺序（`measure_oe_order.py`）→ 逐手BP验证 → 生成sample index → 跑离线测试。规则与patches结构化记录已有版本，本轮不需要重新联网获取规则书；如主动刷新则按规则证据文档审核新内容。输入快照变化后重新生成下游产物，`sample-index.json` 内的input_sha256用于识别过期索引。
+建议顺序：收集上下文 → 构建CSV/SQLite → 收集静态资料 → 采集Leaguepedia逐手表（`collect_leaguepedia_pb.py`）与赛事禁用名单（`collect_leaguepedia_data_pages.py`，均需要SQLite）→ 测量OE顺序（`measure_oe_order.py`）→ 逐手BP验证 → 生成sample index → 跑离线测试。规则与patches结构化记录已有版本，本轮不需要重新联网获取规则书；如主动刷新则按规则证据文档审核新内容。输入快照变化后重新生成下游产物，`sample-index.json` 内的input_sha256用于识别过期索引。
 
 索引目前覆盖42小局、11系列赛，关联英雄数字ID及候选规则。生成索引前须运行 `python3 scripts/validate_bp.py`；[逐手BP验证器](bp-validation.md)已实现，但尚无独立逐手证据，所有replay_ready保持false；详见[样本索引说明](sample-index.md)和[数据集状态](dataset-status.md)。

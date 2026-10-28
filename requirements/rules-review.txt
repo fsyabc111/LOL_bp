@@ -1,0 +1,2 @@
+# Reading rulebook PDFs during rules review (not needed by pipelines or app).
+pypdf==5.1.0

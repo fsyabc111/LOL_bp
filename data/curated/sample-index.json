@@ -1,10 +1,10 @@
 {
   "input_sha256": {
-    "data/curated/bp-validation.json": "0ca3469afb9b4900a3830144139d8426d393f18ae16a25431a681ff4ab4112a7",
+    "data/curated/bp-validation.json": "fcb7ed7a9b0f1d838228c00049fa53713ef36f16b7e4860b58377767fdd6fdb5",
     "data/curated/match_context.jsonl": "48ce1a6ab624b68c077a1eb2da2b474a8995c85aedd25f002b58cb436f9cdba1",
     "data/curated/patches.json": "35e6f47fe96078bb9ff2e58cd37435c01847165f4039955ba0eeff4eda2927f8",
     "data/curated/replay_candidates.jsonl": "2ea1719504bfbe41524627b4e6f54339b4603806db260f67cc142af2483d371b",
-    "data/curated/rules.json": "834eb20b9aeab8e6d373225cbfdb43d1c2fc1e7d711eb6042497647414dc64f8",
+    "data/curated/rules.json": "5b713ac2d75ad15ba22364c27732da8a3adb61cc11f36889f7b1044f1f9d66df",
     "data/manifests/static-data.json": "4da048fc55ba67777c2000f925982428a0b4ef2894c962508496424c3935ce7e"
   },
   "records": [
@@ -1288,8 +1288,6 @@
           "applicability_status": "observed",
           "rule_id": "worlds_2026",
           "unknown_fields": [
-            "draft_template",
-            "cross_game_ban_scope",
             "event_disabled_champions"
           ]
         }
@@ -1447,8 +1445,6 @@
           "applicability_status": "observed",
           "rule_id": "worlds_2026",
           "unknown_fields": [
-            "draft_template",
-            "cross_game_ban_scope",
             "event_disabled_champions"
           ]
         }
@@ -1606,8 +1602,6 @@
           "applicability_status": "observed",
           "rule_id": "worlds_2026",
           "unknown_fields": [
-            "draft_template",
-            "cross_game_ban_scope",
             "event_disabled_champions"
           ]
         }

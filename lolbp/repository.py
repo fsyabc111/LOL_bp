@@ -20,6 +20,7 @@ from assemble_sample import applicable_rules  # noqa: E402  (shared rule-applica
 DB = 'data/processed/lol_bp.sqlite3'
 SEQUENCES = 'data/curated/bp_sequences.jsonl'
 CONTEXT = 'data/curated/match_context.jsonl'
+RESTRICTIONS = 'data/curated/event_restrictions.jsonl'
 RULES = 'data/curated/rules.json'
 ACCURACY = 'data/curated/oe-order-accuracy.json'
 CATALOG_VERSION = '16.20.1'
@@ -89,6 +90,12 @@ class Repository:
             for line in path.read_text().splitlines():
                 if line.strip():
                     item = json.loads(line); self.evidence[item['oe_gameid']].append(item)
+        self.restrictions = defaultdict(list)
+        path = self.root / RESTRICTIONS
+        if path.exists():
+            for line in path.read_text().splitlines():
+                if line.strip():
+                    item = json.loads(line); self.restrictions[item['oe_gameid']].append(item)
         self.contexts = {}
         path = self.root / CONTEXT
         if path.exists():
@@ -167,19 +174,21 @@ class Repository:
         candidates = applicable_rules({'league_raw': game['league'], 'date_raw': game['date']}, context, self.rules)
         by_id = {r['rule_id']: r for r in self.rules['rules']}
         usable = [by_id[c['rule_id']] for c in candidates if c['applicability_status'] in ('observed', 'inferred')]
-        def observed(field):
-            for rule in usable:
-                value = rule.get(field, {})
-                if value.get('status') == 'observed': return value.get('value'), rule['rule_id']
-            return None, None
-        template, rule_id = observed('draft_template')
-        template_field = ({'value': template, 'status': 'observed', 'source': rule_id} if template else
+        def documented(field):
+            """Prefer an observed rulebook value, then an inferred one; return (value, status, rule_id)."""
+            for wanted in ('observed', 'inferred'):
+                for rule in usable:
+                    value = rule.get(field, {})
+                    if value.get('status') == wanted and value.get('value') is not None: return value['value'], wanted, rule['rule_id']
+            return None, None, None
+        template, status, rule_id = documented('draft_template')
+        template_field = ({'value': template, 'status': status, 'source': rule_id} if template else
                           {'value': 'snake_20', 'status': 'practice_observed',
                            'source': 'Leaguepedia per-step tables: all 2,376 linked 2024-2026 games follow snake_20; rulebook not obtained'})
-        scope, rule_id = observed('cross_game_ban_scope')
+        scope, status, rule_id = documented('cross_game_ban_scope')
         if scope:
             fearless = {'value': draft.FEARLESS_PICKS_BOTH if scope == 'picks_by_both_teams_for_remainder_of_match' else scope,
-                        'status': 'observed', 'source': rule_id}
+                        'status': status, 'source': rule_id}
         elif int(game['year']) >= 2025:
             fearless = {'value': draft.FEARLESS_PICKS_BOTH, 'status': 'assumed',
                         'source': 'Riot 2025 Fearless announcements (background evidence); event rulebook not obtained'}
@@ -188,9 +197,18 @@ class Repository:
                         'source': 'pre-2025 tournament draft; repeated picks observed across series games'}
         if fearless_override in (draft.FEARLESS_PICKS_BOTH, draft.FEARLESS_NONE):
             fearless = {'value': fearless_override, 'status': 'user_assumption', 'source': 'branch setting', 'default': fearless}
-        disabled, rule_id = observed('event_disabled_champions')
-        disabled_field = ({'value': disabled, 'status': 'observed', 'source': rule_id} if disabled is not None else
-                          {'value': [], 'status': 'unknown', 'source': 'event-disabled list not collected; nothing is blocked'})
+        disabled, status, rule_id = documented('event_disabled_champions')
+        listed = self.restrictions.get(gameid, [])
+        if disabled is not None:
+            disabled_field = {'value': disabled, 'status': status, 'source': rule_id}
+        elif len(listed) == 1:
+            item = listed[0]
+            disabled_field = {'value': item['disabled'], 'status': 'community_listed',
+                              'source': f"Leaguepedia SetPatch: {item['source']['locator']}", 'listed_patch': item['listed_patch'],
+                              'hotfix': item['hotfix']}
+        else:
+            disabled_field = {'value': [], 'status': 'unknown' if not listed else 'conflicting_sources',
+                              'source': 'no event-disabled list linked to this game; nothing is blocked'}
         return {'tournament': tournament or None, 'candidate_rules': candidates, 'template': template_field,
                 'fearless': fearless, 'disabled_champions': disabled_field}
 
@@ -212,8 +230,9 @@ class Repository:
         _, first_side, _ = self.sequence(gameid)
         resolved = self.resolve_rules(gameid, fearless_override)
         context = self.series_context(gameid)
+        disabled = frozenset(self.champion_id(name) for name in resolved['disabled_champions']['value'] or [])
         rules = draft.DraftRules(slots=draft.slots_from_template(self.template, first_side), fearless=resolved['fearless']['value'],
-                                 consumed=frozenset(context['consumed']), disabled=frozenset(resolved['disabled_champions']['value'] or []),
+                                 consumed=frozenset(context['consumed']), disabled=disabled,
                                  known=frozenset(self.champions))
         return rules, resolved, context
 

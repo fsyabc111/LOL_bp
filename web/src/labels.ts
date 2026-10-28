@@ -11,6 +11,9 @@ export const REASON: Record<string, string> = {
 
 export const STATUS: Record<string, { text: string; tone: 'ok' | 'warn' | 'muted' }> = {
   observed: { text: '规则书确认', tone: 'ok' },
+  inferred: { text: '规则书推断', tone: 'warn' },
+  community_listed: { text: 'Leaguepedia 记录', tone: 'warn' },
+  conflicting_sources: { text: '来源冲突', tone: 'warn' },
   practice_observed: { text: '实践观察·规则书未取得', tone: 'warn' },
   assumed: { text: '假设', tone: 'warn' },
   user_assumption: { text: '用户假设', tone: 'warn' },

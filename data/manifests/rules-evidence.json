@@ -226,6 +226,34 @@
       "content_status": "snapshot_saved",
       "legacy_path": "data/raw/rules/riot_ddragon_docs.html",
       "semantic_status": "unreviewed"
+    },
+    {
+      "source_id": "worlds_2025_rules",
+      "url": "https://cdn.sanity.io/files/dsfx7636/news_live/d3d5b3d1ad2d201d397818ca4209c99536182a18.pdf",
+      "attempted_at_utc": "2026-10-28T18:36:49.185126+00:00",
+      "semantic_status": "unreviewed",
+      "retrieved_at_utc": "2026-10-28T18:36:50.677193+00:00",
+      "status": 200,
+      "final_url": "https://cdn.sanity.io/files/dsfx7636/news_live/d3d5b3d1ad2d201d397818ca4209c99536182a18.pdf",
+      "content_type": "application/pdf",
+      "last_modified": "Fri, 03 Oct 2025 20:45:41 GMT",
+      "path": "data/raw/rules/sha256/4b27e64a5c6b717e91277aaea5c7c5f85d062d6181eda6c738e17e52b681da22.pdf",
+      "sha256": "4b27e64a5c6b717e91277aaea5c7c5f85d062d6181eda6c738e17e52b681da22",
+      "bytes": 1085338
+    },
+    {
+      "source_id": "lck_2025_rules",
+      "url": "https://cdn.sanity.io/files/dsfx7636/news_live/3e74c542dd1efc5c07529772e4b978ab83c99352.pdf",
+      "attempted_at_utc": "2026-10-28T18:36:50.679656+00:00",
+      "semantic_status": "unreviewed",
+      "retrieved_at_utc": "2026-10-28T18:36:52.138148+00:00",
+      "status": 200,
+      "final_url": "https://cdn.sanity.io/files/dsfx7636/news_live/3e74c542dd1efc5c07529772e4b978ab83c99352.pdf",
+      "content_type": "application/pdf",
+      "last_modified": "Mon, 31 Mar 2025 19:02:51 GMT",
+      "path": "data/raw/rules/sha256/6595f5c7dc5c2c6a8a24edf3dfd9d0b9038018a6fe8b242ba198513641d15d99.pdf",
+      "sha256": "6595f5c7dc5c2c6a8a24edf3dfd9d0b9038018a6fe8b242ba198513641d15d99",
+      "bytes": 1413979
     }
   ],
   "access_failures": [
@@ -449,6 +477,34 @@
       "bytes": 99451,
       "legacy_path": "data/raw/rules/riot_ddragon_docs.html",
       "semantic_status": "unreviewed"
+    },
+    {
+      "source_id": "worlds_2025_rules",
+      "url": "https://cdn.sanity.io/files/dsfx7636/news_live/d3d5b3d1ad2d201d397818ca4209c99536182a18.pdf",
+      "attempted_at_utc": "2026-10-28T18:36:49.185126+00:00",
+      "semantic_status": "unreviewed",
+      "retrieved_at_utc": "2026-10-28T18:36:50.677193+00:00",
+      "status": 200,
+      "final_url": "https://cdn.sanity.io/files/dsfx7636/news_live/d3d5b3d1ad2d201d397818ca4209c99536182a18.pdf",
+      "content_type": "application/pdf",
+      "last_modified": "Fri, 03 Oct 2025 20:45:41 GMT",
+      "path": "data/raw/rules/sha256/4b27e64a5c6b717e91277aaea5c7c5f85d062d6181eda6c738e17e52b681da22.pdf",
+      "sha256": "4b27e64a5c6b717e91277aaea5c7c5f85d062d6181eda6c738e17e52b681da22",
+      "bytes": 1085338
+    },
+    {
+      "source_id": "lck_2025_rules",
+      "url": "https://cdn.sanity.io/files/dsfx7636/news_live/3e74c542dd1efc5c07529772e4b978ab83c99352.pdf",
+      "attempted_at_utc": "2026-10-28T18:36:50.679656+00:00",
+      "semantic_status": "unreviewed",
+      "retrieved_at_utc": "2026-10-28T18:36:52.138148+00:00",
+      "status": 200,
+      "final_url": "https://cdn.sanity.io/files/dsfx7636/news_live/3e74c542dd1efc5c07529772e4b978ab83c99352.pdf",
+      "content_type": "application/pdf",
+      "last_modified": "Mon, 31 Mar 2025 19:02:51 GMT",
+      "path": "data/raw/rules/sha256/6595f5c7dc5c2c6a8a24edf3dfd9d0b9038018a6fe8b242ba198513641d15d99.pdf",
+      "sha256": "6595f5c7dc5c2c6a8a24edf3dfd9d0b9038018a6fe8b242ba198513641d15d99",
+      "bytes": 1413979
     }
   ],
   "semantic_reviews": [
@@ -544,5 +600,39 @@
       "content_status": "snapshot_saved"
     }
   ],
-  "collections": []
+  "collections": [
+    {
+      "collected_at_utc": "2026-10-28T18:36:52.140671+00:00",
+      "results": [
+        {
+          "source_id": "worlds_2025_rules",
+          "url": "https://cdn.sanity.io/files/dsfx7636/news_live/d3d5b3d1ad2d201d397818ca4209c99536182a18.pdf",
+          "attempted_at_utc": "2026-10-28T18:36:49.185126+00:00",
+          "semantic_status": "unreviewed",
+          "retrieved_at_utc": "2026-10-28T18:36:50.677193+00:00",
+          "status": 200,
+          "final_url": "https://cdn.sanity.io/files/dsfx7636/news_live/d3d5b3d1ad2d201d397818ca4209c99536182a18.pdf",
+          "content_type": "application/pdf",
+          "last_modified": "Fri, 03 Oct 2025 20:45:41 GMT",
+          "path": "data/raw/rules/sha256/4b27e64a5c6b717e91277aaea5c7c5f85d062d6181eda6c738e17e52b681da22.pdf",
+          "sha256": "4b27e64a5c6b717e91277aaea5c7c5f85d062d6181eda6c738e17e52b681da22",
+          "bytes": 1085338
+        },
+        {
+          "source_id": "lck_2025_rules",
+          "url": "https://cdn.sanity.io/files/dsfx7636/news_live/3e74c542dd1efc5c07529772e4b978ab83c99352.pdf",
+          "attempted_at_utc": "2026-10-28T18:36:50.679656+00:00",
+          "semantic_status": "unreviewed",
+          "retrieved_at_utc": "2026-10-28T18:36:52.138148+00:00",
+          "status": 200,
+          "final_url": "https://cdn.sanity.io/files/dsfx7636/news_live/3e74c542dd1efc5c07529772e4b978ab83c99352.pdf",
+          "content_type": "application/pdf",
+          "last_modified": "Mon, 31 Mar 2025 19:02:51 GMT",
+          "path": "data/raw/rules/sha256/6595f5c7dc5c2c6a8a24edf3dfd9d0b9038018a6fe8b242ba198513641d15d99.pdf",
+          "sha256": "6595f5c7dc5c2c6a8a24edf3dfd9d0b9038018a6fe8b242ba198513641d15d99",
+          "bytes": 1413979
+        }
+      ]
+    }
+  ]
 }

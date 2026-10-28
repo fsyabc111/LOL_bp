@@ -36,3 +36,66 @@ Manifest 已离线迁移为 schema_version=2：
 - 原始旧路径保留在 `legacy_path`，对应文件不改写。新字节不会覆盖它或已有哈希快照。
 
 仅迁移本地已有证据可运行 `python3 scripts/collect_rules_evidence.py --migrate-only`，没有网络请求。当前迁移保留全部15个原始响应，5项离线回归测试覆盖迁移、变化内容、HTTP200占位、HTTP/传输失败和缓存损坏。任何后续 curated 版本更新都需要显式审阅与改动固定映射，不能把“最近抓取”默认当作已验收规则。
+
+## 2026-10-29 补充：2025 规则书与赛事禁用名单
+
+### 新取得的规则书
+
+两份文件来自 [Riot 官方规则库](https://competitiveops.riotgames.com/en-US/library?SPIEL=lol)，通过 `python3 scripts/collect_rules_evidence.py --only worlds_2025_rules lck_2025_rules --pin` 下载并固定为来源（`--pin` 只追加尚未固定的成功来源，不改动已有映射）。正文用 pypdf 5.1.0 读取；附录中只有图片的页面，渲染后人工查看。
+
+- **[2025 Worlds 规则 v1.0](https://cdn.sanity.io/files/dsfx7636/news_live/d3d5b3d1ad2d201d397818ca4209c99536182a18.pdf)**（库中标注 ARCHIVED）
+  - p28 §7.3：比赛补丁为 15.20；赛前向队伍提供禁用名单，该名单未取得。
+  - p30 §7.5.4：所有比赛采用 Fearless，本系列赛已选英雄在剩余对局中禁用，每局 10 个标准 ban 不变。
+  - p31 §7.5.5–7.5.8：蛇形选禁；Fearless 误选英雄时回退重选，误禁则不回退。
+  - p54 附录 Figure 3（图片）：Ban1 蓝红交替各 3 手；Pick1 为蓝、红、红、蓝、蓝、红；Ban2 为红、蓝、红、蓝；Pick2 为红、蓝、蓝、红。即 snake_20，A = 蓝方。
+  - p19 §6.1.1.2：选边规则为首局抛硬币或按种子，之后由上一局败方选边。
+- **[2025 LCK & LCK CL 规则](https://cdn.sanity.io/files/dsfx7636/news_live/3e74c542dd1efc5c07529772e4b978ab83c99352.pdf)**（2025-03-03 修订，2025-04-02 生效）
+  - p35–36 §7.7.1.1：明文规定"蓝方 = A，红方 = B"，顺序为 ABABAB / ABBAAB / BABA / BAAB。
+  - p36 §7.7.1.2：定义 Fearless（双方前局所选英雄不可再选；误选回退并可能处罚，误禁则失去该 ban）。
+  - p42 §8.5.2：重赛时前序局的 Fearless 消耗保留，重赛局本身的 pick 不计入。
+  - p34 §7.4.3：新英雄在其上线补丁内禁用。
+  - 本书没有说明哪些赛事采用 Fearless，这在赛事细则中规定。库中"2025 赛事细则"条目指向的是同一份文件，因此 2025 LCK 的 Fearless 适用标为 **inferred**。规则在 2025-04-02 生效，2025 LCK Cup 不在其适用期内。
+
+`rules.json` 的相应调整：
+
+- 新增 `worlds_2025`：模板、A 方、Fearless、补丁均为 observed，赛事禁用为 unknown。
+- 新增 `lck_2025_from_2025_04_02`。
+- `worlds_2026` 的模板、A 方、Fearless 由 unknown 改为 **inferred**。理由：2026 国际赛事通则 v1.1 p18 §4.5.4 写明蛇形选禁，但所引用的 Figure 4 不在 PDF 中；p19 §4.5.6–7 涉及 Fearless 误选，但没有定义适用范围。因此步骤顺序和 Fearless 定义取自 2025 版规则，"A = 先选方"沿用 2026 LCK 的明文。
+- 2026 LCK 规则改为按其赛事细则列出的适用范围匹配（常规赛 1–2、3–4 轮、Play-In、季后赛、Road to MSI），不再只认 Season Playoffs；同时仍要求比赛日期不早于 2026-07-29。
+
+验证器只接受 observed 的模板和 A 方，所以 2026 Worlds 样本局仍为 blocked。
+
+LPL：官方规则库中没有 LPL 文件，本次检索也没有找到腾讯公开的 2025–2026 LPL 规则书，因此 LPL 仍为 practice_observed（模板）和 assumed（Fearless）。
+
+### Leaguepedia 赛事禁用名单
+
+`scripts/collect_leaguepedia_data_pages.py` 读取 59 个 Data 页面的 wikitext（2024 LCK 夏季季后赛，以及 2025–2026 LCK、LPL、Worlds 各赛段；不含表演赛），原始响应按哈希存放。页面中的 `{{SetPatch|patch=..|disabled=..|hotfix=..}}` 对其后的比赛有效，直到下一条 SetPatch 出现。
+
+- **关联方式**：只按 ID 关联，不按队名。LCK 与 Worlds 用 `riot_platform_game_id`，LPL 用 `qq` 系列号拼成 `<qq>-<qq>_game_<n>`。共关联 2,726 局，没有重复。未关联的是 2026 Worlds 正赛中 62 局 OE 尚未收录的比赛，以及 LCK、LPL 各 1 局 OE 中没有的比赛。
+- **结果**：523 局列有禁用英雄，例如 2024 LCK 夏季季后赛禁用 Aurora，2025 年多段禁用 Mel、Yunara，2026 年部分赛段禁用 Zac、Maokai。所有禁用名都能映射到英雄 ID。
+- **一致性**：全量回放中，没有任何一局历史 pick 使用了该局列出的禁用英雄，可以作为关联和语义正确的旁证。
+- **数据性质**：这是社区记录，状态标为 `community_listed`，等级低于规则书。空名单表示 Leaguepedia 没有列出禁用英雄，不等于主办方确认无禁用。sample index 的 `rules_complete` 仍只认规则书，所以不受这份名单影响；应用会据此拦截英雄并显示来源。
+
+### 当前规则状态覆盖（2024–2026，按局计）
+
+| 年 | 标签 | 模板 | 跨局限制 | 赛事禁用 | 局数 |
+| --- | --- | --- | --- | --- | ---: |
+| 2024 | LCK | observed（夏季季后赛） | assumed | community_listed | 31 |
+| 2024 | LCK / LPL / WLDs 其余 | practice_observed | assumed | unknown | 1,300 |
+| 2025 | LCK（04-02 起） | observed | inferred | community_listed | 446 |
+| 2025 | LCK Cup 等 | practice_observed | assumed | community_listed | 109 |
+| 2025 | LPL | practice_observed | assumed | community_listed | 805 |
+| 2025 | Worlds | observed | observed | community_listed | 84 |
+| 2026 | LCK（7-29 后、规则范围内） | observed | observed | community_listed | 153 |
+| 2026 | LCK 其余 | practice_observed | assumed | community_listed | 349 |
+| 2026 | LPL | practice_observed | assumed | community_listed | 674 |
+| 2026 | Worlds | inferred | inferred | community_listed | 51 |
+| 2025–2026 | WLDs 中的地区资格赛等 | practice_observed | assumed | community_listed | 24 |
+
+仍未补齐：
+
+- LPL 规则书。
+- 2025 LCK 赛事细则（各赛事 Fearless 范围、选边规则）与 2025 LCK Cup 规则。
+- 2026 LCK 7 月前的修订版。
+- 2024 夏季修订。
+- 官方赛事禁用名单原件，以及热修复版本。

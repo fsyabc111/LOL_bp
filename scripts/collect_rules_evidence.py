@@ -19,6 +19,8 @@ SOURCES={
 'ddragon_14_16_1':'https://ddragon.leagueoflegends.com/cdn/14.16.1/data/en_US/champion/Ahri.json',
 'ddragon_16_20_1':'https://ddragon.leagueoflegends.com/cdn/16.20.1/data/en_US/champion/Ahri.json',
 'riot_ddragon_docs':'https://developer.riotgames.com/docs/lol#data-dragon',
+'worlds_2025_rules':'https://cdn.sanity.io/files/dsfx7636/news_live/d3d5b3d1ad2d201d397818ca4209c99536182a18.pdf',
+'lck_2025_rules':'https://cdn.sanity.io/files/dsfx7636/news_live/3e74c542dd1efc5c07529772e4b978ab83c99352.pdf',
 }
 def save_bytes(root, body, suffix):
  digest = hashlib.sha256(body).hexdigest()
@@ -95,10 +97,23 @@ def add_collection(manifest, records):
  return manifest
 
 
+def pin_new_sources(manifest, records):
+ # Pinning is explicit and never replaces an existing pin; reviews stay separate.
+ pinned = {source['source_id'] for source in manifest['sources']}
+ for record in records:
+  if record['source_id'] not in pinned and record['status'] == 200:
+   manifest['sources'].append(dict(record))
+   pinned.add(record['source_id'])
+ return manifest
+
+
 def main():
  import argparse
  parser = argparse.ArgumentParser(description=__doc__)
  parser.add_argument('--migrate-only', action='store_true', help='Migrate existing bytes without network')
+ parser.add_argument('--only', nargs='+', choices=sorted(SOURCES), help='Fetch only these source ids')
+ parser.add_argument('--pin', action='store_true',
+                     help='Pin successful fetches of source ids not yet pinned, so curated facts can cite them')
  args = parser.parse_args()
  path = ROOT / 'data/manifests/rules-evidence.json'
  manifest = json.loads(path.read_text()) if path.exists() else {
@@ -107,10 +122,12 @@ def main():
  if not args.migrate_only:
   records = []
   for key, url in SOURCES.items():
+   if args.only and key not in args.only: continue
    record = collect_source(ROOT, key, url)
    records.append(record)
    print(key, record['status'], record['bytes'], flush=True)
   add_collection(manifest, records)
+  if args.pin: pin_new_sources(manifest, records)
  temporary = path.with_suffix('.json.tmp')
  temporary.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
  temporary.replace(path)

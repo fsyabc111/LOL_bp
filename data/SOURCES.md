@@ -16,6 +16,8 @@
 
 `curated/bp_sequences.jsonl` 的逐手选禁顺序摘自 [Leaguepedia](https://lol.fandom.com/wiki/League_of_Legends_Esports_Wiki) 各赛段 Picks and Bans 页面，通过公开 MediaWiki parse 接口低频读取。每条记录带页面标题、修订号、获取时间和原始响应哈希；`manifests/leaguepedia-pb.json` 保存采集记录，原始响应留在本地 `raw/leaguepedia-pb/`。Leaguepedia 内容按 [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) 使用，派生记录沿用该署名与许可；与 OE 的关联和质量标注是本项目的处理。
 
+`curated/event_restrictions.jsonl` 的赛事禁用英雄、列出的补丁和选边字段摘自 Leaguepedia 赛段 Data 页面（MediaWiki revisions API），每条记录带页面修订号与比赛定位。归属与许可同上；这是社区记录，不是主办方原件。
+
 ## Riot 规则与静态资料
 
 规则出处及每项条款定位见 `curated/rules.json`、`curated/patches.json` 与 `manifests/rules-evidence.json`。官方书和第三方托管镜像分开标注；本仓库跟踪结构化摘要，不上传整份PDF正文。

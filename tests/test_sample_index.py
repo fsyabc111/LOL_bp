@@ -55,6 +55,14 @@ class SampleIndexTests(unittest.TestCase):
             with self.assertRaises(ValueError):m.load_validation(root,'v.json',['in.json'])
             (root/'v.json').write_text(json.dumps({'input_sha256':{},'records':[]}))
             with self.assertRaises(ValueError):m.load_validation(root,'v.json',['in.json'])
+    def test_lck_2026_rule_scope_follows_rulebook_scope_list(self):
+        rule={'rule_id':'lck_2026_from_2026_07_29','competition':'LCK','year':2026,'effective_from':'2026-07-29','applicability_status':'observed',
+              'scope':{'value':['regular rounds 3-4','season playoffs'],'status':'observed'}}
+        game=self.fixture();game['league_raw']='LCK';game['date_raw']='2026-08-01'
+        status=lambda t:m.applicable_rules(game,{'tournament':t},{'rules':[rule]})[0]['applicability_status']
+        self.assertEqual(status('LCK/2026 Season/Rounds 3-4'),'observed')
+        self.assertEqual(status('LCK/2026 Season/Cup'),'unknown_scope')
+        self.assertEqual(status(''),'unknown_scope')
     def test_unknown_rules_preserved(self):
         rule={'rule_id':'lpl_2026_unverified','competition':'LPL','year':2026,'applicability_status':'unknown'}
         r=m.assemble_record(self.fixture(),{}, {'rules':[rule]},{'patches':[]},{})

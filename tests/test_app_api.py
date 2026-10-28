@@ -47,8 +47,10 @@ class AppApiTests(unittest.TestCase):
         self.assertEqual(len(series),1);self.assertEqual([g['game_number'] for g in series[0]['games']],[1,2])
         detail=self.client.get('/api/games/S1_game_2').json()
         self.assertEqual(detail['sequence_source']['type'],'oe_columns')
-        self.assertEqual(detail['rules']['fearless']['status'],'assumed')
-        self.assertEqual(detail['rules']['template']['status'],'practice_observed')
+        # A 2025-06 LCK game falls under the 2025 LCK rulebook (effective 2025-04-02).
+        self.assertEqual(detail['rules']['fearless']['status'],'inferred')
+        self.assertEqual(detail['rules']['template']['status'],'observed')
+        self.assertEqual(detail['rules']['disabled_champions']['status'],'unknown')
         # Game 2 re-picks game-1 picks under the assumed Fearless rule: reported, not hidden.
         self.assertTrue(any('fearless_consumed' in f['reasons'] for f in detail['replay_findings']))
         state=self.client.get('/api/games/S1_game_1/state',params={'step':6}).json()
@@ -70,6 +72,19 @@ class AppApiTests(unittest.TestCase):
         self.assertEqual(self.client.post(f'/api/branches/{bid}/undo').json()['state']['step'],6)
         self.assertEqual(self.client.post(f'/api/branches/{bid}/undo').status_code,409)
         self.assertEqual(self.client.get('/api/games/S1_game_1').json()['sequence'],before)
+    def test_community_listed_disabled_champion_blocked(self):
+        from lolbp.api import create_app
+        from lolbp.branches import BranchStore
+        from lolbp.repository import Repository
+        root=Path(self.tmp.name)
+        (root/'data/curated/event_restrictions.jsonl').write_text(json.dumps({'oe_gameid':'S1_game_1','disabled':['Jinx'],'listed_patch':'25.11',
+            'hotfix':None,'source':{'locator':'Data:X rev 1 game1'}})+'\n')
+        repo=Repository(root);client=TestClient(create_app(repo,BranchStore(root/'b2.sqlite3')))
+        detail=client.get('/api/games/S1_game_1').json()
+        self.assertEqual(detail['rules']['disabled_champions']['status'],'community_listed')
+        state=client.get('/api/games/S1_game_1/state',params={'step':6}).json()
+        self.assertEqual(state['unavailable'][repo.champion_id('Jinx')]['reasons'],['event_disabled'])
+        self.assertEqual(client.get('/api/games/S1_game_2').json()['rules']['disabled_champions']['status'],'unknown')
     def test_fearless_override_on_branch(self):
         game1_pick=self.repo.champion_id(CHAMPS[9])  # game 1 step 10; unused in game 2's first six steps
         r=self.client.post('/api/branches',json={'gameid':'S1_game_2','fork_step':6})

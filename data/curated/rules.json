@@ -115,6 +115,97 @@
   ],
   "rules": [
     {
+      "rule_id": "lck_2025_from_2025_04_02",
+      "competition": "LCK",
+      "year": 2025,
+      "effective_from": "2025-04-02",
+      "applicability_status": "observed",
+      "source_caveat": "LCK & LCK CL Official Ruleset (2025), revision 2025-03-03, effective 2025-04-02. Does not cover earlier 2025 events (e.g. LCK Cup).",
+      "draft_template": {
+        "value": "snake_20",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "lck_2025_rules",
+            "locator": "p35-36 §7.7.1.1"
+          }
+        ]
+      },
+      "draft_team_A": {
+        "value": "blue",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "lck_2025_rules",
+            "locator": "p35 §7.7.1.1"
+          }
+        ]
+      },
+      "cross_game_ban_scope": {
+        "value": "picks_by_both_teams_for_remainder_of_match",
+        "status": "inferred",
+        "evidence": [
+          {
+            "source_id": "lck_2025_rules",
+            "locator": "p36 §7.7.1.2.1-2"
+          }
+        ],
+        "note": "Fearless format is defined in the draft chapter, but which events use it is left to the event-specific ruleset, whose library entry links to this same file."
+      },
+      "fearless_pick_error": {
+        "value": "restart draft at that point; penalty possible",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "lck_2025_rules",
+            "locator": "p36 §7.7.1.2.3"
+          }
+        ]
+      },
+      "fearless_ban_error": {
+        "value": "ban opportunity lost; no separate penalty",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "lck_2025_rules",
+            "locator": "p36 §7.7.1.2.4"
+          }
+        ]
+      },
+      "remake_fearless_consumption": {
+        "value": {
+          "prior_games": "preserved",
+          "remade_game_picks": "not_consumed"
+        },
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "lck_2025_rules",
+            "locator": "p42 §8.5.2"
+          }
+        ]
+      },
+      "new_champion_restriction": {
+        "value": "new champions unavailable on their release patch; usable from the next live patch unless the league decides otherwise",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "lck_2025_rules",
+            "locator": "p34 §7.4.3"
+          }
+        ]
+      },
+      "event_disabled_champions": {
+        "value": null,
+        "status": "unknown",
+        "note": "p36 §7.7.2 lets the league add restrictions at any time; no list in the rulebook."
+      },
+      "unresolved": [
+        "Event-specific 2025 ruleset (Fearless scope per event, side selection)",
+        "Rules for LCK Cup before 2025-04-02"
+      ]
+    },
+    {
       "rule_id": "lck_2024_summer_playoffs_candidate",
       "competition": "LCK",
       "year": 2024,
@@ -424,14 +515,34 @@
         ]
       },
       "draft_template": {
-        "value": null,
-        "status": "unknown",
-        "note": "International rules §4.5.4 references Appendix Figure4; figure not independently interpreted."
+        "value": "snake_20",
+        "status": "inferred",
+        "evidence": [
+          {
+            "source_id": "international_2026",
+            "locator": "p18 §4.5.4"
+          },
+          {
+            "source_id": "worlds_2025_rules",
+            "locator": "p54 Appendix Figure 3 (image, read visually)"
+          }
+        ],
+        "note": "2026 international ruleset v1.1 states a snake draft but its referenced Figure 4 is absent from the PDF; step order taken from the 2025 WCE figure."
       },
       "cross_game_ban_scope": {
-        "value": null,
-        "status": "unknown",
-        "note": "Downloaded Worlds event-specific PDF does not explicitly define Fearless. 2025 announcement is not silently applied to 2026."
+        "value": "picks_by_both_teams_for_remainder_of_match",
+        "status": "inferred",
+        "evidence": [
+          {
+            "source_id": "international_2026",
+            "locator": "p19 §4.5.6-4.5.7"
+          },
+          {
+            "source_id": "worlds_2025_rules",
+            "locator": "p30 §7.5.4"
+          }
+        ],
+        "note": "2026 documents regulate errors in \"Fearless Draft\" matches without defining scope; definition taken from the 2025 WCE ruleset."
       },
       "event_disabled_champions": {
         "value": null,
@@ -439,11 +550,22 @@
         "note": "§5.1 allows official restrictions and says teams receive a list; that list not obtained."
       },
       "unresolved": [
-        "Worlds Fearless application and full consumption rules",
+        "Explicit 2026 Worlds Fearless definition and Figure 4",
         "event disabled list",
         "hotfix build",
         "PDF §4.1.3.1.3 says 2025 champion despite 2026 title; preserve source defect"
-      ]
+      ],
+      "draft_team_A": {
+        "value": "first_pick",
+        "status": "inferred",
+        "evidence": [
+          {
+            "source_id": "worlds_2026_rules",
+            "locator": "p9 §4.1.4.1"
+          }
+        ],
+        "note": "First Selection lets a team choose draft position; mapping the first-pick team to snake team A follows the 2026 LCK text (A=first pick) and is not stated in the Worlds documents."
+      }
     },
     {
       "rule_id": "lpl_2026_unverified",
@@ -464,6 +586,110 @@
       },
       "unresolved": [
         "LPL-specific 2026 rulebook not found in official public library; First Selection global announcement alone cannot fill Fearless rules"
+      ]
+    },
+    {
+      "rule_id": "worlds_2025",
+      "competition": "Worlds",
+      "year": 2025,
+      "applicability_status": "observed",
+      "source_caveat": "ARCHIVED: 2025 World Championship Rules (v1.0), Riot official library.",
+      "patch": {
+        "value": "15.20",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "worlds_2025_rules",
+            "locator": "p28 §7.3"
+          }
+        ]
+      },
+      "draft_template": {
+        "value": "snake_20",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "worlds_2025_rules",
+            "locator": "p31 §7.5.5"
+          },
+          {
+            "source_id": "worlds_2025_rules",
+            "locator": "p54 Appendix Figure 3 (image, read visually)"
+          }
+        ]
+      },
+      "draft_team_A": {
+        "value": "blue",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "worlds_2025_rules",
+            "locator": "p54 Appendix Figure 3 (image, read visually)"
+          }
+        ]
+      },
+      "cross_game_ban_scope": {
+        "value": "picks_by_both_teams_for_remainder_of_match",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "worlds_2025_rules",
+            "locator": "p30 §7.5.4"
+          }
+        ]
+      },
+      "standard_bans_carry_over": {
+        "value": false,
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "worlds_2025_rules",
+            "locator": "p30 §7.5.4.1-7.5.4.5"
+          }
+        ]
+      },
+      "fearless_pick_error": {
+        "value": "restart champ select to the error point",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "worlds_2025_rules",
+            "locator": "p31 §7.5.7"
+          }
+        ]
+      },
+      "fearless_ban_error": {
+        "value": "champ select continues; no restart",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "worlds_2025_rules",
+            "locator": "p31 §7.5.8"
+          }
+        ]
+      },
+      "side_selection": {
+        "value": "game1 coin flip or seeding per stage; later games previous-game loser",
+        "status": "observed",
+        "evidence": [
+          {
+            "source_id": "worlds_2025_rules",
+            "locator": "p19 §6.1.1.2"
+          },
+          {
+            "source_id": "worlds_2025_rules",
+            "locator": "p20-23 §6.1.2.2, §6.1.3.2"
+          }
+        ]
+      },
+      "event_disabled_champions": {
+        "value": null,
+        "status": "unknown",
+        "note": "p28 §7.3: a restricted list is given to teams before the event; list not obtained."
+      },
+      "unresolved": [
+        "event disabled list",
+        "hotfix build"
       ]
     }
   ]

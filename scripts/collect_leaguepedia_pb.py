@@ -50,9 +50,9 @@ def page_url(title):
     return API + '?' + urllib.parse.urlencode({'action': 'parse', 'page': title, 'prop': 'text|revid', 'format': 'json'})
 
 
-def save_raw(root, body):
+def save_raw(root, body, raw=RAW):
     digest = hashlib.sha256(body).hexdigest()
-    path = Path(RAW) / 'sha256' / f'{digest}.json'
+    path = Path(raw) / 'sha256' / f'{digest}.json'
     target = root / path
     target.parent.mkdir(parents=True, exist_ok=True)
     if target.exists() and target.read_bytes() != body: raise ValueError(f'content-addressed cache mismatch: {path}')
@@ -60,8 +60,14 @@ def save_raw(root, body):
     return str(path), digest
 
 
-def fetch(root, title, opener=urllib.request.urlopen, sleep=time.sleep, attempts=3, backoff=60):
-    record = {'title': title, 'url': page_url(title), 'attempts': []}
+def parse_revid(payload):
+    return payload['parse']['revid']
+
+
+def fetch(root, title, opener=urllib.request.urlopen, sleep=time.sleep, attempts=3, backoff=60,
+          url=None, raw=RAW, revid=parse_revid):
+    """Fetch one API URL with bounded rate-limit back-off; content-address the raw response."""
+    record = {'title': title, 'url': url or page_url(title), 'attempts': []}
     for attempt in range(attempts):
         started = utc_now()
         try:
@@ -77,9 +83,9 @@ def fetch(root, title, opener=urllib.request.urlopen, sleep=time.sleep, attempts
             code = payload.get('error', {}).get('code')
             record['attempts'].append({'attempted_at': started, 'http_status': status, 'api_error': code})
             if not code:
-                path, digest = save_raw(root, body)
+                path, digest = save_raw(root, body, raw)
                 record.update(status='success', retrieved_at=utc_now(), raw_path=path, sha256=digest, bytes=len(body),
-                              revid=payload['parse']['revid'])
+                              revid=revid(payload))
                 return record
             if code != 'ratelimited':
                 record['status'] = 'failed'; return record

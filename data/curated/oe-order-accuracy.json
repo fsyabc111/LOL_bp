@@ -157,7 +157,7 @@
   "evidence_independence_note": "Leaguepedia tables are community-entered and not proven independent of OE upstreams; VOD spot checks remain advisable.",
   "input_sha256": {
     "data/curated/bp_sequences.jsonl": "eb9ad2fa0de73704383edb8f8d88cc3750f52fa7f3ee3a00b064a0b01fd22433",
-    "data/curated/rules.json": "834eb20b9aeab8e6d373225cbfdb43d1c2fc1e7d711eb6042497647414dc64f8",
+    "data/curated/rules.json": "5b713ac2d75ad15ba22364c27732da8a3adb61cc11f36889f7b1044f1f9d66df",
     "data/curated/static/14.16.1/en_US/champion.json": "1909e4ba100281250ca5387c3d3aa40b69987db32bcd656155c8cf16064afbaa",
     "data/curated/static/16.20.1/en_US/champion.json": "24b5df775dfa86f1a94b54d1e321eb36e66ac4824f1cde6b6e47263357a9e432"
   },

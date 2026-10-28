@@ -1,0 +1,1372 @@
+{
+  "duplicate_games": [],
+  "link_stats": [
+    {
+      "games": 0,
+      "linked": 0,
+      "no_setpatch": 0,
+      "title": "Data:2025 Season World Championship/Hash"
+    },
+    {
+      "games": 80,
+      "linked": 80,
+      "no_setpatch": 0,
+      "title": "Data:2025 Season World Championship/Main Event"
+    },
+    {
+      "games": 0,
+      "linked": 0,
+      "no_setpatch": 0,
+      "title": "Data:2025 Season World Championship/Main Event/Hash"
+    },
+    {
+      "games": 4,
+      "linked": 4,
+      "no_setpatch": 0,
+      "title": "Data:2025 Season World Championship/Play-In"
+    },
+    {
+      "games": 0,
+      "linked": 0,
+      "no_setpatch": 0,
+      "title": "Data:2025 Season World Championship/Play-In/Hash"
+    },
+    {
+      "games": 91,
+      "linked": 29,
+      "no_setpatch": 0,
+      "title": "Data:2026 Season World Championship/Main Event"
+    },
+    {
+      "games": 22,
+      "linked": 22,
+      "no_setpatch": 0,
+      "title": "Data:2026 Season World Championship/Play-In"
+    },
+    {
+      "games": 31,
+      "linked": 31,
+      "no_setpatch": 0,
+      "title": "Data:LCK/2024 Season/Summer Playoffs"
+    },
+    {
+      "games": 0,
+      "linked": 0,
+      "no_setpatch": 0,
+      "title": "Data:LCK/2024 Season/Summer Playoffs/Hash"
+    },
+    {
+      "games": 109,
+      "linked": 109,
+      "no_setpatch": 0,
+      "title": "Data:LCK/2025 Season/Cup"
+    },
+    {
+      "games": 0,
+      "linked": 0,
+      "no_setpatch": 0,
+      "title": "Data:LCK/2025 Season/Cup/Hash"
+    },
+    {
+      "games": 0,
+      "linked": 0,
+      "no_setpatch": 0,
+      "title": "Data:LCK/2025 Season/LCK Cup"
+    },
+    {
+      "games": 18,
+      "linked": 18,
+      "no_setpatch": 0,
+      "title": "Data:LCK/2025 Season/Road to MSI"
+    },
+    {
+      "games": 0,
+      "linked": 0,
+      "no_setpatch": 0,
+      "title": "Data:LCK/2025 Season/Road to MSI/Hash"
+    },
+    {
+      "games": 98,
+      "linked": 98,
+      "no_setpatch": 0,
+      "title": "Data:LCK/2025 Season/Rounds 1-2"
+    },
+    {
+      "games": 124,
+      "linked": 124,
+      "no_setpatch": 0,
+      "title": "Data:LCK/2025 Season/Rounds 1-2/2"
+    },
+    {
+      "games": 0,
+      "linked": 0,
+      "no_setpatch": 0,
+      "title": "Data:LCK/2025 Season/Rounds 1-2/2/Hash"
+    },
+    {
+      "games": 0,
+      "linked": 0,
+      "no_setpatch": 0,
+      "title": "Data:LCK/2025 Season/Rounds 1-2/Hash"
+    },
+    {
+      "games": 145,
+      "linked": 145,
+      "no_setpatch": 0,
+      "title": "Data:LCK/2025 Season/Rounds 3-5"
+    },
+    {
+      "games": 0,
+      "linked": 0,
+      "no_setpatch": 0,
+      "title": "Data:LCK/2025 Season/Rounds 3-5/Hash"
+    },
+    {
+      "games": 21,
+      "linked": 21,
+      "no_setpatch": 0,
+      "title": "Data:LCK/2025 Season/Season Play-In"
+    },
+    {
+      "games": 0,
+      "linked": 0,
+      "no_setpatch": 0,
+      "title": "Data:LCK/2025 Season/Season Play-In/Hash"
+    },
+    {
+      "games": 40,
+      "linked": 40,
+      "no_setpatch": 0,
+      "title": "Data:LCK/2025 Season/Season Playoffs"
+    },
+    {
+      "games": 0,
+      "linked": 0,
+      "no_setpatch": 0,
+      "title": "Data:LCK/2025 Season/Season Playoffs/Hash"
+    },
+    {
+      "games": 125,
+      "linked": 125,
+      "no_setpatch": 0,
+      "title": "Data:LCK/2026 Season/Cup"
+    },
+    {
+      "games": 20,
+      "linked": 20,
+      "no_setpatch": 0,
+      "title": "Data:LCK/2026 Season/Road to MSI"
+    },
+    {
+      "games": 87,
+      "linked": 87,
+      "no_setpatch": 0,
+      "title": "Data:LCK/2026 Season/Rounds 1-2"
+    },
+    {
+      "games": 117,
+      "linked": 117,
+      "no_setpatch": 0,
+      "title": "Data:LCK/2026 Season/Rounds 1-2/2"
+    },
+    {
+      "games": 99,
+      "linked": 98,
+      "no_setpatch": 0,
+      "title": "Data:LCK/2026 Season/Rounds 3-4"
+    },
+    {
+      "games": 14,
+      "linked": 14,
+      "no_setpatch": 0,
+      "title": "Data:LCK/2026 Season/Season Play-In"
+    },
+    {
+      "games": 41,
+      "linked": 41,
+      "no_setpatch": 0,
+      "title": "Data:LCK/2026 Season/Season Playoffs"
+    },
+    {
+      "games": 73,
+      "linked": 73,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2025 Season/Grand Finals"
+    },
+    {
+      "games": 0,
+      "linked": 0,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2025 Season/Grand Finals/Hash"
+    },
+    {
+      "games": 12,
+      "linked": 12,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2025 Season/Regional Finals"
+    },
+    {
+      "games": 0,
+      "linked": 0,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2025 Season/Regional Finals/Hash"
+    },
+    {
+      "games": 88,
+      "linked": 88,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2025 Season/Split 1"
+    },
+    {
+      "games": 42,
+      "linked": 42,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2025 Season/Split 1 Playoffs"
+    },
+    {
+      "games": 0,
+      "linked": 0,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2025 Season/Split 1 Playoffs/Hash"
+    },
+    {
+      "games": 0,
+      "linked": 0,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2025 Season/Split 1/Hash"
+    },
+    {
+      "games": 132,
+      "linked": 132,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2025 Season/Split 2"
+    },
+    {
+      "games": 60,
+      "linked": 60,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2025 Season/Split 2 Placements"
+    },
+    {
+      "games": 0,
+      "linked": 0,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2025 Season/Split 2 Placements/Hash"
+    },
+    {
+      "games": 71,
+      "linked": 71,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2025 Season/Split 2 Playoffs"
+    },
+    {
+      "games": 0,
+      "linked": 0,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2025 Season/Split 2 Playoffs/Hash"
+    },
+    {
+      "games": 127,
+      "linked": 127,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2025 Season/Split 2/2"
+    },
+    {
+      "games": 0,
+      "linked": 0,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2025 Season/Split 2/2/Hash"
+    },
+    {
+      "games": 0,
+      "linked": 0,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2025 Season/Split 2/Hash"
+    },
+    {
+      "games": 121,
+      "linked": 121,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2025 Season/Split 3"
+    },
+    {
+      "games": 91,
+      "linked": 91,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2025 Season/Split 3/2"
+    },
+    {
+      "games": 0,
+      "linked": 0,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2025 Season/Split 3/2/Hash"
+    },
+    {
+      "games": 0,
+      "linked": 0,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2025 Season/Split 3/Hash"
+    },
+    {
+      "games": 55,
+      "linked": 55,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2026 Season/Grand Finals"
+    },
+    {
+      "games": 12,
+      "linked": 12,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2026 Season/Regional Finals"
+    },
+    {
+      "games": 137,
+      "linked": 137,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2026 Season/Split 1"
+    },
+    {
+      "games": 77,
+      "linked": 77,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2026 Season/Split 1 Playoffs"
+    },
+    {
+      "games": 82,
+      "linked": 82,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2026 Season/Split 2"
+    },
+    {
+      "games": 68,
+      "linked": 68,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2026 Season/Split 2 Playoffs"
+    },
+    {
+      "games": 89,
+      "linked": 89,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2026 Season/Split 2/2"
+    },
+    {
+      "games": 167,
+      "linked": 166,
+      "no_setpatch": 0,
+      "title": "Data:LPL/2026 Season/Split 3"
+    }
+  ],
+  "pages": [
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:40:51Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 2262,
+      "raw_path": "data/raw/leaguepedia-data/sha256/3ee70ce2e1bc71799a60d2233f16a55066588d64ddfd439209717d8d92b19da9.json",
+      "retrieved_at": "2026-10-28T18:40:51Z",
+      "revid": 4301127,
+      "sha256": "3ee70ce2e1bc71799a60d2233f16a55066588d64ddfd439209717d8d92b19da9",
+      "status": "success",
+      "title": "Data:2025 Season World Championship/Hash",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3A2025+Season+World+Championship%2FHash&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:40:57Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 45859,
+      "raw_path": "data/raw/leaguepedia-data/sha256/9519c16d9b64839f4549e23e996c80a1f565012aa9aaaf1642e00698e397362e.json",
+      "retrieved_at": "2026-10-28T18:40:58Z",
+      "revid": 4538273,
+      "sha256": "9519c16d9b64839f4549e23e996c80a1f565012aa9aaaf1642e00698e397362e",
+      "status": "success",
+      "title": "Data:2025 Season World Championship/Main Event",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3A2025+Season+World+Championship%2FMain+Event&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:41:04Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 2211,
+      "raw_path": "data/raw/leaguepedia-data/sha256/2c9dd9683430d1206a12bc48550970dd3133cf169a8bdbd15564abdf27ca0678.json",
+      "retrieved_at": "2026-10-28T18:41:05Z",
+      "revid": 4303801,
+      "sha256": "2c9dd9683430d1206a12bc48550970dd3133cf169a8bdbd15564abdf27ca0678",
+      "status": "success",
+      "title": "Data:2025 Season World Championship/Main Event/Hash",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3A2025+Season+World+Championship%2FMain+Event%2FHash&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:41:11Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 2621,
+      "raw_path": "data/raw/leaguepedia-data/sha256/5f15af644c289ca07de6f90c86d61a909eeb4b4a3280daeef0fa1d531d9f8f2b.json",
+      "retrieved_at": "2026-10-28T18:41:14Z",
+      "revid": 4312653,
+      "sha256": "5f15af644c289ca07de6f90c86d61a909eeb4b4a3280daeef0fa1d531d9f8f2b",
+      "status": "success",
+      "title": "Data:2025 Season World Championship/Play-In",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3A2025+Season+World+Championship%2FPlay-In&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:41:20Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 357,
+      "raw_path": "data/raw/leaguepedia-data/sha256/f36ab85cc078361552413b4db08c8915b03805adc421d337d1ffb4e0312335f7.json",
+      "retrieved_at": "2026-10-28T18:41:20Z",
+      "revid": 4303765,
+      "sha256": "f36ab85cc078361552413b4db08c8915b03805adc421d337d1ffb4e0312335f7",
+      "status": "success",
+      "title": "Data:2025 Season World Championship/Play-In/Hash",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3A2025+Season+World+Championship%2FPlay-In%2FHash&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:41:26Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 41875,
+      "raw_path": "data/raw/leaguepedia-data/sha256/7aeec0d6ee232d605ebb00a4b16346576fc44c1b248ee330d5ace245bf38af32.json",
+      "retrieved_at": "2026-10-28T18:41:27Z",
+      "revid": 4553454,
+      "sha256": "7aeec0d6ee232d605ebb00a4b16346576fc44c1b248ee330d5ace245bf38af32",
+      "status": "success",
+      "title": "Data:2026 Season World Championship/Main Event",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3A2026+Season+World+Championship%2FMain+Event&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:41:33Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 12132,
+      "raw_path": "data/raw/leaguepedia-data/sha256/ce1bd44402a7ac21d17827319a1b287be77a846f08c689dea3800a0b24f13dd2.json",
+      "retrieved_at": "2026-10-28T18:41:34Z",
+      "revid": 4550994,
+      "sha256": "ce1bd44402a7ac21d17827319a1b287be77a846f08c689dea3800a0b24f13dd2",
+      "status": "success",
+      "title": "Data:2026 Season World Championship/Play-In",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3A2026+Season+World+Championship%2FPlay-In&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:41:40Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 15224,
+      "raw_path": "data/raw/leaguepedia-data/sha256/ef4b3d0889e4b9db25de37d400ac15a5f1dc4562cc206a77b4ba160ec42b4dda.json",
+      "retrieved_at": "2026-10-28T18:41:40Z",
+      "revid": 4538212,
+      "sha256": "ef4b3d0889e4b9db25de37d400ac15a5f1dc4562cc206a77b4ba160ec42b4dda",
+      "status": "success",
+      "title": "Data:LCK/2024 Season/Summer Playoffs",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALCK%2F2024+Season%2FSummer+Playoffs&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:41:46Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 768,
+      "raw_path": "data/raw/leaguepedia-data/sha256/0afc715c4c07ec757bf1cf7699d1008e2fd65acf4c6ae986a793d61986016572.json",
+      "retrieved_at": "2026-10-28T18:41:47Z",
+      "revid": 3952424,
+      "sha256": "0afc715c4c07ec757bf1cf7699d1008e2fd65acf4c6ae986a793d61986016572",
+      "status": "success",
+      "title": "Data:LCK/2024 Season/Summer Playoffs/Hash",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALCK%2F2024+Season%2FSummer+Playoffs%2FHash&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:41:53Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 52230,
+      "raw_path": "data/raw/leaguepedia-data/sha256/fd42ac419f06ef30abde7371b1c389a0af5ddda819910f17a9bca7cffc1357dc.json",
+      "retrieved_at": "2026-10-28T18:41:54Z",
+      "revid": 4226313,
+      "sha256": "fd42ac419f06ef30abde7371b1c389a0af5ddda819910f17a9bca7cffc1357dc",
+      "status": "success",
+      "title": "Data:LCK/2025 Season/Cup",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALCK%2F2025+Season%2FCup&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:42:00Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 2782,
+      "raw_path": "data/raw/leaguepedia-data/sha256/db1cd6bd723270c5a22c8c6782151b56fb903f2cb6928aa4baef79bd004b80a6.json",
+      "retrieved_at": "2026-10-28T18:42:00Z",
+      "revid": 4073387,
+      "sha256": "db1cd6bd723270c5a22c8c6782151b56fb903f2cb6928aa4baef79bd004b80a6",
+      "status": "success",
+      "title": "Data:LCK/2025 Season/Cup/Hash",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALCK%2F2025+Season%2FCup%2FHash&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:42:06Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 317,
+      "raw_path": "data/raw/leaguepedia-data/sha256/d04d45f5a820f979a56f83c8cac2d66205840260377d3bd270460dffdc8b9244.json",
+      "retrieved_at": "2026-10-28T18:42:07Z",
+      "revid": 4017844,
+      "sha256": "d04d45f5a820f979a56f83c8cac2d66205840260377d3bd270460dffdc8b9244",
+      "status": "success",
+      "title": "Data:LCK/2025 Season/LCK Cup",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALCK%2F2025+Season%2FLCK+Cup&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:42:13Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 9018,
+      "raw_path": "data/raw/leaguepedia-data/sha256/f5fd79c1a623436020743765c6c928293016d8700b175bb1a2eb4c9681d06378.json",
+      "retrieved_at": "2026-10-28T18:42:14Z",
+      "revid": 4538271,
+      "sha256": "f5fd79c1a623436020743765c6c928293016d8700b175bb1a2eb4c9681d06378",
+      "status": "success",
+      "title": "Data:LCK/2025 Season/Road to MSI",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALCK%2F2025+Season%2FRoad+to+MSI&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:42:20Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 600,
+      "raw_path": "data/raw/leaguepedia-data/sha256/1e00120d56db747586121c85f8f99aad1481c714f6c1bb57001d160cd7d076a1.json",
+      "retrieved_at": "2026-10-28T18:42:20Z",
+      "revid": 4218718,
+      "sha256": "1e00120d56db747586121c85f8f99aad1481c714f6c1bb57001d160cd7d076a1",
+      "status": "success",
+      "title": "Data:LCK/2025 Season/Road to MSI/Hash",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALCK%2F2025+Season%2FRoad+to+MSI%2FHash&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:42:26Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 51896,
+      "raw_path": "data/raw/leaguepedia-data/sha256/2b0353845088d476c8977b350b046f2078074ac8b8549de9074d2c7516ca826f.json",
+      "retrieved_at": "2026-10-28T18:42:27Z",
+      "revid": 4176293,
+      "sha256": "2b0353845088d476c8977b350b046f2078074ac8b8549de9074d2c7516ca826f",
+      "status": "success",
+      "title": "Data:LCK/2025 Season/Rounds 1-2",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALCK%2F2025+Season%2FRounds+1-2&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:42:33Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 63858,
+      "raw_path": "data/raw/leaguepedia-data/sha256/cc67fb721f69d244d64e67319ca22ccaef81cee8d434d3462d914a0c8d92c345.json",
+      "retrieved_at": "2026-10-28T18:42:34Z",
+      "revid": 4538284,
+      "sha256": "cc67fb721f69d244d64e67319ca22ccaef81cee8d434d3462d914a0c8d92c345",
+      "status": "success",
+      "title": "Data:LCK/2025 Season/Rounds 1-2/2",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALCK%2F2025+Season%2FRounds+1-2%2F2&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:42:40Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 3382,
+      "raw_path": "data/raw/leaguepedia-data/sha256/2c1b331fa7f2517a397779561688326836667fae74671d7240b929b017e25462.json",
+      "retrieved_at": "2026-10-28T18:42:41Z",
+      "revid": 4209648,
+      "sha256": "2c1b331fa7f2517a397779561688326836667fae74671d7240b929b017e25462",
+      "status": "success",
+      "title": "Data:LCK/2025 Season/Rounds 1-2/2/Hash",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALCK%2F2025+Season%2FRounds+1-2%2F2%2FHash&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:42:47Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 4302,
+      "raw_path": "data/raw/leaguepedia-data/sha256/ad9bac62c4c0d28c989ae7e7821957a9cec4b3be3a0b3d3faa7a0722f341425f.json",
+      "retrieved_at": "2026-10-28T18:42:47Z",
+      "revid": 4136932,
+      "sha256": "ad9bac62c4c0d28c989ae7e7821957a9cec4b3be3a0b3d3faa7a0722f341425f",
+      "status": "success",
+      "title": "Data:LCK/2025 Season/Rounds 1-2/Hash",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALCK%2F2025+Season%2FRounds+1-2%2FHash&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:42:53Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 76402,
+      "raw_path": "data/raw/leaguepedia-data/sha256/72e15be001ccf1d9ee309c5dc11794a90c184ec64db4796b913bd0a1e6fa75fc.json",
+      "retrieved_at": "2026-10-28T18:42:54Z",
+      "revid": 4538286,
+      "sha256": "72e15be001ccf1d9ee309c5dc11794a90c184ec64db4796b913bd0a1e6fa75fc",
+      "status": "success",
+      "title": "Data:LCK/2025 Season/Rounds 3-5",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALCK%2F2025+Season%2FRounds+3-5&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:43:00Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 3849,
+      "raw_path": "data/raw/leaguepedia-data/sha256/03f7a6fa6764b64e810c90b234c6dcb5c215eeea822832f86f48ddc71f7adc73.json",
+      "retrieved_at": "2026-10-28T18:43:01Z",
+      "revid": 4260474,
+      "sha256": "03f7a6fa6764b64e810c90b234c6dcb5c215eeea822832f86f48ddc71f7adc73",
+      "status": "success",
+      "title": "Data:LCK/2025 Season/Rounds 3-5/Hash",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALCK%2F2025+Season%2FRounds+3-5%2FHash&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:43:07Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 10647,
+      "raw_path": "data/raw/leaguepedia-data/sha256/d16f1a603d502bfe5cbc4953ef8610ddd04eb7b1d68ccf7622f6455d5e74cad2.json",
+      "retrieved_at": "2026-10-28T18:43:08Z",
+      "revid": 4292550,
+      "sha256": "d16f1a603d502bfe5cbc4953ef8610ddd04eb7b1d68ccf7622f6455d5e74cad2",
+      "status": "success",
+      "title": "Data:LCK/2025 Season/Season Play-In",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALCK%2F2025+Season%2FSeason+Play-In&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:43:14Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 634,
+      "raw_path": "data/raw/leaguepedia-data/sha256/32735f45136b4994463d73dcec596dcc5e031fa0c787b61375016121ca2aac29.json",
+      "retrieved_at": "2026-10-28T18:43:14Z",
+      "revid": 4285878,
+      "sha256": "32735f45136b4994463d73dcec596dcc5e031fa0c787b61375016121ca2aac29",
+      "status": "success",
+      "title": "Data:LCK/2025 Season/Season Play-In/Hash",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALCK%2F2025+Season%2FSeason+Play-In%2FHash&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:43:20Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 18014,
+      "raw_path": "data/raw/leaguepedia-data/sha256/3cc25f3337a99fc4aa3d21ef63595e1df2d8597809d3245506f20c2b81ae82ff.json",
+      "retrieved_at": "2026-10-28T18:43:21Z",
+      "revid": 4538285,
+      "sha256": "3cc25f3337a99fc4aa3d21ef63595e1df2d8597809d3245506f20c2b81ae82ff",
+      "status": "success",
+      "title": "Data:LCK/2025 Season/Season Playoffs",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALCK%2F2025+Season%2FSeason+Playoffs&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:43:27Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 922,
+      "raw_path": "data/raw/leaguepedia-data/sha256/8ece6cad507e17faf2daf56a6c673b24041bac36597dd56e9fdcd97ef7b163a5.json",
+      "retrieved_at": "2026-10-28T18:43:28Z",
+      "revid": 4300925,
+      "sha256": "8ece6cad507e17faf2daf56a6c673b24041bac36597dd56e9fdcd97ef7b163a5",
+      "status": "success",
+      "title": "Data:LCK/2025 Season/Season Playoffs/Hash",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALCK%2F2025+Season%2FSeason+Playoffs%2FHash&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:43:34Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 58171,
+      "raw_path": "data/raw/leaguepedia-data/sha256/b6ec7f424cf6864bfbac103efae962b6738665b8b29fb610dc87bfbc99e278dd.json",
+      "retrieved_at": "2026-10-28T18:43:34Z",
+      "revid": 4538274,
+      "sha256": "b6ec7f424cf6864bfbac103efae962b6738665b8b29fb610dc87bfbc99e278dd",
+      "status": "success",
+      "title": "Data:LCK/2026 Season/Cup",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALCK%2F2026+Season%2FCup&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:43:40Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 9228,
+      "raw_path": "data/raw/leaguepedia-data/sha256/c9fed637da0f649f29dc4debb87db10eb2271b58e70d6594cead6e12b1312e31.json",
+      "retrieved_at": "2026-10-28T18:43:41Z",
+      "revid": 4538278,
+      "sha256": "c9fed637da0f649f29dc4debb87db10eb2271b58e70d6594cead6e12b1312e31",
+      "status": "success",
+      "title": "Data:LCK/2026 Season/Road to MSI",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALCK%2F2026+Season%2FRoad+to+MSI&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:43:47Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 46433,
+      "raw_path": "data/raw/leaguepedia-data/sha256/566c845b3882b53b01c3ac164e7f2d8e4da9e17c1d2728e03528f553b23de9d7.json",
+      "retrieved_at": "2026-10-28T18:43:48Z",
+      "revid": 4504295,
+      "sha256": "566c845b3882b53b01c3ac164e7f2d8e4da9e17c1d2728e03528f553b23de9d7",
+      "status": "success",
+      "title": "Data:LCK/2026 Season/Rounds 1-2",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALCK%2F2026+Season%2FRounds+1-2&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:43:54Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 60261,
+      "raw_path": "data/raw/leaguepedia-data/sha256/2b3725b83f7e0fbf4ba16e04294f8449e7a94dd4b621386d76773356d7261b70.json",
+      "retrieved_at": "2026-10-28T18:43:54Z",
+      "revid": 4538275,
+      "sha256": "2b3725b83f7e0fbf4ba16e04294f8449e7a94dd4b621386d76773356d7261b70",
+      "status": "success",
+      "title": "Data:LCK/2026 Season/Rounds 1-2/2",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALCK%2F2026+Season%2FRounds+1-2%2F2&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:44:00Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 56688,
+      "raw_path": "data/raw/leaguepedia-data/sha256/1280948b0e8feda3d944080ffb7f8345449eca739612f718575e79de1265db59.json",
+      "retrieved_at": "2026-10-28T18:44:01Z",
+      "revid": 4538279,
+      "sha256": "1280948b0e8feda3d944080ffb7f8345449eca739612f718575e79de1265db59",
+      "status": "success",
+      "title": "Data:LCK/2026 Season/Rounds 3-4",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALCK%2F2026+Season%2FRounds+3-4&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:44:07Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 7428,
+      "raw_path": "data/raw/leaguepedia-data/sha256/84c5ddccf786474f393ced79f016196b93cc6ea217ccd53510702a717d26c2dd.json",
+      "retrieved_at": "2026-10-28T18:44:07Z",
+      "revid": 4519746,
+      "sha256": "84c5ddccf786474f393ced79f016196b93cc6ea217ccd53510702a717d26c2dd",
+      "status": "success",
+      "title": "Data:LCK/2026 Season/Season Play-In",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALCK%2F2026+Season%2FSeason+Play-In&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:44:13Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 20611,
+      "raw_path": "data/raw/leaguepedia-data/sha256/d08bd567f97ba5c025ec992f8733df6952199f88c9c81a1b75cf669f3148e211.json",
+      "retrieved_at": "2026-10-28T18:44:14Z",
+      "revid": 4538281,
+      "sha256": "d08bd567f97ba5c025ec992f8733df6952199f88c9c81a1b75cf669f3148e211",
+      "status": "success",
+      "title": "Data:LCK/2026 Season/Season Playoffs",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALCK%2F2026+Season%2FSeason+Playoffs&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:44:20Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 23600,
+      "raw_path": "data/raw/leaguepedia-data/sha256/354d924db9088730e79cebefb368db2c05ce1034cd4be5ddf4567fcdcbe48fe0.json",
+      "retrieved_at": "2026-10-28T18:44:21Z",
+      "revid": 4297664,
+      "sha256": "354d924db9088730e79cebefb368db2c05ce1034cd4be5ddf4567fcdcbe48fe0",
+      "status": "success",
+      "title": "Data:LPL/2025 Season/Grand Finals",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2025+Season%2FGrand+Finals&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:44:27Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 1500,
+      "raw_path": "data/raw/leaguepedia-data/sha256/aaf15a24e9f6b20dff9cb80cfd8277dca829712e5caab9d75a9038dbd6c971e9.json",
+      "retrieved_at": "2026-10-28T18:44:27Z",
+      "revid": 4296722,
+      "sha256": "aaf15a24e9f6b20dff9cb80cfd8277dca829712e5caab9d75a9038dbd6c971e9",
+      "status": "success",
+      "title": "Data:LPL/2025 Season/Grand Finals/Hash",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2025+Season%2FGrand+Finals%2FHash&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:44:33Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 4190,
+      "raw_path": "data/raw/leaguepedia-data/sha256/9760320e99d463f47e545dae7be7100856d51d20427df6d7c0a32e28c51ba169.json",
+      "retrieved_at": "2026-10-28T18:44:34Z",
+      "revid": 4301126,
+      "sha256": "9760320e99d463f47e545dae7be7100856d51d20427df6d7c0a32e28c51ba169",
+      "status": "success",
+      "title": "Data:LPL/2025 Season/Regional Finals",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2025+Season%2FRegional+Finals&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:44:40Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 490,
+      "raw_path": "data/raw/leaguepedia-data/sha256/8a327d05633412d93e1db8e9aed3b2a8a018619c03ea0c127b360fc8ad88280b.json",
+      "retrieved_at": "2026-10-28T18:44:41Z",
+      "revid": 4300412,
+      "sha256": "8a327d05633412d93e1db8e9aed3b2a8a018619c03ea0c127b360fc8ad88280b",
+      "status": "success",
+      "title": "Data:LPL/2025 Season/Regional Finals/Hash",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2025+Season%2FRegional+Finals%2FHash&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:44:47Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 35451,
+      "raw_path": "data/raw/leaguepedia-data/sha256/2858dd29d704b841aebd3b3e88010d44afe86759153cadf9f0c76df760e7c160.json",
+      "retrieved_at": "2026-10-28T18:44:47Z",
+      "revid": 4347786,
+      "sha256": "2858dd29d704b841aebd3b3e88010d44afe86759153cadf9f0c76df760e7c160",
+      "status": "success",
+      "title": "Data:LPL/2025 Season/Split 1",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2025+Season%2FSplit+1&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:44:53Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 15658,
+      "raw_path": "data/raw/leaguepedia-data/sha256/7964c891c54703ddb63225e39b19c19ec8d395a920f2f118095d5c19d5302d4f.json",
+      "retrieved_at": "2026-10-28T18:44:54Z",
+      "revid": 4124641,
+      "sha256": "7964c891c54703ddb63225e39b19c19ec8d395a920f2f118095d5c19d5302d4f",
+      "status": "success",
+      "title": "Data:LPL/2025 Season/Split 1 Playoffs",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2025+Season%2FSplit+1+Playoffs&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:45:00Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 981,
+      "raw_path": "data/raw/leaguepedia-data/sha256/cb46cf8de12960c0e032b652d19c89e85d9b905082b9d4951cf3aa79d28abfd9.json",
+      "retrieved_at": "2026-10-28T18:45:01Z",
+      "revid": 4078415,
+      "sha256": "cb46cf8de12960c0e032b652d19c89e85d9b905082b9d4951cf3aa79d28abfd9",
+      "status": "success",
+      "title": "Data:LPL/2025 Season/Split 1 Playoffs/Hash",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2025+Season%2FSplit+1+Playoffs%2FHash&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:45:07Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 3408,
+      "raw_path": "data/raw/leaguepedia-data/sha256/0d61f7a5e22b49d2ff691ae832bce87b5bbc7d56c20c986c6aa23f2232a2bea1.json",
+      "retrieved_at": "2026-10-28T18:45:07Z",
+      "revid": 4043882,
+      "sha256": "0d61f7a5e22b49d2ff691ae832bce87b5bbc7d56c20c986c6aa23f2232a2bea1",
+      "status": "success",
+      "title": "Data:LPL/2025 Season/Split 1/Hash",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2025+Season%2FSplit+1%2FHash&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:45:13Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 41653,
+      "raw_path": "data/raw/leaguepedia-data/sha256/e5f2c60c90e369ff9479cf2ffe54b62a27f9d4366224534985fd2860c2efc7f4.json",
+      "retrieved_at": "2026-10-28T18:45:14Z",
+      "revid": 4347798,
+      "sha256": "e5f2c60c90e369ff9479cf2ffe54b62a27f9d4366224534985fd2860c2efc7f4",
+      "status": "success",
+      "title": "Data:LPL/2025 Season/Split 2",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2025+Season%2FSplit+2&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:45:20Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 32020,
+      "raw_path": "data/raw/leaguepedia-data/sha256/27a45641967cab6c5bcae2772c9f9905c98e44501befb13e754fc27082d1c5c4.json",
+      "retrieved_at": "2026-10-28T18:45:21Z",
+      "revid": 4347791,
+      "sha256": "27a45641967cab6c5bcae2772c9f9905c98e44501befb13e754fc27082d1c5c4",
+      "status": "success",
+      "title": "Data:LPL/2025 Season/Split 2 Placements",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2025+Season%2FSplit+2+Placements&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:45:27Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 3812,
+      "raw_path": "data/raw/leaguepedia-data/sha256/751faf9b608d70693c2f145747e04cb145c499367151eed6698550295e051cd1.json",
+      "retrieved_at": "2026-10-28T18:45:27Z",
+      "revid": 4145127,
+      "sha256": "751faf9b608d70693c2f145747e04cb145c499367151eed6698550295e051cd1",
+      "status": "success",
+      "title": "Data:LPL/2025 Season/Split 2 Placements/Hash",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2025+Season%2FSplit+2+Placements%2FHash&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:45:33Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 22105,
+      "raw_path": "data/raw/leaguepedia-data/sha256/2b5bc0fe2396e64da4bce64f97b13068b5464d419239609143374391cf17c065.json",
+      "retrieved_at": "2026-10-28T18:45:34Z",
+      "revid": 4347818,
+      "sha256": "2b5bc0fe2396e64da4bce64f97b13068b5464d419239609143374391cf17c065",
+      "status": "success",
+      "title": "Data:LPL/2025 Season/Split 2 Playoffs",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2025+Season%2FSplit+2+Playoffs&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:45:40Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 1499,
+      "raw_path": "data/raw/leaguepedia-data/sha256/6f569a7535e47163a2bb51a9003fb86daef5b98fc8901ec1bb2dec056b236164.json",
+      "retrieved_at": "2026-10-28T18:45:41Z",
+      "revid": 4218045,
+      "sha256": "6f569a7535e47163a2bb51a9003fb86daef5b98fc8901ec1bb2dec056b236164",
+      "status": "success",
+      "title": "Data:LPL/2025 Season/Split 2 Playoffs/Hash",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2025+Season%2FSplit+2+Playoffs%2FHash&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:45:47Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 42026,
+      "raw_path": "data/raw/leaguepedia-data/sha256/89d4f1df06c8e0a93f0651717f408f5c30e6b4c3e338cc0304143758ea0ef3d3.json",
+      "retrieved_at": "2026-10-28T18:45:48Z",
+      "revid": 4347799,
+      "sha256": "89d4f1df06c8e0a93f0651717f408f5c30e6b4c3e338cc0304143758ea0ef3d3",
+      "status": "success",
+      "title": "Data:LPL/2025 Season/Split 2/2",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2025+Season%2FSplit+2%2F2&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:45:54Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 3667,
+      "raw_path": "data/raw/leaguepedia-data/sha256/22e79c3ae5ce2464aae6bd952ed86b1a79768bef250f85da692a00a8fbed0997.json",
+      "retrieved_at": "2026-10-28T18:45:54Z",
+      "revid": 4148699,
+      "sha256": "22e79c3ae5ce2464aae6bd952ed86b1a79768bef250f85da692a00a8fbed0997",
+      "status": "success",
+      "title": "Data:LPL/2025 Season/Split 2/2/Hash",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2025+Season%2FSplit+2%2F2%2FHash&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:46:00Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 5410,
+      "raw_path": "data/raw/leaguepedia-data/sha256/753de95cf2cd6f6a9b2873a1208f03bc781340b3a25fb8042987b8154cc1aef2.json",
+      "retrieved_at": "2026-10-28T18:46:01Z",
+      "revid": 4152708,
+      "sha256": "753de95cf2cd6f6a9b2873a1208f03bc781340b3a25fb8042987b8154cc1aef2",
+      "status": "success",
+      "title": "Data:LPL/2025 Season/Split 2/Hash",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2025+Season%2FSplit+2%2FHash&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:46:07Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 39320,
+      "raw_path": "data/raw/leaguepedia-data/sha256/829e84c9de9d9f732dd0875d05ca79f48c809d0f748f0da65a0356128dc277eb.json",
+      "retrieved_at": "2026-10-28T18:46:08Z",
+      "revid": 4347827,
+      "sha256": "829e84c9de9d9f732dd0875d05ca79f48c809d0f748f0da65a0356128dc277eb",
+      "status": "success",
+      "title": "Data:LPL/2025 Season/Split 3",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2025+Season%2FSplit+3&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:46:14Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 30405,
+      "raw_path": "data/raw/leaguepedia-data/sha256/88ea5422ba286d287cf854912def328de286fa629a024c9fdce4b8be130f9666.json",
+      "retrieved_at": "2026-10-28T18:46:14Z",
+      "revid": 4347829,
+      "sha256": "88ea5422ba286d287cf854912def328de286fa629a024c9fdce4b8be130f9666",
+      "status": "success",
+      "title": "Data:LPL/2025 Season/Split 3/2",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2025+Season%2FSplit+3%2F2&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:46:20Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 2800,
+      "raw_path": "data/raw/leaguepedia-data/sha256/02f7ca85cf040cd88744460a6b092f3011c4be62fb12a86cd78f632072583433.json",
+      "retrieved_at": "2026-10-28T18:46:21Z",
+      "revid": 4257006,
+      "sha256": "02f7ca85cf040cd88744460a6b092f3011c4be62fb12a86cd78f632072583433",
+      "status": "success",
+      "title": "Data:LPL/2025 Season/Split 3/2/Hash",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2025+Season%2FSplit+3%2F2%2FHash&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:46:27Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 5113,
+      "raw_path": "data/raw/leaguepedia-data/sha256/e1f127c1aff67572c4e3fe066da54303730c500b803cbb77a9cd076ce6330383.json",
+      "retrieved_at": "2026-10-28T18:46:28Z",
+      "revid": 4243151,
+      "sha256": "e1f127c1aff67572c4e3fe066da54303730c500b803cbb77a9cd076ce6330383",
+      "status": "success",
+      "title": "Data:LPL/2025 Season/Split 3/Hash",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2025+Season%2FSplit+3%2FHash&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:46:34Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 20384,
+      "raw_path": "data/raw/leaguepedia-data/sha256/d64ca4b767365baaa158927272951737de026ec222bb4dcddac65d9300471d3d.json",
+      "retrieved_at": "2026-10-28T18:46:34Z",
+      "revid": 4534120,
+      "sha256": "d64ca4b767365baaa158927272951737de026ec222bb4dcddac65d9300471d3d",
+      "status": "success",
+      "title": "Data:LPL/2026 Season/Grand Finals",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2026+Season%2FGrand+Finals&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:46:40Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 4776,
+      "raw_path": "data/raw/leaguepedia-data/sha256/c5d4c7296b363670eddbffaffbdb12a62377dde34426ce7ce11ad86598449081.json",
+      "retrieved_at": "2026-10-28T18:46:41Z",
+      "revid": 4535129,
+      "sha256": "c5d4c7296b363670eddbffaffbdb12a62377dde34426ce7ce11ad86598449081",
+      "status": "success",
+      "title": "Data:LPL/2026 Season/Regional Finals",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2026+Season%2FRegional+Finals&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:46:47Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 50332,
+      "raw_path": "data/raw/leaguepedia-data/sha256/2b73b4e5179df89f3fbf9ad5615c3b7abf6097259e658177ee24d6d15b129c45.json",
+      "retrieved_at": "2026-10-28T18:46:48Z",
+      "revid": 4377119,
+      "sha256": "2b73b4e5179df89f3fbf9ad5615c3b7abf6097259e658177ee24d6d15b129c45",
+      "status": "success",
+      "title": "Data:LPL/2026 Season/Split 1",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2026+Season%2FSplit+1&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:46:54Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 27830,
+      "raw_path": "data/raw/leaguepedia-data/sha256/7b50565a54883a436746f46e4ebfb3e73d194fdf81f79e3d19ef5d64465a8b02.json",
+      "retrieved_at": "2026-10-28T18:46:54Z",
+      "revid": 4399198,
+      "sha256": "7b50565a54883a436746f46e4ebfb3e73d194fdf81f79e3d19ef5d64465a8b02",
+      "status": "success",
+      "title": "Data:LPL/2026 Season/Split 1 Playoffs",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2026+Season%2FSplit+1+Playoffs&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:47:00Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 35658,
+      "raw_path": "data/raw/leaguepedia-data/sha256/39cb916b216c610c5570bbd691d3b5e26854af5309b9abaf557f271388ed54d8.json",
+      "retrieved_at": "2026-10-28T18:47:01Z",
+      "revid": 4434193,
+      "sha256": "39cb916b216c610c5570bbd691d3b5e26854af5309b9abaf557f271388ed54d8",
+      "status": "success",
+      "title": "Data:LPL/2026 Season/Split 2",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2026+Season%2FSplit+2&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:47:07Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 25197,
+      "raw_path": "data/raw/leaguepedia-data/sha256/d0070413358791ddcbdc190de21c8aa78c85d88f523bcf22cc5bb86b6c6e61df.json",
+      "retrieved_at": "2026-10-28T18:47:08Z",
+      "revid": 4470497,
+      "sha256": "d0070413358791ddcbdc190de21c8aa78c85d88f523bcf22cc5bb86b6c6e61df",
+      "status": "success",
+      "title": "Data:LPL/2026 Season/Split 2 Playoffs",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2026+Season%2FSplit+2+Playoffs&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:47:14Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 37059,
+      "raw_path": "data/raw/leaguepedia-data/sha256/2554e5fecc19ca67184035808e0e8feaf08d36b506597f0b4fe1bdfab45ee494.json",
+      "retrieved_at": "2026-10-28T18:47:14Z",
+      "revid": 4451397,
+      "sha256": "2554e5fecc19ca67184035808e0e8feaf08d36b506597f0b4fe1bdfab45ee494",
+      "status": "success",
+      "title": "Data:LPL/2026 Season/Split 2/2",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2026+Season%2FSplit+2%2F2&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-28T18:47:20Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 68488,
+      "raw_path": "data/raw/leaguepedia-data/sha256/b3074ffb1307186352f5b3f813a78c6a83a41710a56c92bdf562134615bcca30.json",
+      "retrieved_at": "2026-10-28T18:47:21Z",
+      "revid": 4516840,
+      "sha256": "b3074ffb1307186352f5b3f813a78c6a83a41710a56c92bdf562134615bcca30",
+      "status": "success",
+      "title": "Data:LPL/2026 Season/Split 3",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Data%3ALPL%2F2026+Season%2FSplit+3&format=json"
+    }
+  ],
+  "schema_version": 1,
+  "summary": {
+    "games_linked": 2726,
+    "pages": 59,
+    "success": 59,
+    "with_disabled": 523
+  },
+  "user_agent": "LOL_bp-research/0.1 (personal research; github.com/fsyabc111/LOL_bp)"
+}
