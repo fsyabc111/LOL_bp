@@ -15,7 +15,7 @@ python3 -m unittest discover -s tests -p test_sample_index.py
 
 规则适用性与事实字段分别保留：2024 LCK 主样本规则仍为 inferred；2026 LCK 规则要求比赛日期不早于7月29日并属于 Season Playoffs；Worlds 的 observed 文档仍含未知 Fearless / draft template；LPL 保留 unknown。全局 First Selection 公告仅作为候选补充，不能填补赛事专属未知规则。规则观察不证明任何一局历史 BP 步骤。
 
-readiness 独立报告 context、source_data、entities_same_candidate_version、rules_complete、bp_verified 和 replay_ready。实体解析成功只说明候选目录里有唯一数字身份；映射/赛事构建仍未确认时继续保留 blocker。本阶段没有逐手序列及证据验证器，bp_verified 固定 false、bp_validator_status=not_implemented；即使两个来源的字符串标记为 verified 也不会升格。context 的 source_record_verified 只证明关联，本轮全部 replay_ready=false。WLDs 标签只有在已关联的核验上下文明确为 World Championship/Worlds 且不含 Regional Qualifier 时才套用 Worlds 规则，否则保留 unknown_pending。
+readiness 独立报告 context、source_data、entities_same_candidate_version、rules_complete、bp_verified 和 replay_ready。实体解析成功只说明候选目录里有唯一数字身份；映射/赛事构建仍未确认时继续保留 blocker。bp_verified 只来自[逐手验证器](bp-validation.md)的 `verified` 结果，bp_validator_status 照录其状态；即使两个来源的字符串标记为 verified 也不会升格。索引读取 `bp-validation.json` 前核对其记录的输入哈希，过期即报错。context 的 source_record_verified 只证明关联，本轮全部 replay_ready=false。WLDs 标签只有在已关联的核验上下文明确为 World Championship/Worlds 且不含 Regional Qualifier 时才套用 Worlds 规则，否则保留 unknown_pending。
 
 测试覆盖错版本隔离、manifest 哈希冲突拒绝、上下文不能提升未验证 BP、未知规则保留、唯一 casefold 和未知实体处理。
 

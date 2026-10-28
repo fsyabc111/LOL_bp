@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Deterministic, offline sample integration. No model training or BP truth inference."""
+"""Deterministic, offline sample integration. No model training; BP readiness comes only from validate_bp.py."""
 import argparse
 from collections import Counter
 import hashlib
@@ -56,14 +56,15 @@ def applicable_rules(game, context, rules):
         output.append({'rule_id':rule['rule_id'],'applicability_status':status,'unknown_fields':unknown})
     return output
 
-def assemble_record(game, context, rules, patches, catalogs):
+def assemble_record(game, context, rules, patches, catalogs, validation=None):
     version,mapping=choose_asset(game['patch_raw'],patches)
     champions=catalogs.get(version,[]) if version else []
     names=sorted({n for team in game.get('teams',[]) for field in ['picks_source_columns','bans_source_columns'] for n in team.get(field,[]) if n})
     entities=[resolve_name(name,champions) for name in names]
     rule_candidates=applicable_rules(game,context,rules)
-    # No sequence/evidence validator exists in this delivery; flags cannot grant readiness.
-    bp=False
+    # Only the per-step validator result can grant BP readiness; source flags never do.
+    validation=validation or {'status':'not_run'}
+    bp=validation['status']=='verified'
     context_ok=context.get('evidence_status')=='source_record_verified'
     source_ok=game.get('quality',{}).get('structural_valid',False)
     entity_ok=bool(champions) and all(x['champion_id'] is not None for x in entities)
@@ -82,7 +83,7 @@ def assemble_record(game, context, rules, patches, catalogs):
             'candidate_static_version':version,'mapping_status':mapping,'static_available':bool(champions)},
         champion_entities=entities,candidate_rules=rule_candidates,
         readiness={'context':context_ok,'source_data':source_ok,'entities_same_candidate_version':entity_ok,
-            'rules_complete':rule_complete,'bp_verified':bp,'bp_validator_status':'not_implemented','replay_ready':not blockers},blockers=blockers)
+            'rules_complete':rule_complete,'bp_verified':bp,'bp_validator_status':validation['status'],'replay_ready':not blockers},blockers=blockers)
 
 def load_catalogs(root,manifest):
     responses={r.get('url'):r for r in manifest.get('responses',[]) if r.get('status')=='success'}
@@ -103,17 +104,27 @@ def load_catalogs(root,manifest):
             catalogs[version]=payload['entities']
     return catalogs,checked
 
+def load_validation(root, path, inputs):
+    validation=read_json(root/path)
+    for key,expected in validation.get('input_sha256',{}).items():
+        if not (root/key).is_file() or digest(root/key)!=expected: raise ValueError(f'stale BP validation; rerun validate_bp.py: {key}')
+    missing=[p for p in inputs if p not in validation.get('input_sha256',{})]
+    if missing: raise ValueError(f'BP validation lacks input hashes: {missing}')
+    return {r['oe_gameid']:r for r in validation['records']}
+
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--root',type=Path,default=ROOT);args=parser.parse_args();root=args.root
-    paths=['data/curated/replay_candidates.jsonl','data/curated/match_context.jsonl','data/curated/rules.json','data/curated/patches.json','data/manifests/static-data.json']
+    paths=['data/curated/replay_candidates.jsonl','data/curated/match_context.jsonl','data/curated/rules.json','data/curated/patches.json','data/manifests/static-data.json','data/curated/bp-validation.json']
     for path in paths:
         if not (root/path).is_file():raise FileNotFoundError(f'required integration input absent: {path}')
     games=read_jsonl(root/paths[0]);contexts={r['oe_gameid']:r for r in read_jsonl(root/paths[1])}
     catalogs,assets=load_catalogs(root,read_json(root/paths[4]))
-    records=[assemble_record(g,contexts.get(g['oe_gameid'],{}),read_json(root/paths[2]),read_json(root/paths[3]),catalogs) for g in sorted(games,key=lambda x:x['oe_gameid'])]
+    validations=load_validation(root,paths[5],paths[:5])
+    records=[assemble_record(g,contexts.get(g['oe_gameid'],{}),read_json(root/paths[2]),read_json(root/paths[3]),catalogs,validations.get(g['oe_gameid'])) for g in sorted(games,key=lambda x:x['oe_gameid'])]
     output={'schema_version':1,'input_sha256':{p:digest(root/p) for p in paths},'validated_static_outputs':assets,'records':records,
         'summary':{'games':len(records),'replay_ready':sum(r['readiness']['replay_ready'] for r in records),
             'readiness_counts':{key:sum(bool(r['readiness'][key]) for r in records) for key in ['context','source_data','entities_same_candidate_version','rules_complete','bp_verified']},
+            'bp_validator_status_counts':dict(sorted(Counter(r['readiness']['bp_validator_status'] for r in records).items())),
             'blocker_counts':dict(sorted(Counter(blocker for r in records for blocker in r['blockers']).items()))}}
     (root/'data/curated/sample-index.json').write_text(json.dumps(output,ensure_ascii=False,sort_keys=True,indent=2)+'\n')
     print(json.dumps(output['summary']))

@@ -1,0 +1,5252 @@
+{
+  "independent_source_types": [
+    "leaguepedia_picks_and_bans",
+    "official_broadcast",
+    "vod_manual"
+  ],
+  "input_sha256": {
+    "data/curated/match_context.jsonl": "48ce1a6ab624b68c077a1eb2da2b474a8995c85aedd25f002b58cb436f9cdba1",
+    "data/curated/patches.json": "35e6f47fe96078bb9ff2e58cd37435c01847165f4039955ba0eeff4eda2927f8",
+    "data/curated/replay_candidates.jsonl": "2ea1719504bfbe41524627b4e6f54339b4603806db260f67cc142af2483d371b",
+    "data/curated/rules.json": "834eb20b9aeab8e6d373225cbfdb43d1c2fc1e7d711eb6042497647414dc64f8",
+    "data/manifests/static-data.json": "4da048fc55ba67777c2000f925982428a0b4ef2894c962508496424c3935ce7e"
+  },
+  "records": [
+    {
+      "blockers": [
+        "draft_template_unknown",
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [],
+        "status": "rule_unknown"
+      },
+      "draft_sides": null,
+      "oe_column_hypothesis": null,
+      "oe_gameid": "13505-13505_game_1",
+      "rule_id": null,
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "draft_template_unknown",
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [],
+        "status": "rule_unknown"
+      },
+      "draft_sides": null,
+      "oe_column_hypothesis": null,
+      "oe_gameid": "13505-13505_game_2",
+      "rule_id": null,
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "draft_template_unknown",
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [],
+        "status": "rule_unknown"
+      },
+      "draft_sides": null,
+      "oe_column_hypothesis": null,
+      "oe_gameid": "13505-13505_game_3",
+      "rule_id": null,
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "draft_template_unknown",
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [],
+        "status": "rule_unknown"
+      },
+      "draft_sides": null,
+      "oe_column_hypothesis": null,
+      "oe_gameid": "13505-13505_game_4",
+      "rule_id": null,
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "bans_on_consumed": [],
+        "pick_repeats": [],
+        "remake_status": "unknown_not_recorded_in_sources",
+        "status": "pass"
+      },
+      "draft_sides": {
+        "A": "Red",
+        "B": "Blue"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Camille",
+            "side": "Red",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Cassiopeia",
+            "side": "Blue",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Jayce",
+            "side": "Red",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Ezreal",
+            "side": "Blue",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Pantheon",
+            "side": "Red",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Olaf",
+            "side": "Blue",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Lee Sin",
+            "side": "Red",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Ashe",
+            "side": "Blue",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Seraphine",
+            "side": "Blue",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Zeri",
+            "side": "Red",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Yuumi",
+            "side": "Red",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Cho'Gath",
+            "side": "Blue",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Annie",
+            "side": "Blue",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Vayne",
+            "side": "Red",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "K'Sante",
+            "side": "Blue",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Mordekaiser",
+            "side": "Red",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Syndra",
+            "side": "Blue",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Sion",
+            "side": "Red",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Sylas",
+            "side": "Red",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Dr. Mundo",
+            "side": "Blue",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT02_462565",
+      "rule_id": "lck_2026_from_2026_07_29",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "bans_on_consumed": [],
+        "pick_repeats": [],
+        "remake_status": "unknown_not_recorded_in_sources",
+        "status": "pass"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Camille",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Ezreal",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Nocturne",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Cassiopeia",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Pantheon",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Olaf",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Vi",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Caitlyn",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Bard",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Rumble",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Ryze",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Galio",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Nautilus",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Jarvan IV",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Jhin",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Lee Sin",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Orianna",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Lucian",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Milio",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Naafiri",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT02_463372",
+      "rule_id": "lck_2026_from_2026_07_29",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "bans_on_consumed": [],
+        "pick_repeats": [],
+        "remake_status": "unknown_not_recorded_in_sources",
+        "status": "pass"
+      },
+      "draft_sides": {
+        "A": "Red",
+        "B": "Blue"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Camille",
+            "side": "Red",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Ezreal",
+            "side": "Blue",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Jayce",
+            "side": "Red",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Cassiopeia",
+            "side": "Blue",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Seraphine",
+            "side": "Red",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Lee Sin",
+            "side": "Blue",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Nocturne",
+            "side": "Red",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Lulu",
+            "side": "Blue",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Yunara",
+            "side": "Blue",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Kalista",
+            "side": "Red",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Renata Glasc",
+            "side": "Red",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Akali",
+            "side": "Blue",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Twisted Fate",
+            "side": "Blue",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Cho'Gath",
+            "side": "Red",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Olaf",
+            "side": "Blue",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Xin Zhao",
+            "side": "Red",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Jarvan IV",
+            "side": "Blue",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Lissandra",
+            "side": "Red",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Varus",
+            "side": "Red",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Anivia",
+            "side": "Blue",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT02_463373",
+      "rule_id": "lck_2026_from_2026_07_29",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "bans_on_consumed": [],
+        "pick_repeats": [],
+        "remake_status": "unknown_not_recorded_in_sources",
+        "status": "pass"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Camille",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Cassiopeia",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Jayce",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Ezreal",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Yone",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Olaf",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Viktor",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Jhin",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Skarner",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Trundle",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Corki",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Karma",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Nautilus",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Vayne",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Miss Fortune",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Ahri",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Locke",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Alistar",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Gwen",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Fiora",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT02_463374",
+      "rule_id": "lck_2026_from_2026_07_29",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "draft_template_unknown",
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [],
+        "status": "rule_unknown"
+      },
+      "draft_sides": null,
+      "oe_column_hypothesis": null,
+      "oe_gameid": "LOLTMNT02_480507",
+      "rule_id": null,
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "draft_template_unknown",
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [],
+        "status": "rule_unknown"
+      },
+      "draft_sides": null,
+      "oe_column_hypothesis": null,
+      "oe_gameid": "LOLTMNT02_480508",
+      "rule_id": null,
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "draft_template_unknown",
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [],
+        "status": "rule_unknown"
+      },
+      "draft_sides": null,
+      "oe_column_hypothesis": null,
+      "oe_gameid": "LOLTMNT02_480511",
+      "rule_id": null,
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [
+          "id:22",
+          "id:526",
+          "id:901"
+        ],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "LeBlanc",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Nasus",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Vi",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Ivern",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Zyra",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Renekton",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Maokai",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Corki",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Lillia",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Ashe",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Rell",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Yone",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Gangplank",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Braum",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Miss Fortune",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Smolder",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Zeri",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Alistar",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "K'Sante",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_137726",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [
+          "id:12",
+          "id:221",
+          "id:516",
+          "id:526",
+          "id:68",
+          "id:876"
+        ],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Renekton",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "LeBlanc",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Ziggs",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Maokai",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Vi",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Nasus",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Rumble",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Ornn",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Viego",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Lillia",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Miss Fortune",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Zeri",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Corki",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Azir",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Tristana",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Rakan",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Alistar",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Rell",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Yasuo",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Akali",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_137737",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Renekton",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "LeBlanc",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Zyra",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Maokai",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Vi",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Lillia",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Rumble",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Ashe",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Azir",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Nasus",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Ivern",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Ornn",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Ezreal",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Viego",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Miss Fortune",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Braum",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Xin Zhao",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Smolder",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Rell",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Seraphine",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_138505",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [
+          "id:12",
+          "id:221",
+          "id:42",
+          "id:526",
+          "id:57",
+          "id:876",
+          "id:901"
+        ],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "LeBlanc",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Nasus",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Vi",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Ivern",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Renekton",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Maokai",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Smolder",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Lillia",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Corki",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Ziggs",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Rell",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Leona",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Ezreal",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Nautilus",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Gangplank",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Zeri",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Alistar",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Camille",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Gnar",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_138521",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Maokai",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Ivern",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Ashe",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Vi",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Nasus",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Azir",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Renekton",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Sejuani",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Lillia",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Senna",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Smolder",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Kennen",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Taliyah",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "K'Sante",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Caitlyn",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Seraphine",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Olaf",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Nilah",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Miss Fortune",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_138902",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [
+          "id:113",
+          "id:2",
+          "id:21",
+          "id:268",
+          "id:526",
+          "id:58",
+          "id:876",
+          "id:901"
+        ],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Maokai",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Ashe",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Ivern",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Vi",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Nasus",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Azir",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Renekton",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Sejuani",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Lillia",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Olaf",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Smolder",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Senna",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Kalista",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Caitlyn",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Ziggs",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Miss Fortune",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Varus",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Rell",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Alistar",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_138906",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [
+          "id:113",
+          "id:235",
+          "id:58",
+          "id:876",
+          "id:901"
+        ],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Nasus",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Maokai",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Azir",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Ivern",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Ashe",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Renekton",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Lillia",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Senna",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Sejuani",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Smolder",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Yasuo",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Caitlyn",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Ornn",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Taliyah",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Olaf",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Aatrox",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Ziggs",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Rell",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Lee Sin",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_139091",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [
+          "id:113",
+          "id:58",
+          "id:876",
+          "id:901"
+        ],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Nasus",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Maokai",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Ashe",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Ivern",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Azir",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Lillia",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Smolder",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Sejuani",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Renekton",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Corki",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Vayne",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Leona",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Kalista",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Ziggs",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Rell",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Caitlyn",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Ezreal",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Karma",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Lux",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_139097",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [
+          "id:115",
+          "id:254"
+        ],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Maokai",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Azir",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Ivern",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Zyra",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Lillia",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Vi",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Ziggs",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Sejuani",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Nasus",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Seraphine",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Smolder",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Senna",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Rell",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Kennen",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Jax",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Leona",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Olaf",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Shen",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Renekton",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_142511",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [
+          "id:113",
+          "id:115",
+          "id:254",
+          "id:777",
+          "id:901"
+        ],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Maokai",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Azir",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Ivern",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Tristana",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Lillia",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Ziggs",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Vi",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Kai'Sa",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Sejuani",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Smolder",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Yone",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Poppy",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Leona",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Olaf",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Kennen",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Rell",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Alistar",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Camille",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Jax",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_142514",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Vi",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Azir",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "LeBlanc",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Smolder",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Nasus",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Maokai",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Miss Fortune",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Lillia",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Ziggs",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Tristana",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Rell",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Leona",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Yasuo",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Alistar",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Mordekaiser",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Corki",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "K'Sante",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Poppy",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Malphite",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_143238",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [
+          "id:115",
+          "id:21",
+          "id:42",
+          "id:57",
+          "id:78"
+        ],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Azir",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "LeBlanc",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Tristana",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Smolder",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Nidalee",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Nasus",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Maokai",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Ziggs",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Miss Fortune",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Ivern",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Corki",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Rell",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Leona",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Nautilus",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "K'Sante",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Blitzcrank",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Poppy",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Olaf",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Garen",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_143239",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [
+          "id:115",
+          "id:42",
+          "id:526",
+          "id:75",
+          "id:86"
+        ],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Azir",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "LeBlanc",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Tristana",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Smolder",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Maokai",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Nasus",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Ziggs",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Corki",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Vi",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Leona",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Garen",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Kai'Sa",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Poppy",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Olaf",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Zyra",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Rell",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Seraphine",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Taliyah",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Skarner",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_143242",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Azir",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Maokai",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Nasus",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Lillia",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Ivern",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Vi",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Ashe",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "LeBlanc",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Ziggs",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Yone",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Braum",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Rell",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Poppy",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "K'Sante",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Olaf",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Kennen",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Rakan",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Vladimir",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Lee Sin",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_143512",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Vi",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Tristana",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Yone",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Ivern",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Ziggs",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Maokai",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Smolder",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Miss Fortune",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Ezreal",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Zeri",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Sejuani",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Leona",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Rell",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Mordekaiser",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Camille",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Nautilus",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "K'Sante",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Blitzcrank",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Jax",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_143986",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [
+          "id:21",
+          "id:897",
+          "id:901"
+        ],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Vi",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Tristana",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Maokai",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Sejuani",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Ziggs",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Smolder",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Miss Fortune",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Zyra",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Nidalee",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "K'Sante",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Renekton",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Senna",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Rell",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Ashe",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Nautilus",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Yone",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Kalista",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Renata Glasc",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Leona",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_143993",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [
+          "id:888",
+          "id:897"
+        ],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Tristana",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Nidalee",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Smolder",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Ziggs",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Maokai",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Azir",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Ashe",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Corki",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Vi",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "K'Sante",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Skarner",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Bard",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Mordekaiser",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Rakan",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Udyr",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Nasus",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Senna",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Ornn",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Renata Glasc",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_144116",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [
+          "id:113",
+          "id:115",
+          "id:42",
+          "id:57",
+          "id:89"
+        ],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Azir",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Nasus",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Smolder",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Lillia",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Vi",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Maokai",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Ziggs",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Corki",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "LeBlanc",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Jhin",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Sejuani",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Lee Sin",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Camille",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Nocturne",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Vayne",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Leona",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Rell",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Aatrox",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Yone",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_144583",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [
+          "id:221",
+          "id:24",
+          "id:254",
+          "id:42",
+          "id:53",
+          "id:57",
+          "id:89",
+          "id:897"
+        ],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Tristana",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Nidalee",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Smolder",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Azir",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Yone",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Ziggs",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Maokai",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Corki",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Vi",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Zeri",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Jhin",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Rakan",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Nasus",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Nautilus",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Poppy",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Blitzcrank",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Leona",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Jax",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "K'Sante",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_145002",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Azir",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Nasus",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "LeBlanc",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Lillia",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Smolder",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Ziggs",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Corki",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Maokai",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Vi",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Leona",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "K'Sante",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Gangplank",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Jhin",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Zeri",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Miss Fortune",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Nilah",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Taliyah",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Gnar",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Zilean",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_145467",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [
+          "id:115",
+          "id:42",
+          "id:57"
+        ],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "LeBlanc",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Smolder",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Lillia",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Vi",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Jhin",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Ziggs",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Maokai",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Nasus",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Sejuani",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Corki",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Ezreal",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Kennen",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Leona",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": null,
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Renekton",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Nautilus",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Alistar",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Camille",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Gangplank",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_145472",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [
+          "id:113",
+          "id:12",
+          "id:150",
+          "id:202",
+          "id:42",
+          "id:526",
+          "id:57",
+          "id:777"
+        ],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Vi",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Smolder",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Lillia",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Nasus",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Ziggs",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Azir",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Maokai",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Miss Fortune",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Sejuani",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Jhin",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Corki",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Camille",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Gangplank",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Leona",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "LeBlanc",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Rell",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Gnar",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Alistar",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Yone",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_145485",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [
+          "id:113",
+          "id:115",
+          "id:901"
+        ],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Maokai",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Azir",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Vi",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Jax",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Lillia",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Ziggs",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Smolder",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Sejuani",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Camille",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Tristana",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "K'Sante",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Poppy",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Jhin",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Leona",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Taliyah",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Rell",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Alistar",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Nidalee",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Yone",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_146452",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [
+          "id:113",
+          "id:115",
+          "id:12",
+          "id:202",
+          "id:78",
+          "id:901"
+        ],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Azir",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Lillia",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Maokai",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Tristana",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Vi",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Smolder",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Ziggs",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Sejuani",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Poppy",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Jhin",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Corki",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Jax",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Camille",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Bard",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Leona",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Alistar",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Rakan",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Renekton",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Zeri",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_146454",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [
+          "id:113",
+          "id:115",
+          "id:18",
+          "id:202",
+          "id:42",
+          "id:76",
+          "id:78",
+          "id:89",
+          "id:901"
+        ],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Maokai",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Azir",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Vi",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Lillia",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Jax",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Ziggs",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Smolder",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Jhin",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Tristana",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Nidalee",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Sejuani",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Camille",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Renekton",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Alistar",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "K'Sante",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Poppy",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Leona",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Corki",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Nasus",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_146456",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Sejuani",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Maokai",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Nidalee",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Vi",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Ziggs",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Smolder",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Ashe",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Zyra",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Skarner",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Ezreal",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Tristana",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Nasus",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Braum",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Alistar",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Nautilus",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Leona",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Rell",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "K'Sante",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Mordekaiser",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_146529",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Azir",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Lillia",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Maokai",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Tristana",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Vi",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Smolder",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Ziggs",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Sejuani",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Poppy",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Jhin",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Leona",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Rell",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Camille",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Alistar",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Corki",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Caitlyn",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Bard",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Jax",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Gnar",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_147323",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [
+          "id:143",
+          "id:22"
+        ],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Sejuani",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Maokai",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Nidalee",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Smolder",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Ziggs",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Ashe",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Jhin",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Azir",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Zyra",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Corki",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Ivern",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Renata Glasc",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Leona",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "K'Sante",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Nautilus",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Renekton",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Blitzcrank",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Ornn",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Alistar",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_147402",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [
+          "id:12",
+          "id:202",
+          "id:42",
+          "id:72"
+        ],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Nidalee",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Tristana",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Smolder",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Blitzcrank",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Sejuani",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Maokai",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Corki",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Ziggs",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Jhin",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Yone",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Skarner",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Poppy",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Leona",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Bard",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "K'Sante",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Alistar",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Rakan",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Camille",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Jax",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_147403",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [
+          "id:12",
+          "id:143",
+          "id:18",
+          "id:24",
+          "id:42",
+          "id:53",
+          "id:57",
+          "id:81"
+        ],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Nidalee",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Skarner",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Smolder",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Ziggs",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Ashe",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Maokai",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Corki",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Miss Fortune",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Tristana",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Ezreal",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Zyra",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Bard",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Nautilus",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Rell",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "K'Sante",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Alistar",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "Jax",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Blitzcrank",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Udyr",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_147404",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    },
+    {
+      "blockers": [
+        "independent_sequence_missing"
+      ],
+      "cross_game": {
+        "observed_pick_repeats": [
+          "id:115",
+          "id:24",
+          "id:42",
+          "id:526",
+          "id:72",
+          "id:777",
+          "id:897"
+        ],
+        "status": "rule_unknown"
+      },
+      "draft_sides": {
+        "A": "Blue",
+        "B": "Red"
+      },
+      "oe_column_hypothesis": {
+        "errors": [],
+        "status": "hypothesis_unverified",
+        "steps": [
+          {
+            "action": "ban",
+            "champion": "Tristana",
+            "side": "Blue",
+            "step": 1
+          },
+          {
+            "action": "ban",
+            "champion": "Rumble",
+            "side": "Red",
+            "step": 2
+          },
+          {
+            "action": "ban",
+            "champion": "Sejuani",
+            "side": "Blue",
+            "step": 3
+          },
+          {
+            "action": "ban",
+            "champion": "Nidalee",
+            "side": "Red",
+            "step": 4
+          },
+          {
+            "action": "ban",
+            "champion": "Maokai",
+            "side": "Blue",
+            "step": 5
+          },
+          {
+            "action": "ban",
+            "champion": "Smolder",
+            "side": "Red",
+            "step": 6
+          },
+          {
+            "action": "pick",
+            "champion": "Corki",
+            "side": "Blue",
+            "step": 7
+          },
+          {
+            "action": "pick",
+            "champion": "Ziggs",
+            "side": "Red",
+            "step": 8
+          },
+          {
+            "action": "pick",
+            "champion": "Vi",
+            "side": "Red",
+            "step": 9
+          },
+          {
+            "action": "pick",
+            "champion": "Skarner",
+            "side": "Blue",
+            "step": 10
+          },
+          {
+            "action": "pick",
+            "champion": "Kai'Sa",
+            "side": "Blue",
+            "step": 11
+          },
+          {
+            "action": "pick",
+            "champion": "Yone",
+            "side": "Red",
+            "step": 12
+          },
+          {
+            "action": "ban",
+            "champion": "Poppy",
+            "side": "Red",
+            "step": 13
+          },
+          {
+            "action": "ban",
+            "champion": "Alistar",
+            "side": "Blue",
+            "step": 14
+          },
+          {
+            "action": "ban",
+            "champion": "Blitzcrank",
+            "side": "Red",
+            "step": 15
+          },
+          {
+            "action": "ban",
+            "champion": "Rakan",
+            "side": "Blue",
+            "step": 16
+          },
+          {
+            "action": "pick",
+            "champion": "Jax",
+            "side": "Red",
+            "step": 17
+          },
+          {
+            "action": "pick",
+            "champion": "K'Sante",
+            "side": "Blue",
+            "step": 18
+          },
+          {
+            "action": "pick",
+            "champion": "Nautilus",
+            "side": "Blue",
+            "step": 19
+          },
+          {
+            "action": "pick",
+            "champion": "Rell",
+            "side": "Red",
+            "step": 20
+          }
+        ]
+      },
+      "oe_gameid": "LOLTMNT03_147405",
+      "rule_id": "lck_2024_summer_playoffs_candidate",
+      "status": "no_independent_sequence"
+    }
+  ],
+  "schema_version": 1,
+  "summary": {
+    "cross_game_counts": {
+      "pass": 4,
+      "rule_unknown": 38
+    },
+    "games": 42,
+    "oe_hypothesis_internal_errors": 0,
+    "status_counts": {
+      "no_independent_sequence": 42
+    }
+  }
+}

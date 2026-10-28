@@ -1,5 +1,6 @@
 {
   "input_sha256": {
+    "data/curated/bp-validation.json": "c20f53317280bc74546a55066079c9ca916ca6585aa7235e9a40f21a85413eee",
     "data/curated/match_context.jsonl": "48ce1a6ab624b68c077a1eb2da2b474a8995c85aedd25f002b58cb436f9cdba1",
     "data/curated/patches.json": "35e6f47fe96078bb9ff2e58cd37435c01847165f4039955ba0eeff4eda2927f8",
     "data/curated/replay_candidates.jsonl": "2ea1719504bfbe41524627b4e6f54339b4603806db260f67cc142af2483d371b",
@@ -146,7 +147,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -305,7 +306,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -464,7 +465,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -623,7 +624,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -780,7 +781,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -937,7 +938,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -1094,7 +1095,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -1251,7 +1252,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -1410,7 +1411,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -1569,7 +1570,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -1728,7 +1729,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -1877,7 +1878,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -2026,7 +2027,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -2175,7 +2176,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -2324,7 +2325,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -2473,7 +2474,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -2622,7 +2623,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -2771,7 +2772,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -2920,7 +2921,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -3069,7 +3070,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -3218,7 +3219,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -3367,7 +3368,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -3516,7 +3517,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -3665,7 +3666,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -3814,7 +3815,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -3963,7 +3964,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -4112,7 +4113,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -4261,7 +4262,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -4410,7 +4411,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -4559,7 +4560,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -4708,7 +4709,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -4852,7 +4853,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -5001,7 +5002,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -5150,7 +5151,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -5299,7 +5300,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -5448,7 +5449,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -5597,7 +5598,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -5746,7 +5747,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -5895,7 +5896,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -6044,7 +6045,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -6193,7 +6194,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -6342,7 +6343,7 @@
         "static_available": true
       },
       "readiness": {
-        "bp_validator_status": "not_implemented",
+        "bp_validator_status": "no_independent_sequence",
         "bp_verified": false,
         "context": true,
         "entities_same_candidate_version": true,
@@ -6370,6 +6371,9 @@
       "bp_order_not_verified": 42,
       "static_version_mapping_inferred": 31,
       "static_version_mapping_numeric_candidate_event_build_unverified": 11
+    },
+    "bp_validator_status_counts": {
+      "no_independent_sequence": 42
     },
     "games": 42,
     "readiness_counts": {

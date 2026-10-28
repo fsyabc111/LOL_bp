@@ -42,7 +42,19 @@ class SampleIndexTests(unittest.TestCase):
     def test_verified_flags_without_sequence_never_pass(self):
         game=self.fixture();game['quality']['bp_order_status']='verified'
         r=m.assemble_record(game,{'evidence_status':'source_record_verified','bp_order_status':'verified'},{'rules':[]},{'patches':[]},{})
-        self.assertFalse(r['readiness']['bp_verified']);self.assertEqual(r['readiness']['bp_validator_status'],'not_implemented')
+        self.assertFalse(r['readiness']['bp_verified']);self.assertEqual(r['readiness']['bp_validator_status'],'not_run')
+    def test_only_validator_verified_status_grants_bp(self):
+        for status,expected in [('verified',True),('rejected',False),('no_independent_sequence',False)]:
+            r=m.assemble_record(self.fixture(),{},{'rules':[]},{'patches':[]},{},{'status':status})
+            self.assertIs(r['readiness']['bp_verified'],expected);self.assertEqual(r['readiness']['bp_validator_status'],status)
+            self.assertEqual('bp_order_not_verified' in r['blockers'],not expected)
+    def test_stale_validation_rejected(self):
+        with tempfile.TemporaryDirectory() as d:
+            root=Path(d);(root/'in.json').write_text('{}')
+            (root/'v.json').write_text(json.dumps({'input_sha256':{'in.json':'stale'},'records':[]}))
+            with self.assertRaises(ValueError):m.load_validation(root,'v.json',['in.json'])
+            (root/'v.json').write_text(json.dumps({'input_sha256':{},'records':[]}))
+            with self.assertRaises(ValueError):m.load_validation(root,'v.json',['in.json'])
     def test_unknown_rules_preserved(self):
         rule={'rule_id':'lpl_2026_unverified','competition':'LPL','year':2026,'applicability_status':'unknown'}
         r=m.assemble_record(self.fixture(),{}, {'rules':[rule]},{'patches':[]},{})
