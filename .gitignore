@@ -1,0 +1,13 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+
+# User-provided originals and fetched upstream snapshots remain local.
+/data/*_LoL_esports_match_data_from_OraclesElixir.csv
+/data/raw/
+/data/processed/
+/data/**/*.tmp
