@@ -1,0 +1,151 @@
+{
+  "version": "v3",
+  "description": "v1 + 补丁说明特征：本补丁（含联赛跳过的补丁）加强 / 削弱了该英雄，强度随本补丁局数衰减（20/(20+局数)）",
+  "stats": {
+    "half_life_days": 60,
+    "smoothing": {
+      "meta": 10,
+      "patch": 20,
+      "team": 10,
+      "player": 5
+    },
+    "patch_notes": {
+      "fade_games": 20
+    }
+  },
+  "features": [
+    "meta_pick",
+    "meta_ban",
+    "team_pick",
+    "team_ban",
+    "opp_pick",
+    "banned_vs_opp",
+    "banned_vs_self",
+    "role_meta_self",
+    "player_pool_self",
+    "role_meta_opp",
+    "player_pool_opp",
+    "series_ban_self",
+    "series_banned_vs_self",
+    "patch_buff",
+    "patch_nerf"
+  ],
+  "fit": {
+    "method": "conditional_logit_newton",
+    "l2": 1.0,
+    "split": "train"
+  },
+  "weights": {
+    "ban1": {
+      "meta_pick": -2.450034,
+      "meta_ban": 1.227417,
+      "team_pick": -0.225095,
+      "team_ban": 0.236473,
+      "opp_pick": 0.184212,
+      "banned_vs_opp": 0.535615,
+      "banned_vs_self": -0.390177,
+      "role_meta_self": 1.171186,
+      "player_pool_self": -0.058025,
+      "role_meta_opp": 1.171186,
+      "player_pool_opp": 0.341017,
+      "series_ban_self": 1.221007,
+      "series_banned_vs_self": 0.492485,
+      "patch_buff": 0.597033,
+      "patch_nerf": 0.445613
+    },
+    "pick1": {
+      "meta_pick": 0.021927,
+      "meta_ban": 0.696652,
+      "team_pick": 0.113519,
+      "team_ban": -0.178511,
+      "opp_pick": -0.0022,
+      "banned_vs_opp": -0.084622,
+      "banned_vs_self": 0.095263,
+      "role_meta_self": 0.866654,
+      "player_pool_self": 0.410554,
+      "role_meta_opp": -0.25331,
+      "player_pool_opp": 0.017235,
+      "series_ban_self": 0.683757,
+      "series_banned_vs_self": 0.539015,
+      "patch_buff": 0.341575,
+      "patch_nerf": 0.565916
+    },
+    "ban2": {
+      "meta_pick": -0.618147,
+      "meta_ban": 0.310741,
+      "team_pick": -0.137734,
+      "team_ban": 0.128877,
+      "opp_pick": 0.039008,
+      "banned_vs_opp": 0.179258,
+      "banned_vs_self": -0.095354,
+      "role_meta_self": -0.138372,
+      "player_pool_self": -0.024897,
+      "role_meta_opp": 0.970655,
+      "player_pool_opp": 0.521792,
+      "series_ban_self": 0.553093,
+      "series_banned_vs_self": 0.228256,
+      "patch_buff": -0.057041,
+      "patch_nerf": 0.09588
+    },
+    "pick2": {
+      "meta_pick": -0.029428,
+      "meta_ban": 0.186452,
+      "team_pick": -0.205099,
+      "team_ban": -0.060957,
+      "opp_pick": -0.088395,
+      "banned_vs_opp": -0.065534,
+      "banned_vs_self": 0.080554,
+      "role_meta_self": 0.619084,
+      "player_pool_self": 0.532707,
+      "role_meta_opp": -0.129944,
+      "player_pool_opp": 0.095152,
+      "series_ban_self": 0.251604,
+      "series_banned_vs_self": 0.113541,
+      "patch_buff": 0.123162,
+      "patch_nerf": 0.128085
+    }
+  },
+  "training": {
+    "split": "train",
+    "range": [
+      "2025-01-01",
+      "2026-03-31"
+    ],
+    "games": 1795,
+    "disputed_games_excluded": 0,
+    "skipped": {
+      "empty_ban": 6,
+      "actual_not_candidate": 1
+    },
+    "by_phase": {
+      "ban1": {
+        "decisions": 10766,
+        "mean_log_likelihood": -2.8235,
+        "iterations": 10
+      },
+      "pick1": {
+        "decisions": 10770,
+        "mean_log_likelihood": -3.1552,
+        "iterations": 9
+      },
+      "ban2": {
+        "decisions": 7177,
+        "mean_log_likelihood": -2.8167,
+        "iterations": 11
+      },
+      "pick2": {
+        "decisions": 7180,
+        "mean_log_likelihood": -2.7652,
+        "iterations": 7
+      }
+    },
+    "input_sha256": {
+      "data/manifests/local-oe.json": "afd4247c97b8d7002a98ff6f75216ee9421461d23685265e1806c4408e5963ea",
+      "data/curated/bp_sequences.jsonl": "eb9ad2fa0de73704383edb8f8d88cc3750f52fa7f3ee3a00b064a0b01fd22433",
+      "data/curated/rules.json": "5b713ac2d75ad15ba22364c27732da8a3adb61cc11f36889f7b1044f1f9d66df",
+      "data/curated/event_restrictions.jsonl": "61a0769f47342c1f121bac2c8a983248c62775f6029a220625598f84ffb0acc2",
+      "data/curated/match_context.jsonl": "48ce1a6ab624b68c077a1eb2da2b474a8995c85aedd25f002b58cb436f9cdba1"
+    },
+    "settings_sha256": "a6a2d2351296213f08270f1a4b90db79ed1cc44ea31dd8789dc737b136f46a2c"
+  }
+}

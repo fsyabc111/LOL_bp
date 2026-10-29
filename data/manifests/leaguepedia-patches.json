@@ -1,0 +1,808 @@
+{
+  "pages": [
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:39:41Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 41865,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/d0de0f06a9870fd4074372b61f064263c86b06c6e524370df2d2f43c38eff15f.json",
+      "retrieved_at": "2026-10-29T02:39:46Z",
+      "revid": 4041869,
+      "sha256": "d0de0f06a9870fd4074372b61f064263c86b06c6e524370df2d2f43c38eff15f",
+      "status": "success",
+      "title": "Patch 25.S1.1",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+25.S1.1&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:39:53Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 33359,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/0123985908508f8a1d95bbe622826796047a65bfe8f63a3f5cd23be82e3af023.json",
+      "retrieved_at": "2026-10-29T02:39:56Z",
+      "revid": 4041999,
+      "sha256": "0123985908508f8a1d95bbe622826796047a65bfe8f63a3f5cd23be82e3af023",
+      "status": "success",
+      "title": "Patch 25.S1.2",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+25.S1.2&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:40:03Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 36575,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/e2d6328a43b002b4955e765e559ed92e5e14c2031fb4084ff6e68b3a755dcc62.json",
+      "retrieved_at": "2026-10-29T02:40:07Z",
+      "revid": 4056226,
+      "sha256": "e2d6328a43b002b4955e765e559ed92e5e14c2031fb4084ff6e68b3a755dcc62",
+      "status": "success",
+      "title": "Patch 25.S1.3",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+25.S1.3&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:40:14Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 284,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/633549535f9ddfeb7af13e60d6636e70faf1b2319adb20fbab35eb2b263dc877.json",
+      "retrieved_at": "2026-10-29T02:40:16Z",
+      "revid": 4073103,
+      "sha256": "633549535f9ddfeb7af13e60d6636e70faf1b2319adb20fbab35eb2b263dc877",
+      "status": "success",
+      "title": "Patch 25.S1.4",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+25.S1.4&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:40:23Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 34521,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/328b48e160c54373f50108419c8a0aefd43b8892daa166541c0a92cdefa9b5c8.json",
+      "retrieved_at": "2026-10-29T02:40:32Z",
+      "revid": 4127293,
+      "sha256": "328b48e160c54373f50108419c8a0aefd43b8892daa166541c0a92cdefa9b5c8",
+      "status": "success",
+      "title": "Patch 25.04",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+25.04&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:40:39Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 39678,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/c85885299f9a7d3b20867269324904ed817e8bb157ace6e3398b6a33c72659fa.json",
+      "retrieved_at": "2026-10-29T02:40:41Z",
+      "revid": 4127349,
+      "sha256": "c85885299f9a7d3b20867269324904ed817e8bb157ace6e3398b6a33c72659fa",
+      "status": "success",
+      "title": "Patch 25.05",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+25.05&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:40:48Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 44239,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/cdffb1d34f971b54ed279c884b00757b970cf2268913cabdecfcf5a4f319eee0.json",
+      "retrieved_at": "2026-10-29T02:40:51Z",
+      "revid": 4146735,
+      "sha256": "cdffb1d34f971b54ed279c884b00757b970cf2268913cabdecfcf5a4f319eee0",
+      "status": "success",
+      "title": "Patch 25.06",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+25.06&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:40:58Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 42184,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/7d2e8310d0e2d28ecb61b8330cfce7008bcf8601ce2e10064ba85aa644f22b21.json",
+      "retrieved_at": "2026-10-29T02:41:04Z",
+      "revid": 4162997,
+      "sha256": "7d2e8310d0e2d28ecb61b8330cfce7008bcf8601ce2e10064ba85aa644f22b21",
+      "status": "success",
+      "title": "Patch 25.07",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+25.07&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:41:11Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 29312,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/475dc430e7c5d3b091df9fdcb89d56769099b47daa67ecbe71fca88e4cbb5fb4.json",
+      "retrieved_at": "2026-10-29T02:41:14Z",
+      "revid": 4163218,
+      "sha256": "475dc430e7c5d3b091df9fdcb89d56769099b47daa67ecbe71fca88e4cbb5fb4",
+      "status": "success",
+      "title": "Patch 25.08",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+25.08&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:41:21Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 41033,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/5731923c0c04c889f897fbe34bc369ec519cb97ac4f0a1fffa0d7be659dba547.json",
+      "retrieved_at": "2026-10-29T02:41:27Z",
+      "revid": 4177996,
+      "sha256": "5731923c0c04c889f897fbe34bc369ec519cb97ac4f0a1fffa0d7be659dba547",
+      "status": "success",
+      "title": "Patch 25.09",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+25.09&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:41:34Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 21703,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/1937243744c54841b7fd8d7184e6b094a1f15d46c8be8fb3a97f795a7b2c600c.json",
+      "retrieved_at": "2026-10-29T02:41:39Z",
+      "revid": 4193875,
+      "sha256": "1937243744c54841b7fd8d7184e6b094a1f15d46c8be8fb3a97f795a7b2c600c",
+      "status": "success",
+      "title": "Patch 25.10",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+25.10&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:41:46Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 35404,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/3a726537d7d82366c9ca49efb373cfdd94b9801f749aeed430b545c72ca29b74.json",
+      "retrieved_at": "2026-10-29T02:41:55Z",
+      "revid": 4208054,
+      "sha256": "3a726537d7d82366c9ca49efb373cfdd94b9801f749aeed430b545c72ca29b74",
+      "status": "success",
+      "title": "Patch 25.11",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+25.11&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:42:02Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 40682,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/d1ade5f845dff0a36cef9f057bb12ecd45eedf339213e404e55e14a8d102b2e1.json",
+      "retrieved_at": "2026-10-29T02:42:06Z",
+      "revid": 4218274,
+      "sha256": "d1ade5f845dff0a36cef9f057bb12ecd45eedf339213e404e55e14a8d102b2e1",
+      "status": "success",
+      "title": "Patch 25.12",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+25.12&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:42:13Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 25601,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/f3ee800338cfa3012323b42a64199647e8e09c12b68d3b0a0321f37b78ed4cae.json",
+      "retrieved_at": "2026-10-29T02:42:17Z",
+      "revid": 4227374,
+      "sha256": "f3ee800338cfa3012323b42a64199647e8e09c12b68d3b0a0321f37b78ed4cae",
+      "status": "success",
+      "title": "Patch 25.13",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+25.13&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:42:24Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 42078,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/14f10b9154774e769ce686dc5822e34c21b5b5c00a6bc93f928b029c44a44db4.json",
+      "retrieved_at": "2026-10-29T02:42:27Z",
+      "revid": 4238017,
+      "sha256": "14f10b9154774e769ce686dc5822e34c21b5b5c00a6bc93f928b029c44a44db4",
+      "status": "success",
+      "title": "Patch 25.14",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+25.14&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:42:34Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 24159,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/dcdf74aba54b2fb21d5a4e707d402fe792e4f3d0edcb38a453c42efb8aded02f.json",
+      "retrieved_at": "2026-10-29T02:42:38Z",
+      "revid": 4251027,
+      "sha256": "dcdf74aba54b2fb21d5a4e707d402fe792e4f3d0edcb38a453c42efb8aded02f",
+      "status": "success",
+      "title": "Patch 25.15",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+25.15&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:42:45Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 38496,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/170be7321bcb047dd24a657c5b6dabfd07407cd38745af79048f18962e4ba0ab.json",
+      "retrieved_at": "2026-10-29T02:42:51Z",
+      "revid": 4265400,
+      "sha256": "170be7321bcb047dd24a657c5b6dabfd07407cd38745af79048f18962e4ba0ab",
+      "status": "success",
+      "title": "Patch 25.16",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+25.16&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:42:58Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 39564,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/50e481c870a0f0c1d3f1469de7b2268bcc1c382802624ad8ec675cdeb92d9383.json",
+      "retrieved_at": "2026-10-29T02:43:02Z",
+      "revid": 4280187,
+      "sha256": "50e481c870a0f0c1d3f1469de7b2268bcc1c382802624ad8ec675cdeb92d9383",
+      "status": "success",
+      "title": "Patch 25.17",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+25.17&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:43:09Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 44903,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/99df199d9e148a780c3fd86c1b3459d52036822c30d2795f99da786a680b374e.json",
+      "retrieved_at": "2026-10-29T02:43:14Z",
+      "revid": 4299008,
+      "sha256": "99df199d9e148a780c3fd86c1b3459d52036822c30d2795f99da786a680b374e",
+      "status": "success",
+      "title": "Patch 25.18",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+25.18&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:43:21Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 28394,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/d386c77ec6f5f17e8398854fef37bd91c95d5cec9a47e420bf797b2c5544a1fe.json",
+      "retrieved_at": "2026-10-29T02:43:23Z",
+      "revid": 4307874,
+      "sha256": "d386c77ec6f5f17e8398854fef37bd91c95d5cec9a47e420bf797b2c5544a1fe",
+      "status": "success",
+      "title": "Patch 25.19",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+25.19&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:43:30Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 31153,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/14fd43797f67d4c7db968931e0adb28c39a2788c65c997d8bbee719a1287be34.json",
+      "retrieved_at": "2026-10-29T02:43:34Z",
+      "revid": 4317048,
+      "sha256": "14fd43797f67d4c7db968931e0adb28c39a2788c65c997d8bbee719a1287be34",
+      "status": "success",
+      "title": "Patch 25.20",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+25.20&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:43:41Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 22991,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/bcc5df3d85d6ade7b4eee9996b04a4b22f848c096ec06dc96341f88c59be25ba.json",
+      "retrieved_at": "2026-10-29T02:43:47Z",
+      "revid": 4317080,
+      "sha256": "bcc5df3d85d6ade7b4eee9996b04a4b22f848c096ec06dc96341f88c59be25ba",
+      "status": "success",
+      "title": "Patch 25.21",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+25.21&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:43:54Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 26626,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/2d069fc7ac5b9564719e1c31460a1f326567fb0af13abdd3581c90090d5d924e.json",
+      "retrieved_at": "2026-10-29T02:43:58Z",
+      "revid": 4324232,
+      "sha256": "2d069fc7ac5b9564719e1c31460a1f326567fb0af13abdd3581c90090d5d924e",
+      "status": "success",
+      "title": "Patch 25.22",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+25.22&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:44:05Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 36127,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/4617cb7353d6ca357f6ec0408b84c90ce7613efaf241cfa81ee6ea611a0e7806.json",
+      "retrieved_at": "2026-10-29T02:44:10Z",
+      "revid": 4337640,
+      "sha256": "4617cb7353d6ca357f6ec0408b84c90ce7613efaf241cfa81ee6ea611a0e7806",
+      "status": "success",
+      "title": "Patch 25.23",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+25.23&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:44:17Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 32492,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/43acfbd09ce32db9d9799c39424166ff8bfaa19e02b33a80ef05488cb72d64dc.json",
+      "retrieved_at": "2026-10-29T02:44:26Z",
+      "revid": 4343386,
+      "sha256": "43acfbd09ce32db9d9799c39424166ff8bfaa19e02b33a80ef05488cb72d64dc",
+      "status": "success",
+      "title": "Patch 25.24",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+25.24&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:44:33Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 130510,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/39ef14f70b5ceb9a57f0f2d2762243ede34772e693d118a3021513433d36aacb.json",
+      "retrieved_at": "2026-10-29T02:44:36Z",
+      "revid": 4363585,
+      "sha256": "39ef14f70b5ceb9a57f0f2d2762243ede34772e693d118a3021513433d36aacb",
+      "status": "success",
+      "title": "Patch 26.01",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+26.01&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:44:43Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 30200,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/b3a630a6f1c3d0c0736a7dcd87e8584d10f4cc03eb2c2d705fca41e1cc566f34.json",
+      "retrieved_at": "2026-10-29T02:44:46Z",
+      "revid": 4363609,
+      "sha256": "b3a630a6f1c3d0c0736a7dcd87e8584d10f4cc03eb2c2d705fca41e1cc566f34",
+      "status": "success",
+      "title": "Patch 26.02",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+26.02&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:44:53Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 54286,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/78e8e62234c6d876d577813d09767b928fad1f38fb97c7e2276eed1d62d5ad86.json",
+      "retrieved_at": "2026-10-29T02:44:55Z",
+      "revid": 4385809,
+      "sha256": "78e8e62234c6d876d577813d09767b928fad1f38fb97c7e2276eed1d62d5ad86",
+      "status": "success",
+      "title": "Patch 26.03",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+26.03&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:45:02Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 34945,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/26304db6e8c3a0f56c40b6e5ad79544f714f0c3bf5a77f040659a4645d0077a4.json",
+      "retrieved_at": "2026-10-29T02:45:08Z",
+      "revid": 4385860,
+      "sha256": "26304db6e8c3a0f56c40b6e5ad79544f714f0c3bf5a77f040659a4645d0077a4",
+      "status": "success",
+      "title": "Patch 26.04",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+26.04&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:45:15Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 30021,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/18105d53612b76209f578fc2dfdfa1724b475cd6511dab244de259845137f44a.json",
+      "retrieved_at": "2026-10-29T02:45:17Z",
+      "revid": 4396253,
+      "sha256": "18105d53612b76209f578fc2dfdfa1724b475cd6511dab244de259845137f44a",
+      "status": "success",
+      "title": "Patch 26.05",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+26.05&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:45:24Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 29807,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/3aee5fbbab14ba8387b4c39c5a2dd2b6de13b0ceb1e0af8d9fbca84bbfb90336.json",
+      "retrieved_at": "2026-10-29T02:45:27Z",
+      "revid": 4414031,
+      "sha256": "3aee5fbbab14ba8387b4c39c5a2dd2b6de13b0ceb1e0af8d9fbca84bbfb90336",
+      "status": "success",
+      "title": "Patch 26.06",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+26.06&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:45:34Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 24721,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/5275ff41f15280efafa05c90c9e3400b9e152903baaaef9984bf63d057c63deb.json",
+      "retrieved_at": "2026-10-29T02:45:36Z",
+      "revid": 4414122,
+      "sha256": "5275ff41f15280efafa05c90c9e3400b9e152903baaaef9984bf63d057c63deb",
+      "status": "success",
+      "title": "Patch 26.07",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+26.07&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:45:43Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 20287,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/76c79ec7d295259d6156865010412e42e82ca8777742ed49e82ca56fc2f22f5a.json",
+      "retrieved_at": "2026-10-29T02:45:47Z",
+      "revid": 4424482,
+      "sha256": "76c79ec7d295259d6156865010412e42e82ca8777742ed49e82ca56fc2f22f5a",
+      "status": "success",
+      "title": "Patch 26.08",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+26.08&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:45:54Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 50650,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/48b62ed2711e0665f483f27f469d5c2884d7ef8356103e5a2825393921610707.json",
+      "retrieved_at": "2026-10-29T02:45:56Z",
+      "revid": 4447485,
+      "sha256": "48b62ed2711e0665f483f27f469d5c2884d7ef8356103e5a2825393921610707",
+      "status": "success",
+      "title": "Patch 26.09",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+26.09&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:46:03Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 34841,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/91a660d4345abb40232d90fb408c7fed2ae059cf28ac9c4e344678104747a735.json",
+      "retrieved_at": "2026-10-29T02:46:06Z",
+      "revid": 4447572,
+      "sha256": "91a660d4345abb40232d90fb408c7fed2ae059cf28ac9c4e344678104747a735",
+      "status": "success",
+      "title": "Patch 26.10",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+26.10&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:46:13Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 34245,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/a1f1c765e0a47a6da1260478f2979f1d253b35be2aadcdce518f2be680dd49e9.json",
+      "retrieved_at": "2026-10-29T02:46:15Z",
+      "revid": 4459204,
+      "sha256": "a1f1c765e0a47a6da1260478f2979f1d253b35be2aadcdce518f2be680dd49e9",
+      "status": "success",
+      "title": "Patch 26.11",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+26.11&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:46:22Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 28405,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/ddaeb45fc7c02b42c2744a7e35f005f6b1d4eb5d3795b3edb063975176757d03.json",
+      "retrieved_at": "2026-10-29T02:46:29Z",
+      "revid": 4467390,
+      "sha256": "ddaeb45fc7c02b42c2744a7e35f005f6b1d4eb5d3795b3edb063975176757d03",
+      "status": "success",
+      "title": "Patch 26.12",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+26.12&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:46:36Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 27332,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/7e943a9c2bedfd5b5a7f2e450d0b382a14d8a8e004e993e15beb4db11e3d9ef3.json",
+      "retrieved_at": "2026-10-29T02:46:38Z",
+      "revid": 4476363,
+      "sha256": "7e943a9c2bedfd5b5a7f2e450d0b382a14d8a8e004e993e15beb4db11e3d9ef3",
+      "status": "success",
+      "title": "Patch 26.13",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+26.13&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:46:45Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 24338,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/5986f08dabf6d291d8189816b4f814694c6a8278871d9418f7aeb3eff47c6452.json",
+      "retrieved_at": "2026-10-29T02:46:47Z",
+      "revid": 4486674,
+      "sha256": "5986f08dabf6d291d8189816b4f814694c6a8278871d9418f7aeb3eff47c6452",
+      "status": "success",
+      "title": "Patch 26.14",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+26.14&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:46:54Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 34673,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/30c64c17d38ab3ecd3f84e42ae6a7ce2d0cb12996385e404b384021f2f636b8b.json",
+      "retrieved_at": "2026-10-29T02:46:58Z",
+      "revid": 4498945,
+      "sha256": "30c64c17d38ab3ecd3f84e42ae6a7ce2d0cb12996385e404b384021f2f636b8b",
+      "status": "success",
+      "title": "Patch 26.15",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+26.15&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "attempted_at": "2026-10-29T02:47:05Z",
+          "error": "URLError"
+        },
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:48:08Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 52460,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/cbfb3403d51c08042dd6251a41065d02a47ad9572156be88c72e329b0437ef0c.json",
+      "retrieved_at": "2026-10-29T02:48:11Z",
+      "revid": 4507916,
+      "sha256": "cbfb3403d51c08042dd6251a41065d02a47ad9572156be88c72e329b0437ef0c",
+      "status": "success",
+      "title": "Patch 26.16",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+26.16&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:48:18Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 43983,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/be78fea31db05d1908b1213b9ece2c3a6bbaa260cff9fa7e2c9cde6dc96f3a27.json",
+      "retrieved_at": "2026-10-29T02:48:20Z",
+      "revid": 4518142,
+      "sha256": "be78fea31db05d1908b1213b9ece2c3a6bbaa260cff9fa7e2c9cde6dc96f3a27",
+      "status": "success",
+      "title": "Patch 26.17",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+26.17&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:48:27Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 34887,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/ce8cd6e1d2081880746d1ed733a797d4ab3a09807b1631bc0beadc675e398fcc.json",
+      "retrieved_at": "2026-10-29T02:48:31Z",
+      "revid": 4527898,
+      "sha256": "ce8cd6e1d2081880746d1ed733a797d4ab3a09807b1631bc0beadc675e398fcc",
+      "status": "success",
+      "title": "Patch 26.18",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+26.18&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:48:38Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 45884,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/00c97dea45d688aa4ecf82a688a578f12ccefa50cfcd5d2fb40992723e348699.json",
+      "retrieved_at": "2026-10-29T02:48:41Z",
+      "revid": 4537169,
+      "sha256": "00c97dea45d688aa4ecf82a688a578f12ccefa50cfcd5d2fb40992723e348699",
+      "status": "success",
+      "title": "Patch 26.19",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+26.19&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:48:48Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 34860,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/47822e9ef90244e539d9e9850f3dc1e1c53aeed4e31e7ce1536764ee5f3a7d62.json",
+      "retrieved_at": "2026-10-29T02:48:52Z",
+      "revid": 4544871,
+      "sha256": "47822e9ef90244e539d9e9850f3dc1e1c53aeed4e31e7ce1536764ee5f3a7d62",
+      "status": "success",
+      "title": "Patch 26.20",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+26.20&format=json"
+    },
+    {
+      "attempts": [
+        {
+          "api_error": null,
+          "attempted_at": "2026-10-29T02:48:59Z",
+          "http_status": 200
+        }
+      ],
+      "bytes": 49283,
+      "raw_path": "data/raw/leaguepedia-patches/sha256/06a2b24f6ac569f64feb936897d551d053bc8cda233ed307f544da160132565c.json",
+      "retrieved_at": "2026-10-29T02:49:03Z",
+      "revid": 4552473,
+      "sha256": "06a2b24f6ac569f64feb936897d551d053bc8cda233ed307f544da160132565c",
+      "status": "success",
+      "title": "Patch 26.21",
+      "url": "https://lol.fandom.com/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp%7Ccontent&rvslots=main&titles=Patch+26.21&format=json"
+    }
+  ],
+  "schema_version": 1,
+  "summary": {
+    "changes": 708,
+    "direction_basis": {
+      "context": 406,
+      "none": 43,
+      "numbers": 259
+    },
+    "directions": {
+      "adjust": 59,
+      "buff": 343,
+      "nerf": 306
+    },
+    "pages": 46,
+    "success": 46
+  },
+  "unknown_champions": {},
+  "user_agent": "LOL_bp-research/0.1 (personal research; github.com/fsyabc111/LOL_bp)"
+}

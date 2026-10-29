@@ -1,0 +1,174 @@
+{
+  "by_league": {
+    "LCK": {
+      "actual_not_candidate": 0,
+      "decisions": 4760,
+      "log_loss": 2.7489,
+      "mrr": 0.3945,
+      "top1": 0.2137,
+      "top10": 0.8078,
+      "top3": 0.47,
+      "top5": 0.6231
+    },
+    "LPL": {
+      "actual_not_candidate": 0,
+      "decisions": 5679,
+      "log_loss": 2.761,
+      "mrr": 0.3915,
+      "top1": 0.208,
+      "top10": 0.8119,
+      "top3": 0.4702,
+      "top5": 0.6209
+    }
+  },
+  "by_patch_progress": {
+    "0-9": {
+      "actual_not_candidate": 0,
+      "decisions": 1780,
+      "log_loss": 2.9773,
+      "mrr": 0.354,
+      "top1": 0.1876,
+      "top10": 0.7444,
+      "top3": 0.4051,
+      "top5": 0.5444
+    },
+    "10-29": {
+      "actual_not_candidate": 0,
+      "decisions": 2499,
+      "log_loss": 2.8004,
+      "mrr": 0.3877,
+      "top1": 0.2085,
+      "top10": 0.8031,
+      "top3": 0.455,
+      "top5": 0.6182
+    },
+    "30-59": {
+      "actual_not_candidate": 0,
+      "decisions": 3100,
+      "log_loss": 2.7067,
+      "mrr": 0.4015,
+      "top1": 0.2177,
+      "top10": 0.82,
+      "top3": 0.4852,
+      "top5": 0.6361
+    },
+    "60-": {
+      "actual_not_candidate": 0,
+      "decisions": 3060,
+      "log_loss": 2.6392,
+      "mrr": 0.4109,
+      "top1": 0.2183,
+      "top10": 0.8438,
+      "top3": 0.5049,
+      "top5": 0.6556
+    }
+  },
+  "by_phase": {
+    "ban1": {
+      "actual_not_candidate": 0,
+      "decisions": 3132,
+      "log_loss": 2.5627,
+      "mrr": 0.4626,
+      "top1": 0.2727,
+      "top10": 0.8528,
+      "top3": 0.5798,
+      "top5": 0.7126
+    },
+    "ban2": {
+      "actual_not_candidate": 0,
+      "decisions": 2087,
+      "log_loss": 2.8887,
+      "mrr": 0.3486,
+      "top1": 0.1749,
+      "top10": 0.77,
+      "top3": 0.3977,
+      "top5": 0.5539
+    },
+    "pick1": {
+      "actual_not_candidate": 0,
+      "decisions": 3132,
+      "log_loss": 2.8707,
+      "mrr": 0.3586,
+      "top1": 0.1842,
+      "top10": 0.7883,
+      "top3": 0.4109,
+      "top5": 0.5722
+    },
+    "pick2": {
+      "actual_not_candidate": 0,
+      "decisions": 2088,
+      "log_loss": 2.7388,
+      "mrr": 0.384,
+      "top1": 0.1925,
+      "top10": 0.8185,
+      "top3": 0.4665,
+      "top5": 0.6284
+    }
+  },
+  "calibration_top1": [
+    {
+      "decisions": 1042,
+      "hit_rate": 0.1296,
+      "mean_probability": 0.0837,
+      "top1_probability": "0.0-0.1"
+    },
+    {
+      "decisions": 5933,
+      "hit_rate": 0.192,
+      "mean_probability": 0.1456,
+      "top1_probability": "0.1-0.2"
+    },
+    {
+      "decisions": 2262,
+      "hit_rate": 0.2365,
+      "mean_probability": 0.2413,
+      "top1_probability": "0.2-0.3"
+    },
+    {
+      "decisions": 1096,
+      "hit_rate": 0.3248,
+      "mean_probability": 0.3664,
+      "top1_probability": "0.3-0.5"
+    },
+    {
+      "decisions": 106,
+      "hit_rate": 0.3113,
+      "mean_probability": 0.568,
+      "top1_probability": "0.5-1.0"
+    }
+  ],
+  "disputed_games_excluded": 4,
+  "empty_bans_skipped": 1,
+  "games": 522,
+  "group_aware_pairs": {
+    "10": 11,
+    "18": 19,
+    "8": 9
+  },
+  "input_sha256": {
+    "data/curated/bp_sequences.jsonl": "eb9ad2fa0de73704383edb8f8d88cc3750f52fa7f3ee3a00b064a0b01fd22433",
+    "data/curated/event_restrictions.jsonl": "61a0769f47342c1f121bac2c8a983248c62775f6029a220625598f84ffb0acc2",
+    "data/curated/match_context.jsonl": "48ce1a6ab624b68c077a1eb2da2b474a8995c85aedd25f002b58cb436f9cdba1",
+    "data/curated/rules.json": "5b713ac2d75ad15ba22364c27732da8a3adb61cc11f36889f7b1044f1f9d66df",
+    "data/manifests/local-oe.json": "afd4247c97b8d7002a98ff6f75216ee9421461d23685265e1806c4408e5963ea"
+  },
+  "model_sha256": "c23b3a43bbbcd430bbb7f69ae909309e4ce0210459c3fcb5503c844023a03366",
+  "overall": {
+    "actual_not_candidate": 0,
+    "decisions": 10439,
+    "log_loss": 2.7555,
+    "mrr": 0.3929,
+    "top1": 0.2106,
+    "top10": 0.81,
+    "top3": 0.4701,
+    "top5": 0.6219
+  },
+  "range": [
+    "2026-04-01",
+    "2026-07-31"
+  ],
+  "schema_version": 1,
+  "settings_sha256": "a6a2d2351296213f08270f1a4b90db79ed1cc44ea31dd8789dc737b136f46a2c",
+  "split": "validation",
+  "version": "v4"
+}

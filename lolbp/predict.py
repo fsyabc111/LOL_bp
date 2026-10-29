@@ -22,7 +22,7 @@ from .history import ROLES, History, day, other
 MODELS = 'models/next_action'
 FEATURES = ('meta_pick', 'meta_ban', 'team_pick', 'team_ban', 'opp_pick', 'banned_vs_opp', 'banned_vs_self',
             'role_meta_self', 'player_pool_self', 'role_meta_opp', 'player_pool_opp', 'series_ban_self', 'series_banned_vs_self',
-            'lane_edge_self', 'lane_strength_self', 'lane_threat_opp', 'lane_strength_opp')
+            'lane_edge_self', 'lane_strength_self', 'lane_threat_opp', 'lane_strength_opp', 'patch_buff', 'patch_nerf', 'patch_pro')
 PHASES = ('ban1', 'pick1', 'ban2', 'pick2')
 ROLE_ZH = {'top': '上单', 'jng': '打野', 'mid': '中单', 'bot': '下路', 'sup': '辅助'}
 EPS = 1e-6
@@ -154,6 +154,10 @@ class Context:
         lane = stats.get('lane')  # 15-minute lane averages, in thousands of gold, when the version uses lane features
         self.lane = lane and [[x / 1000 for x in row] for row in
                               history.lane_averages(self.cutoff, lane['half_life_days'] / math.log(2), lane['smoothing'])]
+        notes = stats.get('patch_notes')  # fresh patch-note changes, fading as same-patch games accumulate
+        self.fresh, self.fresh_patches = history.patch_notes.fresh(history, gameid) if notes else ({}, [])
+        self.freshness = notes['fade_games'] / (notes['fade_games'] + self.patch_games) if notes else 0.0
+        self.uses_patch_notes = bool(notes)
         self.log_meta_pick, self.log_meta_ban = [math.log(x) for x in self.meta_pick], [math.log(x) for x in self.meta_ban]
         by, against = history.series_bans(gameid)
         self.series_status = history.repo.series_context(gameid)['prior_status']
@@ -228,7 +232,10 @@ class Context:
             'series_ban_self': lambda: [1.0 if c in own['series_ban'] else 0.0 for c in cols],
             'series_banned_vs_self': lambda: [1.0 if c in own['series_banned_vs'] else 0.0 for c in cols],
             'lane_edge_self': lambda: lane('self', 0), 'lane_strength_self': lambda: lane('self', 1),
-            'lane_threat_opp': lambda: lane('opp', 0), 'lane_strength_opp': lambda: lane('opp', 1)}
+            'lane_threat_opp': lambda: lane('opp', 0), 'lane_strength_opp': lambda: lane('opp', 1),
+            'patch_buff': lambda: [self.freshness if self.fresh.get(c, {}).get('net', 0) > 0 else 0.0 for c in cols],
+            'patch_nerf': lambda: [self.freshness if self.fresh.get(c, {}).get('net', 0) < 0 else 0.0 for c in cols],
+            'patch_pro': lambda: [self.freshness if self.fresh.get(c, {}).get('pro') else 0.0 for c in cols]}
         return [list(r) for r in zip(*(build[f]() for f in features))], open_own, open_opp
 
     def describe(self, feature, side, champion, open_own, open_opp, actions=()):
@@ -261,6 +268,10 @@ class Context:
             if feature == 'lane_threat_opp': return f"若对手拿到，对线我方已选英雄期望约 {edge * 1000:+.0f}"
             who = '' if mine else '对手使用时'
             return f"{who}对线强势：该位置 15 分钟经济平均约 {strength * 1000:+.0f}"
+        if feature in ('patch_buff', 'patch_nerf', 'patch_pro'):
+            entry = self.fresh.get(c, {'records': []}); latest = entry['records'][-1] if entry['records'] else {}
+            word = {'patch_buff': '加强', 'patch_nerf': '削弱', 'patch_pro': '改动（说明提到职业赛场）'}[feature]
+            return f"补丁 {latest.get('patch', '')} {word}：{latest.get('context', '')[:60]}{'…' if len(latest.get('context', '')) > 60 else ''}"
         if feature == 'series_ban_self': return f"{own['name']} 本系列赛前几局 ban 过它"
         return f"本系列赛前几局对手针对 {own['name']} ban 过它"
 
@@ -273,6 +284,7 @@ class Context:
         sparse = [f"{p['name']}（{ROLE_ZH[r]}）" for s in (side, other(side)) for r, p in zip(ROLES, self.sides[s]['players'])
                   if p['name'] and p['raw'] < 3]
         if sparse: out.append('当前位置历史少于 3 局：' + '、'.join(sparse))
+        if self.uses_patch_notes and not self.fresh_patches: out.append(f'补丁 {self.patch} 没有可用的补丁说明数据，补丁改动特征不生效')
         if self.series_status != 'complete': out.append('系列赛前序局不全，Fearless 已消耗英雄和系列赛内 ban 可能不全')
         return out
 

@@ -13,6 +13,7 @@ import json
 import math
 import sqlite3
 
+from .patches import PatchNotes
 from .repository import DB, parse_time
 
 ROLES = ('top', 'jng', 'mid', 'bot', 'sup')
@@ -73,7 +74,12 @@ class History:
                 self.by_team[own['team']].append((g, own, g['sides'][other(side)]))
                 for role, c in own['picks']:
                     self.by_player[(own['players'][role][0], role)].append((g, c)); self.by_champion[(c, role)].append((g, side))
-        self._cumulative = {}
+        self._cumulative, self._patch_notes = {}, None
+
+    @property
+    def patch_notes(self):
+        if self._patch_notes is None: self._patch_notes = PatchNotes(self.repo.root)
+        return self._patch_notes
 
     def cumulative(self, tau):
         """Rows of global forward-decayed sums before each date: [games, picks[n], bans[n], picks by role[5][n]].

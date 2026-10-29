@@ -1,0 +1,127 @@
+{
+  "evidence": "data/curated/event_restrictions.jsonl",
+  "evidence_status": "community_listed_per_game",
+  "mapping": {
+    "14.16": {
+      "games": 31,
+      "leaguepedia": "14.16"
+    },
+    "15.01": {
+      "games": 92,
+      "leaguepedia": "25.S1.1"
+    },
+    "15.02": {
+      "games": 70,
+      "leaguepedia": "25.S1.2"
+    },
+    "15.03": {
+      "games": 35,
+      "leaguepedia": "25.S1.3"
+    },
+    "15.04": {
+      "games": 42,
+      "leaguepedia": "25.04"
+    },
+    "15.06": {
+      "games": 84,
+      "leaguepedia": "25.06"
+    },
+    "15.07": {
+      "games": 132,
+      "leaguepedia": "25.07"
+    },
+    "15.08": {
+      "games": 123,
+      "leaguepedia": "25.08"
+    },
+    "15.09": {
+      "games": 149,
+      "leaguepedia": "25.09"
+    },
+    "15.10": {
+      "games": 68,
+      "leaguepedia": "25.10"
+    },
+    "15.11": {
+      "games": 74,
+      "leaguepedia": "25.11"
+    },
+    "15.14": {
+      "games": 129,
+      "leaguepedia": "25.14"
+    },
+    "15.15": {
+      "games": 129,
+      "leaguepedia": "25.15"
+    },
+    "15.16": {
+      "games": 114,
+      "leaguepedia": "25.16"
+    },
+    "15.17": {
+      "games": 131,
+      "leaguepedia": "25.17"
+    },
+    "15.20": {
+      "games": 84,
+      "leaguepedia": "25.20"
+    },
+    "16.01": {
+      "games": 126,
+      "leaguepedia": "26.01"
+    },
+    "16.02": {
+      "games": 118,
+      "leaguepedia": "26.02"
+    },
+    "16.03": {
+      "games": 95,
+      "leaguepedia": "26.03"
+    },
+    "16.06": {
+      "games": 21,
+      "leaguepedia": "26.06"
+    },
+    "16.07": {
+      "games": 104,
+      "leaguepedia": "26.07"
+    },
+    "16.08": {
+      "games": 93,
+      "leaguepedia": "26.08"
+    },
+    "16.09": {
+      "games": 108,
+      "leaguepedia": "26.09"
+    },
+    "16.10": {
+      "games": 117,
+      "leaguepedia": "26.10"
+    },
+    "16.11": {
+      "games": 20,
+      "leaguepedia": "26.11"
+    },
+    "16.14": {
+      "games": 87,
+      "leaguepedia": "26.14"
+    },
+    "16.15": {
+      "games": 116,
+      "leaguepedia": "26.15"
+    },
+    "16.16": {
+      "games": 122,
+      "leaguepedia": "26.16"
+    },
+    "16.17": {
+      "games": 61,
+      "leaguepedia": "26.17"
+    },
+    "16.20": {
+      "games": 51,
+      "leaguepedia": "26.20"
+    }
+  },
+  "schema_version": 1
+}
