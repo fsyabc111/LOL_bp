@@ -1,4 +1,4 @@
-import type { BranchPayload, Branch, Champion, Composition, DraftState, FeedbackDraft, FeedbackRecord, GameDetail, Meta, ModelList, Prediction, Recommendation, Series } from './types';
+import type { BranchPayload, Branch, Champion, Composition, DraftState, FeedbackDraft, FeedbackRecord, GameDetail, Meta, ModelList, Prediction, Recommendation, Series, SimPatch, SimTeam, Simulation } from './types';
 
 export class ApiError extends Error {
   constructor(public status: number, public detail: unknown) {
@@ -33,6 +33,12 @@ export const api = {
     request<BranchPayload>(`/api/branches/${id}/actions`, { method: 'POST', body: JSON.stringify({ champion }) }),
   undo: (id: number) => request<BranchPayload>(`/api/branches/${id}/undo`, { method: 'POST' }),
   deleteBranch: (id: number) => request<void>(`/api/branches/${id}`, { method: 'DELETE' }),
+  simulationPatches: () => request<SimPatch[]>('/api/simulations/patches'),
+  simulationTeams: (patch: string) => request<{ patch: string; cutoff: string; teams: SimTeam[] }>('/api/simulations/teams' + query({ patch })),
+  simulations: () => request<Simulation[]>('/api/simulations'),
+  createSimulation: (body: { patch: string; blue: string; red: string; name?: string }) =>
+    request<Simulation>('/api/simulations', { method: 'POST', body: JSON.stringify(body) }),
+  deleteSimulation: (id: number) => request<void>(`/api/simulations/${id}`, { method: 'DELETE' }),
   models: () => request<ModelList>('/api/models'),
   gameComposition: (id: string, step: number) => request<Composition>(`/api/games/${encodeURIComponent(id)}/composition` + query({ step })),
   branchComposition: (id: number) => request<Composition>(`/api/branches/${id}/composition`),

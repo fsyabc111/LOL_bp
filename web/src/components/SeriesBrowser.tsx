@@ -1,10 +1,10 @@
-import { useEffect, useState } from 'react';
+import { type ReactNode, useEffect, useState } from 'react';
 import { api } from '../api';
 import type { Meta, Series } from '../types';
 
-interface Props { meta: Meta; selected: string | null; onSelect: (gameid: string) => void }
+interface Props { meta: Meta; modes: ReactNode; selected: string | null; onSelect: (gameid: string) => void }
 
-export function SeriesBrowser({ meta, selected, onSelect }: Props) {
+export function SeriesBrowser({ meta, modes, selected, onSelect }: Props) {
   const [league, setLeague] = useState('');
   const [year, setYear] = useState(meta.years[meta.years.length - 1] ?? '');
   const [q, setQ] = useState('');
@@ -20,6 +20,7 @@ export function SeriesBrowser({ meta, selected, onSelect }: Props) {
 
   return (
     <aside className="sidebar">
+      {modes}
       <div className="filters">
         <select value={league} onChange={(e) => setLeague(e.target.value)} aria-label="联赛">
           <option value="">全部联赛</option>

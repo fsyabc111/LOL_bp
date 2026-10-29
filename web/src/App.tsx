@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { ApiError, api } from './api';
 import type { Branch, Champion, Composition, DraftState, FeedbackDraft, FeedbackRecord, GameDetail, Meta, ModelList, Prediction, Recommendation, Rules } from './types';
 import { SeriesBrowser } from './components/SeriesBrowser';
+import { SimulationBrowser } from './components/SimulationBrowser';
 import { DraftBoard } from './components/DraftBoard';
 import { Timeline } from './components/Timeline';
 import { ChampionGrid } from './components/ChampionGrid';
@@ -71,6 +72,8 @@ export default function App() {
   const [compositionError, setCompositionError] = useState<string | null>(null);
   const [recommendation, setRecommendation] = useState<Recommendation | null>(null);
   const [recommendationError, setRecommendationError] = useState<string | null>(null);
+  const [mode, setMode] = useState<'replay' | 'sim'>(() => (readRoute().game?.startsWith('sim-') ? 'sim' : 'replay'));
+  const [simRefresh, setSimRefresh] = useState(0);
 
   const champions = useMemo(() => Object.fromEntries(championList.map((c) => [c.id, c])), [championList]);
 
@@ -121,6 +124,13 @@ export default function App() {
     setError(null);
     api.game(route.game).then((d) => { setDetail(d); return refreshBranches(d.game.gameid); }).catch((e) => setError(describe(e)));
   }, [route.game, refreshBranches]);
+
+  // A simulation is always played in its branch (forked at step 0).
+  const simulation = detail?.game.simulation ?? null;
+  useEffect(() => {
+    if (simulation && detail?.game.gameid === route.game && route.branch === null && branches[0]?.gameid === route.game)
+      setRoute((r) => ({ ...r, branch: branches[0].id }));
+  }, [simulation, detail, branches, route.game, route.branch]);
 
   const step = route.step ?? detail?.sequence.length ?? 0;
   useEffect(() => {
@@ -194,19 +204,40 @@ export default function App() {
   const activeBranch = branches.find((b) => b.id === route.branch) ?? null;
   const findings = Object.fromEntries((detail?.replay_findings ?? []).map((f) => [f.step, [...f.reasons, ...(f.warnings ?? [])].map(reasonText)]));
 
+  const modes = (
+    <div className="modes" role="tablist">
+      <button role="tab" aria-selected={mode === 'replay'} className={'tab' + (mode === 'replay' ? ' active' : '')} onClick={() => setMode('replay')}>比赛复盘</button>
+      <button role="tab" aria-selected={mode === 'sim'} className={'tab' + (mode === 'sim' ? ' active' : '')} onClick={() => setMode('sim')}>模拟 BP</button>
+    </div>
+  );
+  const openSimulation = (gameid: string, branch: number | null) => {
+    if (gameid !== route.game) { setDetail(null); setState(null); }
+    setRoute({ game: gameid, step: null, branch });
+  };
+
   return (
     <div className="app">
-      <SeriesBrowser meta={meta} selected={route.game} onSelect={(g) => setRoute({ game: g, step: null, branch: null })} />
+      {mode === 'replay'
+        ? <SeriesBrowser meta={meta} modes={modes} selected={route.game} onSelect={(g) => setRoute({ game: g, step: null, branch: null })} />
+        : <SimulationBrowser modes={modes} selected={route.game} busy={busy} refresh={simRefresh}
+            onCreate={(body) => run(async () => { const s = await api.createSimulation(body); setSimRefresh((n) => n + 1); openSimulation(s.gameid, s.branch_id ?? null); })}
+            onOpen={(s) => openSimulation(s.gameid, s.branch_id ?? null)}
+            onDelete={(s) => run(async () => {
+              await api.deleteSimulation(s.id); setSimRefresh((n) => n + 1);
+              if (route.game === s.gameid) { setDetail(null); setState(null); setRoute({ game: null, step: null, branch: null }); }
+            })} />}
       <main>
-        {!detail && <div className="empty">从左侧选择一局比赛开始复盘。</div>}
+        {!detail && <div className="empty">{mode === 'sim' ? '在左侧选择补丁和两支队伍，开始一局模拟 BP。' : '从左侧选择一局比赛开始复盘。'}</div>}
         {detail && state && (
           <>
             <header className="game-head">
               <h2>{detail.teams.Blue.name} <span className="muted">vs</span> {detail.teams.Red.name}</h2>
-              <span className="muted">{detail.game.date.slice(0, 16)} · {detail.game.league} · 补丁 {detail.game.patch} · 第 {detail.series.position} 局</span>
+              {simulation
+                ? <span className="muted">模拟 BP · 补丁 {simulation.patch} · 统计截至 {simulation.cutoff} · 规则参照 {detail.game.league} 该补丁最后一场 · 单局</span>
+                : <span className="muted">{detail.game.date.slice(0, 16)} · {detail.game.league} · 补丁 {detail.game.patch} · 第 {detail.series.position} 局</span>}
             </header>
             {error && <div className="error" role="alert">{error}</div>}
-            <DraftBoard detail={detail} state={state} champions={champions} branchName={activeBranch?.name} />
+            <DraftBoard detail={detail} state={state} champions={champions} branchName={simulation ? undefined : activeBranch?.name} />
             {!activeBranch && (
               <Timeline sequence={detail.sequence} step={step} champions={champions} findings={findings}
                 unorderedGroups={detail.sequence_source.type === 'leaguepedia' ? [[8, 9], [10, 11], [18, 19]] : []}
@@ -226,7 +257,7 @@ export default function App() {
                   <PredictionPanel prediction={prediction} loading={predicting} error={predictionError} models={models} version={version}
                     onVersion={chooseVersion} champions={champions} championList={championList} inBranch={!!activeBranch} busy={busy}
                     onChoose={(c) => activeBranch && run(() => api.addAction(activeBranch.id, c).then(applyBranch))}
-                    onFeedback={submitFeedback} />
+                    onFeedback={submitFeedback} allowFeedback={!simulation} />
                 )}
                 {!version && predictionError && <div className="error" role="alert">预测不可用：{predictionError}</div>}
                 {tab === 'recommend' && version && (
@@ -238,7 +269,26 @@ export default function App() {
                   onChoose={(c) => activeBranch && run(() => api.addAction(activeBranch.id, c).then(applyBranch))} />
               </div>
               <div className="side-panels">
-                <BranchPanel branches={branches} activeId={route.branch} currentStep={step} sequence={detail.sequence}
+                {simulation && (
+                  <div className="panel">
+                    <h3>模拟</h3>
+                    <p className="muted small">在预测、候选对比或英雄格子里点选执行；已走 {activeBranch?.actions.length ?? 0} 步。</p>
+                    <div className="row">
+                      <button disabled={busy || !activeBranch?.actions.length} onClick={() => activeBranch && run(() => api.undo(activeBranch.id).then(applyBranch))}>撤销一步</button>
+                      <button disabled={busy || !activeBranch?.actions.length} onClick={() => activeBranch && run(async () => {
+                        const p = await api.createBranch({ gameid: detail.game.gameid, fork_step: 0, name: '模拟' });
+                        await api.deleteBranch(activeBranch.id); await refreshBranches(detail.game.gameid);
+                        setRoute((r) => ({ ...r, branch: p.branch.id }));
+                      })}>重新开始</button>
+                    </div>
+                    <ul className="muted small lineup-list">
+                      {(['Blue', 'Red'] as const).map((side) => (
+                        <li key={side}>{simulation.sides[side].name}：{['top', 'jng', 'mid', 'bot', 'sup'].map((r) => simulation.sides[side].players[r]?.[1] ?? '—').join(' / ')}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {!simulation && <BranchPanel branches={branches} activeId={route.branch} currentStep={step} sequence={detail.sequence}
                   champions={champions} busy={busy}
                   onCreate={(name, fearless) => run(async () => {
                     const p = await api.createBranch({ gameid: detail.game.gameid, fork_step: step, name: name || undefined, fearless_override: fearless });
@@ -252,7 +302,7 @@ export default function App() {
                     await api.deleteBranch(id);
                     await refreshBranches(detail.game.gameid);
                     if (route.branch === id) setRoute((r) => ({ ...r, branch: null }));
-                  })} />
+                  })} />}
                 <RulesPanel detail={detail} rules={branchRules ?? detail.rules} champions={champions} />
                 {version && (
                   <FeedbackPanel items={feedback} version={version} champions={champions} busy={busy}

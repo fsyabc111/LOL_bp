@@ -134,8 +134,29 @@ class Repository:
                                   'numbering': 'complete' if complete else 'gaps_or_duplicates'}
         for game in games: game['series_id'] = series_id
 
+    # -- simulated games (lolbp/simulate.py) -----------------------------------------------
+    def add_simulation(self, sim):
+        """Register a simulation as a virtual game with an empty sequence and a series of its own."""
+        gameid, sides = sim['gameid'], sim['sides']
+        self.games[gameid] = {'gameid': gameid, 'league': sides['Blue']['league'], 'date': sim['cutoff'] + ' 00:00:00', 'year': sim['cutoff'][:4],
+                              'patch': sim['patch'], 'game_number': 1, 'structural_valid': True, 'winner_side': None,
+                              'simulation': sim, 'series_id': 'sim:' + gameid,
+                              'teams': {side: {'side': side, 'name': t['name'], 'first_pick': side == 'Blue', 'result': None, 'picks': [], 'bans': []}
+                                        for side, t in sides.items()}}
+        self.series['sim:' + gameid] = {'series_id': 'sim:' + gameid, 'league': sides['Blue']['league'], 'year': sim['cutoff'][:4],
+                                        'date': sim['cutoff'], 'teams': [t['name'] for t in sides.values()], 'gameids': [gameid],
+                                        'numbering': 'complete', 'simulated': True}
+
+    def remove_simulation(self, gameid):
+        self.series.pop(self.games.pop(gameid)['series_id'], None)
+
+    def _evidence_id(self, gameid):
+        """Game whose tournament and event restrictions apply: a simulation borrows its reference game's."""
+        return self.games[gameid].get('simulation', {}).get('reference', gameid)
+
     # -- per-game resolution -------------------------------------------------------------
     def _tournament(self, gameid):
+        gameid = self._evidence_id(gameid)
         if gameid in self.contexts: return self.contexts[gameid].get('tournament', ''), self.contexts[gameid].get('evidence_status')
         items = self.evidence.get(gameid, [])
         if len(items) == 1: return items[0]['source']['title'].removesuffix('/Picks and Bans'), 'source_record_verified'
@@ -144,6 +165,7 @@ class Repository:
     def sequence(self, gameid):
         """Return (steps with champion ids, first_selection_side, source descriptor)."""
         game = self.games[gameid]
+        if 'simulation' in game: return [], 'Blue', {'type': 'simulation', 'reference': game['simulation']['reference']}
         items = self.evidence.get(gameid, [])
         if len(items) == 1 and self._evidence_matches_oe(items[0], game):
             item = items[0]
@@ -202,7 +224,7 @@ class Repository:
         if fearless_override in (draft.FEARLESS_PICKS_BOTH, draft.FEARLESS_NONE):
             fearless = {'value': fearless_override, 'status': 'user_assumption', 'source': 'branch setting', 'default': fearless}
         disabled, status, rule_id = documented('event_disabled_champions')
-        listed = self.restrictions.get(gameid, [])
+        listed = self.restrictions.get(self._evidence_id(gameid), [])
         if disabled is not None:
             disabled_field = {'value': disabled, 'status': status, 'source': rule_id}
         elif len(listed) == 1:
@@ -251,8 +273,8 @@ class Repository:
                 'rules': resolved, 'series': context, 'replay_findings': findings}
 
     def list_series(self, league=None, year=None, query=None, limit=200):
-        items = [s for s in self.series.values()
-                 if (not league or s['league'] == league) and (not year or s['year'] == year)
+        items = [s for s in self.series.values() if not s.get('simulated')
+                 and (not league or s['league'] == league) and (not year or s['year'] == year)
                  and (not query or any(query.casefold() in t.casefold() for t in s['teams']))]
         items.sort(key=lambda s: s['date'], reverse=True)
         out = []

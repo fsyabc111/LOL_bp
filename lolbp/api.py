@@ -1,4 +1,4 @@
-"""Local HTTP API for replay, manual branching, next-action predictions, prediction feedback, composition evaluation and candidate comparison.
+"""Local HTTP API for replay, manual branching, simulated drafts, next-action predictions, prediction feedback, composition evaluation and candidate comparison.
 
 Run: .venv/bin/uvicorn lolbp.api:app --port 8000
 """
@@ -15,6 +15,7 @@ from .branches import BranchNotFound, BranchStore
 from .composition import Composer
 from .predict import ModelError, Predictor
 from .recommend import Recommender
+from . import simulate
 from .repository import ROOT, Repository
 
 WEB_DIST = ROOT / 'web/dist'
@@ -25,6 +26,13 @@ class BranchCreate(BaseModel):
     fork_step: int
     name: str = ''
     fearless_override: str | None = None
+
+
+class SimulationCreate(BaseModel):
+    patch: str
+    blue: str                        # team ids, as listed by /api/simulations/teams
+    red: str
+    name: str = ''
 
 
 class BranchAction(BaseModel):
@@ -42,13 +50,15 @@ class FeedbackCreate(BaseModel):
     note: str = ''
 
 
-def create_app(repository=None, store=None, predictor=None, feedback_store=None, composer=None, recommender=None):
+def create_app(repository=None, store=None, predictor=None, feedback_store=None, composer=None, recommender=None, simulation_store=None):
     repo = repository or Repository()
     branches = store or BranchStore()
     predictions = predictor or Predictor(repo)
     feedback = feedback_store or fb.FeedbackStore()
     compositions = composer or Composer(repo, predictions)
     recommendations = recommender or Recommender(predictions, compositions)
+    simulations = simulation_store or simulate.SimulationStore(branches.path)
+    for sim in simulations.list(): repo.add_simulation(sim)  # before the History is built, which then picks them up
     app = FastAPI(title='LOL BP')
 
     def game_or_404(gameid):
@@ -83,8 +93,9 @@ def create_app(repository=None, store=None, predictor=None, feedback_store=None,
 
     @app.get('/api/meta')
     def meta():
-        leagues = sorted({g['league'] for g in repo.games.values()}); years = sorted({g['year'] for g in repo.games.values()})
-        return {'leagues': leagues, 'years': years, 'games': len(repo.games), 'series': len(repo.series),
+        real = [g for g in repo.games.values() if 'simulation' not in g]
+        leagues = sorted({g['league'] for g in real}); years = sorted({g['year'] for g in real})
+        return {'leagues': leagues, 'years': years, 'games': len(real), 'series': sum(not s.get('simulated') for s in repo.series.values()),
                 'oe_order_accuracy': repo.accuracy, 'champion_catalog_version': '16.20.1',
                 'champion_pool_note': 'Names and icons come from the 16.20.1 catalog; champions not yet released on a game\'s patch '
                                       '(per Data Dragon for that version) are blocked as not_released.'}
@@ -145,6 +156,42 @@ def create_app(repository=None, store=None, predictor=None, feedback_store=None,
     @app.delete('/api/branches/{branch_id}', status_code=204)
     def delete_branch(branch_id: int):
         branch_or_404(branch_id); branches.delete(branch_id)
+
+    def simulation_payload(sim):
+        found = [b for b in branches.list(sim['gameid'])]
+        return {**sim, 'branch_id': found[0]['id'] if found else None}
+
+    @app.get('/api/simulations/patches')
+    def simulation_patches():
+        return simulate.patches(predictions.history)
+
+    @app.get('/api/simulations/teams')
+    def simulation_teams(patch: str):
+        try: cutoff, teams = simulate.teams(predictions.history, patch)
+        except ValueError as error: raise HTTPException(422, str(error))
+        return {'patch': patch, 'cutoff': cutoff, 'teams': teams}
+
+    @app.get('/api/simulations')
+    def list_simulations():
+        return [simulation_payload(sim) for sim in simulations.list()]
+
+    @app.post('/api/simulations', status_code=201)
+    def create_simulation(body: SimulationCreate):
+        history = predictions.history
+        try: spec = simulate.build_spec(history, body.patch, body.blue, body.red)
+        except ValueError as error: raise HTTPException(422, str(error))
+        sides = spec['sides']
+        sim = simulations.create(spec, body.name or f"{sides['Blue']['name']} vs {sides['Red']['name']} · {body.patch}")
+        repo.add_simulation(sim); history.add_simulation(sim)
+        branches.create(repo, sim['gameid'], 0, '模拟')
+        return simulation_payload(sim)
+
+    @app.delete('/api/simulations/{sim_id}', status_code=204)
+    def delete_simulation(sim_id: int):
+        try: sim = simulations.get(sim_id)
+        except simulate.SimulationNotFound: raise HTTPException(404, f'unknown simulation {sim_id}')
+        for b in branches.list(sim['gameid']): branches.delete(b['id'])
+        simulations.delete(sim_id); repo.remove_simulation(sim['gameid']); predictions.history.games.pop(sim['gameid'], None)
 
     @app.get('/api/models')
     def models():
@@ -220,6 +267,7 @@ def create_app(repository=None, store=None, predictor=None, feedback_store=None,
     @app.post('/api/feedback', status_code=201)
     def create_feedback(body: FeedbackCreate):
         game_or_404(body.gameid)
+        if 'simulation' in repo.games[body.gameid]: raise HTTPException(422, 'simulated drafts have no recorded outcome; feedback is for real games')
         model = model_or_422(body.version)
         if body.branch_id is not None:
             branch = branch_or_404(body.branch_id)

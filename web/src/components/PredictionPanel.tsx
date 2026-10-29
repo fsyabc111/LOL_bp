@@ -9,9 +9,10 @@ interface Props {
   champions: Record<string, Champion>; championList: Champion[];
   inBranch: boolean; busy: boolean; onChoose: (champion: string) => void;
   onFeedback: (draft: FeedbackDraft) => Promise<number>;
+  allowFeedback?: boolean;  // simulated drafts have no recorded game to check feedback against
 }
 
-export function PredictionPanel({ prediction, loading, error, models, version, onVersion, champions, championList, inBranch, busy, onChoose, onFeedback }: Props) {
+export function PredictionPanel({ prediction, loading, error, models, version, onVersion, champions, championList, inBranch, busy, onChoose, onFeedback, allowFeedback = true }: Props) {
   const [open, setOpen] = useState<string | null>(null);
   const [form, setForm] = useState<{ kind: FeedbackKind; champion: string | null } | null>(null);
   const [saved, setSaved] = useState<number | null>(null);
@@ -62,7 +63,7 @@ export function PredictionPanel({ prediction, loading, error, models, version, o
                 </button>
                 <span className="candidate-actions">
                   {inBranch && <button className="link" disabled={busy} onClick={() => onChoose(c.champion)}>执行</button>}
-                  <button className="link" onClick={() => setForm({ kind: 'too_high', champion: c.champion })}>标记</button>
+                  {allowFeedback && <button className="link" onClick={() => setForm({ kind: 'too_high', champion: c.champion })}>标记</button>}
                 </span>
                 {open === c.champion && c.reasons.length > 1 && (
                   <ul className="reasons">{c.reasons.slice(1).map((r) => <li key={r.feature}>{r.text}</li>)}</ul>
@@ -81,7 +82,7 @@ export function PredictionPanel({ prediction, loading, error, models, version, o
             <FeedbackForm key={`${form.kind}:${form.champion}`} initial={form} prediction={prediction} championList={championList}
               topK={models.feedback_top_k} onCancel={() => setForm(null)}
               onSubmit={async (draft) => { const id = await onFeedback(draft); setForm(null); setSaved(id); }} />
-          ) : (
+          ) : allowFeedback && (
             <div className="row">
               <button className="link" onClick={() => setForm({ kind: 'too_low', champion: null })}>漏掉了某个英雄？</button>
               <button className="link" onClick={() => setForm({ kind: 'other', champion: null })}>整体有问题？</button>

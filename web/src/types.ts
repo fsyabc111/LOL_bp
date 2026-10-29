@@ -24,12 +24,12 @@ export interface Rules {
 }
 
 export interface SequenceSource {
-  type: 'leaguepedia' | 'oe_columns'; locator?: string; revid?: number; note?: string;
+  type: 'leaguepedia' | 'oe_columns' | 'simulation'; reference?: string; locator?: string; revid?: number; note?: string;
   measured_agreement?: number | null; first_selection_from?: string; conflict?: string | null;
 }
 
 export interface GameDetail {
-  game: { gameid: string; league: string; date: string; year: string; patch: string; game_number: number | null; winner_side: Side | null; series_id: string };
+  game: { gameid: string; league: string; date: string; year: string; patch: string; game_number: number | null; winner_side: Side | null; series_id: string; simulation?: Simulation };
   teams: Record<Side, { name: string; result: number | null }>;
   first_selection_side: Side;
   sequence: Step[];
@@ -51,6 +51,14 @@ export interface DraftState {
 export interface Branch {
   id: number; gameid: string; fork_step: number; name: string; fearless_override: string | null;
   created_at: string; updated_at: string; actions: Step[];
+}
+export interface SimTeam {
+  team: string; name: string; league: string; last_date?: string; games_on_patch?: number; players: Record<string, [string, string]>;
+}
+export interface SimPatch { patch: string; games: number; first: string; last: string }
+export interface Simulation {
+  id: number; gameid: string; name: string; created_at: string; patch: string; cutoff: string; reference: string;
+  sides: Record<Side, SimTeam>; branch_id?: number | null;
 }
 export interface BranchPayload { branch: Branch; state: DraftState; rules: Rules }
 

@@ -57,6 +57,7 @@ class History:
         connection.close()
         self.games = {}
         for gameid, game in repo.games.items():
+            if 'simulation' in game: self.add_simulation(game['simulation']); continue
             sides = {}
             for side, team in game['teams'].items():
                 lineup = lineups.get((gameid, side), {})
@@ -66,7 +67,7 @@ class History:
                                'bans': [self.column[c] for c in map(repo.champion_id, team['bans']) if c in self.column],
                                'win': results.get((gameid, side)), 'lanes': lanes.get((gameid, side), {})}
             self.games[gameid] = {'gameid': gameid, 'date': game['date'][:10], 't': day(game['date']), 'patch': game['patch'], 'sides': sides}
-        self.order = sorted(self.games.values(), key=lambda g: (g['t'], g['gameid']))
+        self.order = sorted((g for g in self.games.values() if not g.get('simulated')), key=lambda g: (g['t'], g['gameid']))
         self.dates = sorted({g['date'] for g in self.order})
         self.by_team, self.by_player, self.by_patch, self.by_champion = defaultdict(list), defaultdict(list), defaultdict(list), defaultdict(list)
         for g in self.order:
@@ -76,6 +77,13 @@ class History:
                 for role, c in own['picks']:
                     self.by_player[(own['players'][role][0], role)].append((g, c)); self.by_champion[(c, role)].append((g, side))
         self._cumulative, self._patch_notes, self._soloq = {}, None, None
+
+    def add_simulation(self, sim):
+        """A simulated game (lolbp/simulate.py): teams and lineups only, kept out of every index so it is never history."""
+        sides = {side: {'team': t['team'], 'name': t['name'], 'players': {r: tuple(p) for r, p in t['players'].items()},
+                        'picks': [], 'bans': [], 'win': None, 'lanes': {}} for side, t in sim['sides'].items()}
+        self.games[sim['gameid']] = {'gameid': sim['gameid'], 'date': sim['cutoff'], 't': day(sim['cutoff']), 'patch': sim['patch'],
+                                     'sides': sides, 'simulated': True}
 
     @property
     def soloq(self):
