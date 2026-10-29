@@ -1,4 +1,4 @@
-"""Local HTTP API for replay, manual branching, next-action predictions and prediction feedback.
+"""Local HTTP API for replay, manual branching, next-action predictions, prediction feedback and composition evaluation.
 
 Run: .venv/bin/uvicorn lolbp.api:app --port 8000
 """
@@ -12,6 +12,7 @@ from pydantic import BaseModel
 
 from . import draft, feedback as fb
 from .branches import BranchNotFound, BranchStore
+from .composition import Composer
 from .predict import ModelError, Predictor
 from .repository import ROOT, Repository
 
@@ -40,11 +41,12 @@ class FeedbackCreate(BaseModel):
     note: str = ''
 
 
-def create_app(repository=None, store=None, predictor=None, feedback_store=None):
+def create_app(repository=None, store=None, predictor=None, feedback_store=None, composer=None):
     repo = repository or Repository()
     branches = store or BranchStore()
     predictions = predictor or Predictor(repo)
     feedback = feedback_store or fb.FeedbackStore()
+    compositions = composer or Composer(repo, predictions)
     app = FastAPI(title='LOL BP')
 
     def game_or_404(gameid):
@@ -164,6 +166,27 @@ def create_app(repository=None, store=None, predictor=None, feedback_store=None)
         branch = branch_or_404(branch_id)
         _, actions = branches.actions(repo, branch)
         return predictions.predict(branch['gameid'], actions, branch['fearless_override'], model_or_422(version).version, max(1, min(top, 50)))
+
+    def composition_payload(gameid, actions):
+        out = compositions.evaluate(gameid, actions)
+        path = repo.root / 'models/composition/reports' / f"{out['settings_version']}.validation.json"
+        report = json.loads(path.read_text()) if path.exists() else None
+        out['backtest'] = report and {'lane_r': report['lane_gold15']['matchup']['pearson_r'], 'lane_n': report['lane_gold15']['matchup']['n'],
+                                      'win_auc': report['win_auc']['early_gold_expectation'], 'duo_auc': report['win_auc']['duo_win_residuals'],
+                                      'reference_auc': report['win_auc']['reference_actual_gold15'], 'range': report['range']}
+        return out
+
+    @app.get('/api/games/{gameid}/composition')
+    def game_composition(gameid: str, step: int = 20):
+        game_or_404(gameid)
+        _, actions = history_actions(gameid, step)
+        return composition_payload(gameid, actions)
+
+    @app.get('/api/branches/{branch_id}/composition')
+    def branch_composition(branch_id: int):
+        branch = branch_or_404(branch_id)
+        _, actions = branches.actions(repo, branch)
+        return composition_payload(branch['gameid'], actions)
 
     @app.get('/api/feedback')
     def list_feedback(version: str | None = None):

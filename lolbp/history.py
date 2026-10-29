@@ -6,14 +6,17 @@ rules and the series features instead. Counts are forward-decayed: a game on day
 ratio of two sums is already the decayed rate, and a sum times exp(-T / tau) is the decayed count at day T.
 """
 from array import array
+from bisect import bisect_left
 from collections import defaultdict
 import datetime
+import json
 import math
 import sqlite3
 
 from .repository import DB, parse_time
 
 ROLES = ('top', 'jng', 'mid', 'bot', 'sup')
+LANE_STATS = ('golddiffat15', 'xpdiffat15', 'csdiffat15')
 EPOCH = datetime.datetime(2023, 1, 1)
 
 
@@ -27,9 +30,12 @@ def other(side):
 
 
 class History:
-    """Per-game draft facts (team ids, lineups, picks by role, bans) indexed by date, team, player and patch.
+    """Per-game draft facts (team ids, lineups, picks by role, bans, result, 15-minute lane differences) indexed by
+    date, team, player, patch and champion-in-role.
 
-    Champions are stored as columns into the sorted catalog ids; names outside the catalog are dropped.
+    Champions are stored as columns into the sorted catalog ids; names outside the catalog are dropped. Lane
+    differences are the player's own-perspective value against the opposing player in the same role, or None
+    when the source has no 15-minute data (e.g. LPL before 2026) or the game ended earlier.
     """
 
     def __init__(self, repo):
@@ -38,10 +44,14 @@ class History:
         self.column = {cid: i for i, cid in enumerate(self.champions)}
         connection = sqlite3.connect(repo.root / DB)
         team_ids = {(g, side): team for g, side, team in connection.execute('SELECT gameid, side, team_id FROM team_drafts')}
-        lineups = defaultdict(dict)
-        for g, side, role, player, name, champion in connection.execute(
-                'SELECT gameid, side, final_role, player_id, player_name, champion_name_raw FROM player_games'):
-            if g in repo.games and role in ROLES: lineups[(g, side)][role] = (player or name, name, repo.champion_id(champion))
+        lineups, results, lanes = defaultdict(dict), {}, defaultdict(dict)
+        for g, side, role, player, name, champion, result, stats in connection.execute(
+                'SELECT gameid, side, final_role, player_id, player_name, champion_name_raw, result, stats_json FROM player_games'):
+            if g not in repo.games or role not in ROLES: continue
+            lineups[(g, side)][role] = (player or name, name, repo.champion_id(champion))
+            if result is not None: results[(g, side)] = result
+            values = json.loads(stats) if stats else {}
+            if all(values.get(k) is not None for k in LANE_STATS): lanes[(g, side)][role] = tuple(values[k] for k in LANE_STATS)
         connection.close()
         self.games = {}
         for gameid, game in repo.games.items():
@@ -51,16 +61,18 @@ class History:
                 sides[side] = {'team': team_ids.get((gameid, side)) or team['name'], 'name': team['name'],
                                'players': {r: lineup[r][:2] for r in ROLES if r in lineup},
                                'picks': [(r, self.column[lineup[r][2]]) for r in ROLES if r in lineup and lineup[r][2] in self.column],
-                               'bans': [self.column[c] for c in map(repo.champion_id, team['bans']) if c in self.column]}
+                               'bans': [self.column[c] for c in map(repo.champion_id, team['bans']) if c in self.column],
+                               'win': results.get((gameid, side)), 'lanes': lanes.get((gameid, side), {})}
             self.games[gameid] = {'gameid': gameid, 'date': game['date'][:10], 't': day(game['date']), 'patch': game['patch'], 'sides': sides}
         self.order = sorted(self.games.values(), key=lambda g: (g['t'], g['gameid']))
         self.dates = sorted({g['date'] for g in self.order})
-        self.by_team, self.by_player, self.by_patch = defaultdict(list), defaultdict(list), defaultdict(list)
+        self.by_team, self.by_player, self.by_patch, self.by_champion = defaultdict(list), defaultdict(list), defaultdict(list), defaultdict(list)
         for g in self.order:
             self.by_patch[g['patch']].append(g)
             for side, own in g['sides'].items():
                 self.by_team[own['team']].append((g, own, g['sides'][other(side)]))
-                for role, c in own['picks']: self.by_player[(own['players'][role][0], role)].append((g, c))
+                for role, c in own['picks']:
+                    self.by_player[(own['players'][role][0], role)].append((g, c)); self.by_champion[(c, role)].append((g, side))
         self._cumulative = {}
 
     def cumulative(self, tau):
@@ -81,6 +93,16 @@ class History:
             rows.append(array('d', row))
             self._cumulative[tau] = rows
         return self._cumulative[tau]
+
+    def role_prob(self, cutoff, tau):
+        """Per champion column, the decayed share of its picks in each role before the cutoff date, with 0.2
+        pseudo-picks per role so unseen champions are uniform."""
+        n, row = len(self.champions), self.cumulative(tau)[bisect_left(self.dates, cutoff)]
+        out = []
+        for c in range(n):
+            counts = [row[1 + n * (2 + r) + c] * math.exp(-day(cutoff) / tau) for r in range(len(ROLES))]
+            out.append([(x + 0.2) / (sum(counts) + 1.0) for x in counts])
+        return out
 
     def team(self, team, cutoff, tau):
         """(forward games, raw games, picks, bans, bans by opponents) for one team before the cutoff date."""

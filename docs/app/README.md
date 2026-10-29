@@ -2,7 +2,7 @@
 
 本地 Web 应用，支持载入比赛、逐步回放选禁、查看每一步的可选英雄及不可选原因，并从任意一步创建分支手动推演。分支单独保存，不改动比赛记录。
 
-第二阶段加入了**下一手预测**和**预测反馈**，模型与评估见[下一手预测](../model/next-action.md)。目前还没有我方推荐和阵容评价。
+第二阶段加入了**下一手预测**和**预测反馈**，模型与评估见[下一手预测](../model/next-action.md)。第三阶段加入了**阵容评估**面板（对线期望、双人组合、阵容画像），见[阵容评估](../model/composition.md)。目前还没有我方推荐。
 
 ## 运行
 
@@ -40,6 +40,7 @@ PID 和日志在 `data/app/server.pid`、`data/app/server.log`（不入库）。
 | `lolbp/history.py` | 按日期截断的历史统计：队伍、选手、补丁与全局的时间加权计数 |
 | `lolbp/predict.py` | 版本化模型文件、特征、合法候选上的条件 logit 排序与依据说明 |
 | `lolbp/backtest.py` | 时间切分、争议局排除、逐手决策迭代与命中率统计（训练和评估脚本共用） |
+| `lolbp/composition.py` | 阵容评估：对线 15 分钟经济期望、双人组合残差、Data Dragon 粗粒度画像，按推断分路计算 |
 | `lolbp/feedback.py` | 预测反馈：保存局面快照、期望名次，并用任意版本重新检查 |
 | `models/next_action/` | 模型版本文件、切分设置 `settings.json`、评估报告 `reports/` |
 | `scripts/train_next_action.py`、`scripts/evaluate_next_action.py` | 训练（需 numpy）与评估（标准库） |
@@ -82,4 +83,4 @@ PID 和日志在 `data/app/server.pid`、`data/app/server.log`（不入库）。
 
 - 补齐规则：2025 Worlds/LCK 规则书和赛事禁用名单已完成（[规则证据](../research/dataset-rules-evidence.md)）；LPL 规则书、2025 LCK 赛事细则仍缺。
 - 按补丁加载英雄目录，替代统一的 16.20.1 目录。
-- 第三阶段：阵容评估（对位、配合、克制与发力窗口），再在此基础上做我方候选推荐。
+- 阵容评估第一版已完成；下一步试着把对线期望加入下一手预测（v2），再做我方候选推荐。

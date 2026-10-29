@@ -129,10 +129,7 @@ class Context:
         recent_pick = [(row[1 + c] * scale + k * 10 / n) / (games + k) for c in every]
         recent_ban = [(row[1 + n + c] * scale + k * 10 / n) / (games + k) for c in every]
         recent_role = [[(row[1 + n * (2 + r) + c] * scale + k / n) / (2 * games + k) for c in every] for r in range(len(ROLES))]
-        self.role_prob = []
-        for c in every:
-            counts = [row[1 + n * (2 + r) + c] * scale for r in range(len(ROLES))]
-            self.role_prob.append([(x + 0.2) / (sum(counts) + 1.0) for x in counts])
+        self.role_prob = history.role_prob(self.cutoff, tau)
         p_games, self.patch_games, p_picks, p_bans, p_roles = history.patch(self.patch, self.cutoff, tau)
         p_games *= scale; k = smooth['patch']
         self.meta_pick = [(p_picks.get(c, 0.0) * scale + k * recent_pick[c]) / (p_games + k) for c in every]

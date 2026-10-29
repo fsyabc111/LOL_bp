@@ -1,0 +1,77 @@
+{
+  "disputed_games_excluded": 4,
+  "games": 522,
+  "lane_gold15": {
+    "champion": {
+      "mae": 600.7,
+      "n": 2525,
+      "pearson_r": 0.2222,
+      "rmse": 800.9
+    },
+    "matchup": {
+      "mae": 601.2,
+      "n": 2525,
+      "pearson_r": 0.2208,
+      "rmse": 801.2
+    },
+    "zero": {
+      "mae": 619.0,
+      "n": 2525,
+      "pearson_r": null,
+      "rmse": 821.1
+    }
+  },
+  "lane_gold15_by_role": {
+    "bot": {
+      "mae": 816.6,
+      "n": 505,
+      "pearson_r": 0.1094,
+      "rmse": 1063.3
+    },
+    "jng": {
+      "mae": 593.6,
+      "n": 505,
+      "pearson_r": 0.1646,
+      "rmse": 764.7
+    },
+    "mid": {
+      "mae": 651.0,
+      "n": 505,
+      "pearson_r": 0.2434,
+      "rmse": 836.5
+    },
+    "sup": {
+      "mae": 335.0,
+      "n": 505,
+      "pearson_r": 0.2579,
+      "rmse": 435.0
+    },
+    "top": {
+      "mae": 609.7,
+      "n": 505,
+      "pearson_r": 0.3494,
+      "rmse": 778.1
+    }
+  },
+  "range": [
+    "2026-04-01",
+    "2026-07-31"
+  ],
+  "schema_version": 1,
+  "settings_sha256": "836a9830a1af1fdc6d768eebb3e0fb617de6a13613100bba697d438770d1b08e",
+  "split": "validation",
+  "team_gold15_sum": {
+    "mae": 1849.0,
+    "n": 505,
+    "pearson_r": 0.2135,
+    "rmse": 2359.3
+  },
+  "traits_sha256": "324fccbb7e4c6492e3465991d4df14cae079a6ef2bc0cdc66036a8e926ba1852",
+  "version": "c1",
+  "win_auc": {
+    "combined_rank_sum": 0.4764,
+    "duo_win_residuals": 0.4837,
+    "early_gold_expectation": 0.4828,
+    "reference_actual_gold15": 0.8052
+  }
+}

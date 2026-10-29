@@ -1,4 +1,4 @@
-import type { BranchPayload, Branch, Champion, DraftState, FeedbackDraft, FeedbackRecord, GameDetail, Meta, ModelList, Prediction, Series } from './types';
+import type { BranchPayload, Branch, Champion, Composition, DraftState, FeedbackDraft, FeedbackRecord, GameDetail, Meta, ModelList, Prediction, Series } from './types';
 
 export class ApiError extends Error {
   constructor(public status: number, public detail: unknown) {
@@ -34,6 +34,8 @@ export const api = {
   undo: (id: number) => request<BranchPayload>(`/api/branches/${id}/undo`, { method: 'POST' }),
   deleteBranch: (id: number) => request<void>(`/api/branches/${id}`, { method: 'DELETE' }),
   models: () => request<ModelList>('/api/models'),
+  gameComposition: (id: string, step: number) => request<Composition>(`/api/games/${encodeURIComponent(id)}/composition` + query({ step })),
+  branchComposition: (id: number) => request<Composition>(`/api/branches/${id}/composition`),
   gamePredictions: (id: string, step: number, version: string) =>
     request<Prediction | null>(`/api/games/${encodeURIComponent(id)}/predictions` + query({ step, version })),
   branchPredictions: (id: number, version: string) => request<Prediction | null>(`/api/branches/${id}/predictions` + query({ version })),

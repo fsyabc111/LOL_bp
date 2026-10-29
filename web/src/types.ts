@@ -92,3 +92,19 @@ export interface FeedbackRecord {
   recheck: { version: string; verdict: string; rank: number | null; probability: number | null; top: RankedChampion[]; model_file_changed: boolean };
   branch_exists: boolean;
 }
+
+export interface CompositionLane {
+  role: string; blue: string; red: string; expected: number; champion_part: number; matchup_part: number;
+  matchup_games: number; matchup_lane_games: number; matchup_blue_wins: number; blue_lane_games: number; red_lane_games: number; enough: boolean;
+}
+export interface CompositionSide {
+  team: string; confidence: number; assignment: { role: string; champion: string }[];
+  profile: { champions: number; magic_share?: number; frontline?: number; ranged?: number; tags?: Record<string, number> };
+  flags: { tone: 'ok' | 'warn'; kind: string; text: string }[];
+  duos: { roles: string[]; champions: string[]; win_delta: number; gold_delta: number; games: number; lane_games: number; enough: boolean }[];
+}
+export interface Composition {
+  cutoff: string; settings_version: string; half_life_days: number; sides: Record<Side, CompositionSide>; lanes: CompositionLane[];
+  early_gold_total: number | null; notes: string[]; traits_note: string;
+  backtest: { lane_r: number; lane_n: number; win_auc: number; duo_auc: number; reference_auc: number; range: string[] } | null;
+}

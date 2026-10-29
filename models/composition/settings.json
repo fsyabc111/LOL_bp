@@ -1,0 +1,20 @@
+{
+  "version": "c1",
+  "description": "对线 15 分钟经济期望（英雄位置均值 + 直接交手修正）、双人组合胜率残差、Data Dragon 粗粒度阵容画像",
+  "half_life_days": 180,
+  "smoothing": {
+    "champion": 20,
+    "matchup": 50,
+    "duo": 20,
+    "win": 20
+  },
+  "min_games": {
+    "champion": 5,
+    "duo": 20
+  },
+  "flags": {
+    "magic_share_low": 0.25,
+    "lane_gold": 300
+  },
+  "tuning_note": "收缩强度与半衰期在训练集上选择（2026-10-29）：各组合的对线平均误差差异不到 1 金币，直接交手修正几乎不带来额外信息。"
+}

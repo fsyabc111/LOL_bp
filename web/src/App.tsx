@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { ApiError, api } from './api';
-import type { Branch, Champion, DraftState, FeedbackDraft, FeedbackRecord, GameDetail, Meta, ModelList, Prediction, Rules } from './types';
+import type { Branch, Champion, Composition, DraftState, FeedbackDraft, FeedbackRecord, GameDetail, Meta, ModelList, Prediction, Rules } from './types';
 import { SeriesBrowser } from './components/SeriesBrowser';
 import { DraftBoard } from './components/DraftBoard';
 import { Timeline } from './components/Timeline';
@@ -9,6 +9,7 @@ import { RulesPanel } from './components/RulesPanel';
 import { BranchPanel } from './components/BranchPanel';
 import { PredictionPanel } from './components/PredictionPanel';
 import { FeedbackPanel } from './components/FeedbackPanel';
+import { CompositionPanel } from './components/CompositionPanel';
 import { reasonText } from './labels';
 
 type Route = { game: string | null; step: number | null; branch: number | null };
@@ -58,6 +59,8 @@ export default function App() {
   const [predicting, setPredicting] = useState(false);
   const [predictionError, setPredictionError] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<FeedbackRecord[]>([]);
+  const [composition, setComposition] = useState<Composition | null>(null);
+  const [compositionError, setCompositionError] = useState<string | null>(null);
 
   const champions = useMemo(() => Object.fromEntries(championList.map((c) => [c.id, c])), [championList]);
 
@@ -116,6 +119,17 @@ export default function App() {
     return () => { stale = true; };
   }, [state, version]);  // eslint-disable-line react-hooks/exhaustive-deps
 
+  // Composition follows the displayed state the same way predictions do.
+  useEffect(() => {
+    if (!detail || !state) return;
+    let stale = false;
+    setCompositionError(null);
+    const request = route.branch !== null ? api.branchComposition(route.branch) : api.gameComposition(detail.game.gameid, state.step);
+    request.then((c) => { if (!stale) setComposition(c); })
+      .catch((e) => { if (!stale) { setComposition(null); setCompositionError(describe(e)); } });
+    return () => { stale = true; };
+  }, [state]);  // eslint-disable-line react-hooks/exhaustive-deps
+
   const submitFeedback = async (draft: FeedbackDraft) => {
     if (!detail) throw new Error('未载入比赛');
     const where = route.branch !== null ? { branch_id: route.branch } : { step };
@@ -165,6 +179,7 @@ export default function App() {
                     onFeedback={submitFeedback} />
                 )}
                 {!version && predictionError && <div className="error" role="alert">预测不可用：{predictionError}</div>}
+                <CompositionPanel composition={composition} error={compositionError} champions={champions} />
                 <ChampionGrid champions={championList} state={state} interactive={!!activeBranch} busy={busy}
                   onChoose={(c) => activeBranch && run(() => api.addAction(activeBranch.id, c).then(applyBranch))} />
               </div>

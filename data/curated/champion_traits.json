@@ -1,0 +1,2735 @@
+{
+ "schema_version": 1,
+ "version": "16.20.1",
+ "source_url": "https://ddragon.leagueoflegends.com/cdn/16.20.1/data/en_US/champion.json",
+ "raw_sha256": "84fd12721ea0cec502d2a747aea94d8e57d4da337422d1d3ca33a7890909787f",
+ "evidence_type": "riot_static_descriptor",
+ "note": "info 评分与 tags 是 Riot 的粗粒度描述（0–10），不是实测伤害构成，且不一定随补丁更新。",
+ "champions": [
+  {
+   "id": "1",
+   "source_key": "Annie",
+   "tags": [
+    "Mage",
+    "Support"
+   ],
+   "info": {
+    "attack": 2,
+    "defense": 3,
+    "magic": 10,
+    "difficulty": 6
+   },
+   "resource_type": "Mana",
+   "attack_range": 625
+  },
+  {
+   "id": "2",
+   "source_key": "Olaf",
+   "tags": [
+    "Fighter",
+    "Tank"
+   ],
+   "info": {
+    "attack": 9,
+    "defense": 5,
+    "magic": 3,
+    "difficulty": 3
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "3",
+   "source_key": "Galio",
+   "tags": [
+    "Tank",
+    "Mage"
+   ],
+   "info": {
+    "attack": 1,
+    "defense": 10,
+    "magic": 6,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 150
+  },
+  {
+   "id": "4",
+   "source_key": "TwistedFate",
+   "tags": [
+    "Mage",
+    "Marksman"
+   ],
+   "info": {
+    "attack": 6,
+    "defense": 2,
+    "magic": 6,
+    "difficulty": 9
+   },
+   "resource_type": "Mana",
+   "attack_range": 525
+  },
+  {
+   "id": "5",
+   "source_key": "XinZhao",
+   "tags": [
+    "Fighter",
+    "Tank"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 6,
+    "magic": 3,
+    "difficulty": 2
+   },
+   "resource_type": "Mana",
+   "attack_range": 175
+  },
+  {
+   "id": "6",
+   "source_key": "Urgot",
+   "tags": [
+    "Fighter",
+    "Tank"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 5,
+    "magic": 3,
+    "difficulty": 8
+   },
+   "resource_type": "Mana",
+   "attack_range": 350
+  },
+  {
+   "id": "7",
+   "source_key": "Leblanc",
+   "tags": [
+    "Assassin",
+    "Mage"
+   ],
+   "info": {
+    "attack": 1,
+    "defense": 4,
+    "magic": 10,
+    "difficulty": 9
+   },
+   "resource_type": "Mana",
+   "attack_range": 525
+  },
+  {
+   "id": "8",
+   "source_key": "Vladimir",
+   "tags": [
+    "Mage",
+    "Fighter"
+   ],
+   "info": {
+    "attack": 2,
+    "defense": 6,
+    "magic": 8,
+    "difficulty": 7
+   },
+   "resource_type": "Crimson Rush",
+   "attack_range": 450
+  },
+  {
+   "id": "9",
+   "source_key": "Fiddlesticks",
+   "tags": [
+    "Mage",
+    "Support"
+   ],
+   "info": {
+    "attack": 2,
+    "defense": 3,
+    "magic": 9,
+    "difficulty": 9
+   },
+   "resource_type": "Mana",
+   "attack_range": 480
+  },
+  {
+   "id": "10",
+   "source_key": "Kayle",
+   "tags": [
+    "Marksman",
+    "Mage"
+   ],
+   "info": {
+    "attack": 6,
+    "defense": 6,
+    "magic": 7,
+    "difficulty": 7
+   },
+   "resource_type": "Mana",
+   "attack_range": 175
+  },
+  {
+   "id": "11",
+   "source_key": "MasterYi",
+   "tags": [
+    "Fighter",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 10,
+    "defense": 4,
+    "magic": 2,
+    "difficulty": 4
+   },
+   "resource_type": "Mana",
+   "attack_range": 175
+  },
+  {
+   "id": "12",
+   "source_key": "Alistar",
+   "tags": [
+    "Tank",
+    "Support"
+   ],
+   "info": {
+    "attack": 6,
+    "defense": 9,
+    "magic": 5,
+    "difficulty": 7
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "13",
+   "source_key": "Ryze",
+   "tags": [
+    "Mage"
+   ],
+   "info": {
+    "attack": 2,
+    "defense": 2,
+    "magic": 10,
+    "difficulty": 7
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "14",
+   "source_key": "Sion",
+   "tags": [
+    "Tank",
+    "Fighter"
+   ],
+   "info": {
+    "attack": 5,
+    "defense": 9,
+    "magic": 3,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 175
+  },
+  {
+   "id": "15",
+   "source_key": "Sivir",
+   "tags": [
+    "Marksman"
+   ],
+   "info": {
+    "attack": 9,
+    "defense": 3,
+    "magic": 1,
+    "difficulty": 4
+   },
+   "resource_type": "Mana",
+   "attack_range": 500
+  },
+  {
+   "id": "16",
+   "source_key": "Soraka",
+   "tags": [
+    "Support",
+    "Mage"
+   ],
+   "info": {
+    "attack": 2,
+    "defense": 5,
+    "magic": 7,
+    "difficulty": 3
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "17",
+   "source_key": "Teemo",
+   "tags": [
+    "Marksman",
+    "Mage"
+   ],
+   "info": {
+    "attack": 5,
+    "defense": 3,
+    "magic": 7,
+    "difficulty": 6
+   },
+   "resource_type": "Mana",
+   "attack_range": 500
+  },
+  {
+   "id": "18",
+   "source_key": "Tristana",
+   "tags": [
+    "Marksman",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 9,
+    "defense": 3,
+    "magic": 5,
+    "difficulty": 4
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "19",
+   "source_key": "Warwick",
+   "tags": [
+    "Fighter",
+    "Tank"
+   ],
+   "info": {
+    "attack": 9,
+    "defense": 5,
+    "magic": 3,
+    "difficulty": 3
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "20",
+   "source_key": "Nunu",
+   "tags": [
+    "Tank",
+    "Mage"
+   ],
+   "info": {
+    "attack": 4,
+    "defense": 6,
+    "magic": 7,
+    "difficulty": 4
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "21",
+   "source_key": "MissFortune",
+   "tags": [
+    "Marksman",
+    "Mage"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 2,
+    "magic": 5,
+    "difficulty": 1
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "22",
+   "source_key": "Ashe",
+   "tags": [
+    "Marksman",
+    "Support"
+   ],
+   "info": {
+    "attack": 7,
+    "defense": 3,
+    "magic": 2,
+    "difficulty": 4
+   },
+   "resource_type": "Mana",
+   "attack_range": 600
+  },
+  {
+   "id": "23",
+   "source_key": "Tryndamere",
+   "tags": [
+    "Fighter",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 10,
+    "defense": 5,
+    "magic": 2,
+    "difficulty": 5
+   },
+   "resource_type": "Fury",
+   "attack_range": 175
+  },
+  {
+   "id": "24",
+   "source_key": "Jax",
+   "tags": [
+    "Fighter"
+   ],
+   "info": {
+    "attack": 7,
+    "defense": 5,
+    "magic": 7,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "25",
+   "source_key": "Morgana",
+   "tags": [
+    "Support",
+    "Mage"
+   ],
+   "info": {
+    "attack": 1,
+    "defense": 6,
+    "magic": 8,
+    "difficulty": 1
+   },
+   "resource_type": "Mana",
+   "attack_range": 450
+  },
+  {
+   "id": "26",
+   "source_key": "Zilean",
+   "tags": [
+    "Support",
+    "Mage"
+   ],
+   "info": {
+    "attack": 2,
+    "defense": 5,
+    "magic": 8,
+    "difficulty": 6
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "27",
+   "source_key": "Singed",
+   "tags": [
+    "Tank",
+    "Mage"
+   ],
+   "info": {
+    "attack": 4,
+    "defense": 8,
+    "magic": 7,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "28",
+   "source_key": "Evelynn",
+   "tags": [
+    "Assassin",
+    "Mage"
+   ],
+   "info": {
+    "attack": 4,
+    "defense": 2,
+    "magic": 7,
+    "difficulty": 10
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "29",
+   "source_key": "Twitch",
+   "tags": [
+    "Marksman",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 9,
+    "defense": 2,
+    "magic": 3,
+    "difficulty": 6
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "30",
+   "source_key": "Karthus",
+   "tags": [
+    "Mage"
+   ],
+   "info": {
+    "attack": 2,
+    "defense": 2,
+    "magic": 10,
+    "difficulty": 7
+   },
+   "resource_type": "Mana",
+   "attack_range": 450
+  },
+  {
+   "id": "31",
+   "source_key": "Chogath",
+   "tags": [
+    "Tank",
+    "Mage"
+   ],
+   "info": {
+    "attack": 3,
+    "defense": 7,
+    "magic": 7,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "32",
+   "source_key": "Amumu",
+   "tags": [
+    "Tank",
+    "Support"
+   ],
+   "info": {
+    "attack": 2,
+    "defense": 6,
+    "magic": 8,
+    "difficulty": 3
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "33",
+   "source_key": "Rammus",
+   "tags": [
+    "Tank"
+   ],
+   "info": {
+    "attack": 4,
+    "defense": 10,
+    "magic": 5,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "34",
+   "source_key": "Anivia",
+   "tags": [
+    "Mage"
+   ],
+   "info": {
+    "attack": 1,
+    "defense": 4,
+    "magic": 10,
+    "difficulty": 10
+   },
+   "resource_type": "Mana",
+   "attack_range": 600
+  },
+  {
+   "id": "35",
+   "source_key": "Shaco",
+   "tags": [
+    "Assassin"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 4,
+    "magic": 6,
+    "difficulty": 9
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "36",
+   "source_key": "DrMundo",
+   "tags": [
+    "Tank",
+    "Fighter"
+   ],
+   "info": {
+    "attack": 5,
+    "defense": 7,
+    "magic": 6,
+    "difficulty": 5
+   },
+   "resource_type": "None",
+   "attack_range": 125
+  },
+  {
+   "id": "37",
+   "source_key": "Sona",
+   "tags": [
+    "Support",
+    "Mage"
+   ],
+   "info": {
+    "attack": 5,
+    "defense": 2,
+    "magic": 8,
+    "difficulty": 4
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "38",
+   "source_key": "Kassadin",
+   "tags": [
+    "Assassin",
+    "Mage"
+   ],
+   "info": {
+    "attack": 3,
+    "defense": 5,
+    "magic": 8,
+    "difficulty": 8
+   },
+   "resource_type": "Mana",
+   "attack_range": 150
+  },
+  {
+   "id": "39",
+   "source_key": "Irelia",
+   "tags": [
+    "Fighter",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 7,
+    "defense": 4,
+    "magic": 5,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 200
+  },
+  {
+   "id": "40",
+   "source_key": "Janna",
+   "tags": [
+    "Support",
+    "Mage"
+   ],
+   "info": {
+    "attack": 3,
+    "defense": 5,
+    "magic": 7,
+    "difficulty": 7
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "41",
+   "source_key": "Gangplank",
+   "tags": [
+    "Fighter"
+   ],
+   "info": {
+    "attack": 7,
+    "defense": 6,
+    "magic": 4,
+    "difficulty": 9
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "42",
+   "source_key": "Corki",
+   "tags": [
+    "Marksman",
+    "Mage"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 3,
+    "magic": 6,
+    "difficulty": 6
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "43",
+   "source_key": "Karma",
+   "tags": [
+    "Mage",
+    "Support"
+   ],
+   "info": {
+    "attack": 1,
+    "defense": 7,
+    "magic": 8,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 525
+  },
+  {
+   "id": "44",
+   "source_key": "Taric",
+   "tags": [
+    "Support",
+    "Tank"
+   ],
+   "info": {
+    "attack": 4,
+    "defense": 8,
+    "magic": 5,
+    "difficulty": 3
+   },
+   "resource_type": "Mana",
+   "attack_range": 150
+  },
+  {
+   "id": "45",
+   "source_key": "Veigar",
+   "tags": [
+    "Mage"
+   ],
+   "info": {
+    "attack": 2,
+    "defense": 2,
+    "magic": 10,
+    "difficulty": 7
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "48",
+   "source_key": "Trundle",
+   "tags": [
+    "Fighter",
+    "Tank"
+   ],
+   "info": {
+    "attack": 7,
+    "defense": 6,
+    "magic": 2,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 175
+  },
+  {
+   "id": "50",
+   "source_key": "Swain",
+   "tags": [
+    "Mage",
+    "Support"
+   ],
+   "info": {
+    "attack": 2,
+    "defense": 6,
+    "magic": 9,
+    "difficulty": 8
+   },
+   "resource_type": "Mana",
+   "attack_range": 525
+  },
+  {
+   "id": "51",
+   "source_key": "Caitlyn",
+   "tags": [
+    "Marksman"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 2,
+    "magic": 2,
+    "difficulty": 6
+   },
+   "resource_type": "Mana",
+   "attack_range": 650
+  },
+  {
+   "id": "53",
+   "source_key": "Blitzcrank",
+   "tags": [
+    "Tank",
+    "Support"
+   ],
+   "info": {
+    "attack": 4,
+    "defense": 8,
+    "magic": 5,
+    "difficulty": 4
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "54",
+   "source_key": "Malphite",
+   "tags": [
+    "Tank",
+    "Mage"
+   ],
+   "info": {
+    "attack": 5,
+    "defense": 9,
+    "magic": 7,
+    "difficulty": 2
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "55",
+   "source_key": "Katarina",
+   "tags": [
+    "Assassin",
+    "Mage"
+   ],
+   "info": {
+    "attack": 4,
+    "defense": 3,
+    "magic": 9,
+    "difficulty": 8
+   },
+   "resource_type": "None",
+   "attack_range": 125
+  },
+  {
+   "id": "56",
+   "source_key": "Nocturne",
+   "tags": [
+    "Fighter",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 9,
+    "defense": 5,
+    "magic": 2,
+    "difficulty": 4
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "57",
+   "source_key": "Maokai",
+   "tags": [
+    "Tank",
+    "Support"
+   ],
+   "info": {
+    "attack": 3,
+    "defense": 8,
+    "magic": 6,
+    "difficulty": 3
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "58",
+   "source_key": "Renekton",
+   "tags": [
+    "Fighter",
+    "Tank"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 5,
+    "magic": 2,
+    "difficulty": 3
+   },
+   "resource_type": "Fury",
+   "attack_range": 125
+  },
+  {
+   "id": "59",
+   "source_key": "JarvanIV",
+   "tags": [
+    "Fighter",
+    "Tank"
+   ],
+   "info": {
+    "attack": 6,
+    "defense": 8,
+    "magic": 3,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 175
+  },
+  {
+   "id": "60",
+   "source_key": "Elise",
+   "tags": [
+    "Assassin",
+    "Mage"
+   ],
+   "info": {
+    "attack": 6,
+    "defense": 5,
+    "magic": 7,
+    "difficulty": 9
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "61",
+   "source_key": "Orianna",
+   "tags": [
+    "Mage",
+    "Support"
+   ],
+   "info": {
+    "attack": 4,
+    "defense": 3,
+    "magic": 9,
+    "difficulty": 7
+   },
+   "resource_type": "Mana",
+   "attack_range": 525
+  },
+  {
+   "id": "62",
+   "source_key": "MonkeyKing",
+   "tags": [
+    "Fighter",
+    "Tank"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 5,
+    "magic": 2,
+    "difficulty": 3
+   },
+   "resource_type": "Mana",
+   "attack_range": 175
+  },
+  {
+   "id": "63",
+   "source_key": "Brand",
+   "tags": [
+    "Mage",
+    "Support"
+   ],
+   "info": {
+    "attack": 2,
+    "defense": 2,
+    "magic": 9,
+    "difficulty": 4
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "64",
+   "source_key": "LeeSin",
+   "tags": [
+    "Fighter",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 5,
+    "magic": 3,
+    "difficulty": 6
+   },
+   "resource_type": "Energy",
+   "attack_range": 125
+  },
+  {
+   "id": "67",
+   "source_key": "Vayne",
+   "tags": [
+    "Marksman",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 10,
+    "defense": 1,
+    "magic": 1,
+    "difficulty": 8
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "68",
+   "source_key": "Rumble",
+   "tags": [
+    "Fighter",
+    "Mage"
+   ],
+   "info": {
+    "attack": 3,
+    "defense": 6,
+    "magic": 8,
+    "difficulty": 10
+   },
+   "resource_type": "Heat",
+   "attack_range": 125
+  },
+  {
+   "id": "69",
+   "source_key": "Cassiopeia",
+   "tags": [
+    "Mage"
+   ],
+   "info": {
+    "attack": 2,
+    "defense": 3,
+    "magic": 9,
+    "difficulty": 10
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "72",
+   "source_key": "Skarner",
+   "tags": [
+    "Tank",
+    "Fighter"
+   ],
+   "info": {
+    "attack": 7,
+    "defense": 8,
+    "magic": 5,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 150
+  },
+  {
+   "id": "74",
+   "source_key": "Heimerdinger",
+   "tags": [
+    "Mage",
+    "Support"
+   ],
+   "info": {
+    "attack": 2,
+    "defense": 6,
+    "magic": 8,
+    "difficulty": 8
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "75",
+   "source_key": "Nasus",
+   "tags": [
+    "Fighter",
+    "Tank"
+   ],
+   "info": {
+    "attack": 7,
+    "defense": 5,
+    "magic": 6,
+    "difficulty": 6
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "76",
+   "source_key": "Nidalee",
+   "tags": [
+    "Assassin",
+    "Mage"
+   ],
+   "info": {
+    "attack": 5,
+    "defense": 4,
+    "magic": 7,
+    "difficulty": 8
+   },
+   "resource_type": "Mana",
+   "attack_range": 525
+  },
+  {
+   "id": "77",
+   "source_key": "Udyr",
+   "tags": [
+    "Fighter",
+    "Tank"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 7,
+    "magic": 4,
+    "difficulty": 7
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "78",
+   "source_key": "Poppy",
+   "tags": [
+    "Tank",
+    "Fighter"
+   ],
+   "info": {
+    "attack": 6,
+    "defense": 7,
+    "magic": 2,
+    "difficulty": 6
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "79",
+   "source_key": "Gragas",
+   "tags": [
+    "Fighter",
+    "Mage"
+   ],
+   "info": {
+    "attack": 4,
+    "defense": 7,
+    "magic": 6,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "80",
+   "source_key": "Pantheon",
+   "tags": [
+    "Fighter",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 9,
+    "defense": 4,
+    "magic": 3,
+    "difficulty": 4
+   },
+   "resource_type": "Mana",
+   "attack_range": 175
+  },
+  {
+   "id": "81",
+   "source_key": "Ezreal",
+   "tags": [
+    "Marksman",
+    "Mage"
+   ],
+   "info": {
+    "attack": 7,
+    "defense": 2,
+    "magic": 6,
+    "difficulty": 7
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "82",
+   "source_key": "Mordekaiser",
+   "tags": [
+    "Fighter",
+    "Mage"
+   ],
+   "info": {
+    "attack": 4,
+    "defense": 6,
+    "magic": 7,
+    "difficulty": 4
+   },
+   "resource_type": "Shield",
+   "attack_range": 175
+  },
+  {
+   "id": "83",
+   "source_key": "Yorick",
+   "tags": [
+    "Fighter",
+    "Tank"
+   ],
+   "info": {
+    "attack": 6,
+    "defense": 6,
+    "magic": 4,
+    "difficulty": 6
+   },
+   "resource_type": "Mana",
+   "attack_range": 175
+  },
+  {
+   "id": "84",
+   "source_key": "Akali",
+   "tags": [
+    "Assassin"
+   ],
+   "info": {
+    "attack": 5,
+    "defense": 3,
+    "magic": 8,
+    "difficulty": 7
+   },
+   "resource_type": "Energy",
+   "attack_range": 125
+  },
+  {
+   "id": "85",
+   "source_key": "Kennen",
+   "tags": [
+    "Mage"
+   ],
+   "info": {
+    "attack": 6,
+    "defense": 4,
+    "magic": 7,
+    "difficulty": 4
+   },
+   "resource_type": "Energy",
+   "attack_range": 550
+  },
+  {
+   "id": "86",
+   "source_key": "Garen",
+   "tags": [
+    "Fighter",
+    "Tank"
+   ],
+   "info": {
+    "attack": 7,
+    "defense": 7,
+    "magic": 1,
+    "difficulty": 5
+   },
+   "resource_type": "None",
+   "attack_range": 175
+  },
+  {
+   "id": "89",
+   "source_key": "Leona",
+   "tags": [
+    "Tank",
+    "Support"
+   ],
+   "info": {
+    "attack": 4,
+    "defense": 8,
+    "magic": 3,
+    "difficulty": 4
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "90",
+   "source_key": "Malzahar",
+   "tags": [
+    "Mage"
+   ],
+   "info": {
+    "attack": 2,
+    "defense": 2,
+    "magic": 9,
+    "difficulty": 6
+   },
+   "resource_type": "Mana",
+   "attack_range": 500
+  },
+  {
+   "id": "91",
+   "source_key": "Talon",
+   "tags": [
+    "Assassin"
+   ],
+   "info": {
+    "attack": 9,
+    "defense": 3,
+    "magic": 1,
+    "difficulty": 7
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "92",
+   "source_key": "Riven",
+   "tags": [
+    "Fighter",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 5,
+    "magic": 1,
+    "difficulty": 8
+   },
+   "resource_type": "None",
+   "attack_range": 125
+  },
+  {
+   "id": "96",
+   "source_key": "KogMaw",
+   "tags": [
+    "Marksman",
+    "Mage"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 2,
+    "magic": 5,
+    "difficulty": 6
+   },
+   "resource_type": "Mana",
+   "attack_range": 500
+  },
+  {
+   "id": "98",
+   "source_key": "Shen",
+   "tags": [
+    "Tank"
+   ],
+   "info": {
+    "attack": 3,
+    "defense": 9,
+    "magic": 3,
+    "difficulty": 4
+   },
+   "resource_type": "Energy",
+   "attack_range": 125
+  },
+  {
+   "id": "99",
+   "source_key": "Lux",
+   "tags": [
+    "Mage",
+    "Support"
+   ],
+   "info": {
+    "attack": 2,
+    "defense": 4,
+    "magic": 9,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "101",
+   "source_key": "Xerath",
+   "tags": [
+    "Mage",
+    "Support"
+   ],
+   "info": {
+    "attack": 1,
+    "defense": 3,
+    "magic": 10,
+    "difficulty": 8
+   },
+   "resource_type": "Mana",
+   "attack_range": 525
+  },
+  {
+   "id": "102",
+   "source_key": "Shyvana",
+   "tags": [
+    "Fighter",
+    "Tank"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 6,
+    "magic": 3,
+    "difficulty": 4
+   },
+   "resource_type": "Fury",
+   "attack_range": 150
+  },
+  {
+   "id": "103",
+   "source_key": "Ahri",
+   "tags": [
+    "Mage",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 3,
+    "defense": 4,
+    "magic": 8,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "104",
+   "source_key": "Graves",
+   "tags": [
+    "Marksman"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 5,
+    "magic": 3,
+    "difficulty": 3
+   },
+   "resource_type": "Mana",
+   "attack_range": 425
+  },
+  {
+   "id": "105",
+   "source_key": "Fizz",
+   "tags": [
+    "Assassin",
+    "Fighter"
+   ],
+   "info": {
+    "attack": 6,
+    "defense": 4,
+    "magic": 7,
+    "difficulty": 6
+   },
+   "resource_type": "Mana",
+   "attack_range": 175
+  },
+  {
+   "id": "106",
+   "source_key": "Volibear",
+   "tags": [
+    "Fighter",
+    "Tank"
+   ],
+   "info": {
+    "attack": 7,
+    "defense": 7,
+    "magic": 4,
+    "difficulty": 3
+   },
+   "resource_type": "Mana",
+   "attack_range": 150
+  },
+  {
+   "id": "107",
+   "source_key": "Rengar",
+   "tags": [
+    "Assassin",
+    "Fighter"
+   ],
+   "info": {
+    "attack": 7,
+    "defense": 4,
+    "magic": 2,
+    "difficulty": 8
+   },
+   "resource_type": "Ferocity",
+   "attack_range": 125
+  },
+  {
+   "id": "110",
+   "source_key": "Varus",
+   "tags": [
+    "Marksman",
+    "Mage"
+   ],
+   "info": {
+    "attack": 7,
+    "defense": 3,
+    "magic": 4,
+    "difficulty": 2
+   },
+   "resource_type": "Mana",
+   "attack_range": 575
+  },
+  {
+   "id": "111",
+   "source_key": "Nautilus",
+   "tags": [
+    "Tank",
+    "Support"
+   ],
+   "info": {
+    "attack": 4,
+    "defense": 6,
+    "magic": 6,
+    "difficulty": 6
+   },
+   "resource_type": "Mana",
+   "attack_range": 175
+  },
+  {
+   "id": "112",
+   "source_key": "Viktor",
+   "tags": [
+    "Mage"
+   ],
+   "info": {
+    "attack": 2,
+    "defense": 4,
+    "magic": 10,
+    "difficulty": 9
+   },
+   "resource_type": "Mana",
+   "attack_range": 525
+  },
+  {
+   "id": "113",
+   "source_key": "Sejuani",
+   "tags": [
+    "Tank"
+   ],
+   "info": {
+    "attack": 5,
+    "defense": 7,
+    "magic": 6,
+    "difficulty": 4
+   },
+   "resource_type": "Mana",
+   "attack_range": 150
+  },
+  {
+   "id": "114",
+   "source_key": "Fiora",
+   "tags": [
+    "Fighter",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 10,
+    "defense": 4,
+    "magic": 2,
+    "difficulty": 3
+   },
+   "resource_type": "Mana",
+   "attack_range": 150
+  },
+  {
+   "id": "115",
+   "source_key": "Ziggs",
+   "tags": [
+    "Mage"
+   ],
+   "info": {
+    "attack": 2,
+    "defense": 4,
+    "magic": 9,
+    "difficulty": 4
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "117",
+   "source_key": "Lulu",
+   "tags": [
+    "Support",
+    "Mage"
+   ],
+   "info": {
+    "attack": 4,
+    "defense": 5,
+    "magic": 7,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "119",
+   "source_key": "Draven",
+   "tags": [
+    "Marksman"
+   ],
+   "info": {
+    "attack": 9,
+    "defense": 3,
+    "magic": 1,
+    "difficulty": 8
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "120",
+   "source_key": "Hecarim",
+   "tags": [
+    "Fighter",
+    "Tank"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 6,
+    "magic": 4,
+    "difficulty": 6
+   },
+   "resource_type": "Mana",
+   "attack_range": 175
+  },
+  {
+   "id": "121",
+   "source_key": "Khazix",
+   "tags": [
+    "Assassin"
+   ],
+   "info": {
+    "attack": 9,
+    "defense": 4,
+    "magic": 3,
+    "difficulty": 6
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "122",
+   "source_key": "Darius",
+   "tags": [
+    "Fighter",
+    "Tank"
+   ],
+   "info": {
+    "attack": 9,
+    "defense": 5,
+    "magic": 1,
+    "difficulty": 2
+   },
+   "resource_type": "Mana",
+   "attack_range": 175
+  },
+  {
+   "id": "126",
+   "source_key": "Jayce",
+   "tags": [
+    "Fighter",
+    "Marksman"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 4,
+    "magic": 3,
+    "difficulty": 7
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "127",
+   "source_key": "Lissandra",
+   "tags": [
+    "Mage"
+   ],
+   "info": {
+    "attack": 2,
+    "defense": 5,
+    "magic": 8,
+    "difficulty": 6
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "131",
+   "source_key": "Diana",
+   "tags": [
+    "Fighter",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 7,
+    "defense": 6,
+    "magic": 8,
+    "difficulty": 4
+   },
+   "resource_type": "Mana",
+   "attack_range": 150
+  },
+  {
+   "id": "133",
+   "source_key": "Quinn",
+   "tags": [
+    "Marksman",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 9,
+    "defense": 4,
+    "magic": 2,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 525
+  },
+  {
+   "id": "134",
+   "source_key": "Syndra",
+   "tags": [
+    "Mage"
+   ],
+   "info": {
+    "attack": 2,
+    "defense": 3,
+    "magic": 9,
+    "difficulty": 8
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "136",
+   "source_key": "AurelionSol",
+   "tags": [
+    "Mage"
+   ],
+   "info": {
+    "attack": 2,
+    "defense": 3,
+    "magic": 8,
+    "difficulty": 7
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "141",
+   "source_key": "Kayn",
+   "tags": [
+    "Fighter",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 10,
+    "defense": 6,
+    "magic": 1,
+    "difficulty": 8
+   },
+   "resource_type": "Mana",
+   "attack_range": 175
+  },
+  {
+   "id": "142",
+   "source_key": "Zoe",
+   "tags": [
+    "Mage"
+   ],
+   "info": {
+    "attack": 1,
+    "defense": 7,
+    "magic": 8,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "143",
+   "source_key": "Zyra",
+   "tags": [
+    "Mage",
+    "Support"
+   ],
+   "info": {
+    "attack": 4,
+    "defense": 3,
+    "magic": 8,
+    "difficulty": 7
+   },
+   "resource_type": "Mana",
+   "attack_range": 575
+  },
+  {
+   "id": "145",
+   "source_key": "Kaisa",
+   "tags": [
+    "Marksman",
+    "Mage"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 5,
+    "magic": 3,
+    "difficulty": 6
+   },
+   "resource_type": "Mana",
+   "attack_range": 525
+  },
+  {
+   "id": "147",
+   "source_key": "Seraphine",
+   "tags": [
+    "Support",
+    "Mage"
+   ],
+   "info": {
+    "attack": 0,
+    "defense": 0,
+    "magic": 0,
+    "difficulty": 0
+   },
+   "resource_type": "Mana",
+   "attack_range": 525
+  },
+  {
+   "id": "150",
+   "source_key": "Gnar",
+   "tags": [
+    "Fighter",
+    "Tank"
+   ],
+   "info": {
+    "attack": 6,
+    "defense": 5,
+    "magic": 5,
+    "difficulty": 8
+   },
+   "resource_type": "Rage",
+   "attack_range": 175
+  },
+  {
+   "id": "154",
+   "source_key": "Zac",
+   "tags": [
+    "Tank",
+    "Fighter"
+   ],
+   "info": {
+    "attack": 3,
+    "defense": 7,
+    "magic": 7,
+    "difficulty": 8
+   },
+   "resource_type": "None",
+   "attack_range": 175
+  },
+  {
+   "id": "157",
+   "source_key": "Yasuo",
+   "tags": [
+    "Fighter",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 4,
+    "magic": 4,
+    "difficulty": 10
+   },
+   "resource_type": "Flow",
+   "attack_range": 175
+  },
+  {
+   "id": "161",
+   "source_key": "Velkoz",
+   "tags": [
+    "Mage",
+    "Support"
+   ],
+   "info": {
+    "attack": 2,
+    "defense": 2,
+    "magic": 10,
+    "difficulty": 8
+   },
+   "resource_type": "Mana",
+   "attack_range": 525
+  },
+  {
+   "id": "163",
+   "source_key": "Taliyah",
+   "tags": [
+    "Mage",
+    "Support"
+   ],
+   "info": {
+    "attack": 1,
+    "defense": 7,
+    "magic": 8,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 525
+  },
+  {
+   "id": "164",
+   "source_key": "Camille",
+   "tags": [
+    "Fighter",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 6,
+    "magic": 3,
+    "difficulty": 4
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "166",
+   "source_key": "Akshan",
+   "tags": [
+    "Marksman",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 0,
+    "defense": 0,
+    "magic": 0,
+    "difficulty": 0
+   },
+   "resource_type": "Mana",
+   "attack_range": 500
+  },
+  {
+   "id": "200",
+   "source_key": "Belveth",
+   "tags": [
+    "Fighter"
+   ],
+   "info": {
+    "attack": 4,
+    "defense": 2,
+    "magic": 7,
+    "difficulty": 10
+   },
+   "resource_type": "",
+   "attack_range": 150
+  },
+  {
+   "id": "201",
+   "source_key": "Braum",
+   "tags": [
+    "Tank",
+    "Support"
+   ],
+   "info": {
+    "attack": 3,
+    "defense": 9,
+    "magic": 4,
+    "difficulty": 3
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "202",
+   "source_key": "Jhin",
+   "tags": [
+    "Marksman",
+    "Mage"
+   ],
+   "info": {
+    "attack": 10,
+    "defense": 2,
+    "magic": 6,
+    "difficulty": 6
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "203",
+   "source_key": "Kindred",
+   "tags": [
+    "Marksman"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 2,
+    "magic": 2,
+    "difficulty": 4
+   },
+   "resource_type": "Mana",
+   "attack_range": 500
+  },
+  {
+   "id": "221",
+   "source_key": "Zeri",
+   "tags": [
+    "Marksman"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 5,
+    "magic": 3,
+    "difficulty": 6
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "222",
+   "source_key": "Jinx",
+   "tags": [
+    "Marksman"
+   ],
+   "info": {
+    "attack": 9,
+    "defense": 2,
+    "magic": 4,
+    "difficulty": 6
+   },
+   "resource_type": "Mana",
+   "attack_range": 525
+  },
+  {
+   "id": "223",
+   "source_key": "TahmKench",
+   "tags": [
+    "Tank",
+    "Support"
+   ],
+   "info": {
+    "attack": 3,
+    "defense": 9,
+    "magic": 6,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 175
+  },
+  {
+   "id": "233",
+   "source_key": "Briar",
+   "tags": [
+    "Fighter",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 9,
+    "defense": 5,
+    "magic": 3,
+    "difficulty": 3
+   },
+   "resource_type": "Fury",
+   "attack_range": 125
+  },
+  {
+   "id": "234",
+   "source_key": "Viego",
+   "tags": [
+    "Fighter",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 6,
+    "defense": 4,
+    "magic": 2,
+    "difficulty": 5
+   },
+   "resource_type": "None",
+   "attack_range": 200
+  },
+  {
+   "id": "235",
+   "source_key": "Senna",
+   "tags": [
+    "Support",
+    "Marksman"
+   ],
+   "info": {
+    "attack": 7,
+    "defense": 2,
+    "magic": 6,
+    "difficulty": 7
+   },
+   "resource_type": "Mana",
+   "attack_range": 600
+  },
+  {
+   "id": "236",
+   "source_key": "Lucian",
+   "tags": [
+    "Marksman",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 5,
+    "magic": 3,
+    "difficulty": 6
+   },
+   "resource_type": "Mana",
+   "attack_range": 500
+  },
+  {
+   "id": "238",
+   "source_key": "Zed",
+   "tags": [
+    "Assassin"
+   ],
+   "info": {
+    "attack": 9,
+    "defense": 2,
+    "magic": 1,
+    "difficulty": 7
+   },
+   "resource_type": "Energy",
+   "attack_range": 125
+  },
+  {
+   "id": "240",
+   "source_key": "Kled",
+   "tags": [
+    "Fighter"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 2,
+    "magic": 2,
+    "difficulty": 7
+   },
+   "resource_type": "Courage",
+   "attack_range": 125
+  },
+  {
+   "id": "245",
+   "source_key": "Ekko",
+   "tags": [
+    "Assassin",
+    "Mage"
+   ],
+   "info": {
+    "attack": 5,
+    "defense": 3,
+    "magic": 7,
+    "difficulty": 8
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "246",
+   "source_key": "Qiyana",
+   "tags": [
+    "Assassin"
+   ],
+   "info": {
+    "attack": 0,
+    "defense": 2,
+    "magic": 4,
+    "difficulty": 8
+   },
+   "resource_type": "Mana",
+   "attack_range": 150
+  },
+  {
+   "id": "254",
+   "source_key": "Vi",
+   "tags": [
+    "Fighter",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 5,
+    "magic": 3,
+    "difficulty": 4
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "266",
+   "source_key": "Aatrox",
+   "tags": [
+    "Fighter"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 4,
+    "magic": 3,
+    "difficulty": 4
+   },
+   "resource_type": "Blood Well",
+   "attack_range": 175
+  },
+  {
+   "id": "267",
+   "source_key": "Nami",
+   "tags": [
+    "Support",
+    "Mage"
+   ],
+   "info": {
+    "attack": 4,
+    "defense": 3,
+    "magic": 7,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "268",
+   "source_key": "Azir",
+   "tags": [
+    "Mage",
+    "Marksman"
+   ],
+   "info": {
+    "attack": 6,
+    "defense": 3,
+    "magic": 8,
+    "difficulty": 9
+   },
+   "resource_type": "Mana",
+   "attack_range": 525
+  },
+  {
+   "id": "350",
+   "source_key": "Yuumi",
+   "tags": [
+    "Support",
+    "Mage"
+   ],
+   "info": {
+    "attack": 5,
+    "defense": 1,
+    "magic": 8,
+    "difficulty": 2
+   },
+   "resource_type": "Mana",
+   "attack_range": 425
+  },
+  {
+   "id": "360",
+   "source_key": "Samira",
+   "tags": [
+    "Marksman",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 5,
+    "magic": 3,
+    "difficulty": 6
+   },
+   "resource_type": "Mana",
+   "attack_range": 500
+  },
+  {
+   "id": "412",
+   "source_key": "Thresh",
+   "tags": [
+    "Support",
+    "Tank"
+   ],
+   "info": {
+    "attack": 5,
+    "defense": 6,
+    "magic": 6,
+    "difficulty": 7
+   },
+   "resource_type": "Mana",
+   "attack_range": 450
+  },
+  {
+   "id": "420",
+   "source_key": "Illaoi",
+   "tags": [
+    "Fighter",
+    "Tank"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 6,
+    "magic": 3,
+    "difficulty": 4
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "421",
+   "source_key": "RekSai",
+   "tags": [
+    "Fighter",
+    "Tank"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 5,
+    "magic": 2,
+    "difficulty": 3
+   },
+   "resource_type": "Rage",
+   "attack_range": 175
+  },
+  {
+   "id": "427",
+   "source_key": "Ivern",
+   "tags": [
+    "Support",
+    "Mage"
+   ],
+   "info": {
+    "attack": 3,
+    "defense": 5,
+    "magic": 7,
+    "difficulty": 7
+   },
+   "resource_type": "Mana",
+   "attack_range": 475
+  },
+  {
+   "id": "429",
+   "source_key": "Kalista",
+   "tags": [
+    "Marksman"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 2,
+    "magic": 4,
+    "difficulty": 7
+   },
+   "resource_type": "Mana",
+   "attack_range": 525
+  },
+  {
+   "id": "432",
+   "source_key": "Bard",
+   "tags": [
+    "Support",
+    "Mage"
+   ],
+   "info": {
+    "attack": 4,
+    "defense": 4,
+    "magic": 5,
+    "difficulty": 9
+   },
+   "resource_type": "Mana",
+   "attack_range": 500
+  },
+  {
+   "id": "497",
+   "source_key": "Rakan",
+   "tags": [
+    "Support"
+   ],
+   "info": {
+    "attack": 2,
+    "defense": 4,
+    "magic": 8,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 300
+  },
+  {
+   "id": "498",
+   "source_key": "Xayah",
+   "tags": [
+    "Marksman"
+   ],
+   "info": {
+    "attack": 10,
+    "defense": 6,
+    "magic": 1,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 525
+  },
+  {
+   "id": "516",
+   "source_key": "Ornn",
+   "tags": [
+    "Tank"
+   ],
+   "info": {
+    "attack": 5,
+    "defense": 9,
+    "magic": 3,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 175
+  },
+  {
+   "id": "517",
+   "source_key": "Sylas",
+   "tags": [
+    "Mage",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 3,
+    "defense": 4,
+    "magic": 8,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 175
+  },
+  {
+   "id": "518",
+   "source_key": "Neeko",
+   "tags": [
+    "Mage",
+    "Support"
+   ],
+   "info": {
+    "attack": 1,
+    "defense": 1,
+    "magic": 9,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "523",
+   "source_key": "Aphelios",
+   "tags": [
+    "Marksman"
+   ],
+   "info": {
+    "attack": 6,
+    "defense": 2,
+    "magic": 1,
+    "difficulty": 10
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "526",
+   "source_key": "Rell",
+   "tags": [
+    "Tank",
+    "Support"
+   ],
+   "info": {
+    "attack": 0,
+    "defense": 0,
+    "magic": 0,
+    "difficulty": 0
+   },
+   "resource_type": "Mana",
+   "attack_range": 175
+  },
+  {
+   "id": "555",
+   "source_key": "Pyke",
+   "tags": [
+    "Support",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 9,
+    "defense": 3,
+    "magic": 1,
+    "difficulty": 7
+   },
+   "resource_type": "Mana",
+   "attack_range": 150
+  },
+  {
+   "id": "711",
+   "source_key": "Vex",
+   "tags": [
+    "Mage"
+   ],
+   "info": {
+    "attack": 0,
+    "defense": 0,
+    "magic": 0,
+    "difficulty": 0
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "777",
+   "source_key": "Yone",
+   "tags": [
+    "Fighter",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 4,
+    "magic": 4,
+    "difficulty": 8
+   },
+   "resource_type": "Flow",
+   "attack_range": 175
+  },
+  {
+   "id": "799",
+   "source_key": "Ambessa",
+   "tags": [
+    "Fighter",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 9,
+    "defense": 2,
+    "magic": 0,
+    "difficulty": 10
+   },
+   "resource_type": "Energy",
+   "attack_range": 125
+  },
+  {
+   "id": "800",
+   "source_key": "Mel",
+   "tags": [
+    "Mage",
+    "Support"
+   ],
+   "info": {
+    "attack": 2,
+    "defense": 4,
+    "magic": 9,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "804",
+   "source_key": "Yunara",
+   "tags": [
+    "Marksman"
+   ],
+   "info": {
+    "attack": 9,
+    "defense": 2,
+    "magic": 0,
+    "difficulty": 4
+   },
+   "resource_type": "Mana",
+   "attack_range": 575
+  },
+  {
+   "id": "805",
+   "source_key": "Locke",
+   "tags": [
+    "Assassin",
+    "Mage"
+   ],
+   "info": {
+    "attack": 6,
+    "defense": 4,
+    "magic": 2,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  },
+  {
+   "id": "875",
+   "source_key": "Sett",
+   "tags": [
+    "Fighter",
+    "Tank"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 5,
+    "magic": 1,
+    "difficulty": 2
+   },
+   "resource_type": "Grit",
+   "attack_range": 125
+  },
+  {
+   "id": "876",
+   "source_key": "Lillia",
+   "tags": [
+    "Fighter",
+    "Mage"
+   ],
+   "info": {
+    "attack": 0,
+    "defense": 2,
+    "magic": 10,
+    "difficulty": 8
+   },
+   "resource_type": "Mana",
+   "attack_range": 325
+  },
+  {
+   "id": "887",
+   "source_key": "Gwen",
+   "tags": [
+    "Fighter"
+   ],
+   "info": {
+    "attack": 7,
+    "defense": 4,
+    "magic": 5,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 150
+  },
+  {
+   "id": "888",
+   "source_key": "Renata",
+   "tags": [
+    "Support",
+    "Mage"
+   ],
+   "info": {
+    "attack": 2,
+    "defense": 6,
+    "magic": 9,
+    "difficulty": 8
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "893",
+   "source_key": "Aurora",
+   "tags": [
+    "Mage",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 3,
+    "defense": 4,
+    "magic": 8,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "895",
+   "source_key": "Nilah",
+   "tags": [
+    "Fighter",
+    "Assassin"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 4,
+    "magic": 4,
+    "difficulty": 10
+   },
+   "resource_type": "Mana",
+   "attack_range": 225
+  },
+  {
+   "id": "897",
+   "source_key": "KSante",
+   "tags": [
+    "Tank",
+    "Fighter"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 8,
+    "magic": 7,
+    "difficulty": 9
+   },
+   "resource_type": "Mana",
+   "attack_range": 150
+  },
+  {
+   "id": "901",
+   "source_key": "Smolder",
+   "tags": [
+    "Marksman",
+    "Mage"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 2,
+    "magic": 5,
+    "difficulty": 6
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "902",
+   "source_key": "Milio",
+   "tags": [
+    "Support",
+    "Mage"
+   ],
+   "info": {
+    "attack": 2,
+    "defense": 4,
+    "magic": 8,
+    "difficulty": 5
+   },
+   "resource_type": "Mana",
+   "attack_range": 525
+  },
+  {
+   "id": "904",
+   "source_key": "Zaahen",
+   "tags": [
+    "Fighter"
+   ],
+   "info": {
+    "attack": 8,
+    "defense": 6,
+    "magic": 1,
+    "difficulty": 2
+   },
+   "resource_type": "Mana",
+   "attack_range": 175
+  },
+  {
+   "id": "910",
+   "source_key": "Hwei",
+   "tags": [
+    "Mage",
+    "Support"
+   ],
+   "info": {
+    "attack": 7,
+    "defense": 1,
+    "magic": 8,
+    "difficulty": 9
+   },
+   "resource_type": "Mana",
+   "attack_range": 550
+  },
+  {
+   "id": "950",
+   "source_key": "Naafiri",
+   "tags": [
+    "Assassin",
+    "Fighter"
+   ],
+   "info": {
+    "attack": 9,
+    "defense": 5,
+    "magic": 0,
+    "difficulty": 2
+   },
+   "resource_type": "Mana",
+   "attack_range": 125
+  }
+ ]
+}
