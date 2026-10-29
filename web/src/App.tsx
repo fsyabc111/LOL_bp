@@ -31,6 +31,12 @@ function writeRoute(r: Route) {
 }
 
 const MODEL_KEY = 'lolbp.model';
+const TAB_KEY = 'lolbp.tab';
+type Tab = 'prediction' | 'recommend' | 'composition';
+const TABS: { id: Tab; label: string }[] = [{ id: 'prediction', label: '下一手预测' }, { id: 'recommend', label: '候选对比' }, { id: 'composition', label: '阵容评估' }];
+function storedTab(): Tab {
+  try { const t = localStorage.getItem(TAB_KEY); return TABS.some((x) => x.id === t) ? (t as Tab) : 'prediction'; } catch { return 'prediction'; }
+}
 function storedModel() {
   try { return localStorage.getItem(MODEL_KEY); } catch { return null; }
 }
@@ -60,6 +66,7 @@ export default function App() {
   const [predicting, setPredicting] = useState(false);
   const [predictionError, setPredictionError] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<FeedbackRecord[]>([]);
+  const [tab, setTab] = useState<Tab>(storedTab);
   const [composition, setComposition] = useState<Composition | null>(null);
   const [compositionError, setCompositionError] = useState<string | null>(null);
   const [recommendation, setRecommendation] = useState<Recommendation | null>(null);
@@ -78,6 +85,27 @@ export default function App() {
     }).catch((e) => setPredictionError(describe(e)));
   }, []);
   useEffect(() => writeRoute(route), [route]);
+
+  const chooseTab = (t: Tab) => {
+    setTab(t);
+    try { localStorage.setItem(TAB_KEY, t); } catch { /* storage unavailable: the choice lasts for this page only */ }
+  };
+
+  // ←/→ step through the replay (not while typing or inside a branch).
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      const target = e.target as HTMLElement | null;
+      if (!detail || route.branch !== null || e.altKey || e.ctrlKey || e.metaKey) return;
+      if (target && ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName)) return;
+      const total = detail.sequence.length;
+      if (e.key === 'ArrowRight') setRoute((r) => ({ ...r, step: Math.min(total, (r.step ?? total) + 1) }));
+      else if (e.key === 'ArrowLeft') setRoute((r) => ({ ...r, step: Math.max(0, (r.step ?? total) - 1) }));
+      else return;
+      e.preventDefault();
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [detail, route.branch]);
 
   const chooseVersion = (v: string) => {
     setVersion(v);
@@ -186,19 +214,27 @@ export default function App() {
             )}
             <div className="workspace">
               <div className="main-column">
-                {models && version && (
+                <div className="tabs" role="tablist">
+                  {TABS.map((t) => (
+                    <button key={t.id} role="tab" aria-selected={tab === t.id} className={'tab' + (tab === t.id ? ' active' : '')} onClick={() => chooseTab(t.id)}>
+                      {t.label}
+                    </button>
+                  ))}
+                  <span className="muted small tab-hint">{route.branch === null ? '回放中可用 ←/→ 逐步' : ''}</span>
+                </div>
+                {tab === 'prediction' && models && version && (
                   <PredictionPanel prediction={prediction} loading={predicting} error={predictionError} models={models} version={version}
                     onVersion={chooseVersion} champions={champions} championList={championList} inBranch={!!activeBranch} busy={busy}
                     onChoose={(c) => activeBranch && run(() => api.addAction(activeBranch.id, c).then(applyBranch))}
                     onFeedback={submitFeedback} />
                 )}
                 {!version && predictionError && <div className="error" role="alert">预测不可用：{predictionError}</div>}
-                {version && (
+                {tab === 'recommend' && version && (
                   <RecommendPanel data={recommendation} error={recommendationError} champions={champions} inBranch={!!activeBranch} busy={busy}
                     onChoose={(c) => activeBranch && run(() => api.addAction(activeBranch.id, c).then(applyBranch))} />
                 )}
-                <CompositionPanel composition={composition} error={compositionError} champions={champions} />
-                <ChampionGrid champions={championList} state={state} interactive={!!activeBranch} busy={busy}
+                {tab === 'composition' && <CompositionPanel composition={composition} error={compositionError} champions={champions} />}
+                <ChampionGrid champions={championList} state={state} interactive={!!activeBranch} busy={busy} prediction={prediction}
                   onChoose={(c) => activeBranch && run(() => api.addAction(activeBranch.id, c).then(applyBranch))} />
               </div>
               <div className="side-panels">

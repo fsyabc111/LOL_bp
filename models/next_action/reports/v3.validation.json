@@ -45,7 +45,7 @@
     "30-59": {
       "actual_not_candidate": 0,
       "decisions": 3100,
-      "log_loss": 2.7077,
+      "log_loss": 2.7076,
       "mrr": 0.4009,
       "top1": 0.2168,
       "top10": 0.8197,
@@ -129,13 +129,13 @@
   },
   "calibration_top1": [
     {
-      "decisions": 1037,
-      "hit_rate": 0.1311,
+      "decisions": 1036,
+      "hit_rate": 0.1313,
       "mean_probability": 0.0836,
       "top1_probability": "0.0-0.1"
     },
     {
-      "decisions": 5938,
+      "decisions": 5939,
       "hit_rate": 0.1916,
       "mean_probability": 0.1455,
       "top1_probability": "0.1-0.2"
@@ -178,7 +178,7 @@
   "overall": {
     "actual_not_candidate": 0,
     "decisions": 10439,
-    "log_loss": 2.7559,
+    "log_loss": 2.7558,
     "mrr": 0.3927,
     "top1": 0.2106,
     "top10": 0.8098,

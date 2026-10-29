@@ -143,7 +143,7 @@
     {
       "decisions": 2262,
       "hit_rate": 0.2365,
-      "mean_probability": 0.2413,
+      "mean_probability": 0.2414,
       "top1_probability": "0.2-0.3"
     },
     {

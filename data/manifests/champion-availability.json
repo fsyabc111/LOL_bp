@@ -1,0 +1,323 @@
+{
+  "responses": {
+    "13.1.1": {
+      "bytes": 149056,
+      "raw_path": "data/raw/static-availability/2003a419408f26c81201a6b41266e6e6a63de5d583f63ac4dfaa6393b6816d84.json",
+      "sha256": "2003a419408f26c81201a6b41266e6e6a63de5d583f63ac4dfaa6393b6816d84",
+      "url": "https://ddragon.leagueoflegends.com/cdn/13.1.1/data/en_US/champion.json"
+    },
+    "13.10.1": {
+      "bytes": 150101,
+      "raw_path": "data/raw/static-availability/e6fa6cfcb1ead7afbba1c3b4f3e2357df18a721bddc253d4e4a4c9188da75985.json",
+      "sha256": "e6fa6cfcb1ead7afbba1c3b4f3e2357df18a721bddc253d4e4a4c9188da75985",
+      "url": "https://ddragon.leagueoflegends.com/cdn/13.10.1/data/en_US/champion.json"
+    },
+    "13.11.1": {
+      "bytes": 150096,
+      "raw_path": "data/raw/static-availability/dda948d55b4bbcef8a0db418ec79068b47cf22437dd402906d76d51d4956bd5c.json",
+      "sha256": "dda948d55b4bbcef8a0db418ec79068b47cf22437dd402906d76d51d4956bd5c",
+      "url": "https://ddragon.leagueoflegends.com/cdn/13.11.1/data/en_US/champion.json"
+    },
+    "13.12.1": {
+      "bytes": 150106,
+      "raw_path": "data/raw/static-availability/1f928d0ecee9064aff6aa94174b93e8666091ef6a300b5b83a8da2e0076e0521.json",
+      "sha256": "1f928d0ecee9064aff6aa94174b93e8666091ef6a300b5b83a8da2e0076e0521",
+      "url": "https://ddragon.leagueoflegends.com/cdn/13.12.1/data/en_US/champion.json"
+    },
+    "13.13.1": {
+      "bytes": 150106,
+      "raw_path": "data/raw/static-availability/4ff6c28f5ca702f2ac5241f60951214d3d5e19aba60cc97c2fd5b343693808de.json",
+      "sha256": "4ff6c28f5ca702f2ac5241f60951214d3d5e19aba60cc97c2fd5b343693808de",
+      "url": "https://ddragon.leagueoflegends.com/cdn/13.13.1/data/en_US/champion.json"
+    },
+    "13.14.1": {
+      "bytes": 151038,
+      "raw_path": "data/raw/static-availability/dbf2e9bfb360084fd1fee67cda75486cb1f590784fb1cb561c9d9eb80e265989.json",
+      "sha256": "dbf2e9bfb360084fd1fee67cda75486cb1f590784fb1cb561c9d9eb80e265989",
+      "url": "https://ddragon.leagueoflegends.com/cdn/13.14.1/data/en_US/champion.json"
+    },
+    "13.19.1": {
+      "bytes": 151950,
+      "raw_path": "data/raw/static-availability/7e43cf18ca3c0813f2b21733a6696977bf2328a804d35adc9ce9d0cf1e6f4b4e.json",
+      "sha256": "7e43cf18ca3c0813f2b21733a6696977bf2328a804d35adc9ce9d0cf1e6f4b4e",
+      "url": "https://ddragon.leagueoflegends.com/cdn/13.19.1/data/en_US/champion.json"
+    },
+    "13.3.1": {
+      "bytes": 149041,
+      "raw_path": "data/raw/static-availability/ec5ede24b5b68412201ef38112c937b8b3b8b9e2f52ca71a40654b6ec757c72b.json",
+      "sha256": "ec5ede24b5b68412201ef38112c937b8b3b8b9e2f52ca71a40654b6ec757c72b",
+      "url": "https://ddragon.leagueoflegends.com/cdn/13.3.1/data/en_US/champion.json"
+    },
+    "13.4.1": {
+      "bytes": 149037,
+      "raw_path": "data/raw/static-availability/5126e869fd470b6cf9ac85f008792a8f52f7f48cd336c19a4070eb610bdde7c1.json",
+      "sha256": "5126e869fd470b6cf9ac85f008792a8f52f7f48cd336c19a4070eb610bdde7c1",
+      "url": "https://ddragon.leagueoflegends.com/cdn/13.4.1/data/en_US/champion.json"
+    },
+    "13.5.1": {
+      "bytes": 149034,
+      "raw_path": "data/raw/static-availability/78f7dc259d236be527a9da037d1d29caae1189208d0f8a0d8788bd3dfba74cde.json",
+      "sha256": "78f7dc259d236be527a9da037d1d29caae1189208d0f8a0d8788bd3dfba74cde",
+      "url": "https://ddragon.leagueoflegends.com/cdn/13.5.1/data/en_US/champion.json"
+    },
+    "14.1.1": {
+      "bytes": 152690,
+      "raw_path": "data/raw/static-availability/bd63c47944d0228b2ece5e97c16015a2352c4b4be96a9da237b984c99f5064f5.json",
+      "sha256": "bd63c47944d0228b2ece5e97c16015a2352c4b4be96a9da237b984c99f5064f5",
+      "url": "https://ddragon.leagueoflegends.com/cdn/14.1.1/data/en_US/champion.json"
+    },
+    "14.10.1": {
+      "bytes": 153773,
+      "raw_path": "data/raw/static-availability/a2edd753d83b3a41c9fea526eaaf30d94e4ecae54761292a195d10b128ecc5b6.json",
+      "sha256": "a2edd753d83b3a41c9fea526eaaf30d94e4ecae54761292a195d10b128ecc5b6",
+      "url": "https://ddragon.leagueoflegends.com/cdn/14.10.1/data/en_US/champion.json"
+    },
+    "14.11.1": {
+      "bytes": 153785,
+      "raw_path": "data/raw/static-availability/e7ec293e968d688cea1a5ae1e57c02de07f908bb128041d319c2d4a5b53d377d.json",
+      "sha256": "e7ec293e968d688cea1a5ae1e57c02de07f908bb128041d319c2d4a5b53d377d",
+      "url": "https://ddragon.leagueoflegends.com/cdn/14.11.1/data/en_US/champion.json"
+    },
+    "14.12.1": {
+      "bytes": 153787,
+      "raw_path": "data/raw/static-availability/5ad03e5d2546e4b8a87626e2c1e15d20d492f67a8087f47cb6928c35b5e31ef8.json",
+      "sha256": "5ad03e5d2546e4b8a87626e2c1e15d20d492f67a8087f47cb6928c35b5e31ef8",
+      "url": "https://ddragon.leagueoflegends.com/cdn/14.12.1/data/en_US/champion.json"
+    },
+    "14.13.1": {
+      "bytes": 153789,
+      "raw_path": "data/raw/static-availability/73f4046c9d938393fba2d06f1f39760d5821b2bcd995f47d06648cf8f660e115.json",
+      "sha256": "73f4046c9d938393fba2d06f1f39760d5821b2bcd995f47d06648cf8f660e115",
+      "url": "https://ddragon.leagueoflegends.com/cdn/14.13.1/data/en_US/champion.json"
+    },
+    "14.14.1": {
+      "bytes": 154713,
+      "raw_path": "data/raw/static-availability/cd0f81e667a2a80b4df5c612597d7f88979c6f5b045d0ce039732c70023cbd2e.json",
+      "sha256": "cd0f81e667a2a80b4df5c612597d7f88979c6f5b045d0ce039732c70023cbd2e",
+      "url": "https://ddragon.leagueoflegends.com/cdn/14.14.1/data/en_US/champion.json"
+    },
+    "14.15.1": {
+      "bytes": 154711,
+      "raw_path": "data/raw/static-availability/bc5dfd065b37290781d94c3aab276860edb1d543c8b598803b81bd9344122830.json",
+      "sha256": "bc5dfd065b37290781d94c3aab276860edb1d543c8b598803b81bd9344122830",
+      "url": "https://ddragon.leagueoflegends.com/cdn/14.15.1/data/en_US/champion.json"
+    },
+    "14.16.1": {
+      "bytes": 154709,
+      "raw_path": "data/raw/static-availability/d11657e7715539d4f9d1c4fd35bdd1855afb64a8054ac59627642c4e08ad98ab.json",
+      "sha256": "d11657e7715539d4f9d1c4fd35bdd1855afb64a8054ac59627642c4e08ad98ab",
+      "url": "https://ddragon.leagueoflegends.com/cdn/14.16.1/data/en_US/champion.json"
+    },
+    "14.18.1": {
+      "bytes": 154709,
+      "raw_path": "data/raw/static-availability/b6a4cc21fe7ab7b07f5b2d99cf9dcbaceedda9d76724d7a7dfc319bb337fb441.json",
+      "sha256": "b6a4cc21fe7ab7b07f5b2d99cf9dcbaceedda9d76724d7a7dfc319bb337fb441",
+      "url": "https://ddragon.leagueoflegends.com/cdn/14.18.1/data/en_US/champion.json"
+    },
+    "14.2.1": {
+      "bytes": 153608,
+      "raw_path": "data/raw/static-availability/82d22a934e56e70600dbbc56f0754cdf73415c58db78e7d2435d0e9fca5ff91f.json",
+      "sha256": "82d22a934e56e70600dbbc56f0754cdf73415c58db78e7d2435d0e9fca5ff91f",
+      "url": "https://ddragon.leagueoflegends.com/cdn/14.2.1/data/en_US/champion.json"
+    },
+    "14.3.1": {
+      "bytes": 153606,
+      "raw_path": "data/raw/static-availability/f4af6b91ed9fcd377a11c043793f397765c484acfae460cd5a1669ab9a492525.json",
+      "sha256": "f4af6b91ed9fcd377a11c043793f397765c484acfae460cd5a1669ab9a492525",
+      "url": "https://ddragon.leagueoflegends.com/cdn/14.3.1/data/en_US/champion.json"
+    },
+    "14.4.1": {
+      "bytes": 153606,
+      "raw_path": "data/raw/static-availability/c2ee64bd43b8ff75f9feb39add249bcb0cc8678c83503457240a383ac910b309.json",
+      "sha256": "c2ee64bd43b8ff75f9feb39add249bcb0cc8678c83503457240a383ac910b309",
+      "url": "https://ddragon.leagueoflegends.com/cdn/14.4.1/data/en_US/champion.json"
+    },
+    "14.5.1": {
+      "bytes": 153607,
+      "raw_path": "data/raw/static-availability/cfe6032925c2bcf3bb7a8f45fed99278fce82423af9bf7c33716c46134a8863a.json",
+      "sha256": "cfe6032925c2bcf3bb7a8f45fed99278fce82423af9bf7c33716c46134a8863a",
+      "url": "https://ddragon.leagueoflegends.com/cdn/14.5.1/data/en_US/champion.json"
+    },
+    "14.6.1": {
+      "bytes": 153604,
+      "raw_path": "data/raw/static-availability/b45d3ed02f26faea4cd046f21a520242f47eebdaa8bd35a86a3fc6332df7589e.json",
+      "sha256": "b45d3ed02f26faea4cd046f21a520242f47eebdaa8bd35a86a3fc6332df7589e",
+      "url": "https://ddragon.leagueoflegends.com/cdn/14.6.1/data/en_US/champion.json"
+    },
+    "15.1.1": {
+      "bytes": 155446,
+      "raw_path": "data/raw/static-availability/9c6a24c024b4458e7166bd405bf156a852a3fffc24134b5549da851456d266aa.json",
+      "sha256": "9c6a24c024b4458e7166bd405bf156a852a3fffc24134b5549da851456d266aa",
+      "url": "https://ddragon.leagueoflegends.com/cdn/15.1.1/data/en_US/champion.json"
+    },
+    "15.10.1": {
+      "bytes": 156520,
+      "raw_path": "data/raw/static-availability/3c4232ab18c5a4dd975ca3a00023ddae1be31e80033343dd98c0890001e1a477.json",
+      "sha256": "3c4232ab18c5a4dd975ca3a00023ddae1be31e80033343dd98c0890001e1a477",
+      "url": "https://ddragon.leagueoflegends.com/cdn/15.10.1/data/en_US/champion.json"
+    },
+    "15.11.1": {
+      "bytes": 156521,
+      "raw_path": "data/raw/static-availability/e342d001a4f929a6b2b8f109818687217f91dcc776cf2d922ad60c1307a7fc59.json",
+      "sha256": "e342d001a4f929a6b2b8f109818687217f91dcc776cf2d922ad60c1307a7fc59",
+      "url": "https://ddragon.leagueoflegends.com/cdn/15.11.1/data/en_US/champion.json"
+    },
+    "15.14.1": {
+      "bytes": 157441,
+      "raw_path": "data/raw/static-availability/27d34bacddb39430d3c57e98ab61b74428a056040e5b41ee7cd3ab2b1576fcf1.json",
+      "sha256": "27d34bacddb39430d3c57e98ab61b74428a056040e5b41ee7cd3ab2b1576fcf1",
+      "url": "https://ddragon.leagueoflegends.com/cdn/15.14.1/data/en_US/champion.json"
+    },
+    "15.15.1": {
+      "bytes": 157443,
+      "raw_path": "data/raw/static-availability/e8a288b77c4dffd01386e34046d298f74d06c5234b3fac9b0fcc62be21ffc124.json",
+      "sha256": "e8a288b77c4dffd01386e34046d298f74d06c5234b3fac9b0fcc62be21ffc124",
+      "url": "https://ddragon.leagueoflegends.com/cdn/15.15.1/data/en_US/champion.json"
+    },
+    "15.16.1": {
+      "bytes": 157447,
+      "raw_path": "data/raw/static-availability/13888ccf953dff69292bb953b6aaf8fb994ff00adfa801432e8125543dbeba42.json",
+      "sha256": "13888ccf953dff69292bb953b6aaf8fb994ff00adfa801432e8125543dbeba42",
+      "url": "https://ddragon.leagueoflegends.com/cdn/15.16.1/data/en_US/champion.json"
+    },
+    "15.17.1": {
+      "bytes": 157446,
+      "raw_path": "data/raw/static-availability/a8be3aa3726bc17b05442007ab46badb2574c59887a837b32e0fab0a4fed3302.json",
+      "sha256": "a8be3aa3726bc17b05442007ab46badb2574c59887a837b32e0fab0a4fed3302",
+      "url": "https://ddragon.leagueoflegends.com/cdn/15.17.1/data/en_US/champion.json"
+    },
+    "15.2.1": {
+      "bytes": 156360,
+      "raw_path": "data/raw/static-availability/fcb49f1bba04f23f39d2dcb9649885ce4185de2be796af8d132a45b5692a7b97.json",
+      "sha256": "fcb49f1bba04f23f39d2dcb9649885ce4185de2be796af8d132a45b5692a7b97",
+      "url": "https://ddragon.leagueoflegends.com/cdn/15.2.1/data/en_US/champion.json"
+    },
+    "15.20.1": {
+      "bytes": 157443,
+      "raw_path": "data/raw/static-availability/6509e9526d2db309fa4545279904495a76331e0776c621be64a3d8e5a93bb38e.json",
+      "sha256": "6509e9526d2db309fa4545279904495a76331e0776c621be64a3d8e5a93bb38e",
+      "url": "https://ddragon.leagueoflegends.com/cdn/15.20.1/data/en_US/champion.json"
+    },
+    "15.3.1": {
+      "bytes": 156356,
+      "raw_path": "data/raw/static-availability/8cdc3396db10b2f90f7dd614ee701fc5940a6012009232bf78a221645dc2538d.json",
+      "sha256": "8cdc3396db10b2f90f7dd614ee701fc5940a6012009232bf78a221645dc2538d",
+      "url": "https://ddragon.leagueoflegends.com/cdn/15.3.1/data/en_US/champion.json"
+    },
+    "15.4.1": {
+      "bytes": 156354,
+      "raw_path": "data/raw/static-availability/4f2eb08088b95e71fc7d6c9d7dd2cc08a7148dad38684873e1e662eea662104f.json",
+      "sha256": "4f2eb08088b95e71fc7d6c9d7dd2cc08a7148dad38684873e1e662eea662104f",
+      "url": "https://ddragon.leagueoflegends.com/cdn/15.4.1/data/en_US/champion.json"
+    },
+    "15.6.1": {
+      "bytes": 156348,
+      "raw_path": "data/raw/static-availability/894bf2ed3cc24239d10258e161c97f0c904cf558c89e32c8c1e1b909b34339cd.json",
+      "sha256": "894bf2ed3cc24239d10258e161c97f0c904cf558c89e32c8c1e1b909b34339cd",
+      "url": "https://ddragon.leagueoflegends.com/cdn/15.6.1/data/en_US/champion.json"
+    },
+    "15.7.1": {
+      "bytes": 156350,
+      "raw_path": "data/raw/static-availability/d58cdd08627d77ee2c21a985ae63dfed835458909d6976ec54e7e23cb2a01f41.json",
+      "sha256": "d58cdd08627d77ee2c21a985ae63dfed835458909d6976ec54e7e23cb2a01f41",
+      "url": "https://ddragon.leagueoflegends.com/cdn/15.7.1/data/en_US/champion.json"
+    },
+    "15.8.1": {
+      "bytes": 156349,
+      "raw_path": "data/raw/static-availability/f5ade577ca0522f1951190096c99a01ae1d42c3fe017e591e23c335dc71059d7.json",
+      "sha256": "f5ade577ca0522f1951190096c99a01ae1d42c3fe017e591e23c335dc71059d7",
+      "url": "https://ddragon.leagueoflegends.com/cdn/15.8.1/data/en_US/champion.json"
+    },
+    "15.9.1": {
+      "bytes": 156347,
+      "raw_path": "data/raw/static-availability/5e479796cd345498d350d833d5f0e0721b4c4b9a548eb9cda7be655b4f61983a.json",
+      "sha256": "5e479796cd345498d350d833d5f0e0721b4c4b9a548eb9cda7be655b4f61983a",
+      "url": "https://ddragon.leagueoflegends.com/cdn/15.9.1/data/en_US/champion.json"
+    },
+    "16.1.1": {
+      "bytes": 158178,
+      "raw_path": "data/raw/static-availability/d35272b230ee7f261125774e1e990206e51a01b811bac70cf894290c1285f756.json",
+      "sha256": "d35272b230ee7f261125774e1e990206e51a01b811bac70cf894290c1285f756",
+      "url": "https://ddragon.leagueoflegends.com/cdn/16.1.1/data/en_US/champion.json"
+    },
+    "16.10.1": {
+      "bytes": 158112,
+      "raw_path": "data/raw/static-availability/530ca6f3b097ed86ee149b5f73ceefa02324234ae2d45fe704342de624d44ca1.json",
+      "sha256": "530ca6f3b097ed86ee149b5f73ceefa02324234ae2d45fe704342de624d44ca1",
+      "url": "https://ddragon.leagueoflegends.com/cdn/16.10.1/data/en_US/champion.json"
+    },
+    "16.11.1": {
+      "bytes": 158111,
+      "raw_path": "data/raw/static-availability/eec3b4e4d823696b744e22291faf5c02339f13d68ce874a3af6d378a5e30bfbd.json",
+      "sha256": "eec3b4e4d823696b744e22291faf5c02339f13d68ce874a3af6d378a5e30bfbd",
+      "url": "https://ddragon.leagueoflegends.com/cdn/16.11.1/data/en_US/champion.json"
+    },
+    "16.14.1": {
+      "bytes": 159026,
+      "raw_path": "data/raw/static-availability/19717cae1dd13aa448c6be423723ee57d787b34161e843a82c9ca03100dc9220.json",
+      "sha256": "19717cae1dd13aa448c6be423723ee57d787b34161e843a82c9ca03100dc9220",
+      "url": "https://ddragon.leagueoflegends.com/cdn/16.14.1/data/en_US/champion.json"
+    },
+    "16.15.1": {
+      "bytes": 207090,
+      "raw_path": "data/raw/static-availability/152a1dad202b314b419f5f0952b8415b26b3830a18bd4a19f9eb6dc3c806c6c9.json",
+      "sha256": "152a1dad202b314b419f5f0952b8415b26b3830a18bd4a19f9eb6dc3c806c6c9",
+      "url": "https://ddragon.leagueoflegends.com/cdn/16.15.1/data/en_US/champion.json"
+    },
+    "16.16.1": {
+      "bytes": 159024,
+      "raw_path": "data/raw/static-availability/970c2b0ead25bd132ff9df260a42130c02e4d1cf3adbeb62f32bc3dc8178a324.json",
+      "sha256": "970c2b0ead25bd132ff9df260a42130c02e4d1cf3adbeb62f32bc3dc8178a324",
+      "url": "https://ddragon.leagueoflegends.com/cdn/16.16.1/data/en_US/champion.json"
+    },
+    "16.17.1": {
+      "bytes": 159008,
+      "raw_path": "data/raw/static-availability/056275dcddac3ecc81c497d269b10e7abe6a66ceaa0d6d965f1fc8d00943760b.json",
+      "sha256": "056275dcddac3ecc81c497d269b10e7abe6a66ceaa0d6d965f1fc8d00943760b",
+      "url": "https://ddragon.leagueoflegends.com/cdn/16.17.1/data/en_US/champion.json"
+    },
+    "16.2.1": {
+      "bytes": 158180,
+      "raw_path": "data/raw/static-availability/77699a8f593a8ffb1ecfe7487501f6062f6b4e4aaa56aee1e94018cee6953ed3.json",
+      "sha256": "77699a8f593a8ffb1ecfe7487501f6062f6b4e4aaa56aee1e94018cee6953ed3",
+      "url": "https://ddragon.leagueoflegends.com/cdn/16.2.1/data/en_US/champion.json"
+    },
+    "16.20.1": {
+      "bytes": 159011,
+      "raw_path": "data/raw/static-availability/84fd12721ea0cec502d2a747aea94d8e57d4da337422d1d3ca33a7890909787f.json",
+      "sha256": "84fd12721ea0cec502d2a747aea94d8e57d4da337422d1d3ca33a7890909787f",
+      "url": "https://ddragon.leagueoflegends.com/cdn/16.20.1/data/en_US/champion.json"
+    },
+    "16.3.1": {
+      "bytes": 158189,
+      "raw_path": "data/raw/static-availability/11cadf35a0d5a26b3ac8ace2ab6ca9748a0ec06f0659277bf1db1c87f31f532b.json",
+      "sha256": "11cadf35a0d5a26b3ac8ace2ab6ca9748a0ec06f0659277bf1db1c87f31f532b",
+      "url": "https://ddragon.leagueoflegends.com/cdn/16.3.1/data/en_US/champion.json"
+    },
+    "16.6.1": {
+      "bytes": 157943,
+      "raw_path": "data/raw/static-availability/ee42e7e1a610d482770a9825349e87feee35abd648c4b733e921372b3e163331.json",
+      "sha256": "ee42e7e1a610d482770a9825349e87feee35abd648c4b733e921372b3e163331",
+      "url": "https://ddragon.leagueoflegends.com/cdn/16.6.1/data/en_US/champion.json"
+    },
+    "16.7.1": {
+      "bytes": 157941,
+      "raw_path": "data/raw/static-availability/fbf67958f54f46871a0dbaae68cf265a4f8761cf3a7203c2e0aba30d81d0653c.json",
+      "sha256": "fbf67958f54f46871a0dbaae68cf265a4f8761cf3a7203c2e0aba30d81d0653c",
+      "url": "https://ddragon.leagueoflegends.com/cdn/16.7.1/data/en_US/champion.json"
+    },
+    "16.8.1": {
+      "bytes": 157941,
+      "raw_path": "data/raw/static-availability/370c454c9e631f4608b664592fa77b2c26d6717e23b7b920eb36237c4589c626.json",
+      "sha256": "370c454c9e631f4608b664592fa77b2c26d6717e23b7b920eb36237c4589c626",
+      "url": "https://ddragon.leagueoflegends.com/cdn/16.8.1/data/en_US/champion.json"
+    },
+    "16.9.1": {
+      "bytes": 157940,
+      "raw_path": "data/raw/static-availability/f8125967975f45cbc01e0c7b9186fe93c1063afe5c809b5cd4f3e45ca4bfadc4.json",
+      "sha256": "f8125967975f45cbc01e0c7b9186fe93c1063afe5c809b5cd4f3e45ca4bfadc4",
+      "url": "https://ddragon.leagueoflegends.com/cdn/16.9.1/data/en_US/champion.json"
+    }
+  },
+  "schema_version": 1
+}

@@ -1,14 +1,17 @@
 import { useMemo, useState } from 'react';
-import type { Champion, DraftState } from '../types';
+import type { Champion, DraftState, Prediction } from '../types';
 import { ChampionIcon } from './ChampionIcon';
 import { reasonText } from '../labels';
 
 interface Props {
   champions: Champion[]; state: DraftState; interactive: boolean;
-  onChoose: (champion: string | null) => void; busy: boolean;
+  onChoose: (champion: string | null) => void; busy: boolean; prediction?: Prediction | null;
 }
 
-export function ChampionGrid({ champions, state, interactive, onChoose, busy }: Props) {
+export function ChampionGrid({ champions, state, interactive, onChoose, busy, prediction }: Props) {
+  // Model rank badges only when the prediction is for the state on screen.
+  const ranks = useMemo(() => (prediction && prediction.slot.step === state.next?.step
+    ? Object.fromEntries(prediction.candidates.map((c) => [c.champion, c.rank])) : {}) as Record<string, number>, [prediction, state.next?.step]);
   const [q, setQ] = useState('');
   const [hideBlocked, setHideBlocked] = useState(false);
   const needle = q.trim().toLowerCase();
@@ -39,6 +42,7 @@ export function ChampionGrid({ champions, state, interactive, onChoose, busy }: 
               disabled={!interactive || blocked || busy || state.complete} onClick={() => onChoose(c.id)}
               title={`${c.name_zh}（${c.name}）${why ? ' · ' + why : ''}`}>
               <ChampionIcon champion={c} size={44} dim={blocked} title={`${c.name_zh}${why ? ' · ' + why : ''}`} />
+              {ranks[c.id] && <span className="rank-badge" title={`模型预测第 ${ranks[c.id]} 名`}>{ranks[c.id]}</span>}
               <span className="champ-name">{c.name_zh}</span>
             </button>
           );

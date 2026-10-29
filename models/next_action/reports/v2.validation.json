@@ -119,7 +119,7 @@
     "regular": {
       "actual_not_candidate": 0,
       "decisions": 9019,
-      "log_loss": 2.7059,
+      "log_loss": 2.7058,
       "mrr": 0.3967,
       "top1": 0.2101,
       "top10": 0.8257,

@@ -23,6 +23,7 @@ CONTEXT = 'data/curated/match_context.jsonl'
 RESTRICTIONS = 'data/curated/event_restrictions.jsonl'
 RULES = 'data/curated/rules.json'
 ACCURACY = 'data/curated/oe-order-accuracy.json'
+AVAILABILITY = 'data/curated/champion_availability.json'
 CATALOG_VERSION = '16.20.1'
 LEAGUES = ('LCK', 'LPL', 'WLDs')
 SERIES_GAP_HOURS = 6
@@ -45,6 +46,9 @@ class Repository:
         self.template = next(t for t in self.rules['templates'] if t['id'] == 'snake_20')
         path = self.root / ACCURACY
         self.accuracy = json.loads(path.read_text())['overall'] if path.exists() else None
+        path = self.root / AVAILABILITY
+        self.released = ({p: frozenset(v['champion_ids']) & frozenset(self.champions) for p, v in json.loads(path.read_text())['patches'].items()}
+                         if path.exists() else {})
         self._load_games()
         self._load_evidence()
         self._group_series()
@@ -233,7 +237,7 @@ class Repository:
         disabled = frozenset(self.champion_id(name) for name in resolved['disabled_champions']['value'] or [])
         rules = draft.DraftRules(slots=draft.slots_from_template(self.template, first_side), fearless=resolved['fearless']['value'],
                                  consumed=frozenset(context['consumed']), disabled=disabled,
-                                 known=frozenset(self.champions))
+                                 known=frozenset(self.champions), released=self.released.get(self.games[gameid]['patch'], frozenset()))
         return rules, resolved, context
 
     def game_detail(self, gameid, fearless_override=None):

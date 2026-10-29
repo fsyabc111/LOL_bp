@@ -13,7 +13,7 @@
     "LPL": {
       "actual_not_candidate": 0,
       "decisions": 5679,
-      "log_loss": 2.7595,
+      "log_loss": 2.7594,
       "mrr": 0.392,
       "top1": 0.2094,
       "top10": 0.8081,
@@ -97,7 +97,7 @@
     "pick2": {
       "actual_not_candidate": 0,
       "decisions": 2088,
-      "log_loss": 2.7389,
+      "log_loss": 2.7388,
       "mrr": 0.3856,
       "top1": 0.1964,
       "top10": 0.817,

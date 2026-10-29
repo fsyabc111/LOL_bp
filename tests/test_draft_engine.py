@@ -42,6 +42,11 @@ class DraftEngineTests(unittest.TestCase):
         r=rules(disabled=frozenset({'7'}),known=frozenset({'7','8'}))
         self.assertEqual(draft.check(r,(),'7')[0],['event_disabled'])
         self.assertEqual(draft.check(r,(),'99')[0],['unknown_champion'])
+    def test_champions_not_released_on_the_patch_are_blocked(self):
+        r=rules(known=frozenset({'7','8'}),released=frozenset({'7'}))
+        self.assertEqual(draft.check(r,(),'8')[0],['not_released'])
+        self.assertEqual(draft.check(r,(),'99')[0],['unknown_champion'])
+        self.assertEqual(draft.check(rules(known=frozenset({'7','8'})),(),'8'),([],[]))
     def test_replay_reports_but_keeps_illegal_history(self):
         r=rules(fearless=draft.FEARLESS_PICKS_BOTH,consumed=frozenset({'7'}))
         steps=[{'step':s.step,'side':s.side,'action':s.action,'champion':str(s.step)} for s in r.slots]

@@ -86,7 +86,8 @@ def create_app(repository=None, store=None, predictor=None, feedback_store=None,
         leagues = sorted({g['league'] for g in repo.games.values()}); years = sorted({g['year'] for g in repo.games.values()})
         return {'leagues': leagues, 'years': years, 'games': len(repo.games), 'series': len(repo.series),
                 'oe_order_accuracy': repo.accuracy, 'champion_catalog_version': '16.20.1',
-                'champion_pool_note': 'Pool is the 16.20.1 catalog for every game; older patches may list champions not yet released.'}
+                'champion_pool_note': 'Names and icons come from the 16.20.1 catalog; champions not yet released on a game\'s patch '
+                                      '(per Data Dragon for that version) are blocked as not_released.'}
 
     @app.get('/api/champions')
     def champions():

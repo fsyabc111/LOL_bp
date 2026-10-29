@@ -25,7 +25,7 @@
     "0-9": {
       "actual_not_candidate": 0,
       "decisions": 1780,
-      "log_loss": 3.4424,
+      "log_loss": 3.4423,
       "mrr": 0.2474,
       "top1": 0.1129,
       "top10": 0.5697,

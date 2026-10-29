@@ -23,6 +23,7 @@ class DraftRules:
     consumed: frozenset = frozenset()   # picked in earlier games of the series
     disabled: frozenset = frozenset()   # event-disabled champions, when known
     known: frozenset = frozenset()      # champion pool; empty means "do not check membership"
+    released: frozenset = frozenset()   # champions out on the game's patch; empty means "do not check"
 
 
 @dataclass(frozen=True)
@@ -62,6 +63,7 @@ def check(rules, actions, champion):
         if slot.action == 'pick': reasons.append('empty_pick')
         return reasons, warnings
     if rules.known and champion not in rules.known: reasons.append('unknown_champion')
+    elif rules.released and champion not in rules.released: reasons.append('not_released')
     if champion in used(actions): reasons.append('already_used_this_game')
     if champion in rules.disabled: reasons.append('event_disabled')
     if rules.fearless == FEARLESS_PICKS_BOTH and champion in rules.consumed:

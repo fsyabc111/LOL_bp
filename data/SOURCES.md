@@ -28,4 +28,6 @@
 
 静态英雄/装备/符文/召唤师技能资料来自 [Riot Data Dragon](https://developer.riotgames.com/docs/lol#data-dragon)。`manifests/static-data.json` 记录每次请求、版本、原始和规范化哈希。游戏内容和资产归 Riot；公共访问不改变其权利归属。没有下载或上传图片素材。
 
+`curated/champion_availability.json` 列出每个比赛补丁对应 Data Dragon 版本（`<major>.<minor>.1`）的英雄编号，采集记录在 `manifests/champion-availability.json`；它说明英雄已经在游戏中上线，不证明赛事服务器的实际版本。
+
 来源缺失、HTTP错误、HTTP200占位页和未核验适用范围均保留原状态。`raw/` 保存本地证据，`manifests/` 保存可跟踪来源清单；API密钥和本地运行产物不进入版本控制。

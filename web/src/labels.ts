@@ -3,6 +3,7 @@ export const REASON: Record<string, string> = {
   fearless_consumed: '系列赛前局已选（Fearless）',
   event_disabled: '赛事禁用',
   unknown_champion: '不在英雄目录中',
+  not_released: '该补丁尚未上线',
   empty_pick: '选择不能为空',
   draft_complete: 'BP 已完成',
   template_mismatch: '与选禁模板不符',
