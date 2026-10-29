@@ -78,24 +78,67 @@ LPL：官方规则库中没有 LPL 文件，本次检索也没有找到腾讯公
 
 ### 当前规则状态覆盖（2024–2026，按局计）
 
+2026-10-29 第二次补充后（见下节）：
+
 | 年 | 标签 | 模板 | 跨局限制 | 赛事禁用 | 局数 |
 | --- | --- | --- | --- | --- | ---: |
 | 2024 | LCK | observed（夏季季后赛） | assumed | community_listed | 31 |
 | 2024 | LCK / LPL / WLDs 其余 | practice_observed | assumed | unknown | 1,300 |
+| 2025 | LCK Cup（01-15 起） | observed | observed | community_listed | 109 |
 | 2025 | LCK（04-02 起） | observed | inferred | community_listed | 446 |
-| 2025 | LCK Cup 等 | practice_observed | assumed | community_listed | 109 |
-| 2025 | LPL | practice_observed | assumed | community_listed | 805 |
+| 2025 | LPL | practice_observed | inferred | community_listed | 805 |
 | 2025 | Worlds | observed | observed | community_listed | 84 |
-| 2026 | LCK（7-29 后、规则范围内） | observed | observed | community_listed | 153 |
-| 2026 | LCK 其余 | practice_observed | assumed | community_listed | 349 |
+| 2026 | LCK（01-14 至 07-28，规则范围内） | observed | observed | community_listed | 276 |
+| 2026 | LCK（07-29 起，规则范围内） | observed | observed | community_listed | 153 |
+| 2026 | LCK 无 Leaguepedia 赛段信息 | practice_observed | assumed | community_listed | 73 |
 | 2026 | LPL | practice_observed | assumed | community_listed | 674 |
 | 2026 | Worlds | inferred | inferred | community_listed | 51 |
 | 2025–2026 | WLDs 中的地区资格赛等 | practice_observed | assumed | community_listed | 24 |
 
 仍未补齐：
 
-- LPL 规则书。
-- 2025 LCK 赛事细则（各赛事 Fearless 范围、选边规则）与 2025 LCK Cup 规则。
-- 2026 LCK 7 月前的修订版。
+- LPL 规则书（公开渠道仍未找到，见下节）。
+- 2025-04-02 版对应的 LCK 赛事细则（库中"赛事细则"条目与通则指向同一文件）。
 - 2024 夏季修订。
 - 官方赛事禁用名单原件，以及热修复版本。
+
+## 2026-10-29 第二次补充：LCK 早期版本规则书与 LPL 公告
+
+### 来源：Wayback 中的规则库旧版本
+
+Riot 规则库页面只列当前文件。Wayback Machine 的库页快照（2025-02-18、2025-06-21、2026-01-18、2026-02-08）列出了已被替换的旧版本链接，四份 PDF 仍可从 Riot 的 CDN 正常下载。已通过 `collect_rules_evidence.py --only ... --pin` 固定：
+
+| source_id | 文件 | 修订 / 生效 |
+| --- | --- | --- |
+| `lck_2025_rules_early` | 2025 LCK & LCK CL 通则 | 2024-12-16 / 2025-01-15 |
+| `lck_2025_event_early` | 2025 LCK 赛事细则（原版） | 文件内未写日期；2025-02 库页已列出 |
+| `lck_2026_rules_early` | 2026 LCK 通则 | 2025-12-15 / 2026-01-14 |
+| `lck_2026_event_early` | 2026 LCK 赛事细则 | 2025-12-15 / 2026-01-14 |
+| `lck_2025_format` | LCK 2025 赛制公告（2024-10-29，LCK 사무국） | — |
+| `lck_2026_rulebook_update` | 2026 LCK 规则修订公告（2026-06-29） | — |
+
+正文用 pypdf 5.1.0 读取。
+
+### 读到的条款
+
+- **2025 通则早期版**：p35 §7.7.1.1 明文"蓝方 = A，红方 = B"，snake_20；p35–36 §7.7.1.2 定义 Fearless，误选回退、误禁失去该 ban；p33 §7.4.3 新英雄在上线补丁禁用。p41 §8.5.2 重赛条款**没有**提到 Fearless 消耗（04-02 版才加入）。
+- **2025 赛事细则原版**：LCK Cup 的组内对抗（p13 §3.1.1）、Play-In（p14 §3.2.1）、季后赛（p16 §3.3.1）均为 Fearless；p6 §2.6 首局选边归主场队，之后归上一局败方。**常规赛 1–2 轮、3–5 轮写的是普通 tournament draft**（p17–18 §4.1.1.1–2）。这一安排被 LoL Esports 2025-03-16 的公告（`fearless_2025`：第二赛段起各赛区联赛全部采用 Fearless）取代，常规赛在 04-02 新版规则下开打。
+- **2026 通则年初版**：p36 §7.7.1.1"先选方 = A，后选方 = B"，snake_20；p37 §7.7.1.2 定义 Fearless；p43 §8.5.2 重赛保留前序局消耗、重赛局 pick 不计。
+- **2026 赛事细则年初版**：LCK Cup 组内对抗 / Play-In / 季后赛（p14 §3.1.1、p16 §3.2.1、p17 §3.3.1），常规赛 1–2、3–4 轮（p20 §4.1.1），赛季 Play-In（p21 §4.2.1），季后赛（p22 §4.3.1），Road to MSI（p26 §5.1）全部为 Fearless；p7–8 §2.6 为 First Selection（RoFS）。
+- **2026-06-29 修订公告**列出的改动：教练组职务变更、交易、"禁止擅自更换位置"(7.7)、全球规则同步、处罚程序、RoFS 提交方式(2.5)、胜者胜分说明(2.8)、LCK CL 教练语音（附件 1）。没有改动 BP 顺序或 Fearless。
+
+### 实际比赛对照
+
+在本地数据中，统计每个多局系列赛内是否有英雄被重复选用：2023–2024 年 LCK / LPL / Worlds 几乎每个系列赛都有重复（例如 2024 LCK 188/188）；2025–2026 年所有标签、所有赛段（含 2025 LCK 常规赛 1–2 轮）的 0 个系列赛有重复。这与全面 Fearless 一致，也说明 2025 原版赛事细则的常规赛安排确实没有执行。
+
+### `rules.json` 的调整
+
+- 新增 `lck_2025_cup_from_2025_01_15`（生效 2025-01-15 至 2025-04-01，范围仅 LCK Cup）：模板、A 方、Fearless 均为 observed。
+- 新增 `lck_2026_from_2026_01_14`（生效 2026-01-14 至 2026-07-28，范围为 LCK Cup 和赛事细则列出的各赛段）：模板、A 方、Fearless 均为 observed。
+- `lck_2025_from_2025_04_02` 的 Fearless 仍为 inferred，补充 `fearless_2025` 作为依据，并注明原版赛事细则的常规赛安排。
+- 新增 `lpl_2025_announced`：Fearless 为 **inferred**，依据是 LoL Esports 的 2025 赛季公告（第一赛段全赛区 Fearless；第二赛段起各赛区联赛）。模板仍为 practice_observed。
+- 规则匹配（`scripts/assemble_sample.py`）支持 `effective_to`；所有带 `scope` 的规则都按赛段检查（此前只对一条规则写死），Leaguepedia 赛段 `Cup` 对应 `LCK Cup`。
+
+### LPL
+
+再次检索后仍未找到公开的 LPL 规则书：Riot 规则库没有 LPL 文件，Wayback 各期库页也没有；腾讯 LPL 官网和中文媒体只有赛制介绍。2026 年 LoL Esports 的赛季公告只有 First Selection，没有逐赛区的 Fearless 说明，因此 2026 LPL 的 Fearless 仍为 assumed；实际比赛中 0 个系列赛有重复选用，与假设一致。

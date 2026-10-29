@@ -9,7 +9,7 @@
     "data/curated/match_context.jsonl": "48ce1a6ab624b68c077a1eb2da2b474a8995c85aedd25f002b58cb436f9cdba1",
     "data/curated/patches.json": "35e6f47fe96078bb9ff2e58cd37435c01847165f4039955ba0eeff4eda2927f8",
     "data/curated/replay_candidates.jsonl": "2ea1719504bfbe41524627b4e6f54339b4603806db260f67cc142af2483d371b",
-    "data/curated/rules.json": "5b713ac2d75ad15ba22364c27732da8a3adb61cc11f36889f7b1044f1f9d66df",
+    "data/curated/rules.json": "41824babbe43abe78d33623f422bb3e1e29b296afcd8b1f4f663cd798167e17a",
     "data/manifests/static-data.json": "4da048fc55ba67777c2000f925982428a0b4ef2894c962508496424c3935ce7e"
   },
   "records": [
