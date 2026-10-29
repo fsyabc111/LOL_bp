@@ -1,4 +1,5 @@
 """Branch storage: a branch is a historical prefix plus user actions, kept apart from source data."""
+import contextlib
 import datetime
 import json
 from pathlib import Path
@@ -21,9 +22,13 @@ class BranchStore:
                       'fork_step INTEGER NOT NULL, name TEXT NOT NULL, fearless_override TEXT, created_at TEXT NOT NULL, '
                       'updated_at TEXT NOT NULL, actions_json TEXT NOT NULL)')
 
+    @contextlib.contextmanager
     def _connect(self):
+        """Commit (or roll back) and close; sqlite3's own context manager only commits."""
         connection = sqlite3.connect(self.path); connection.row_factory = sqlite3.Row
-        return connection
+        try:
+            with connection: yield connection
+        finally: connection.close()
 
     @staticmethod
     def _now():
