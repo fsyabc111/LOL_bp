@@ -231,9 +231,9 @@ class PredictionApiTests(unittest.TestCase):
 
     def test_models_and_predictions(self):
         models = self.client.get('/api/models').json()
-        self.assertEqual(models['default'], 'v1'); self.assertTrue(all(v['ready'] for v in models['versions']))
+        self.assertEqual(models['default'], 'v7'); self.assertTrue(all(v['ready'] for v in models['versions']))
         out = self.client.get('/api/games/S1_game_1/predictions', params={'step': 6}).json()
-        self.assertEqual(out['slot']['step'], 7); self.assertEqual(out['model']['version'], 'v1'); self.assertEqual(len(out['candidates']), 10)
+        self.assertEqual(out['slot']['step'], 7); self.assertEqual(out['model']['version'], 'v7'); self.assertEqual(len(out['candidates']), 10)
         self.assertIsNotNone(out['actual'])
         self.assertIsNone(self.client.get('/api/games/S1_game_1/predictions', params={'step': 20}).json())
         self.assertEqual(self.client.get('/api/games/S1_game_1/predictions', params={'step': 6, 'version': 'nope'}).status_code, 422)

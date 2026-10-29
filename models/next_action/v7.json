@@ -1,0 +1,116 @@
+{
+  "description": "v1 加韩服高分排位：本补丁排位出场率、相对上补丁的变化（随本补丁职业局数淡出）",
+  "features": [
+    "meta_pick",
+    "meta_ban",
+    "team_pick",
+    "team_ban",
+    "opp_pick",
+    "banned_vs_opp",
+    "banned_vs_self",
+    "role_meta_self",
+    "player_pool_self",
+    "role_meta_opp",
+    "player_pool_opp",
+    "series_ban_self",
+    "series_banned_vs_self",
+    "soloq_presence",
+    "soloq_change"
+  ],
+  "fit": {
+    "base": "v1",
+    "base_sha256": "b15625ca807d157592288e17dbe7ec35a0c372ff404a0acd27397ffb35bd9b8c",
+    "games": 408,
+    "l2": 1.0,
+    "method": "conditional_logit_newton_offset",
+    "range": [
+      "2026-04-01",
+      "2026-05-31"
+    ],
+    "script": "scripts/experiment_soloq.py"
+  },
+  "stats": {
+    "half_life_days": 60,
+    "smoothing": {
+      "meta": 10,
+      "patch": 20,
+      "player": 5,
+      "team": 10
+    },
+    "soloq": {
+      "fade_games": 20,
+      "min_games": 30
+    }
+  },
+  "version": "v7",
+  "weights": {
+    "ban1": {
+      "banned_vs_opp": 0.535418,
+      "banned_vs_self": -0.38723,
+      "meta_ban": 1.236428,
+      "meta_pick": -2.494829,
+      "opp_pick": 0.173703,
+      "player_pool_opp": 0.343098,
+      "player_pool_self": -0.055555,
+      "role_meta_opp": 1.18821,
+      "role_meta_self": 1.18821,
+      "series_ban_self": 1.225209,
+      "series_banned_vs_self": 0.497934,
+      "soloq_change": 4.191452,
+      "soloq_presence": 0.196873,
+      "team_ban": 0.238565,
+      "team_pick": -0.230039
+    },
+    "ban2": {
+      "banned_vs_opp": 0.179316,
+      "banned_vs_self": -0.095298,
+      "meta_ban": 0.312234,
+      "meta_pick": -0.619028,
+      "opp_pick": 0.03959,
+      "player_pool_opp": 0.521481,
+      "player_pool_self": -0.024947,
+      "role_meta_opp": 0.970872,
+      "role_meta_self": -0.138455,
+      "series_ban_self": 0.552621,
+      "series_banned_vs_self": 0.228129,
+      "soloq_change": 7.357607,
+      "soloq_presence": 0.152977,
+      "team_ban": 0.128861,
+      "team_pick": -0.137562
+    },
+    "pick1": {
+      "banned_vs_opp": -0.084618,
+      "banned_vs_self": 0.095785,
+      "meta_ban": 0.701408,
+      "meta_pick": 0.015733,
+      "opp_pick": -0.001514,
+      "player_pool_opp": 0.016217,
+      "player_pool_self": 0.407714,
+      "role_meta_opp": -0.253092,
+      "role_meta_self": 0.870067,
+      "series_ban_self": 0.682577,
+      "series_banned_vs_self": 0.537855,
+      "soloq_change": 5.003668,
+      "soloq_presence": 0.114382,
+      "team_ban": -0.17778,
+      "team_pick": 0.116003
+    },
+    "pick2": {
+      "banned_vs_opp": -0.065265,
+      "banned_vs_self": 0.080718,
+      "meta_ban": 0.186564,
+      "meta_pick": -0.030466,
+      "opp_pick": -0.088415,
+      "player_pool_opp": 0.094915,
+      "player_pool_self": 0.532144,
+      "role_meta_opp": -0.129923,
+      "role_meta_self": 0.61986,
+      "series_ban_self": 0.251351,
+      "series_banned_vs_self": 0.112521,
+      "soloq_change": 1.866919,
+      "soloq_presence": 0.084514,
+      "team_ban": -0.060961,
+      "team_pick": -0.204726
+    }
+  }
+}

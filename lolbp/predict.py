@@ -24,7 +24,7 @@ FEATURES = ('meta_pick', 'meta_ban', 'team_pick', 'team_ban', 'opp_pick', 'banne
             'role_meta_self', 'player_pool_self', 'role_meta_opp', 'player_pool_opp', 'series_ban_self', 'series_banned_vs_self',
             'lane_edge_self', 'lane_strength_self', 'lane_threat_opp', 'lane_strength_opp', 'patch_buff', 'patch_nerf', 'patch_pro',
             'meta_pick_break', 'meta_ban_break', 'team_pick_break', 'team_ban_break', 'role_meta_self_break', 'player_pool_self_break',
-            'role_meta_opp_break', 'player_pool_opp_break')
+            'role_meta_opp_break', 'player_pool_opp_break', 'soloq_presence', 'soloq_change')
 BREAK_DAYS = 14
 PHASES = ('ban1', 'pick1', 'ban2', 'pick2')
 ROLE_ZH = {'top': '上单', 'jng': '打野', 'mid': '中单', 'bot': '下路', 'sup': '辅助'}
@@ -161,6 +161,17 @@ class Context:
         self.fresh, self.fresh_patches = history.patch_notes.fresh(history, gameid) if notes else ({}, [])
         self.freshness = notes['fade_games'] / (notes['fade_games'] + self.patch_games) if notes else 0.0
         self.uses_patch_notes = bool(notes)
+        solo = stats.get('soloq')  # KR solo queue: presence on this patch's earlier days and change from the previous patch
+        self.soloq_games, self.soloq_presence, self.soloq_change = 0, {}, {}
+        if solo:
+            name = history.patch_notes.mapping.get(self.patch)
+            current, self.soloq_games = history.soloq.presence(name, before=self.cutoff) if name else ({}, 0)
+            if self.soloq_games >= solo.get('min_games', 30):
+                fade = solo['fade_games'] / (solo['fade_games'] + self.patch_games)
+                earlier, _ = history.soloq.presence(history.soloq.previous(name)) if history.soloq.previous(name) else ({}, 0)
+                for cid, col in history.column.items():
+                    self.soloq_presence[col] = current.get(cid, 0.0)
+                    if earlier: self.soloq_change[col] = fade * (current.get(cid, 0.0) - earlier.get(cid, 0.0))
         self.log_meta_pick, self.log_meta_ban = [math.log(x) for x in self.meta_pick], [math.log(x) for x in self.meta_ban]
         by, against = history.series_bans(gameid)
         self.series_status = history.repo.series_context(gameid)['prior_status']
@@ -242,7 +253,9 @@ class Context:
             'lane_threat_opp': lambda: lane('opp', 0), 'lane_strength_opp': lambda: lane('opp', 1),
             'patch_buff': lambda: [self.freshness if self.fresh.get(c, {}).get('net', 0) > 0 else 0.0 for c in cols],
             'patch_nerf': lambda: [self.freshness if self.fresh.get(c, {}).get('net', 0) < 0 else 0.0 for c in cols],
-            'patch_pro': lambda: [self.freshness if self.fresh.get(c, {}).get('pro') else 0.0 for c in cols]}
+            'patch_pro': lambda: [self.freshness if self.fresh.get(c, {}).get('pro') else 0.0 for c in cols],
+            'soloq_presence': lambda: [math.log(self.soloq_presence.get(c, 0.0) + 0.01) for c in cols],
+            'soloq_change': lambda: [self.soloq_change.get(c, 0.0) for c in cols]}
         for base in ('meta_pick', 'meta_ban', 'team_pick', 'team_ban', 'role_meta_self', 'player_pool_self', 'role_meta_opp', 'player_pool_opp'):
             # Same values, switched on only after a break, so the model can learn how much to trust each signal then.
             build[base + '_break'] = (lambda b: lambda: [x * self.after_break for x in build[b]()])(base)
@@ -282,6 +295,10 @@ class Context:
             entry = self.fresh.get(c, {'records': []}); latest = entry['records'][-1] if entry['records'] else {}
             word = {'patch_buff': '加强', 'patch_nerf': '削弱', 'patch_pro': '改动（说明提到职业赛场）'}[feature]
             return f"补丁 {latest.get('patch', '')} {word}：{latest.get('context', '')[:60]}{'…' if len(latest.get('context', '')) > 60 else ''}"
+        if feature == 'soloq_presence':
+            return f"韩服高分排位本补丁出场率约 {pct(self.soloq_presence.get(c, 0.0))}（{self.soloq_games} 局样本）"
+        if feature == 'soloq_change':
+            return f"韩服高分排位出场率较上个补丁变化约 {self.soloq_change.get(c, 0.0) * 100:+.0f} 个百分点"
         if feature.endswith('_break'):
             return f"休赛 {self.rest_days:.0f} 天后的调整：" + self.describe(feature.removesuffix('_break'), side, champion, open_own, open_opp, actions)
         if feature == 'series_ban_self': return f"{own['name']} 本系列赛前几局 ban 过它"

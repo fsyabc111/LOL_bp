@@ -30,4 +30,6 @@
 
 `curated/champion_availability.json` 列出每个比赛补丁对应 Data Dragon 版本（`<major>.<minor>.1`）的英雄编号，采集记录在 `manifests/champion-availability.json`；它说明英雄已经在游戏中上线，不证明赛事服务器的实际版本。
 
+`curated/kr_soloq/<patch>.json` 是韩服高分单双排的按英雄汇总（选用、禁用、胜场、位置，以及按 UTC 日的选用/禁用），由 `scripts/collect_kr_soloq.py` 通过 Riot API（LEAGUE-V4、MATCH-V5，开发者 Key）生成。原始响应含 PUUID，只保存在不进 git 的 `raw/riot/`；仓库里没有玩家标识，也不用于识别玩家。数据归 Riot，按其开发者政策仅作自用研究。
+
 来源缺失、HTTP错误、HTTP200占位页和未核验适用范围均保留原状态。`raw/` 保存本地证据，`manifests/` 保存可跟踪来源清单；API密钥和本地运行产物不进入版本控制。
