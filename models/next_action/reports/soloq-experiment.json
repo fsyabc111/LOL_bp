@@ -1,0 +1,267 @@
+{
+  "base": "v1",
+  "base_sha256": "b15625ca807d157592288e17dbe7ec35a0c372ff404a0acd27397ffb35bd9b8c",
+  "extra_features": [
+    "soloq_presence",
+    "soloq_change"
+  ],
+  "fit_games": 408,
+  "fit_in_sample": {
+    "v1": {
+      "after_break": {
+        "decisions": 800,
+        "log_loss": 2.9778,
+        "top1": 0.19,
+        "top10": 0.7362,
+        "top3": 0.4062,
+        "top5": 0.535
+      },
+      "all": {
+        "decisions": 8160,
+        "log_loss": 2.7152,
+        "top1": 0.2169,
+        "top10": 0.8219,
+        "top3": 0.4816,
+        "top5": 0.6349
+      },
+      "patch_0-9": {
+        "decisions": 1360,
+        "log_loss": 2.9183,
+        "top1": 0.1934,
+        "top10": 0.7662,
+        "top3": 0.4169,
+        "top5": 0.5581
+      },
+      "patch_10+": {
+        "decisions": 6800,
+        "log_loss": 2.6746,
+        "top1": 0.2216,
+        "top10": 0.8331,
+        "top3": 0.4946,
+        "top5": 0.6503
+      },
+      "regular": {
+        "decisions": 7360,
+        "log_loss": 2.6866,
+        "top1": 0.2198,
+        "top10": 0.8313,
+        "top3": 0.4898,
+        "top5": 0.6458
+      },
+      "with_soloq_signal": {
+        "decisions": 8160,
+        "log_loss": 2.7152,
+        "top1": 0.2169,
+        "top10": 0.8219,
+        "top3": 0.4816,
+        "top5": 0.6349
+      }
+    },
+    "v1+soloq": {
+      "after_break": {
+        "decisions": 800,
+        "log_loss": 2.9383,
+        "top1": 0.1862,
+        "top10": 0.7562,
+        "top3": 0.4263,
+        "top5": 0.56
+      },
+      "all": {
+        "decisions": 8160,
+        "log_loss": 2.697,
+        "top1": 0.2169,
+        "top10": 0.8252,
+        "top3": 0.4879,
+        "top5": 0.6338
+      },
+      "patch_0-9": {
+        "decisions": 1360,
+        "log_loss": 2.8721,
+        "top1": 0.1772,
+        "top10": 0.7809,
+        "top3": 0.4353,
+        "top5": 0.5794
+      },
+      "patch_10+": {
+        "decisions": 6800,
+        "log_loss": 2.662,
+        "top1": 0.2249,
+        "top10": 0.8341,
+        "top3": 0.4984,
+        "top5": 0.6447
+      },
+      "regular": {
+        "decisions": 7360,
+        "log_loss": 2.6708,
+        "top1": 0.2202,
+        "top10": 0.8327,
+        "top3": 0.4946,
+        "top5": 0.6418
+      },
+      "with_soloq_signal": {
+        "decisions": 8160,
+        "log_loss": 2.697,
+        "top1": 0.2169,
+        "top10": 0.8252,
+        "top3": 0.4879,
+        "top5": 0.6338
+      }
+    }
+  },
+  "fit_window": [
+    "2026-04-01",
+    "2026-05-31"
+  ],
+  "fitted_weights": {
+    "ban1": {
+      "soloq_change": 4.1915,
+      "soloq_presence": 0.1969
+    },
+    "ban2": {
+      "soloq_change": 7.3576,
+      "soloq_presence": 0.153
+    },
+    "pick1": {
+      "soloq_change": 5.0037,
+      "soloq_presence": 0.1144
+    },
+    "pick2": {
+      "soloq_change": 1.8669,
+      "soloq_presence": 0.0845
+    }
+  },
+  "schema_version": 1,
+  "soloq_patches": [
+    "26.01",
+    "26.02",
+    "26.03",
+    "26.04",
+    "26.05",
+    "26.06",
+    "26.07",
+    "26.08",
+    "26.09",
+    "26.10",
+    "26.11",
+    "26.12",
+    "26.13",
+    "26.14",
+    "26.15",
+    "26.16",
+    "26.17",
+    "26.18",
+    "26.19",
+    "26.20"
+  ],
+  "soloq_settings": {
+    "fade_games": 20,
+    "min_games": 30
+  },
+  "test": {
+    "v1": {
+      "after_break": {
+        "decisions": 620,
+        "log_loss": 3.1206,
+        "top1": 0.1613,
+        "top10": 0.729,
+        "top3": 0.379,
+        "top5": 0.5129
+      },
+      "all": {
+        "decisions": 2279,
+        "log_loss": 2.9027,
+        "top1": 0.19,
+        "top10": 0.7705,
+        "top3": 0.4269,
+        "top5": 0.57
+      },
+      "patch_0-9": {
+        "decisions": 420,
+        "log_loss": 3.1716,
+        "top1": 0.1595,
+        "top10": 0.6881,
+        "top3": 0.3524,
+        "top5": 0.5048
+      },
+      "patch_10+": {
+        "decisions": 1859,
+        "log_loss": 2.842,
+        "top1": 0.1969,
+        "top10": 0.7891,
+        "top3": 0.4438,
+        "top5": 0.5847
+      },
+      "regular": {
+        "decisions": 1659,
+        "log_loss": 2.8213,
+        "top1": 0.2007,
+        "top10": 0.786,
+        "top3": 0.4448,
+        "top5": 0.5913
+      },
+      "with_soloq_signal": {
+        "decisions": 2279,
+        "log_loss": 2.9027,
+        "top1": 0.19,
+        "top10": 0.7705,
+        "top3": 0.4269,
+        "top5": 0.57
+      }
+    },
+    "v1+soloq": {
+      "after_break": {
+        "decisions": 620,
+        "log_loss": 2.9889,
+        "top1": 0.1919,
+        "top10": 0.7581,
+        "top3": 0.4,
+        "top5": 0.5242
+      },
+      "all": {
+        "decisions": 2279,
+        "log_loss": 2.8667,
+        "top1": 0.1957,
+        "top10": 0.7797,
+        "top3": 0.4221,
+        "top5": 0.5709
+      },
+      "patch_0-9": {
+        "decisions": 420,
+        "log_loss": 3.0721,
+        "top1": 0.1714,
+        "top10": 0.6952,
+        "top3": 0.3667,
+        "top5": 0.5
+      },
+      "patch_10+": {
+        "decisions": 1859,
+        "log_loss": 2.8203,
+        "top1": 0.2012,
+        "top10": 0.7988,
+        "top3": 0.4346,
+        "top5": 0.5869
+      },
+      "regular": {
+        "decisions": 1659,
+        "log_loss": 2.8211,
+        "top1": 0.1971,
+        "top10": 0.7878,
+        "top3": 0.4304,
+        "top5": 0.5883
+      },
+      "with_soloq_signal": {
+        "decisions": 2279,
+        "log_loss": 2.8667,
+        "top1": 0.1957,
+        "top10": 0.7797,
+        "top3": 0.4221,
+        "top5": 0.5709
+      }
+    }
+  },
+  "test_games": 114,
+  "test_window": [
+    "2026-06-01",
+    "2026-07-31"
+  ]
+}

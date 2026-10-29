@@ -14,6 +14,7 @@ import math
 import sqlite3
 
 from .patches import PatchNotes
+from .soloq import SoloQueue
 from .repository import DB, parse_time
 
 ROLES = ('top', 'jng', 'mid', 'bot', 'sup')
@@ -74,7 +75,12 @@ class History:
                 self.by_team[own['team']].append((g, own, g['sides'][other(side)]))
                 for role, c in own['picks']:
                     self.by_player[(own['players'][role][0], role)].append((g, c)); self.by_champion[(c, role)].append((g, side))
-        self._cumulative, self._patch_notes = {}, None
+        self._cumulative, self._patch_notes, self._soloq = {}, None, None
+
+    @property
+    def soloq(self):
+        if self._soloq is None: self._soloq = SoloQueue(self.repo.root)
+        return self._soloq
 
     @property
     def patch_notes(self):
