@@ -36,6 +36,7 @@ class Recommender:
         lane = history.lane_averages(context.cutoff, composer.tau, composer.settings['smoothing']['champion'])
         listed = [(c, 'model') for c in ranking.champions[:top]]
         rules, _, _ = predictor.repo.draft_rules(gameid, fearless_override)
+        series_follows = 'simulation' not in predictor.repo.games[gameid]  # a simulation is a single game: nothing to carry over
         own_want = predictor.rank_as(gameid, actions, model, side, 'pick', fearless_override)
         opp_want = predictor.rank_as(gameid, actions, model, opp, 'pick', fearless_override)
         if slot.action == 'pick' and not context.sides[side]['generic']:  # a generic side has no players to be comfortable
@@ -55,7 +56,7 @@ class Recommender:
                 item['profile'] = {'frontline': [before.get('frontline', 0), after['frontline']],
                                    'magic_share': [before.get('magic_share'), after['magic_share']]}
                 item['responses'] = self._responses(gameid, actions, slot, c, model, fearless_override)
-                item['fearless_cost'] = rules.fearless == draft.FEARLESS_PICKS_BOTH
+                item['fearless_cost'] = series_follows and rules.fearless == draft.FEARLESS_PICKS_BOTH
             else:
                 found = opp_want and opp_want.rank_of(c)
                 item['deny'] = found and {'rank': found[0], 'probability': round(found[1], 4)}

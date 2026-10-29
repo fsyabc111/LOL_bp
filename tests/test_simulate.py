@@ -107,6 +107,10 @@ class SimulationApiTests(unittest.TestCase):
         r = c.get(f'/api/branches/{branch}/recommendations').json()  # red bans: the generic blue side has no player to target
         self.assertEqual(r['slot']['action'], 'ban')
         self.assertTrue(r['candidates'] and not any('opponent_player' in x for x in r['candidates']))
+        while r['slot']['action'] != 'pick':
+            self.assertEqual(c.post(f'/api/branches/{branch}/actions', json={'champion': r['candidates'][0]['champion']}).status_code, 200)
+            r = c.get(f'/api/branches/{branch}/recommendations').json()
+        self.assertFalse(any(x['fearless_cost'] for x in r['candidates']))  # a single game: no series to carry picks into
         self.assertEqual(c.get(f'/api/branches/{branch}/composition').status_code, 200)
 
 
