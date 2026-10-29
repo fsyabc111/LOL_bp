@@ -4,8 +4,10 @@
 KR solo queue history is only reachable for 2026, so the regular train split (mostly 2025) cannot be used. Inside
 the validation period, v1's score is a fixed offset and per-phase weights for soloq_presence and soloq_change are
 fitted on April-May 2026 (series start dates), then v1 and v1 + solo queue are compared on June-July 2026.
-Needs numpy. Writes models/next_action/reports/soloq-experiment.json (deterministic).
+Needs numpy. Writes models/next_action/reports/soloq-experiment.json (deterministic). With --write v7 it also freezes
+v1 plus the fitted solo queue weights as models/next_action/v7.json.
 """
+import argparse
 import json
 from pathlib import Path
 import sys
@@ -80,7 +82,20 @@ def scores(records, weights=None):
                 'log_loss': round(t['nll'] / t['scored'], 4)} for k, t in sorted(tally.items())}
 
 
+def freeze(model, weights, name, fit_games):
+    spec = json.loads(model.path.read_text()); spec.pop('training', None)  # v1's own training record stays in v1.json
+    spec.update({'version': name, 'description': 'v1 加韩服高分排位：本补丁排位出场率、相对上补丁的变化（随本补丁职业局数淡出）',
+                 'stats': {**spec['stats'], 'soloq': SOLOQ}, 'features': spec['features'] + EXTRA,
+                 'fit': {'method': 'conditional_logit_newton_offset', 'l2': 1.0, 'base': model.version, 'base_sha256': model.sha256,
+                         'range': list(FIT), 'games': fit_games, 'script': 'scripts/experiment_soloq.py'},
+                 'weights': {p: {**spec['weights'][p], **{f: round(float(x), 6) for f, x in zip(EXTRA, weights[p])}} for p in PHASES}})
+    (ROOT / MODELS / f'{name}.json').write_text(json.dumps(spec, ensure_ascii=False, indent=2, sort_keys=True) + '\n')
+
+
 def main():
+    parser = argparse.ArgumentParser(description=__doc__.split('\n')[0])
+    parser.add_argument('--write', metavar='VERSION', help='freeze v1 + the fitted weights under this version name')
+    args = parser.parse_args()
     repo = Repository(); predictor = Predictor(repo, ROOT / MODELS); model = predictor.version('v1')
     fit_games, fit_records = collect(predictor, model, FIT)
     test_games, test_records = collect(predictor, model, TEST)
@@ -96,6 +111,7 @@ def main():
               'fitted_weights': summary, 'soloq_patches': predictor.history.soloq.order,
               'test': {'v1': scores(test_records), 'v1+soloq': scores(test_records, weights)},
               'fit_in_sample': {'v1': scores(fit_records), 'v1+soloq': scores(fit_records, weights)}}
+    if args.write: freeze(model, weights, args.write, len(fit_games))
     path = ROOT / MODELS / 'reports/soloq-experiment.json'
     path.write_text(json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True) + '\n')
     print('weights', json.dumps(summary))

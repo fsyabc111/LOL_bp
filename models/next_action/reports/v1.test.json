@@ -1,0 +1,206 @@
+{
+  "by_league": {
+    "LCK": {
+      "actual_not_candidate": 0,
+      "decisions": 2780,
+      "log_loss": 2.8717,
+      "mrr": 0.3748,
+      "top1": 0.1982,
+      "top10": 0.7871,
+      "top3": 0.4399,
+      "top5": 0.5892
+    },
+    "LPL": {
+      "actual_not_candidate": 0,
+      "decisions": 3420,
+      "log_loss": 2.8553,
+      "mrr": 0.3667,
+      "top1": 0.1868,
+      "top10": 0.7731,
+      "top3": 0.4398,
+      "top5": 0.5807
+    },
+    "WLDs": {
+      "actual_not_candidate": 0,
+      "decisions": 1260,
+      "log_loss": 3.106,
+      "mrr": 0.3189,
+      "top1": 0.15,
+      "top10": 0.7079,
+      "top3": 0.3762,
+      "top5": 0.4984
+    }
+  },
+  "by_patch_progress": {
+    "0-9": {
+      "actual_not_candidate": 0,
+      "decisions": 1040,
+      "log_loss": 3.0849,
+      "mrr": 0.3164,
+      "top1": 0.1481,
+      "top10": 0.6933,
+      "top3": 0.3654,
+      "top5": 0.501
+    },
+    "10-29": {
+      "actual_not_candidate": 0,
+      "decisions": 1760,
+      "log_loss": 2.9487,
+      "mrr": 0.3536,
+      "top1": 0.1795,
+      "top10": 0.7517,
+      "top3": 0.4153,
+      "top5": 0.5614
+    },
+    "30-59": {
+      "actual_not_candidate": 0,
+      "decisions": 1960,
+      "log_loss": 2.8169,
+      "mrr": 0.3744,
+      "top1": 0.1883,
+      "top10": 0.7959,
+      "top3": 0.4577,
+      "top5": 0.5949
+    },
+    "60-": {
+      "actual_not_candidate": 0,
+      "decisions": 2700,
+      "log_loss": 2.8677,
+      "mrr": 0.375,
+      "top1": 0.2,
+      "top10": 0.7852,
+      "top3": 0.4419,
+      "top5": 0.5841
+    }
+  },
+  "by_phase": {
+    "ban1": {
+      "actual_not_candidate": 0,
+      "decisions": 2238,
+      "log_loss": 2.815,
+      "mrr": 0.3901,
+      "top1": 0.2011,
+      "top10": 0.8029,
+      "top3": 0.4826,
+      "top5": 0.6238
+    },
+    "ban2": {
+      "actual_not_candidate": 0,
+      "decisions": 1492,
+      "log_loss": 2.967,
+      "mrr": 0.3368,
+      "top1": 0.1736,
+      "top10": 0.7265,
+      "top3": 0.3773,
+      "top5": 0.5127
+    },
+    "pick1": {
+      "actual_not_candidate": 0,
+      "decisions": 2238,
+      "log_loss": 3.0569,
+      "mrr": 0.3376,
+      "top1": 0.1676,
+      "top10": 0.7315,
+      "top3": 0.3981,
+      "top5": 0.5268
+    },
+    "pick2": {
+      "actual_not_candidate": 0,
+      "decisions": 1492,
+      "log_loss": 2.7439,
+      "mrr": 0.3798,
+      "top1": 0.1977,
+      "top10": 0.8083,
+      "top3": 0.4471,
+      "top5": 0.6113
+    }
+  },
+  "by_rest": {
+    "after_break": {
+      "actual_not_candidate": 0,
+      "decisions": 280,
+      "log_loss": 3.1935,
+      "mrr": 0.275,
+      "top1": 0.1,
+      "top10": 0.6929,
+      "top3": 0.3214,
+      "top5": 0.475
+    },
+    "regular": {
+      "actual_not_candidate": 0,
+      "decisions": 7180,
+      "log_loss": 2.8925,
+      "mrr": 0.365,
+      "top1": 0.1882,
+      "top10": 0.7702,
+      "top3": 0.4333,
+      "top5": 0.5737
+    }
+  },
+  "calibration_top1": [
+    {
+      "decisions": 942,
+      "hit_rate": 0.1486,
+      "mean_probability": 0.0836,
+      "top1_probability": "0.0-0.1"
+    },
+    {
+      "decisions": 4088,
+      "hit_rate": 0.1646,
+      "mean_probability": 0.1452,
+      "top1_probability": "0.1-0.2"
+    },
+    {
+      "decisions": 1520,
+      "hit_rate": 0.2171,
+      "mean_probability": 0.2407,
+      "top1_probability": "0.2-0.3"
+    },
+    {
+      "decisions": 790,
+      "hit_rate": 0.2481,
+      "mean_probability": 0.3684,
+      "top1_probability": "0.3-0.5"
+    },
+    {
+      "decisions": 120,
+      "hit_rate": 0.3333,
+      "mean_probability": 0.57,
+      "top1_probability": "0.5-1.0"
+    }
+  ],
+  "disputed_games_excluded": 1,
+  "empty_bans_skipped": 0,
+  "games": 373,
+  "group_aware_pairs": {
+    "10": 11,
+    "18": 19,
+    "8": 9
+  },
+  "input_sha256": {
+    "data/curated/bp_sequences.jsonl": "eb9ad2fa0de73704383edb8f8d88cc3750f52fa7f3ee3a00b064a0b01fd22433",
+    "data/curated/event_restrictions.jsonl": "61a0769f47342c1f121bac2c8a983248c62775f6029a220625598f84ffb0acc2",
+    "data/curated/match_context.jsonl": "48ce1a6ab624b68c077a1eb2da2b474a8995c85aedd25f002b58cb436f9cdba1",
+    "data/curated/rules.json": "5b713ac2d75ad15ba22364c27732da8a3adb61cc11f36889f7b1044f1f9d66df",
+    "data/manifests/local-oe.json": "afd4247c97b8d7002a98ff6f75216ee9421461d23685265e1806c4408e5963ea"
+  },
+  "model_sha256": "b15625ca807d157592288e17dbe7ec35a0c372ff404a0acd27397ffb35bd9b8c",
+  "overall": {
+    "actual_not_candidate": 0,
+    "decisions": 7460,
+    "log_loss": 2.9038,
+    "mrr": 0.3616,
+    "top1": 0.1849,
+    "top10": 0.7673,
+    "top3": 0.4291,
+    "top5": 0.57
+  },
+  "range": [
+    "2026-08-01",
+    null
+  ],
+  "schema_version": 1,
+  "settings_sha256": "a6a2d2351296213f08270f1a4b90db79ed1cc44ea31dd8789dc737b136f46a2c",
+  "split": "test",
+  "version": "v1"
+}
