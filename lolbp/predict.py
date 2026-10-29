@@ -22,7 +22,10 @@ from .history import ROLES, History, day, other
 MODELS = 'models/next_action'
 FEATURES = ('meta_pick', 'meta_ban', 'team_pick', 'team_ban', 'opp_pick', 'banned_vs_opp', 'banned_vs_self',
             'role_meta_self', 'player_pool_self', 'role_meta_opp', 'player_pool_opp', 'series_ban_self', 'series_banned_vs_self',
-            'lane_edge_self', 'lane_strength_self', 'lane_threat_opp', 'lane_strength_opp', 'patch_buff', 'patch_nerf', 'patch_pro')
+            'lane_edge_self', 'lane_strength_self', 'lane_threat_opp', 'lane_strength_opp', 'patch_buff', 'patch_nerf', 'patch_pro',
+            'meta_pick_break', 'meta_ban_break', 'team_pick_break', 'team_ban_break', 'role_meta_self_break', 'player_pool_self_break',
+            'role_meta_opp_break', 'player_pool_opp_break')
+BREAK_DAYS = 14
 PHASES = ('ban1', 'pick1', 'ban2', 'pick2')
 ROLE_ZH = {'top': '上单', 'jng': '打野', 'mid': '中单', 'bot': '下路', 'sup': '辅助'}
 EPS = 1e-6
@@ -162,8 +165,12 @@ class Context:
         by, against = history.series_bans(gameid)
         self.series_status = history.repo.series_context(gameid)['prior_status']
         self.sides = {}
+        rests = [history.rest_days(s['team'], self.cutoff) for s in game['sides'].values()]
+        self.rest_days = max((r for r in rests if r is not None), default=None)
+        self.after_break = float(self.rest_days is not None and self.rest_days >= stats.get('break_days', BREAK_DAYS))
         for side, own in game['sides'].items():
-            t_games, t_raw, picks, bans, banned = history.team(own['team'], self.cutoff, tau)
+            lineup = {p for p, _ in own['players'].values()} if stats.get('lineup_weighting') else None
+            t_games, t_raw, picks, bans, banned = history.team(own['team'], self.cutoff, tau, lineup)
             t_games *= scale; k = smooth['team']
             team = {'name': own['name'], 'games': t_games, 'raw': t_raw,
                     'team_pick': [(picks.get(c, 0.0) * scale + k * self.meta_pick[c] / 2) / (t_games + k) for c in every],
@@ -236,6 +243,9 @@ class Context:
             'patch_buff': lambda: [self.freshness if self.fresh.get(c, {}).get('net', 0) > 0 else 0.0 for c in cols],
             'patch_nerf': lambda: [self.freshness if self.fresh.get(c, {}).get('net', 0) < 0 else 0.0 for c in cols],
             'patch_pro': lambda: [self.freshness if self.fresh.get(c, {}).get('pro') else 0.0 for c in cols]}
+        for base in ('meta_pick', 'meta_ban', 'team_pick', 'team_ban', 'role_meta_self', 'player_pool_self', 'role_meta_opp', 'player_pool_opp'):
+            # Same values, switched on only after a break, so the model can learn how much to trust each signal then.
+            build[base + '_break'] = (lambda b: lambda: [x * self.after_break for x in build[b]()])(base)
         return [list(r) for r in zip(*(build[f]() for f in features))], open_own, open_opp
 
     def describe(self, feature, side, champion, open_own, open_opp, actions=()):
@@ -272,6 +282,8 @@ class Context:
             entry = self.fresh.get(c, {'records': []}); latest = entry['records'][-1] if entry['records'] else {}
             word = {'patch_buff': '加强', 'patch_nerf': '削弱', 'patch_pro': '改动（说明提到职业赛场）'}[feature]
             return f"补丁 {latest.get('patch', '')} {word}：{latest.get('context', '')[:60]}{'…' if len(latest.get('context', '')) > 60 else ''}"
+        if feature.endswith('_break'):
+            return f"休赛 {self.rest_days:.0f} 天后的调整：" + self.describe(feature.removesuffix('_break'), side, champion, open_own, open_opp, actions)
         if feature == 'series_ban_self': return f"{own['name']} 本系列赛前几局 ban 过它"
         return f"本系列赛前几局对手针对 {own['name']} ban 过它"
 
@@ -284,6 +296,7 @@ class Context:
         sparse = [f"{p['name']}（{ROLE_ZH[r]}）" for s in (side, other(side)) for r, p in zip(ROLES, self.sides[s]['players'])
                   if p['name'] and p['raw'] < 3]
         if sparse: out.append('当前位置历史少于 3 局：' + '、'.join(sparse))
+        if self.after_break: out.append(f'距上一场已有 {self.rest_days:.0f} 天（休赛期后），队伍习惯可能已变，回测中这类比赛命中率明显偏低')
         if self.uses_patch_notes and not self.fresh_patches: out.append(f'补丁 {self.patch} 没有可用的补丁说明数据，补丁改动特征不生效')
         if self.series_status != 'complete': out.append('系列赛前序局不全，Fearless 已消耗英雄和系列赛内 ban 可能不全')
         return out

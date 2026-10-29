@@ -131,16 +131,28 @@ class History:
             out.append([(x + 0.2) / (sum(counts) + 1.0) for x in counts])
         return out
 
-    def team(self, team, cutoff, tau):
-        """(forward games, raw games, picks, bans, bans by opponents) for one team before the cutoff date."""
+    def team(self, team, cutoff, tau, lineup=None):
+        """(forward games, raw games, picks, bans, bans by opponents) for one team before the cutoff date. With a
+        `lineup` (set of player ids), each past game also weighs by the share of its players still in that lineup,
+        so habits follow the current roster rather than the organisation."""
         games, raw, picks, bans, against = 0.0, 0, defaultdict(float), defaultdict(float), defaultdict(float)
         for g, own, opponent in self.by_team.get(team, ()):
             if g['date'] >= cutoff: break
-            w = math.exp(g['t'] / tau); games += w; raw += 1
+            w = math.exp(g['t'] / tau); raw += 1
+            if lineup is not None: w *= len(lineup & {p for p, _ in own['players'].values()}) / len(ROLES)
+            games += w
             for _, c in own['picks']: picks[c] += w
             for c in own['bans']: bans[c] += w
             for c in opponent['bans']: against[c] += w
         return games, raw, picks, bans, against
+
+    def rest_days(self, team, date):
+        """Days since the team's last game on an earlier date (None if it has none)."""
+        last = None
+        for g, _, _ in self.by_team.get(team, ()):
+            if g['date'] >= date: break
+            last = g
+        return None if last is None else day(date) - day(last['date'])
 
     def player(self, player, role, cutoff, tau):
         """(forward games, raw games, picks) for one player in one role before the cutoff date."""

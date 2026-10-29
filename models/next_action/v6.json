@@ -1,0 +1,179 @@
+{
+  "version": "v6",
+  "description": "v5 + 休赛 14 天以上时，对版本热度、队伍习惯、选手英雄池和位置需求另学一组调整权重",
+  "stats": {
+    "half_life_days": 60,
+    "smoothing": {
+      "meta": 10,
+      "patch": 20,
+      "team": 10,
+      "player": 5
+    },
+    "lineup_weighting": true
+  },
+  "features": [
+    "meta_pick",
+    "meta_ban",
+    "team_pick",
+    "team_ban",
+    "opp_pick",
+    "banned_vs_opp",
+    "banned_vs_self",
+    "role_meta_self",
+    "player_pool_self",
+    "role_meta_opp",
+    "player_pool_opp",
+    "series_ban_self",
+    "series_banned_vs_self",
+    "meta_pick_break",
+    "meta_ban_break",
+    "team_pick_break",
+    "team_ban_break",
+    "role_meta_self_break",
+    "player_pool_self_break",
+    "role_meta_opp_break",
+    "player_pool_opp_break"
+  ],
+  "fit": {
+    "method": "conditional_logit_newton",
+    "l2": 1.0,
+    "split": "train"
+  },
+  "weights": {
+    "ban1": {
+      "meta_pick": -2.790767,
+      "meta_ban": 1.100453,
+      "team_pick": -0.192927,
+      "team_ban": 0.308975,
+      "opp_pick": 0.480213,
+      "banned_vs_opp": 0.575213,
+      "banned_vs_self": -0.357771,
+      "role_meta_self": 1.317906,
+      "player_pool_self": -0.078322,
+      "role_meta_opp": 1.317906,
+      "player_pool_opp": 0.12178,
+      "series_ban_self": 1.209341,
+      "series_banned_vs_self": 0.50137,
+      "meta_pick_break": 0.061858,
+      "meta_ban_break": 0.042218,
+      "team_pick_break": 0.310653,
+      "team_ban_break": -0.053098,
+      "role_meta_self_break": -0.195685,
+      "player_pool_self_break": -0.212515,
+      "role_meta_opp_break": -0.195685,
+      "player_pool_opp_break": -0.053907
+    },
+    "pick1": {
+      "meta_pick": -0.448067,
+      "meta_ban": 0.657451,
+      "team_pick": 0.463592,
+      "team_ban": -0.132246,
+      "opp_pick": 0.175795,
+      "banned_vs_opp": -0.078759,
+      "banned_vs_self": 0.107351,
+      "role_meta_self": 1.071602,
+      "player_pool_self": 0.186332,
+      "role_meta_opp": -0.150183,
+      "player_pool_opp": -0.088581,
+      "series_ban_self": 0.668587,
+      "series_banned_vs_self": 0.529371,
+      "meta_pick_break": -0.147273,
+      "meta_ban_break": 0.12834,
+      "team_pick_break": -0.083231,
+      "team_ban_break": -0.190905,
+      "role_meta_self_break": 0.120622,
+      "player_pool_self_break": -0.103303,
+      "role_meta_opp_break": 0.028904,
+      "player_pool_opp_break": -0.021892
+    },
+    "ban2": {
+      "meta_pick": -0.854258,
+      "meta_ban": 0.269483,
+      "team_pick": -0.013243,
+      "team_ban": 0.155737,
+      "opp_pick": 0.187375,
+      "banned_vs_opp": 0.187641,
+      "banned_vs_self": -0.081905,
+      "role_meta_self": -0.054119,
+      "player_pool_self": -0.109956,
+      "role_meta_opp": 1.050843,
+      "player_pool_opp": 0.427903,
+      "series_ban_self": 0.544542,
+      "series_banned_vs_self": 0.220135,
+      "meta_pick_break": -0.018853,
+      "meta_ban_break": 0.01819,
+      "team_pick_break": -0.130731,
+      "team_ban_break": -0.095595,
+      "role_meta_self_break": -0.155957,
+      "player_pool_self_break": 0.157833,
+      "role_meta_opp_break": 0.101742,
+      "player_pool_opp_break": -0.055108
+    },
+    "pick2": {
+      "meta_pick": -0.052456,
+      "meta_ban": 0.16514,
+      "team_pick": -0.191983,
+      "team_ban": -0.053738,
+      "opp_pick": -0.071025,
+      "banned_vs_opp": -0.055428,
+      "banned_vs_self": 0.086208,
+      "role_meta_self": 0.621988,
+      "player_pool_self": 0.530784,
+      "role_meta_opp": -0.112822,
+      "player_pool_opp": 0.078304,
+      "series_ban_self": 0.25367,
+      "series_banned_vs_self": 0.115537,
+      "meta_pick_break": -0.078253,
+      "meta_ban_break": 0.063306,
+      "team_pick_break": 0.034703,
+      "team_ban_break": -0.077664,
+      "role_meta_self_break": 0.133792,
+      "player_pool_self_break": -0.123276,
+      "role_meta_opp_break": 0.013036,
+      "player_pool_opp_break": -0.013765
+    }
+  },
+  "training": {
+    "split": "train",
+    "range": [
+      "2025-01-01",
+      "2026-03-31"
+    ],
+    "games": 1795,
+    "disputed_games_excluded": 0,
+    "skipped": {
+      "empty_ban": 6,
+      "actual_not_candidate": 1
+    },
+    "by_phase": {
+      "ban1": {
+        "decisions": 10766,
+        "mean_log_likelihood": -2.8162,
+        "iterations": 10
+      },
+      "pick1": {
+        "decisions": 10770,
+        "mean_log_likelihood": -3.153,
+        "iterations": 9
+      },
+      "ban2": {
+        "decisions": 7177,
+        "mean_log_likelihood": -2.814,
+        "iterations": 12
+      },
+      "pick2": {
+        "decisions": 7180,
+        "mean_log_likelihood": -2.7658,
+        "iterations": 7
+      }
+    },
+    "input_sha256": {
+      "data/manifests/local-oe.json": "afd4247c97b8d7002a98ff6f75216ee9421461d23685265e1806c4408e5963ea",
+      "data/curated/bp_sequences.jsonl": "eb9ad2fa0de73704383edb8f8d88cc3750f52fa7f3ee3a00b064a0b01fd22433",
+      "data/curated/rules.json": "5b713ac2d75ad15ba22364c27732da8a3adb61cc11f36889f7b1044f1f9d66df",
+      "data/curated/event_restrictions.jsonl": "61a0769f47342c1f121bac2c8a983248c62775f6029a220625598f84ffb0acc2",
+      "data/curated/match_context.jsonl": "48ce1a6ab624b68c077a1eb2da2b474a8995c85aedd25f002b58cb436f9cdba1"
+    },
+    "settings_sha256": "a6a2d2351296213f08270f1a4b90db79ed1cc44ea31dd8789dc737b136f46a2c"
+  }
+}

@@ -63,6 +63,19 @@ class PredictionTests(unittest.TestCase):
         self.assertGreater(full.meta_pick[ziggs], plain.meta_pick[ziggs])
         self.assertAlmostEqual(sum(full.role_share[2]), 1.0, places=6)
 
+    def test_rest_days_and_lineup_weighting(self):
+        history = self.predictor.history
+        self.assertEqual(history.rest_days('id:Team A', '2025-06-01'), 12)  # H1 on 2025-05-20; same-day H2 does not count
+        self.assertIsNone(history.rest_days('id:Team B', '2025-06-01'))
+        stats = self.predictor.version('v1').spec['stats']
+        self.assertEqual(self.predictor.context('S1_game_1', stats).after_break, 0.0)
+        self.assertEqual(self.predictor.context('S1_game_1', {**stats, 'break_days': 10}).after_break, 1.0)
+        tau = 60 / 0.6931471805599453
+        full = history.team('id:Team A', '2025-06-01', tau)
+        same = history.team('id:Team A', '2025-06-01', tau, {f'pid:Team A:{r}' for r in ('top', 'jng', 'mid', 'bot', 'sup')})
+        two = history.team('id:Team A', '2025-06-01', tau, {'pid:Team A:top', 'pid:Team A:mid'})
+        self.assertAlmostEqual(same[0], full[0]); self.assertAlmostEqual(two[0], 0.4 * full[0]); self.assertEqual(two[1], full[1])
+
     def test_open_roles_keep_flex_picks_ambiguous(self):
         mid_only, flex = [0.01, 0.01, 0.96, 0.01, 0.01], [0.495, 0.495, 0.0, 0.005, 0.005]
         self.assertEqual(open_roles([mid_only], []), [1.0] * 5)

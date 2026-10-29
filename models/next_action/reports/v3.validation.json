@@ -105,6 +105,28 @@
       "top5": 0.6284
     }
   },
+  "by_rest": {
+    "after_break": {
+      "actual_not_candidate": 0,
+      "decisions": 1420,
+      "log_loss": 3.0367,
+      "mrr": 0.3421,
+      "top1": 0.1761,
+      "top10": 0.7352,
+      "top3": 0.3979,
+      "top5": 0.5275
+    },
+    "regular": {
+      "actual_not_candidate": 0,
+      "decisions": 9019,
+      "log_loss": 2.7116,
+      "mrr": 0.4006,
+      "top1": 0.216,
+      "top10": 0.8216,
+      "top3": 0.4804,
+      "top5": 0.6355
+    }
+  },
   "calibration_top1": [
     {
       "decisions": 1037,
