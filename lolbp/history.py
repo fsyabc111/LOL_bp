@@ -94,6 +94,27 @@ class History:
             self._cumulative[tau] = rows
         return self._cumulative[tau]
 
+    def lane_averages(self, cutoff, tau, smoothing):
+        """[role][column] decayed mean 15-minute gold difference before the cutoff date, shrunk toward 0 by
+        `smoothing` pseudo-games; same estimate as the composition panel's champion part."""
+        key = ('lane', tau)
+        if key not in self._cumulative:
+            n, R = len(self.champions), len(ROLES)
+            row, rows, i = array('d', bytes(8 * 2 * R * n)), [], 0
+            for date in self.dates:
+                rows.append(array('d', row))
+                while i < len(self.order) and self.order[i]['date'] == date:
+                    g = self.order[i]; w = math.exp(g['t'] / tau); i += 1
+                    for s in g['sides'].values():
+                        for role, c in s['picks']:
+                            lane = s['lanes'].get(role)
+                            if lane: r = ROLES.index(role); row[r * n + c] += w; row[(R + r) * n + c] += w * lane[0]
+            rows.append(array('d', row))
+            self._cumulative[key] = rows
+        n, R = len(self.champions), len(ROLES)
+        row, scale = self._cumulative[key][bisect_left(self.dates, cutoff)], math.exp(-day(cutoff) / tau)
+        return [[row[(R + r) * n + c] * scale / (row[r * n + c] * scale + smoothing) for c in range(n)] for r in range(R)]
+
     def role_prob(self, cutoff, tau):
         """Per champion column, the decayed share of its picks in each role before the cutoff date, with 0.2
         pseudo-picks per role so unseen champions are uniform."""

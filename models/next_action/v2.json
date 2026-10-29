@@ -1,0 +1,162 @@
+{
+  "version": "v2",
+  "description": "v1 + 对线特征：候选英雄对线对面已选英雄的 15 分钟经济期望、自身对线强度，以及对手拿到它时对我方已选英雄的威胁（按可能分路加权）",
+  "stats": {
+    "half_life_days": 60,
+    "smoothing": {
+      "meta": 10,
+      "patch": 20,
+      "team": 10,
+      "player": 5
+    },
+    "lane": {
+      "half_life_days": 180,
+      "smoothing": 20
+    }
+  },
+  "features": [
+    "meta_pick",
+    "meta_ban",
+    "team_pick",
+    "team_ban",
+    "opp_pick",
+    "banned_vs_opp",
+    "banned_vs_self",
+    "role_meta_self",
+    "player_pool_self",
+    "role_meta_opp",
+    "player_pool_opp",
+    "series_ban_self",
+    "series_banned_vs_self",
+    "lane_edge_self",
+    "lane_strength_self",
+    "lane_threat_opp",
+    "lane_strength_opp"
+  ],
+  "fit": {
+    "method": "conditional_logit_newton",
+    "l2": 1.0,
+    "split": "train"
+  },
+  "weights": {
+    "ban1": {
+      "meta_pick": -2.320938,
+      "meta_ban": 1.208777,
+      "team_pick": -0.221899,
+      "team_ban": 0.23727,
+      "opp_pick": 0.178805,
+      "banned_vs_opp": 0.529338,
+      "banned_vs_self": -0.394661,
+      "role_meta_self": 1.1153,
+      "player_pool_self": -0.058126,
+      "role_meta_opp": 1.1153,
+      "player_pool_opp": 0.343792,
+      "series_ban_self": 1.215437,
+      "series_banned_vs_self": 0.481946,
+      "lane_edge_self": 0.0,
+      "lane_strength_self": 0.525329,
+      "lane_threat_opp": 0.0,
+      "lane_strength_opp": 0.525329
+    },
+    "pick1": {
+      "meta_pick": 0.105058,
+      "meta_ban": 0.657627,
+      "team_pick": 0.123532,
+      "team_ban": -0.172561,
+      "opp_pick": 0.018782,
+      "banned_vs_opp": -0.091722,
+      "banned_vs_self": 0.086576,
+      "role_meta_self": 0.846956,
+      "player_pool_self": 0.42396,
+      "role_meta_opp": -0.248109,
+      "player_pool_opp": 0.015606,
+      "series_ban_self": 0.677165,
+      "series_banned_vs_self": 0.534239,
+      "lane_edge_self": -0.367273,
+      "lane_strength_self": -0.545746,
+      "lane_threat_opp": -1.277409,
+      "lane_strength_opp": 3.388567
+    },
+    "ban2": {
+      "meta_pick": -0.598698,
+      "meta_ban": 0.301054,
+      "team_pick": -0.130059,
+      "team_ban": 0.130083,
+      "opp_pick": 0.042598,
+      "banned_vs_opp": 0.176341,
+      "banned_vs_self": -0.096175,
+      "role_meta_self": -0.134667,
+      "player_pool_self": -0.026853,
+      "role_meta_opp": 0.967379,
+      "player_pool_opp": 0.524973,
+      "series_ban_self": 0.55154,
+      "series_banned_vs_self": 0.226704,
+      "lane_edge_self": -0.770424,
+      "lane_strength_self": 1.599253,
+      "lane_threat_opp": 0.099957,
+      "lane_strength_opp": -0.629399
+    },
+    "pick2": {
+      "meta_pick": -0.047422,
+      "meta_ban": 0.198118,
+      "team_pick": -0.206137,
+      "team_ban": -0.063276,
+      "opp_pick": -0.093513,
+      "banned_vs_opp": -0.064559,
+      "banned_vs_self": 0.081828,
+      "role_meta_self": 0.62129,
+      "player_pool_self": 0.529997,
+      "role_meta_opp": -0.129304,
+      "player_pool_opp": 0.094163,
+      "series_ban_self": 0.25428,
+      "series_banned_vs_self": 0.117474,
+      "lane_edge_self": 0.018912,
+      "lane_strength_self": -0.875036,
+      "lane_threat_opp": -0.069937,
+      "lane_strength_opp": 0.367041
+    }
+  },
+  "training": {
+    "split": "train",
+    "range": [
+      "2025-01-01",
+      "2026-03-31"
+    ],
+    "games": 1795,
+    "disputed_games_excluded": 0,
+    "skipped": {
+      "empty_ban": 6,
+      "actual_not_candidate": 1
+    },
+    "by_phase": {
+      "ban1": {
+        "decisions": 10766,
+        "mean_log_likelihood": -2.8226,
+        "iterations": 10
+      },
+      "pick1": {
+        "decisions": 10770,
+        "mean_log_likelihood": -3.1354,
+        "iterations": 9
+      },
+      "ban2": {
+        "decisions": 7177,
+        "mean_log_likelihood": -2.814,
+        "iterations": 11
+      },
+      "pick2": {
+        "decisions": 7180,
+        "mean_log_likelihood": -2.7631,
+        "iterations": 8
+      }
+    },
+    "input_sha256": {
+      "data/manifests/local-oe.json": "afd4247c97b8d7002a98ff6f75216ee9421461d23685265e1806c4408e5963ea",
+      "data/curated/bp_sequences.jsonl": "eb9ad2fa0de73704383edb8f8d88cc3750f52fa7f3ee3a00b064a0b01fd22433",
+      "data/curated/rules.json": "5b713ac2d75ad15ba22364c27732da8a3adb61cc11f36889f7b1044f1f9d66df",
+      "data/curated/event_restrictions.jsonl": "61a0769f47342c1f121bac2c8a983248c62775f6029a220625598f84ffb0acc2",
+      "data/curated/match_context.jsonl": "48ce1a6ab624b68c077a1eb2da2b474a8995c85aedd25f002b58cb436f9cdba1"
+    },
+    "settings_sha256": "a6a2d2351296213f08270f1a4b90db79ed1cc44ea31dd8789dc737b136f46a2c"
+  }
+}

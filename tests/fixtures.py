@@ -15,7 +15,7 @@ STEPS = {'Blue': {'ban': (1, 3, 5, 14, 16), 'pick': (7, 10, 11, 18, 19)}, 'Red':
 ROLES = ('top', 'jng', 'mid', 'bot', 'sup')
 GAMES = [{'gameid': 'S1_game_1', 'date': '2025-06-01 10:00:00', 'number': '1', 'champions': CHAMPS[:20]},
          {'gameid': 'S1_game_2', 'date': '2025-06-01 11:00:00', 'number': '2', 'champions': CHAMPS[2:22]}]
-MODEL_FILES = ['settings.json', 'baseline-meta.json', 'baseline-player.json', 'v1.json']
+MODEL_FILES = ['settings.json', 'baseline-meta.json', 'baseline-player.json', 'v1.json', 'v2.json']
 
 
 def build_fixture(root, games=GAMES, models=False):

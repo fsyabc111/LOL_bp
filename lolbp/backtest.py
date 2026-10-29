@@ -97,18 +97,19 @@ class Tally:
 def evaluate(predictor, models, gameids):
     """Per model: overall, by phase and by league tallies, top-1 calibration bins and skipped empty bans.
 
-    Features are computed once per distinct statistics setting and sliced for each model's feature list."""
+    Features are computed once per distinct statistics setting (the union its models use) and sliced per model."""
     results = {m.version: {'overall': Tally(), 'by_phase': defaultdict(Tally), 'by_league': defaultdict(Tally),
                            'calibration': [[0, 0.0, 0] for _ in CALIBRATION_BINS[1:]], 'empty_bans': 0} for m in models}
     groups = defaultdict(list)
     for m in models: groups[json.dumps(m.spec['stats'], sort_keys=True)].append(m)
     for key, group in groups.items():
-        for record in decisions(predictor, gameids, json.loads(key), FEATURES):
+        features = [f for f in FEATURES if any(f in m.spec['features'] for m in group)]
+        for record in decisions(predictor, gameids, json.loads(key), features):
             league = predictor.repo.games[record['gameid']]['league']
             for m in group:
                 result = results[m.version]
                 if record['actual'] is None: result['empty_bans'] += 1; continue
-                index = [FEATURES.index(f) for f in m.spec['features']]
+                index = [features.index(f) for f in m.spec['features']]
                 probs = probabilities(m.weights[record['phase']], m.spec['features'], [[row[i] for i in index] for row in record['rows']])
                 rank, prob = outcome(record['candidates'], probs, record['actual'], record['partner'])
                 for tally in (result['overall'], result['by_phase'][record['phase']], result['by_league'][league]): tally.add(rank, prob)

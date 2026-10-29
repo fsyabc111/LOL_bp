@@ -50,6 +50,12 @@ class CompositionTests(unittest.TestCase):
         self.assertGreater(m['expected'], m['champion_part']); self.assertGreater(m['champion_part'], 0)
         self.assertEqual(self.composer.champion(maokai, 'top', '2025-05-01')['lane_games'], 0)
 
+    def test_cumulative_lane_averages_match_composer(self):
+        tau = self.composer.tau; table = self.predictor.history.lane_averages('2025-06-01', tau, self.composer.settings['smoothing']['champion'])
+        for name, role in (('Maokai', 'top'), ('Rell', 'top'), ('Vi', 'jng')):
+            col = self.col(name)
+            self.assertAlmostEqual(table[1 if role == 'jng' else 0][col], self.composer.champion(col, role, '2025-06-01')['lane'], places=6)
+
     def test_duo_counts_same_team_pairs(self):
         bot, sup = self.col(CHAMPS[17]), self.col(CHAMPS[18])  # Blue picks at steps 18 and 19
         d = self.composer.duo(bot, 'bot', sup, 'sup', '2025-06-01')

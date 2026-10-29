@@ -16,11 +16,13 @@ from pathlib import Path
 import threading
 
 from . import draft
+from .composition import assign_roles
 from .history import ROLES, History, day, other
 
 MODELS = 'models/next_action'
 FEATURES = ('meta_pick', 'meta_ban', 'team_pick', 'team_ban', 'opp_pick', 'banned_vs_opp', 'banned_vs_self',
-            'role_meta_self', 'player_pool_self', 'role_meta_opp', 'player_pool_opp', 'series_ban_self', 'series_banned_vs_self')
+            'role_meta_self', 'player_pool_self', 'role_meta_opp', 'player_pool_opp', 'series_ban_self', 'series_banned_vs_self',
+            'lane_edge_self', 'lane_strength_self', 'lane_threat_opp', 'lane_strength_opp')
 PHASES = ('ban1', 'pick1', 'ban2', 'pick2')
 ROLE_ZH = {'top': '上单', 'jng': '打野', 'mid': '中单', 'bot': '下路', 'sup': '辅助'}
 EPS = 1e-6
@@ -136,6 +138,9 @@ class Context:
         self.meta_ban = [(p_bans.get(c, 0.0) * scale + k * recent_ban[c]) / (p_games + k) for c in every]
         self.role_share = [[(p_roles[r].get(c, 0.0) * scale + k * recent_role[r][c]) / (2 * p_games + k) for c in every]
                            for r in range(len(ROLES))]
+        lane = stats.get('lane')  # 15-minute lane averages, in thousands of gold, when the version uses lane features
+        self.lane = lane and [[x / 1000 for x in row] for row in
+                              history.lane_averages(self.cutoff, lane['half_life_days'] / math.log(2), lane['smoothing'])]
         self.log_meta_pick, self.log_meta_ban = [math.log(x) for x in self.meta_pick], [math.log(x) for x in self.meta_ban]
         by, against = history.series_bans(gameid)
         self.series_status = history.repo.series_context(gameid)['prior_status']
@@ -161,11 +166,35 @@ class Context:
         column = self.history.column
         return open_roles(self.role_prob, [column[a.champion] for a in actions if a.side == side and a.action == 'pick' and a.champion in column])
 
+    def picks(self, side, actions):
+        column = self.history.column
+        return [column[a.champion] for a in actions if a.side == side and a.action == 'pick' and a.champion in column]
+
+    def lane_terms(self, opens, facing, cols):
+        """Per candidate (edge, strength): its expected lane gold against the champions in `facing` (role index -> column)
+        and its own lane average, each averaged over the roles it would fill (open roles x its role history)."""
+        out = []
+        for c in cols:
+            weights = [o * p for o, p in zip(opens, self.role_prob[c])]; total = sum(weights)
+            if total <= 0: out.append((0.0, 0.0)); continue
+            edge = sum(w * (self.lane[r][c] - self.lane[r][facing[r]]) for r, w in enumerate(weights) if r in facing)
+            out.append((edge / total, sum(w * self.lane[r][c] for r, w in enumerate(weights)) / total))
+        return out
+
     def rows(self, side, actions, champions, features):
         """Feature rows for each candidate when `side` acts next; also returns both sides' open-role vectors."""
         own, opp = self.sides[side], self.sides[other(side)]
         open_own, open_opp = self.opens(side, actions), self.opens(other(side), actions)
         cols = [self.history.column[c] for c in champions]
+
+        lanes = {}
+
+        def lane(kind, index):  # lazily computed: kind 'self' = our candidate pick, 'opp' = the opponent picking it
+            if kind not in lanes:
+                opens, facing = (open_own, opp_side) if kind == 'self' else (open_opp, own_side)
+                lanes[kind] = self.lane_terms(opens, {ROLES.index(r): c for r, c in assign_roles(self.role_prob, facing)[0]}, cols)
+            return [t[index] for t in lanes[kind]]
+        own_side, opp_side = self.picks(side, actions), self.picks(other(side), actions)
 
         def mix(weights, shares):
             terms = [(w, s) for w, s in zip(weights, shares) if w > 1e-9]
@@ -184,10 +213,12 @@ class Context:
             'role_meta_opp': lambda: mix(open_opp, self.role_share),
             'player_pool_opp': lambda: mix(open_opp, [p['share'] for p in opp['players']]),
             'series_ban_self': lambda: [1.0 if c in own['series_ban'] else 0.0 for c in cols],
-            'series_banned_vs_self': lambda: [1.0 if c in own['series_banned_vs'] else 0.0 for c in cols]}
+            'series_banned_vs_self': lambda: [1.0 if c in own['series_banned_vs'] else 0.0 for c in cols],
+            'lane_edge_self': lambda: lane('self', 0), 'lane_strength_self': lambda: lane('self', 1),
+            'lane_threat_opp': lambda: lane('opp', 0), 'lane_strength_opp': lambda: lane('opp', 1)}
         return [list(r) for r in zip(*(build[f]() for f in features))], open_own, open_opp
 
-    def describe(self, feature, side, champion, open_own, open_opp):
+    def describe(self, feature, side, champion, open_own, open_opp, actions=()):
         """One line of evidence behind a feature for a candidate, with the rate it rests on."""
         c = self.history.column[champion]; own, opp = self.sides[side], self.sides[other(side)]
         if feature in ('meta_pick', 'meta_ban'):
@@ -209,6 +240,14 @@ class Context:
             r = max(range(len(ROLES)), key=lambda r: weights[r] * team['players'][r]['share'][c]); p = team['players'][r]
             who = ('' if feature == 'player_pool_self' else '对手 ') + (p['name'] or '未知选手')
             return f"{who}（{ROLE_ZH[ROLES[r]]}）近期约 {pct(p['share'][c])} 的比赛用它（加权 {p['games']:.1f} 局）"
+        if feature in ('lane_edge_self', 'lane_strength_self', 'lane_threat_opp', 'lane_strength_opp'):
+            mine = feature.endswith('_self')
+            opens, facing = (open_own, self.picks(other(side), actions)) if mine else (open_opp, self.picks(side, actions))
+            edge, strength = self.lane_terms(opens, {ROLES.index(r): f for r, f in assign_roles(self.role_prob, facing)[0]}, [c])[0]
+            if feature == 'lane_edge_self': return f"对线对面已选英雄：15 分钟经济期望约 {edge * 1000:+.0f}"
+            if feature == 'lane_threat_opp': return f"若对手拿到，对线我方已选英雄期望约 {edge * 1000:+.0f}"
+            who = '' if mine else '对手使用时'
+            return f"{who}对线强势：该位置 15 分钟经济平均约 {strength * 1000:+.0f}"
         if feature == 'series_ban_self': return f"{own['name']} 本系列赛前几局 ban 过它"
         return f"本系列赛前几局对手针对 {own['name']} ban 过它"
 
@@ -228,8 +267,8 @@ class Context:
 class Ranking:
     """Legal candidates for one slot, most probable first, with the feature rows behind each."""
 
-    def __init__(self, slot, phase, model, context, champions, probs, rows, open_own, open_opp):
-        self.slot, self.phase, self.model, self.context = slot, phase, model, context
+    def __init__(self, slot, phase, model, context, champions, probs, rows, open_own, open_opp, actions=()):
+        self.slot, self.phase, self.model, self.context, self.actions = slot, phase, model, context, actions
         self.champions, self.probabilities, self.rows, self.open_own, self.open_opp = champions, probs, rows, open_own, open_opp
         self.position = {c: i for i, c in enumerate(champions)}
         self._means = None
@@ -245,7 +284,7 @@ class Ranking:
         if self._means is None: self._means = [sum(col) / len(col) for col in zip(*self.rows)]
         parts = sorted(((weights.get(f, 0.0) * (x - m), f) for f, x, m in zip(features, self.rows[i], self._means)), reverse=True)
         return [{'feature': f, 'contribution': round(v, 3),
-                 'text': self.context.describe(f, self.slot.side, self.champions[i], self.open_own, self.open_opp)}
+                 'text': self.context.describe(f, self.slot.side, self.champions[i], self.open_own, self.open_opp, self.actions)}
                 for v, f in parts[:limit] if v > 0.05]
 
 
@@ -298,7 +337,7 @@ class Predictor:
         probs = probabilities(model.weights[phase], features, rows)
         order = sorted(range(len(pool)), key=lambda i: (-probs[i], pool[i]))
         return Ranking(slot, phase, model, context, [pool[i] for i in order], [probs[i] for i in order],
-                       [rows[i] for i in order], open_own, open_opp)
+                       [rows[i] for i in order], open_own, open_opp, actions)
 
     def reliability(self, model, phase):
         """Validation hit rates for this version and phase, if a current report exists."""

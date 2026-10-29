@@ -68,7 +68,7 @@ class PredictionTests(unittest.TestCase):
         self.assertEqual(candidates(rules, actions, draft.next_slot(rules, actions), ['a', 'b', 'c']), ['b'])
 
     def test_ranking_is_a_distribution_with_reasons(self):
-        for version in ('baseline-meta', 'baseline-player', 'v1'):
+        for version in ('baseline-meta', 'baseline-player', 'v1', 'v2'):
             model = self.predictor.version(version)
             ranking = self.predictor.rank('S1_game_2', actions_until(self.repo, 'S1_game_2', 7), model)
             self.assertEqual(ranking.slot.step, 8); self.assertEqual(ranking.phase, 'pick1')
