@@ -17,6 +17,8 @@ from .patches import PatchNotes
 from .soloq import SoloQueue
 from .repository import DB, parse_time
 
+# Team id prefix of a simulated side with no particular team (lolbp/simulate.py): it has no history of its own.
+GENERIC_TEAM = 'generic:'
 ROLES = ('top', 'jng', 'mid', 'bot', 'sup')
 LANE_STATS = ('golddiffat15', 'xpdiffat15', 'csdiffat15')
 EPOCH = datetime.datetime(2023, 1, 1)

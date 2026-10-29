@@ -13,8 +13,7 @@ export function RulesPanel({ detail, rules, champions }: Props) {
   const source = detail.sequence_source;
   const byName = Object.fromEntries(Object.values(champions).map((c) => [c.name.toLowerCase(), c]));
   return (
-    <div className="panel">
-      <h3>规则与证据</h3>
+    <div>
       <dl className="facts">
         <dt>赛事</dt><dd>{rules.tournament ?? <span className="muted">未关联</span>}</dd>
         <dt>选禁模板</dt><dd>20 步蛇形 <Status field={rules.template} /></dd>

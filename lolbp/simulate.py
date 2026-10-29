@@ -5,6 +5,9 @@ every game on that patch is history for it, with each team's lineup from its las
 registered in the Repository and the prediction History, so draft state, predictions, composition and candidate
 comparison work unchanged; the draft itself is a branch forked at step 0. Rules (template, event-disabled list) are
 those of the patch's last game in the blue team's league; there is no series, so no Fearless carry-over.
+Either side may be left without a team ('generic'): it then has no team or player history, so predictions for it
+rest on league-wide habits (patch popularity, role distribution). With a generic blue side, the rules come from a
+chosen league (else the red team's, else the league with most games on the patch).
 Simulations are stored next to the branches (data/app/branches.sqlite3) and never touch source data.
 """
 import contextlib
@@ -13,7 +16,7 @@ import json
 from pathlib import Path
 import sqlite3
 
-from .history import ROLES, day
+from .history import GENERIC_TEAM, ROLES, day
 from .branches import DEFAULT_PATH
 
 PREFIX = 'sim-'
@@ -57,6 +60,18 @@ def teams(history, patch, window_days=180):
     return cutoff, sorted(out, key=lambda t: (-bool(t['games_on_patch']), t['league'], t['name'].casefold()))
 
 
+def leagues(history, patch):
+    """Leagues with games on the patch, most games first."""
+    counts = {}
+    for g in history.by_patch.get(patch, ()):
+        league = history.repo.games[g['gameid']]['league']; counts[league] = counts.get(league, 0) + 1
+    return [{'league': l, 'games': n} for l, n in sorted(counts.items(), key=lambda x: (-x[1], x[0]))]
+
+
+def generic_side(side, league):
+    return {'team': GENERIC_TEAM + side, 'name': '蓝方' if side == 'Blue' else '红方', 'league': league, 'players': {}, 'generic': True}
+
+
 def reference_game(history, patch, league):
     """Last game on the patch in this league (else on the patch at all), whose rules the simulation borrows."""
     games = history.by_patch[patch]
@@ -64,15 +79,20 @@ def reference_game(history, patch, league):
     return (same or games)[-1]['gameid']
 
 
-def build_spec(history, patch, blue, red):
-    if blue == red: raise ValueError('two different teams are required')
+def build_spec(history, patch, blue, red, league=''):
+    """An empty team id leaves that side generic; `league` picks the rules when the blue side is generic."""
+    if blue and blue == red: raise ValueError('two different teams are required')
     cutoff, options = teams(history, patch)
     by_team = {t['team']: t for t in options}
-    missing = [t for t in (blue, red) if t not in by_team]
+    missing = [t for t in (blue, red) if t and t not in by_team]
     if missing: raise ValueError(f'unknown or inactive team for patch {patch}: {", ".join(missing)}')
-    sides = {side: by_team[t] for side, t in (('Blue', blue), ('Red', red))}
-    return {'patch': patch, 'cutoff': cutoff, 'reference': reference_game(history, patch, sides['Blue']['league']),
-            'sides': {side: {k: t[k] for k in ('team', 'name', 'league', 'players')} for side, t in sides.items()}}
+    named = {side: by_team[t] for side, t in (('Blue', blue), ('Red', red)) if t}
+    played = [l['league'] for l in leagues(history, patch)]
+    if league and league not in played: raise ValueError(f'no games in league {league} on patch {patch}')
+    rules = named['Blue']['league'] if 'Blue' in named else league or named.get('Red', {}).get('league') or played[0]
+    sides = {side: {k: named[side][k] for k in ('team', 'name', 'league', 'players')} if side in named else generic_side(side, rules)
+             for side in ('Blue', 'Red')}
+    return {'patch': patch, 'cutoff': cutoff, 'reference': reference_game(history, patch, rules), 'sides': sides}
 
 
 class SimulationStore:

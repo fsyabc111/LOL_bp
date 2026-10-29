@@ -17,8 +17,7 @@ export function BranchPanel({ branches, activeId, currentStep, sequence, champio
   const original = active ? sequence.slice(active.fork_step) : [];
 
   return (
-    <div className="panel">
-      <h3>分支推演</h3>
+    <div>
       {!active && (
         <div className="branch-create">
           <p className="muted small">从当前第 {currentStep} 步之后分叉，原比赛记录不受影响。</p>
@@ -28,7 +27,7 @@ export function BranchPanel({ branches, activeId, currentStep, sequence, champio
             <option value="picks_both_teams">假设 Fearless</option>
             <option value="none">假设无跨局限制</option>
           </select>
-          <button disabled={busy || currentStep >= sequence.length} onClick={() => { onCreate(name, fearless || null); setName(''); }}>
+          <button className="primary" disabled={busy || currentStep >= sequence.length} onClick={() => { onCreate(name, fearless || null); setName(''); }}>
             从第 {currentStep} 步创建分支
           </button>
         </div>

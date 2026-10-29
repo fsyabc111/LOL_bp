@@ -1,0 +1,47 @@
+/* Design tokens. Analysis surfaces follow the system theme unless the top bar overrides it (data-theme);
+   the draft stage always uses the fixed --stage-* palette, like a broadcast overlay. */
+:root {
+  --bg: #f3f5f8; --bg-raised: #ffffff; --panel: #ffffff; --panel-2: #f7f8fb; --hover: #eef1f6;
+  --text: #161b26; --text-2: #3d4556; --muted: #6b7385; --line: #e1e5ec; --line-strong: #cbd2dd;
+  --blue: #2563eb; --blue-soft: #e6eefe; --red: #dc3b33; --red-soft: #fdebea;
+  --ok: #188049; --ok-soft: #e1f3e8; --warn: #a3620a; --warn-soft: #fcf1da; --bad: #c43129; --bad-soft: #fde8e7;
+  --accent: #5b4ee6; --accent-soft: #ecebfd; --on-accent: #ffffff;
+  --shadow-sm: 0 1px 2px rgb(16 24 40 / .06); --shadow: 0 1px 3px rgb(16 24 40 / .08), 0 4px 12px rgb(16 24 40 / .05);
+  --shadow-lg: 0 12px 32px rgb(16 24 40 / .16);
+  --skeleton: #e8ebf1; --skeleton-hi: #f4f6f9;
+  color-scheme: light;
+
+  --stage-bg: #0b0f19; --stage-bg-2: #121827; --stage-card: #161d2e; --stage-line: #253049;
+  --stage-text: #e9edf5; --stage-muted: #8792ab;
+  --stage-blue: #3b82f6; --stage-blue-glow: rgb(59 130 246 / .55); --stage-red: #ef4444; --stage-red-glow: rgb(239 68 68 / .55);
+  --stage-gold: #e6b85c;
+
+  --r-sm: 6px; --r: 10px; --r-lg: 14px;
+  --t-fast: .12s; --t: .22s; --ease: cubic-bezier(.2, .7, .2, 1);
+  --topbar-h: 52px; --drawer-w: 300px;
+  --font: system-ui, -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f131b; --bg-raised: #161b25; --panel: #171c26; --panel-2: #1c2230; --hover: #222a39;
+    --text: #e7eaf0; --text-2: #c2c8d4; --muted: #8b93a5; --line: #283041; --line-strong: #364056;
+    --blue: #6b9cff; --blue-soft: #1a2742; --red: #ff7a72; --red-soft: #3a1e22;
+    --ok: #5fd08f; --ok-soft: #15301f; --warn: #f0b552; --warn-soft: #33270f; --bad: #ff7a72; --bad-soft: #3a1e22;
+    --accent: #9b92ff; --accent-soft: #262443; --on-accent: #12101f;
+    --shadow-sm: 0 1px 2px rgb(0 0 0 / .3); --shadow: 0 1px 3px rgb(0 0 0 / .35), 0 4px 12px rgb(0 0 0 / .2);
+    --shadow-lg: 0 12px 32px rgb(0 0 0 / .5);
+    --skeleton: #1f2633; --skeleton-hi: #283041;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f131b; --bg-raised: #161b25; --panel: #171c26; --panel-2: #1c2230; --hover: #222a39;
+  --text: #e7eaf0; --text-2: #c2c8d4; --muted: #8b93a5; --line: #283041; --line-strong: #364056;
+  --blue: #6b9cff; --blue-soft: #1a2742; --red: #ff7a72; --red-soft: #3a1e22;
+  --ok: #5fd08f; --ok-soft: #15301f; --warn: #f0b552; --warn-soft: #33270f; --bad: #ff7a72; --bad-soft: #3a1e22;
+  --accent: #9b92ff; --accent-soft: #262443; --on-accent: #12101f;
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / .3); --shadow: 0 1px 3px rgb(0 0 0 / .35), 0 4px 12px rgb(0 0 0 / .2);
+  --shadow-lg: 0 12px 32px rgb(0 0 0 / .5);
+  --skeleton: #1f2633; --skeleton-hi: #283041;
+  color-scheme: dark;
+}

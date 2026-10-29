@@ -34,9 +34,9 @@ export const api = {
   undo: (id: number) => request<BranchPayload>(`/api/branches/${id}/undo`, { method: 'POST' }),
   deleteBranch: (id: number) => request<void>(`/api/branches/${id}`, { method: 'DELETE' }),
   simulationPatches: () => request<SimPatch[]>('/api/simulations/patches'),
-  simulationTeams: (patch: string) => request<{ patch: string; cutoff: string; teams: SimTeam[] }>('/api/simulations/teams' + query({ patch })),
+  simulationTeams: (patch: string) => request<{ patch: string; cutoff: string; teams: SimTeam[]; leagues: { league: string; games: number }[] }>('/api/simulations/teams' + query({ patch })),
   simulations: () => request<Simulation[]>('/api/simulations'),
-  createSimulation: (body: { patch: string; blue: string; red: string; name?: string }) =>
+  createSimulation: (body: { patch: string; blue: string; red: string; league?: string; name?: string }) =>
     request<Simulation>('/api/simulations', { method: 'POST', body: JSON.stringify(body) }),
   deleteSimulation: (id: number) => request<void>(`/api/simulations/${id}`, { method: 'DELETE' }),
   models: () => request<ModelList>('/api/models'),

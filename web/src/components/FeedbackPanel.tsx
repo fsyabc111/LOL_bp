@@ -16,8 +16,7 @@ function expectation(item: FeedbackRecord) {
 export function FeedbackPanel({ items, version, champions, busy, onOpen, onDelete }: Props) {
   const counts = items.reduce<Record<string, number>>((acc, i) => ({ ...acc, [i.recheck.verdict]: (acc[i.recheck.verdict] ?? 0) + 1 }), {});
   return (
-    <div className="panel">
-      <h3>反馈记录（{items.length}）</h3>
+    <div>
       {!items.length && <p className="muted small">在预测面板里点“标记”记录不合理的预测。每条都会存下当时的局面，之后每个模型版本都会重新检查。</p>}
       {items.length > 0 && (
         <p className="muted small">

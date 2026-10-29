@@ -17,7 +17,7 @@ import threading
 
 from . import draft
 from .composition import assign_roles
-from .history import ROLES, History, day, other
+from .history import GENERIC_TEAM, ROLES, History, day, other
 
 MODELS = 'models/next_action'
 FEATURES = ('meta_pick', 'meta_ban', 'team_pick', 'team_ban', 'opp_pick', 'banned_vs_opp', 'banned_vs_self',
@@ -183,7 +183,7 @@ class Context:
             lineup = {p for p, _ in own['players'].values()} if stats.get('lineup_weighting') else None
             t_games, t_raw, picks, bans, banned = history.team(own['team'], self.cutoff, tau, lineup)
             t_games *= scale; k = smooth['team']
-            team = {'name': own['name'], 'games': t_games, 'raw': t_raw,
+            team = {'name': own['name'], 'games': t_games, 'raw': t_raw, 'generic': own['team'].startswith(GENERIC_TEAM),
                     'team_pick': [(picks.get(c, 0.0) * scale + k * self.meta_pick[c] / 2) / (t_games + k) for c in every],
                     'team_ban': [(bans.get(c, 0.0) * scale + k * self.meta_ban[c] / 2) / (t_games + k) for c in every],
                     'banned_vs': [(banned.get(c, 0.0) * scale + k * self.meta_ban[c] / 2) / (t_games + k) for c in every],
@@ -309,7 +309,8 @@ class Context:
         out = []
         if self.patch_games < 10: out.append(f'补丁 {self.patch} 在本局之前只有 {self.patch_games} 局职业比赛，版本热度主要参考此前补丁')
         for s in (side, other(side)):
-            if self.sides[s]['raw'] < 5: out.append(f"{self.sides[s]['name']} 在本局之前只有 {self.sides[s]['raw']} 局记录，队伍习惯参考价值低")
+            if self.sides[s]['generic']: out.append(f"{self.sides[s]['name']}未指定队伍，按职业比赛的整体习惯（版本热度、位置分布）估计，不含队伍和选手偏好")
+            elif self.sides[s]['raw'] < 5: out.append(f"{self.sides[s]['name']} 在本局之前只有 {self.sides[s]['raw']} 局记录，队伍习惯参考价值低")
         sparse = [f"{p['name']}（{ROLE_ZH[r]}）" for s in (side, other(side)) for r, p in zip(ROLES, self.sides[s]['players'])
                   if p['name'] and p['raw'] < 3]
         if sparse: out.append('当前位置历史少于 3 局：' + '、'.join(sparse))

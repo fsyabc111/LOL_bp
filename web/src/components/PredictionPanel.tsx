@@ -1,18 +1,19 @@
 import { useEffect, useMemo, useState } from 'react';
 import type { Champion, FeedbackDraft, FeedbackKind, ModelList, Prediction } from '../types';
 import { ChampionIcon } from './ChampionIcon';
+import { Skeleton } from './Toast';
 import { ACTION, FEEDBACK_KIND, PHASE, SIDE, defaultExpect, percent } from '../labels';
 
 interface Props {
   prediction: Prediction | null; loading: boolean; error: string | null;
-  models: ModelList; version: string; onVersion: (version: string) => void;
+  models: ModelList; version: string;
   champions: Record<string, Champion>; championList: Champion[];
   inBranch: boolean; busy: boolean; onChoose: (champion: string) => void;
   onFeedback: (draft: FeedbackDraft) => Promise<number>;
   allowFeedback?: boolean;  // simulated drafts have no recorded game to check feedback against
 }
 
-export function PredictionPanel({ prediction, loading, error, models, version, onVersion, champions, championList, inBranch, busy, onChoose, onFeedback, allowFeedback = true }: Props) {
+export function PredictionPanel({ prediction, loading, error, models, version, champions, championList, inBranch, busy, onChoose, onFeedback, allowFeedback = true }: Props) {
   const [open, setOpen] = useState<string | null>(null);
   const [form, setForm] = useState<{ kind: FeedbackKind; champion: string | null } | null>(null);
   const [saved, setSaved] = useState<number | null>(null);
@@ -21,28 +22,24 @@ export function PredictionPanel({ prediction, loading, error, models, version, o
   const recorded = new Set([prediction?.actual?.champion, prediction?.paired_actual?.champion].filter(Boolean));
   const reliability = prediction?.reliability;
   const name = (id: string) => champions[id]?.name_zh ?? id;
+  // Bars are scaled to the leader so the shape of the distribution is readable.
+  const top = prediction?.candidates[0]?.probability || 1;
 
   return (
     <div className="panel prediction">
-      <div className="panel-head">
-        <h3>下一手预测</h3>
-        <select value={version} onChange={(e) => onVersion(e.target.value)} aria-label="模型版本">
-          {models.versions.filter((v) => v.ready).map((v) => (
-            <option key={v.version} value={v.version} title={v.description}>
-              {v.version}{v.validation ? ` · 验证集 Top-5 ${percent(v.validation.top5)}` : ''}
-            </option>
-          ))}
-        </select>
-      </div>
       {error && <div className="error" role="alert">{error}</div>}
-      {!prediction && !error && <p className="muted">{loading ? '计算中…' : 'BP 已完成，没有下一手可预测。'}</p>}
+      {!prediction && !error && (loading ? <Skeleton rows={5} /> : <p className="muted">BP 已完成，没有下一手可预测。</p>)}
       {prediction && (
         <>
-          <p className="prediction-slot">
-            第 {prediction.slot.step} 步 · <strong>{prediction.slot.team}</strong>（{SIDE[prediction.slot.side]}）{ACTION[prediction.slot.action]}
-            <span className="muted"> · {PHASE[prediction.slot.phase]} · {prediction.candidate_count} 个合法候选{loading ? ' · 更新中…' : ''}</span>
-          </p>
-          <p className="muted small">
+          <div className="slot-line">
+            <span className={`side-dot ${prediction.slot.side === 'Blue' ? 'blue' : 'red'}`} />
+            <span>第 {prediction.slot.step} 步 · <strong>{prediction.slot.team}</strong>{prediction.slot.team !== SIDE[prediction.slot.side] && `（${SIDE[prediction.slot.side]}）`}{ACTION[prediction.slot.action]}</span>
+            <span className="badge">{PHASE[prediction.slot.phase]}</span>
+            <span className="badge">{prediction.candidate_count} 个合法候选</span>
+            <span className="badge">{version}</span>
+            {loading && <span className="muted small">更新中…</span>}
+          </div>
+          <p className="fineprint">
             {reliability && 'top1' in reliability && reliability.top1 !== undefined
               ? `该阶段验证集命中：Top-1 ${percent(reliability.top1)} · Top-5 ${percent(reliability.top5)}（${reliability.decisions} 手）。`
               : reliability?.stale ? '验证报告与当前模型文件不一致，请重新评估。' : '该版本还没有验证报告。'}
@@ -51,20 +48,28 @@ export function PredictionPanel({ prediction, loading, error, models, version, o
           {prediction.notes.length > 0 && <ul className="notes">{prediction.notes.map((n) => <li key={n}>{n}</li>)}</ul>}
           <ol className="candidates">
             {prediction.candidates.map((c) => (
-              <li key={c.champion} className={recorded.has(c.champion) ? 'recorded' : ''}>
+              <li key={c.champion} className={'cand' + (recorded.has(c.champion) ? ' recorded' : '') + (open === c.champion ? ' open' : '')}>
                 <button className="candidate" onClick={() => setOpen(open === c.champion ? null : c.champion)} aria-expanded={open === c.champion}>
                   <span className="rank">{c.rank}</span>
-                  <ChampionIcon champion={champions[c.champion]} rawId={c.champion} size={32} />
+                  <ChampionIcon champion={champions[c.champion]} rawId={c.champion} size={36} />
                   <span className="candidate-main">
                     <span className="candidate-name">{name(c.champion)}{recorded.has(c.champion) && <span className="badge ok">实际</span>}</span>
-                    <span className="candidate-reason muted small">{c.reasons[0]?.text ?? '各项信号接近平均'}</span>
+                    <span className="candidate-reason">{c.reasons[0]?.text ?? '各项信号接近平均'}</span>
                   </span>
-                  <span className="prob"><span className="bar" style={{ width: `${Math.min(100, c.probability * 250)}%` }} />{percent(c.probability)}</span>
+                  <span className="prob">{percent(c.probability)}</span>
                 </button>
-                <span className="candidate-actions">
-                  {inBranch && <button className="link" disabled={busy} onClick={() => onChoose(c.champion)}>执行</button>}
-                  {allowFeedback && <button className="link" onClick={() => setForm({ kind: 'too_high', champion: c.champion })}>标记</button>}
-                </span>
+                <div className="prob-track"><span style={{ width: `${Math.min(100, (c.probability / top) * 100)}%` }} /></div>
+                <div className="cand-foot">
+                  {c.reasons.length > 1 && (
+                    <button className="link more" onClick={() => setOpen(open === c.champion ? null : c.champion)}>
+                      {open === c.champion ? '收起依据' : `更多依据（${c.reasons.length - 1}）`}
+                    </button>
+                  )}
+                  <span style={{ marginLeft: 'auto', display: 'flex', gap: 12 }}>
+                    {inBranch && <button className="link" disabled={busy} onClick={() => onChoose(c.champion)}>执行</button>}
+                    {allowFeedback && <button className="link" onClick={() => setForm({ kind: 'too_high', champion: c.champion })}>标记</button>}
+                  </span>
+                </div>
                 {open === c.champion && c.reasons.length > 1 && (
                   <ul className="reasons">{c.reasons.slice(1).map((r) => <li key={r.feature}>{r.text}</li>)}</ul>
                 )}
@@ -83,7 +88,7 @@ export function PredictionPanel({ prediction, loading, error, models, version, o
               topK={models.feedback_top_k} onCancel={() => setForm(null)}
               onSubmit={async (draft) => { const id = await onFeedback(draft); setForm(null); setSaved(id); }} />
           ) : allowFeedback && (
-            <div className="row">
+            <div className="row small">
               <button className="link" onClick={() => setForm({ kind: 'too_low', champion: null })}>漏掉了某个英雄？</button>
               <button className="link" onClick={() => setForm({ kind: 'other', champion: null })}>整体有问题？</button>
             </div>
@@ -145,7 +150,7 @@ function FeedbackForm({ initial, prediction, championList, topK, onSubmit, onCan
       </label>
       {error && <div className="error" role="alert">{error}</div>}
       <div className="row">
-        <button onClick={submit} disabled={sending}>提交</button>
+        <button className="primary" onClick={submit} disabled={sending}>提交</button>
         <button onClick={onCancel} disabled={sending}>取消</button>
       </div>
     </div>

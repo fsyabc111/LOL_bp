@@ -54,6 +54,7 @@ export interface Branch {
 }
 export interface SimTeam {
   team: string; name: string; league: string; last_date?: string; games_on_patch?: number; players: Record<string, [string, string]>;
+  generic?: boolean;  // simulated side with no particular team
 }
 export interface SimPatch { patch: string; games: number; first: string; last: string }
 export interface Simulation {
