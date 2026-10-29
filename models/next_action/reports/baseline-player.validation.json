@@ -1,0 +1,132 @@
+{
+  "by_league": {
+    "LCK": {
+      "actual_not_candidate": 0,
+      "decisions": 4760,
+      "log_loss": 3.3685,
+      "mrr": 0.2546,
+      "top1": 0.1187,
+      "top10": 0.5773,
+      "top3": 0.2685,
+      "top5": 0.3773
+    },
+    "LPL": {
+      "actual_not_candidate": 0,
+      "decisions": 5679,
+      "log_loss": 3.3622,
+      "mrr": 0.2594,
+      "top1": 0.1122,
+      "top10": 0.5982,
+      "top3": 0.2814,
+      "top5": 0.3985
+    }
+  },
+  "by_phase": {
+    "ban1": {
+      "actual_not_candidate": 0,
+      "decisions": 3132,
+      "log_loss": 3.8897,
+      "mrr": 0.1572,
+      "top1": 0.0559,
+      "top10": 0.3777,
+      "top3": 0.1354,
+      "top5": 0.2091
+    },
+    "ban2": {
+      "actual_not_candidate": 0,
+      "decisions": 2087,
+      "log_loss": 3.1891,
+      "mrr": 0.2771,
+      "top1": 0.1255,
+      "top10": 0.6584,
+      "top3": 0.2904,
+      "top5": 0.4245
+    },
+    "pick1": {
+      "actual_not_candidate": 0,
+      "decisions": 3132,
+      "log_loss": 3.2796,
+      "mrr": 0.2746,
+      "top1": 0.1216,
+      "top10": 0.6239,
+      "top3": 0.31,
+      "top5": 0.4243
+    },
+    "pick2": {
+      "actual_not_candidate": 0,
+      "decisions": 2088,
+      "log_loss": 2.8822,
+      "mrr": 0.3613,
+      "top1": 0.1839,
+      "top10": 0.7826,
+      "top3": 0.4191,
+      "top5": 0.5694
+    }
+  },
+  "calibration_top1": [
+    {
+      "decisions": 6703,
+      "hit_rate": 0.0897,
+      "mean_probability": 0.0604,
+      "top1_probability": "0.0-0.1"
+    },
+    {
+      "decisions": 3000,
+      "hit_rate": 0.151,
+      "mean_probability": 0.1356,
+      "top1_probability": "0.1-0.2"
+    },
+    {
+      "decisions": 581,
+      "hit_rate": 0.191,
+      "mean_probability": 0.2378,
+      "top1_probability": "0.2-0.3"
+    },
+    {
+      "decisions": 148,
+      "hit_rate": 0.2365,
+      "mean_probability": 0.3563,
+      "top1_probability": "0.3-0.5"
+    },
+    {
+      "decisions": 7,
+      "hit_rate": 0.2857,
+      "mean_probability": 0.5854,
+      "top1_probability": "0.5-1.0"
+    }
+  ],
+  "disputed_games_excluded": 4,
+  "empty_bans_skipped": 1,
+  "games": 522,
+  "group_aware_pairs": {
+    "10": 11,
+    "18": 19,
+    "8": 9
+  },
+  "input_sha256": {
+    "data/curated/bp_sequences.jsonl": "eb9ad2fa0de73704383edb8f8d88cc3750f52fa7f3ee3a00b064a0b01fd22433",
+    "data/curated/event_restrictions.jsonl": "61a0769f47342c1f121bac2c8a983248c62775f6029a220625598f84ffb0acc2",
+    "data/curated/match_context.jsonl": "48ce1a6ab624b68c077a1eb2da2b474a8995c85aedd25f002b58cb436f9cdba1",
+    "data/curated/rules.json": "5b713ac2d75ad15ba22364c27732da8a3adb61cc11f36889f7b1044f1f9d66df",
+    "data/manifests/local-oe.json": "afd4247c97b8d7002a98ff6f75216ee9421461d23685265e1806c4408e5963ea"
+  },
+  "model_sha256": "a457823652232ca482a691e183460aacdfc7449197d482c5dd885b25d2d732a0",
+  "overall": {
+    "actual_not_candidate": 0,
+    "decisions": 10439,
+    "log_loss": 3.3651,
+    "mrr": 0.2572,
+    "top1": 0.1151,
+    "top10": 0.5887,
+    "top3": 0.2755,
+    "top5": 0.3888
+  },
+  "range": [
+    "2026-04-01",
+    "2026-07-31"
+  ],
+  "schema_version": 1,
+  "settings_sha256": "a6a2d2351296213f08270f1a4b90db79ed1cc44ea31dd8789dc737b136f46a2c",
+  "split": "validation",
+  "version": "baseline-player"
+}

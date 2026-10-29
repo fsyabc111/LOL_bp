@@ -24,7 +24,7 @@ h2 { margin: 0; font-size: 20px; } h3 { margin: 0 0 8px; font-size: 15px; } h4 {
 .error { background: var(--red-soft); color: var(--red); padding: 6px 10px; border-radius: 6px; margin: 8px 0; }
 .badge { display: inline-block; font-size: 11px; padding: 1px 6px; border-radius: 10px; margin-left: 6px; background: var(--line); }
 .badge.ok { background: var(--ok-soft); color: var(--ok); } .badge.warn { background: var(--warn-soft); color: var(--warn); }
-.badge.muted { color: var(--muted); }
+.badge.muted { color: var(--muted); } .badge.bad { background: var(--red-soft); color: var(--red); }
 .loading, .empty { padding: 48px; text-align: center; color: var(--muted); }
 
 .app { display: grid; grid-template-columns: 300px minmax(0, 1fr); min-height: 100vh; }
@@ -93,10 +93,44 @@ main { padding: 16px 20px; min-width: 0; }
 .link { border: none; background: none; padding: 0; color: var(--accent); }
 .link.danger { color: var(--red); margin-left: auto; }
 
+.main-column { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.panel-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 4px; }
+.panel-head h3 { margin: 0; }
+.prediction-slot { margin: 4px 0; }
+.prediction p { margin: 4px 0; }
+.notes { margin: 6px 0; padding: 6px 10px 6px 24px; background: var(--warn-soft); color: var(--warn); border-radius: 6px; font-size: 12px; }
+.candidates { list-style: none; padding: 0; margin: 8px 0; display: flex; flex-direction: column; gap: 2px; }
+.candidates > li { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 6px; border-radius: 8px; }
+.candidates > li.recorded { background: var(--ok-soft); }
+.candidate { display: grid; grid-template-columns: 22px 32px minmax(0, 1fr) 96px; align-items: center; gap: 8px; text-align: left; border: none; background: none; padding: 3px 4px; }
+.candidate .rank { color: var(--muted); font-weight: 700; text-align: right; }
+.candidate-main { display: flex; flex-direction: column; min-width: 0; }
+.candidate-name { font-weight: 600; }
+.candidate-reason { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.prob { position: relative; font-variant-numeric: tabular-nums; font-size: 12px; text-align: right; padding-right: 2px; }
+.prob .bar { position: absolute; left: 0; top: 50%; height: 6px; transform: translateY(-50%); border-radius: 3px; background: color-mix(in srgb, var(--accent) 35%, transparent); max-width: 52px; }
+.candidate-actions { display: flex; gap: 8px; padding-right: 6px; font-size: 12px; }
+.reasons { grid-column: 1 / -1; margin: 0 0 4px 64px; padding: 0; list-style: none; font-size: 12px; color: var(--muted); }
+.panel .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.saved { color: var(--ok); }
+.feedback-form { border-top: 1px solid var(--line); margin-top: 8px; padding-top: 8px; display: flex; flex-direction: column; gap: 6px; }
+.feedback-form h4 { margin: 0; }
+.feedback-form .kinds { display: flex; gap: 12px; flex-wrap: wrap; }
+.feedback-form .field { display: flex; flex-direction: column; gap: 2px; font-size: 12px; color: var(--muted); }
+.feedback-form .field input, .feedback-form textarea { color: var(--text); font: inherit; font-size: 14px; }
+textarea { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 4px 8px; resize: vertical; }
+.feedback-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; max-height: 480px; overflow-y: auto; }
+.feedback-list li { border-top: 1px solid var(--line); padding-top: 6px; display: flex; flex-direction: column; gap: 3px; }
+.feedback-list .note { margin: 0; }
+.feedback-list .link.danger { margin-left: 0; }
+
 @media (max-width: 1100px) { .workspace { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 760px) {
   .app { grid-template-columns: minmax(0, 1fr); }
   .sidebar { position: static; max-height: 45vh; }
   main { padding: 12px 16px; }
   .board { grid-template-columns: minmax(0, 1fr); }
+  .candidate { grid-template-columns: 18px 28px minmax(0, 1fr) 64px; gap: 6px; }
+  .prob .bar { display: none; }
+  .reasons { margin-left: 24px; }
 }

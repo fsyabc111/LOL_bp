@@ -1,4 +1,4 @@
-import type { BranchPayload, Branch, Champion, DraftState, GameDetail, Meta, Series } from './types';
+import type { BranchPayload, Branch, Champion, DraftState, FeedbackDraft, FeedbackRecord, GameDetail, Meta, ModelList, Prediction, Series } from './types';
 
 export class ApiError extends Error {
   constructor(public status: number, public detail: unknown) {
@@ -33,4 +33,12 @@ export const api = {
     request<BranchPayload>(`/api/branches/${id}/actions`, { method: 'POST', body: JSON.stringify({ champion }) }),
   undo: (id: number) => request<BranchPayload>(`/api/branches/${id}/undo`, { method: 'POST' }),
   deleteBranch: (id: number) => request<void>(`/api/branches/${id}`, { method: 'DELETE' }),
+  models: () => request<ModelList>('/api/models'),
+  gamePredictions: (id: string, step: number, version: string) =>
+    request<Prediction | null>(`/api/games/${encodeURIComponent(id)}/predictions` + query({ step, version })),
+  branchPredictions: (id: number, version: string) => request<Prediction | null>(`/api/branches/${id}/predictions` + query({ version })),
+  feedback: (version: string) => request<FeedbackRecord[]>('/api/feedback' + query({ version })),
+  createFeedback: (body: FeedbackDraft & { gameid: string; step?: number; branch_id?: number; version: string }) =>
+    request<FeedbackRecord>('/api/feedback', { method: 'POST', body: JSON.stringify(body) }),
+  deleteFeedback: (id: number) => request<void>(`/api/feedback/${id}`, { method: 'DELETE' }),
 };

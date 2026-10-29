@@ -1,4 +1,8 @@
-"""Local HTTP API for replay and manual branching. Run: .venv/bin/uvicorn lolbp.api:app --port 8000"""
+"""Local HTTP API for replay, manual branching, next-action predictions and prediction feedback.
+
+Run: .venv/bin/uvicorn lolbp.api:app --port 8000
+"""
+import json
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
@@ -6,8 +10,9 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
-from . import draft
+from . import draft, feedback as fb
 from .branches import BranchNotFound, BranchStore
+from .predict import ModelError, Predictor
 from .repository import ROOT, Repository
 
 WEB_DIST = ROOT / 'web/dist'
@@ -24,9 +29,22 @@ class BranchAction(BaseModel):
     champion: str | None = None
 
 
-def create_app(repository=None, store=None):
+class FeedbackCreate(BaseModel):
+    gameid: str
+    step: int | None = None          # replay: number of recorded actions before the predicted slot
+    branch_id: int | None = None     # branch: its current state is used instead of step
+    version: str | None = None
+    kind: str
+    champion: str | None = None
+    expect_rank: int | None = None
+    note: str = ''
+
+
+def create_app(repository=None, store=None, predictor=None, feedback_store=None):
     repo = repository or Repository()
     branches = store or BranchStore()
+    predictions = predictor or Predictor(repo)
+    feedback = feedback_store or fb.FeedbackStore()
     app = FastAPI(title='LOL BP')
 
     def game_or_404(gameid):
@@ -43,6 +61,21 @@ def create_app(repository=None, store=None):
         rules, actions = branches.actions(repo, branch)
         return {'branch': {k: v for k, v in branch.items() if k != 'actions_json'}, 'state': state_payload(rules, actions),
                 'rules': repo.resolve_rules(branch['gameid'], branch['fearless_override'])}
+
+    def history_actions(gameid, step):
+        steps, _, _ = repo.sequence(gameid)
+        if not 0 <= step <= len(steps): raise HTTPException(422, 'step out of range')
+        return steps, tuple(draft.Action(s['step'], s['side'], s['action'], s['champion']) for s in steps[:step])
+
+    def model_or_422(version):
+        try: return predictions.version(version)
+        except ModelError as error: raise HTTPException(422, str(error))
+
+    def game_label(gameid):
+        game = repo.games.get(gameid)
+        if not game: return None
+        return {'date': game['date'][:10], 'league': game['league'], 'blue': game['teams']['Blue']['name'],
+                'red': game['teams']['Red']['name'], 'game_number': game['game_number']}
 
     @app.get('/api/meta')
     def meta():
@@ -107,6 +140,63 @@ def create_app(repository=None, store=None):
     @app.delete('/api/branches/{branch_id}', status_code=204)
     def delete_branch(branch_id: int):
         branch_or_404(branch_id); branches.delete(branch_id)
+
+    @app.get('/api/models')
+    def models():
+        settings = predictions.settings()
+        versions = []
+        for model in predictions.versions().values():
+            path = predictions.models_dir / 'reports' / f'{model.version}.validation.json'
+            report = json.loads(path.read_text()) if path.exists() else None
+            current = bool(report) and report.get('model_sha256') == model.sha256
+            versions.append({**model.summary(), 'validation_stale': bool(report) and not current,
+                             'validation': {k: report['overall'][k] for k in ('decisions', 'top1', 'top3', 'top5', 'top10')} if current else None})
+        return {'default': settings.get('default'), 'feedback_top_k': settings.get('feedback_top_k', 5), 'versions': versions}
+
+    @app.get('/api/games/{gameid}/predictions')
+    def game_predictions(gameid: str, step: int, version: str | None = None, top: int = 10):
+        game_or_404(gameid)
+        steps, actions = history_actions(gameid, step)
+        return predictions.predict(gameid, actions, None, model_or_422(version).version, max(1, min(top, 50)), {s['step']: s['champion'] for s in steps})
+
+    @app.get('/api/branches/{branch_id}/predictions')
+    def branch_predictions(branch_id: int, version: str | None = None, top: int = 10):
+        branch = branch_or_404(branch_id)
+        _, actions = branches.actions(repo, branch)
+        return predictions.predict(branch['gameid'], actions, branch['fearless_override'], model_or_422(version).version, max(1, min(top, 50)))
+
+    @app.get('/api/feedback')
+    def list_feedback(version: str | None = None):
+        model = model_or_422(version)
+        existing = {b['id'] for b in branches.list()}
+        return [{**record, 'game': game_label(record['gameid']), 'recheck': fb.recheck(predictions, record, model),
+                 'branch_exists': bool(record.get('branch')) and record['branch']['id'] in existing}
+                for record in reversed(feedback.list())]
+
+    @app.post('/api/feedback', status_code=201)
+    def create_feedback(body: FeedbackCreate):
+        game_or_404(body.gameid)
+        model = model_or_422(body.version)
+        if body.branch_id is not None:
+            branch = branch_or_404(body.branch_id)
+            if branch['gameid'] != body.gameid: raise HTTPException(422, 'branch belongs to another game')
+            _, actions = branches.actions(repo, branch)
+            override, source, info = branch['fearless_override'], 'branch', {'id': branch['id'], 'name': branch['name']}
+        elif body.step is not None:
+            _, actions = history_actions(body.gameid, body.step)
+            override, source, info = None, 'replay', None
+        else:
+            raise HTTPException(422, 'step or branch_id is required')
+        try:
+            record = fb.build(predictions, body.gameid, actions, override, model, body.kind, body.champion, body.expect_rank,
+                              body.note, source, info, predictions.settings().get('feedback_top_k', 5))
+        except ValueError as error: raise HTTPException(422, str(error))
+        return feedback.add(record)
+
+    @app.delete('/api/feedback/{feedback_id}', status_code=204)
+    def delete_feedback(feedback_id: int):
+        try: feedback.delete(feedback_id)
+        except KeyError: raise HTTPException(404, f'unknown feedback {feedback_id}')
 
     if WEB_DIST.is_dir():
         app.mount('/assets', StaticFiles(directory=WEB_DIST / 'assets'), name='assets')

@@ -1,0 +1,2 @@
+# Training next-action models (scripts/train_next_action.py). The app and evaluation need only app.txt / stdlib.
+numpy==2.2.6

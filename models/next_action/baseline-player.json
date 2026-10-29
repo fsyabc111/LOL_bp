@@ -1,0 +1,13 @@
+{
+  "version": "baseline-player",
+  "description": "基线·选手常用：pick 看己方空缺位置选手的近期英雄，ban 看对手空缺位置选手的近期英雄",
+  "stats": {"half_life_days": 60, "smoothing": {"meta": 10, "patch": 20, "team": 10, "player": 5}},
+  "features": ["player_pool_self", "player_pool_opp"],
+  "fit": null,
+  "weights": {
+    "ban1": {"player_pool_opp": 1.0},
+    "pick1": {"player_pool_self": 1.0},
+    "ban2": {"player_pool_opp": 1.0},
+    "pick2": {"player_pool_self": 1.0}
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "version": "baseline-meta",
+  "description": "基线·版本热门：ban 看本补丁 ban 率，pick 看己方空缺位置的本补丁热度",
+  "stats": {"half_life_days": 60, "smoothing": {"meta": 10, "patch": 20, "team": 10, "player": 5}},
+  "features": ["meta_ban", "role_meta_self"],
+  "fit": null,
+  "weights": {
+    "ban1": {"meta_ban": 1.0},
+    "pick1": {"role_meta_self": 1.0},
+    "ban2": {"meta_ban": 1.0},
+    "pick2": {"role_meta_self": 1.0}
+  }
+}

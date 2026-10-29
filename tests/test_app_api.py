@@ -1,8 +1,7 @@
 """API and repository tests on a small fixture dataset; skipped without the app requirements."""
 import json
 from pathlib import Path
-import shutil
-import sqlite3
+import sys
 import tempfile
 import unittest
 
@@ -11,26 +10,8 @@ try:
 except ImportError:  # requirements/app.txt not installed
     TestClient = None
 
-ROOT=Path(__file__).resolve().parents[1]
-CHAMPS=['Ahri','Azir','Corki','Gnar','KSante','LeeSin','Maokai','Rell','Tristana','Vi','Ziggs','Annie','Ashe','Braum','Caitlyn',
-        'Darius','Ezreal','Fiora','Galio','Garen','Jinx','Karma']
-
-def build_fixture(root):
-    for path in ['data/curated/rules.json','data/curated/static/16.20.1/en_US/champion.json','data/curated/static/16.20.1/zh_CN/champion.json']:
-        (root/path).parent.mkdir(parents=True,exist_ok=True);shutil.copy(ROOT/path,root/path)
-    (root/'data/processed').mkdir(parents=True)
-    c=sqlite3.connect(root/'data/processed/lol_bp.sqlite3')
-    c.execute('CREATE TABLE games (gameid TEXT, league_raw TEXT, date_raw TEXT, patch_raw TEXT, game_number_raw TEXT, structural_valid INTEGER, winner_side TEXT)')
-    c.execute('CREATE TABLE team_drafts (gameid TEXT, side TEXT, team_name TEXT, first_pick_raw TEXT, result REAL, picks_raw_json TEXT, bans_raw_json TEXT)')
-    games=[('S1_game_1','2025-06-01 10:00:00','1',CHAMPS[:20]),('S1_game_2','2025-06-01 11:00:00','2',CHAMPS[2:22])]
-    for gameid,date,n,ch in games:
-        c.execute('INSERT INTO games VALUES (?,?,?,?,?,1,?)',(gameid,'LCK',date,'25.11',n,'Blue'))
-        # column order per side follows snake_20 with Blue first: bans 1,3,5,14,16 / picks 7,10,11,18,19
-        blue_b=[ch[i-1] for i in (1,3,5,14,16)];red_b=[ch[i-1] for i in (2,4,6,13,15)]
-        blue_p=[ch[i-1] for i in (7,10,11,18,19)];red_p=[ch[i-1] for i in (8,9,12,17,20)]
-        c.execute('INSERT INTO team_drafts VALUES (?,?,?,?,?,?,?)',(gameid,'Blue','Team A','1',1.0,json.dumps(blue_p),json.dumps(blue_b)))
-        c.execute('INSERT INTO team_drafts VALUES (?,?,?,?,?,?,?)',(gameid,'Red','Team B','0',0.0,json.dumps(red_p),json.dumps(red_b)))
-    c.commit();c.close()
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+from fixtures import CHAMPS,build_fixture  # noqa: E402
 
 @unittest.skipIf(TestClient is None,'app requirements not installed')
 class AppApiTests(unittest.TestCase):

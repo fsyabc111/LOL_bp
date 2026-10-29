@@ -59,3 +59,36 @@ export interface Meta {
   oe_order_accuracy: { equal_modulo_unordered_groups_rate: number; compared: number } | null;
   champion_catalog_version: string; champion_pool_note: string;
 }
+
+export interface Reason { feature: string; contribution: number; text: string }
+export interface Candidate { champion: string; rank: number; probability: number; reasons: Reason[] }
+export interface Recorded { step: number; champion: string; rank: number | null; probability: number | null }
+export interface HitRates { decisions: number; top1: number; top3: number; top5: number; top10: number }
+
+export interface ModelSummary {
+  version: string; description: string; sha256: string; kind: 'fitted' | 'fixed'; ready: boolean;
+  validation?: HitRates | null; validation_stale?: boolean;
+}
+export interface ModelList { default: string | null; feedback_top_k: number; versions: ModelSummary[] }
+
+export interface Prediction {
+  model: ModelSummary;
+  slot: { step: number; side: Side; action: ActionType; phase: string; team: string; opponent: string };
+  cutoff: string; patch: string; candidate_count: number; candidates: Candidate[];
+  actual: Recorded | null; paired_actual: Recorded | null;
+  reliability: (HitRates & { split: string; stale?: undefined }) | { stale: true } | null;
+  notes: string[];
+}
+
+export type FeedbackKind = 'too_high' | 'too_low' | 'other';
+export interface FeedbackDraft { kind: FeedbackKind; champion: string | null; expect_rank: number | null; note: string }
+export interface RankedChampion { champion: string; probability: number }
+export interface FeedbackRecord {
+  id: number; created_at: string; gameid: string; source: 'replay' | 'branch'; branch: { id: number; name: string } | null;
+  fearless_override: string | null; actions: Step[]; slot: { step: number; side: Side; action: ActionType; phase: string };
+  model: { version: string; sha256: string }; kind: FeedbackKind; champion: string | null;
+  rank: number | null; probability: number | null; expect_rank: number | null; top: RankedChampion[]; note: string;
+  game: { date: string; league: string; blue: string; red: string; game_number: number | null } | null;
+  recheck: { version: string; verdict: string; rank: number | null; probability: number | null; top: RankedChampion[]; model_file_changed: boolean };
+  branch_exists: boolean;
+}

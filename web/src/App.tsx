@@ -1,12 +1,14 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { ApiError, api } from './api';
-import type { Branch, Champion, DraftState, GameDetail, Meta, Rules } from './types';
+import type { Branch, Champion, DraftState, FeedbackDraft, FeedbackRecord, GameDetail, Meta, ModelList, Prediction, Rules } from './types';
 import { SeriesBrowser } from './components/SeriesBrowser';
 import { DraftBoard } from './components/DraftBoard';
 import { Timeline } from './components/Timeline';
 import { ChampionGrid } from './components/ChampionGrid';
 import { RulesPanel } from './components/RulesPanel';
 import { BranchPanel } from './components/BranchPanel';
+import { PredictionPanel } from './components/PredictionPanel';
+import { FeedbackPanel } from './components/FeedbackPanel';
 import { reasonText } from './labels';
 
 type Route = { game: string | null; step: number | null; branch: number | null };
@@ -24,6 +26,11 @@ function writeRoute(r: Route) {
   else if (r.step !== null) p.set('step', String(r.step));
   const hash = '#' + p.toString();
   if (window.location.hash !== hash) window.history.replaceState(null, '', hash);
+}
+
+const MODEL_KEY = 'lolbp.model';
+function storedModel() {
+  try { return localStorage.getItem(MODEL_KEY); } catch { return null; }
 }
 
 function describe(error: unknown) {
@@ -45,13 +52,33 @@ export default function App() {
   const [branches, setBranches] = useState<Branch[]>([]);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [models, setModels] = useState<ModelList | null>(null);
+  const [version, setVersion] = useState('');
+  const [prediction, setPrediction] = useState<Prediction | null>(null);
+  const [predicting, setPredicting] = useState(false);
+  const [predictionError, setPredictionError] = useState<string | null>(null);
+  const [feedback, setFeedback] = useState<FeedbackRecord[]>([]);
 
   const champions = useMemo(() => Object.fromEntries(championList.map((c) => [c.id, c])), [championList]);
 
   useEffect(() => {
     Promise.all([api.meta(), api.champions()]).then(([m, c]) => { setMeta(m); setChampionList(c); }).catch((e) => setError(describe(e)));
   }, []);
+  useEffect(() => {
+    api.models().then((m) => {
+      setModels(m);
+      const ready = m.versions.filter((v) => v.ready).map((v) => v.version);
+      setVersion([storedModel(), m.default].find((v): v is string => !!v && ready.includes(v)) ?? ready[0] ?? '');
+    }).catch((e) => setPredictionError(describe(e)));
+  }, []);
   useEffect(() => writeRoute(route), [route]);
+
+  const chooseVersion = (v: string) => {
+    setVersion(v);
+    try { localStorage.setItem(MODEL_KEY, v); } catch { /* storage unavailable: the choice lasts for this page only */ }
+  };
+  const refreshFeedback = useCallback(() => (version ? api.feedback(version).then(setFeedback) : Promise.resolve()), [version]);
+  useEffect(() => { refreshFeedback().catch((e) => setPredictionError(describe(e))); }, [refreshFeedback]);
 
   const refreshBranches = useCallback((gameid: string) => api.branches(gameid).then(setBranches), []);
 
@@ -64,14 +91,38 @@ export default function App() {
   const step = route.step ?? detail?.sequence.length ?? 0;
   useEffect(() => {
     if (!detail || detail.game.gameid !== route.game) return;
+    let stale = false;  // ignore responses that arrive after a newer step or branch was requested
     if (route.branch !== null) {
-      api.branch(route.branch).then((p) => { setState(p.state); setBranchRules(p.rules); })
-        .catch((e) => { setError(describe(e)); setRoute((r) => ({ ...r, branch: null })); });
+      api.branch(route.branch).then((p) => { if (!stale) { setState(p.state); setBranchRules(p.rules); } })
+        .catch((e) => { if (!stale) { setError(describe(e)); setRoute((r) => ({ ...r, branch: null })); } });
     } else {
       setBranchRules(null);
-      api.gameState(detail.game.gameid, step).then(setState).catch((e) => setError(describe(e)));
+      api.gameState(detail.game.gameid, step).then((s) => { if (!stale) setState(s); }).catch((e) => { if (!stale) setError(describe(e)); });
     }
+    return () => { stale = true; };
   }, [detail, route.game, route.branch, step]);
+
+  // Predictions follow the displayed state: a new state object arrives for every step change, branch action or game switch.
+  useEffect(() => {
+    if (!detail || !state || !version) return;
+    if (state.complete) { setPrediction(null); setPredictionError(null); return; }
+    let stale = false;
+    setPredicting(true); setPredictionError(null);
+    // Replay asks for the step of the displayed state itself, so the prediction always matches the board.
+    const request = route.branch !== null ? api.branchPredictions(route.branch, version) : api.gamePredictions(detail.game.gameid, state.step, version);
+    request.then((p) => { if (!stale) setPrediction(p); })
+      .catch((e) => { if (!stale) { setPrediction(null); setPredictionError(describe(e)); } })
+      .finally(() => { if (!stale) setPredicting(false); });
+    return () => { stale = true; };
+  }, [state, version]);  // eslint-disable-line react-hooks/exhaustive-deps
+
+  const submitFeedback = async (draft: FeedbackDraft) => {
+    if (!detail) throw new Error('未载入比赛');
+    const where = route.branch !== null ? { branch_id: route.branch } : { step };
+    const record = await api.createFeedback({ ...draft, ...where, gameid: detail.game.gameid, version });
+    await refreshFeedback();
+    return record.id;
+  };
 
   const run = async (fn: () => Promise<unknown>) => {
     setBusy(true); setError(null);
@@ -106,8 +157,17 @@ export default function App() {
                 onStep={(s) => setRoute((r) => ({ ...r, step: s }))} />
             )}
             <div className="workspace">
-              <ChampionGrid champions={championList} state={state} interactive={!!activeBranch} busy={busy}
-                onChoose={(c) => activeBranch && run(() => api.addAction(activeBranch.id, c).then(applyBranch))} />
+              <div className="main-column">
+                {models && version && (
+                  <PredictionPanel prediction={prediction} loading={predicting} error={predictionError} models={models} version={version}
+                    onVersion={chooseVersion} champions={champions} championList={championList} inBranch={!!activeBranch} busy={busy}
+                    onChoose={(c) => activeBranch && run(() => api.addAction(activeBranch.id, c).then(applyBranch))}
+                    onFeedback={submitFeedback} />
+                )}
+                {!version && predictionError && <div className="error" role="alert">预测不可用：{predictionError}</div>}
+                <ChampionGrid champions={championList} state={state} interactive={!!activeBranch} busy={busy}
+                  onChoose={(c) => activeBranch && run(() => api.addAction(activeBranch.id, c).then(applyBranch))} />
+              </div>
               <div className="side-panels">
                 <BranchPanel branches={branches} activeId={route.branch} currentStep={step} sequence={detail.sequence}
                   champions={champions} busy={busy}
@@ -125,6 +185,12 @@ export default function App() {
                     if (route.branch === id) setRoute((r) => ({ ...r, branch: null }));
                   })} />
                 <RulesPanel detail={detail} rules={branchRules ?? detail.rules} champions={champions} />
+                {version && (
+                  <FeedbackPanel items={feedback} version={version} champions={champions} busy={busy}
+                    onOpen={(item) => setRoute({ game: item.gameid, step: item.source === 'replay' ? item.slot.step - 1 : null,
+                                                 branch: item.source === 'branch' && item.branch_exists && item.branch ? item.branch.id : null })}
+                    onDelete={(id) => run(async () => { await api.deleteFeedback(id); await refreshFeedback(); })} />
+                )}
               </div>
             </div>
           </>
