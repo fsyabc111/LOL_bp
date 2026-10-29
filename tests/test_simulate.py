@@ -36,6 +36,17 @@ class SimulationTests(unittest.TestCase):
         with self.assertRaises(ValueError): simulate.build_spec(self.history, '25.11', 'id:Team A', 'id:Team A')
         with self.assertRaises(ValueError): simulate.cutoff_of(self.history, '99.99')
 
+    def test_generic_sides(self):
+        both = simulate.build_spec(self.history, '25.11', '', '')
+        self.assertEqual([both['sides'][s]['name'] for s in ('Blue', 'Red')], ['蓝方', '红方'])
+        self.assertTrue(all(both['sides'][s]['generic'] and both['sides'][s]['players'] == {} for s in ('Blue', 'Red')))
+        top = simulate.leagues(self.history, '25.11')[0]['league']
+        self.assertEqual(both['sides']['Blue']['league'], top)  # rules default to the league with most games on the patch
+        mixed = simulate.build_spec(self.history, '25.11', '', 'id:Team A')
+        self.assertEqual(mixed['sides']['Red']['name'], 'Team A')
+        self.assertEqual(mixed['sides']['Blue']['league'], mixed['sides']['Red']['league'])  # generic blue borrows the red team's rules
+        with self.assertRaises(ValueError): simulate.build_spec(self.history, '25.11', '', '', league='NOPE')
+
     def test_simulation_is_never_history(self):
         spec = simulate.build_spec(self.history, '25.11', 'id:Team C', 'id:Team A')
         sim = {**spec, 'id': 1, 'gameid': 'sim-1', 'name': 'x', 'created_at': ''}
@@ -80,6 +91,23 @@ class SimulationApiTests(unittest.TestCase):
         self.assertEqual(reloaded.delete(f"/api/simulations/{sim['id']}").status_code, 204)
         self.assertEqual(reloaded.get('/api/games/sim-1').status_code, 404)
         self.assertEqual(reloaded.get('/api/branches', params={'gameid': 'sim-1'}).json(), [])
+
+    def test_generic_simulation(self):
+        c = self.client
+        self.assertTrue(c.get('/api/simulations/teams', params={'patch': '25.11'}).json()['leagues'])
+        sim = c.post('/api/simulations', json={'patch': '25.11', 'red': 'id:Team B'}).json()
+        self.assertEqual(sim['name'], '蓝方 vs Team B · 25.11')
+        branch = sim['branch_id']
+        p = c.get(f'/api/branches/{branch}/predictions').json()
+        self.assertEqual(p['slot']['team'], '蓝方')
+        self.assertTrue(any('未指定队伍' in n for n in p['notes']))
+        r = c.get(f'/api/branches/{branch}/recommendations').json()
+        self.assertTrue(r['candidates'] and not any('player' in x or x['listed_for'] == 'player' for x in r['candidates']))
+        self.assertEqual(c.post(f'/api/branches/{branch}/actions', json={'champion': p['candidates'][0]['champion']}).status_code, 200)
+        r = c.get(f'/api/branches/{branch}/recommendations').json()  # red bans: the generic blue side has no player to target
+        self.assertEqual(r['slot']['action'], 'ban')
+        self.assertTrue(r['candidates'] and not any('opponent_player' in x for x in r['candidates']))
+        self.assertEqual(c.get(f'/api/branches/{branch}/composition').status_code, 200)
 
 
 if __name__ == '__main__': unittest.main()

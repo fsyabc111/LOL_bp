@@ -30,8 +30,9 @@ class BranchCreate(BaseModel):
 
 class SimulationCreate(BaseModel):
     patch: str
-    blue: str                        # team ids, as listed by /api/simulations/teams
-    red: str
+    blue: str = ''                   # team ids, as listed by /api/simulations/teams; empty leaves the side generic
+    red: str = ''
+    league: str = ''                 # rules reference when the blue side is generic
     name: str = ''
 
 
@@ -169,7 +170,7 @@ def create_app(repository=None, store=None, predictor=None, feedback_store=None,
     def simulation_teams(patch: str):
         try: cutoff, teams = simulate.teams(predictions.history, patch)
         except ValueError as error: raise HTTPException(422, str(error))
-        return {'patch': patch, 'cutoff': cutoff, 'teams': teams}
+        return {'patch': patch, 'cutoff': cutoff, 'teams': teams, 'leagues': simulate.leagues(predictions.history, patch)}
 
     @app.get('/api/simulations')
     def list_simulations():
@@ -178,7 +179,7 @@ def create_app(repository=None, store=None, predictor=None, feedback_store=None,
     @app.post('/api/simulations', status_code=201)
     def create_simulation(body: SimulationCreate):
         history = predictions.history
-        try: spec = simulate.build_spec(history, body.patch, body.blue, body.red)
+        try: spec = simulate.build_spec(history, body.patch, body.blue, body.red, body.league)
         except ValueError as error: raise HTTPException(422, str(error))
         sides = spec['sides']
         sim = simulations.create(spec, body.name or f"{sides['Blue']['name']} vs {sides['Red']['name']} · {body.patch}")

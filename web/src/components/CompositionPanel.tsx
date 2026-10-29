@@ -1,5 +1,6 @@
 import type { Champion, Composition, Side } from '../types';
 import { ChampionIcon } from './ChampionIcon';
+import { Skeleton } from './Toast';
 import { SIDE, percent } from '../labels';
 
 const ROLE: Record<string, string> = { top: '上单', jng: '打野', mid: '中单', bot: '下路', sup: '辅助' };
@@ -12,12 +13,11 @@ export function CompositionPanel({ composition, error, champions }: Props) {
   const b = composition?.backtest;
   return (
     <div className="panel composition">
-      <h3>阵容评估</h3>
       {error && <div className="error" role="alert">{error}</div>}
-      {!composition && !error && <p className="muted">计算中…</p>}
+      {!composition && !error && <Skeleton rows={5} />}
       {composition && (
         <>
-          <p className="muted small">
+          <p className="fineprint">
             统计只用 {composition.cutoff} 之前的比赛（半衰期 {composition.half_life_days} 天）。
             {b && ` 回测（${b.range[0]} 至 ${b.range[1]}）：对线期望与实际 15 分钟经济差相关 r=${b.lane_r}，能部分反映对线结果；但前期期望与双人组合都不能区分胜负（AUC ${b.win_auc} / ${b.duo_auc}，0.5 为无信息）。以下是带样本量的描述，不是胜负预测。`}
           </p>
@@ -25,22 +25,23 @@ export function CompositionPanel({ composition, error, champions }: Props) {
           {composition.lanes.length === 0
             ? <p className="muted small">双方还没有能对上的位置（分路按英雄历史推断）。</p>
             : (
-              <table className="lanes">
-                <thead><tr><th>位置</th><th>{SIDE.Blue}</th><th className="center">15 分钟经济期望</th><th>{SIDE.Red}</th><th>样本</th></tr></thead>
+              <table className="lanes-table">
+                <thead><tr><th>位置</th><th style={{ textAlign: 'right' }}>{SIDE.Blue}</th><th className="center">15 分钟经济期望</th><th style={{ textAlign: 'left' }}>{SIDE.Red}</th><th>样本</th></tr></thead>
                 <tbody>
                   {composition.lanes.map((l) => {
                     const width = Math.min(50, (Math.abs(l.expected) / SCALE) * 50);
+                    const blue = l.expected >= 0;
                     return (
                       <tr key={l.role} className={l.enough ? '' : 'thin'}>
-                        <td>{ROLE[l.role]}</td>
-                        <td><ChampionIcon champion={champions[l.blue]} rawId={l.blue} size={24} /> {name(l.blue)}</td>
+                        <td className="role">{ROLE[l.role]}</td>
+                        <td className="blue-cell"><span className="champ-cell">{name(l.blue)} <ChampionIcon champion={champions[l.blue]} rawId={l.blue} size={26} /></span></td>
                         <td className="center">
                           <span className="lane-bar" title={`英雄均值 ${l.champion_part >= 0 ? '+' : ''}${l.champion_part}，直接交手修正 ${l.matchup_part >= 0 ? '+' : ''}${l.matchup_part}`}>
-                            <span className={l.expected >= 0 ? 'fill blue' : 'fill red'} style={{ width: `${width}%`, [l.expected >= 0 ? 'right' : 'left']: '50%' }} />
+                            <span className={blue ? 'fill blue' : 'fill red'} style={{ width: `${width}%`, [blue ? 'right' : 'left']: '50%' }} />
                           </span>
-                          <span className="small">{l.enough ? `${l.expected >= 0 ? '蓝 +' : '红 +'}${Math.abs(l.expected)}` : '数据不足'}</span>
+                          <span className={'lane-value ' + (l.enough ? (blue ? 'blue' : 'red') : 'muted')}>{l.enough ? `${blue ? '蓝 +' : '红 +'}${Math.abs(l.expected)}` : '数据不足'}</span>
                         </td>
-                        <td><ChampionIcon champion={champions[l.red]} rawId={l.red} size={24} /> {name(l.red)}</td>
+                        <td><span className="champ-cell"><ChampionIcon champion={champions[l.red]} rawId={l.red} size={26} /> {name(l.red)}</span></td>
                         <td className="muted small" title="直接交手（有 15 分钟数据的局数）· 两个英雄在该位置有 15 分钟数据的局数">
                           交手 {l.matchup_lane_games} · {l.blue_lane_games}/{l.red_lane_games}
                         </td>

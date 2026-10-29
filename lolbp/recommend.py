@@ -38,7 +38,7 @@ class Recommender:
         rules, _, _ = predictor.repo.draft_rules(gameid, fearless_override)
         own_want = predictor.rank_as(gameid, actions, model, side, 'pick', fearless_override)
         opp_want = predictor.rank_as(gameid, actions, model, opp, 'pick', fearless_override)
-        if slot.action == 'pick':
+        if slot.action == 'pick' and not context.sides[side]['generic']:  # a generic side has no players to be comfortable
             comfort = sorted(ranking.champions, key=lambda c: -self._comfort(context, side, ranking.open_own, history.column[c])[3])
             listed += [(c, 'player') for c in comfort if c not in dict(listed)][:extra]
         elif opp_want:
@@ -49,7 +49,7 @@ class Recommender:
             item = {'champion': c, 'listed_for': why, 'habit': {'rank': rank, 'probability': round(prob, 4)}}
             if slot.action == 'pick':
                 role, share, name, _ = self._comfort(context, side, ranking.open_own, col)
-                item['player'] = {'role': role, 'name': name, 'share': round(share, 4)}
+                if not context.sides[side]['generic']: item['player'] = {'role': role, 'name': name, 'share': round(share, 4)}
                 item['lane'] = self._lane(lane, role, col, opp_picks, context, composer, history)
                 before, after = composer.profile(own_picks), composer.profile(own_picks + [col])
                 item['profile'] = {'frontline': [before.get('frontline', 0), after['frontline']],
@@ -60,7 +60,7 @@ class Recommender:
                 found = opp_want and opp_want.rank_of(c)
                 item['deny'] = found and {'rank': found[0], 'probability': round(found[1], 4)}
                 role, share, name, _ = self._comfort(context, opp, ranking.open_opp, col)
-                item['opponent_player'] = {'role': role, 'name': name, 'share': round(share, 4)}
+                if not context.sides[opp]['generic']: item['opponent_player'] = {'role': role, 'name': name, 'share': round(share, 4)}
                 item['threat'] = self._lane(lane, role, col, own_picks, context, composer, history)
                 mine = own_want and own_want.rank_of(c)
                 item['own_interest'] = mine and {'rank': mine[0], 'probability': round(mine[1], 4)}
