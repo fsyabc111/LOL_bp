@@ -108,3 +108,17 @@ export interface Composition {
   early_gold_total: number | null; notes: string[]; traits_note: string;
   backtest: { lane_r: number; lane_n: number; win_auc: number; duo_auc: number; reference_auc: number; range: string[] } | null;
 }
+
+export interface LaneInfo { role: string; strength: number; games: number; enough: boolean; against?: string; edge?: number; against_games?: number }
+export interface RecommendCandidate {
+  champion: string; listed_for: 'model' | 'player' | 'deny'; habit: { rank: number; probability: number };
+  player?: { role: string; name: string | null; share: number }; lane?: LaneInfo;
+  profile?: { frontline: number[]; magic_share: (number | null)[] };
+  responses?: { step: number; side: Side; action: ActionType; top: RankedChampion[] } | null; fearless_cost?: boolean;
+  deny?: { rank: number; probability: number } | null; opponent_player?: { role: string; name: string | null; share: number };
+  threat?: LaneInfo; own_interest?: { rank: number; probability: number } | null;
+}
+export interface Recommendation {
+  model: ModelSummary; slot: Prediction['slot']; cutoff: string; candidates: RecommendCandidate[]; notes: string[];
+  evidence: { split: string; range: string[]; games: number; auc: Record<string, number>; labels: Record<string, string> } | null;
+}

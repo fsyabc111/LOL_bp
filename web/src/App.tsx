@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { ApiError, api } from './api';
-import type { Branch, Champion, Composition, DraftState, FeedbackDraft, FeedbackRecord, GameDetail, Meta, ModelList, Prediction, Rules } from './types';
+import type { Branch, Champion, Composition, DraftState, FeedbackDraft, FeedbackRecord, GameDetail, Meta, ModelList, Prediction, Recommendation, Rules } from './types';
 import { SeriesBrowser } from './components/SeriesBrowser';
 import { DraftBoard } from './components/DraftBoard';
 import { Timeline } from './components/Timeline';
@@ -10,6 +10,7 @@ import { BranchPanel } from './components/BranchPanel';
 import { PredictionPanel } from './components/PredictionPanel';
 import { FeedbackPanel } from './components/FeedbackPanel';
 import { CompositionPanel } from './components/CompositionPanel';
+import { RecommendPanel } from './components/RecommendPanel';
 import { reasonText } from './labels';
 
 type Route = { game: string | null; step: number | null; branch: number | null };
@@ -61,6 +62,8 @@ export default function App() {
   const [feedback, setFeedback] = useState<FeedbackRecord[]>([]);
   const [composition, setComposition] = useState<Composition | null>(null);
   const [compositionError, setCompositionError] = useState<string | null>(null);
+  const [recommendation, setRecommendation] = useState<Recommendation | null>(null);
+  const [recommendationError, setRecommendationError] = useState<string | null>(null);
 
   const champions = useMemo(() => Object.fromEntries(championList.map((c) => [c.id, c])), [championList]);
 
@@ -130,6 +133,17 @@ export default function App() {
     return () => { stale = true; };
   }, [state]);  // eslint-disable-line react-hooks/exhaustive-deps
 
+  useEffect(() => {
+    if (!detail || !state || !version) return;
+    if (state.complete) { setRecommendation(null); setRecommendationError(null); return; }
+    let stale = false;
+    setRecommendationError(null);
+    const request = route.branch !== null ? api.branchRecommendations(route.branch, version) : api.gameRecommendations(detail.game.gameid, state.step, version);
+    request.then((r) => { if (!stale) setRecommendation(r); })
+      .catch((e) => { if (!stale) { setRecommendation(null); setRecommendationError(describe(e)); } });
+    return () => { stale = true; };
+  }, [state, version]);  // eslint-disable-line react-hooks/exhaustive-deps
+
   const submitFeedback = async (draft: FeedbackDraft) => {
     if (!detail) throw new Error('未载入比赛');
     const where = route.branch !== null ? { branch_id: route.branch } : { step };
@@ -179,6 +193,10 @@ export default function App() {
                     onFeedback={submitFeedback} />
                 )}
                 {!version && predictionError && <div className="error" role="alert">预测不可用：{predictionError}</div>}
+                {version && (
+                  <RecommendPanel data={recommendation} error={recommendationError} champions={champions} inBranch={!!activeBranch} busy={busy}
+                    onChoose={(c) => activeBranch && run(() => api.addAction(activeBranch.id, c).then(applyBranch))} />
+                )}
                 <CompositionPanel composition={composition} error={compositionError} champions={champions} />
                 <ChampionGrid champions={championList} state={state} interactive={!!activeBranch} busy={busy}
                   onChoose={(c) => activeBranch && run(() => api.addAction(activeBranch.id, c).then(applyBranch))} />

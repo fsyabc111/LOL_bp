@@ -352,6 +352,23 @@ class Predictor:
         return Ranking(slot, phase, model, context, [pool[i] for i in order], [probs[i] for i in order],
                        [rows[i] for i in order], open_own, open_opp, actions)
 
+    def rank_as(self, gameid, actions, model, side, action, fearless_override=None):
+        """Ranking for a hypothetical `side` taking `action` now (e.g. what the opponent would pick if it were their
+        turn), weighted with the phase of that side's next real slot of this action."""
+        rules, _, _ = self.repo.draft_rules(gameid, fearless_override)
+        current = draft.next_slot(rules, actions)
+        if current is None: return None
+        later = [s for s in rules.slots[len(actions):] if s.side == side and s.action == action]
+        if not later: return None
+        slot = draft.Slot(current.step, side, action); phase = self.phases[later[0].step]
+        context = self.context(gameid, model.spec['stats']); features = model.spec['features']
+        pool = candidates(rules, actions, slot, self.history.champions)
+        rows, open_own, open_opp = context.rows(side, actions, pool, features)
+        probs = probabilities(model.weights[phase], features, rows)
+        order = sorted(range(len(pool)), key=lambda i: (-probs[i], pool[i]))
+        return Ranking(slot, phase, model, context, [pool[i] for i in order], [probs[i] for i in order],
+                       [rows[i] for i in order], open_own, open_opp, actions)
+
     def reliability(self, model, phase):
         """Validation hit rates for this version and phase, if a current report exists."""
         path = self.models_dir / 'reports' / f'{model.version}.validation.json'

@@ -1,4 +1,4 @@
-"""Local HTTP API for replay, manual branching, next-action predictions, prediction feedback and composition evaluation.
+"""Local HTTP API for replay, manual branching, next-action predictions, prediction feedback, composition evaluation and candidate comparison.
 
 Run: .venv/bin/uvicorn lolbp.api:app --port 8000
 """
@@ -14,6 +14,7 @@ from . import draft, feedback as fb
 from .branches import BranchNotFound, BranchStore
 from .composition import Composer
 from .predict import ModelError, Predictor
+from .recommend import Recommender
 from .repository import ROOT, Repository
 
 WEB_DIST = ROOT / 'web/dist'
@@ -41,12 +42,13 @@ class FeedbackCreate(BaseModel):
     note: str = ''
 
 
-def create_app(repository=None, store=None, predictor=None, feedback_store=None, composer=None):
+def create_app(repository=None, store=None, predictor=None, feedback_store=None, composer=None, recommender=None):
     repo = repository or Repository()
     branches = store or BranchStore()
     predictions = predictor or Predictor(repo)
     feedback = feedback_store or fb.FeedbackStore()
     compositions = composer or Composer(repo, predictions)
+    recommendations = recommender or Recommender(predictions, compositions)
     app = FastAPI(title='LOL BP')
 
     def game_or_404(gameid):
@@ -187,6 +189,24 @@ def create_app(repository=None, store=None, predictor=None, feedback_store=None,
         branch = branch_or_404(branch_id)
         _, actions = branches.actions(repo, branch)
         return composition_payload(branch['gameid'], actions)
+
+    def recommendation_payload(gameid, actions, override, version):
+        out = recommendations.recommend(gameid, actions, override, model_or_422(version).version)
+        path = repo.root / 'models/recommend/draft-factors.validation.json'
+        if out is not None: out['evidence'] = json.loads(path.read_text()) if path.exists() else None
+        return out
+
+    @app.get('/api/games/{gameid}/recommendations')
+    def game_recommendations(gameid: str, step: int, version: str | None = None):
+        game_or_404(gameid)
+        _, actions = history_actions(gameid, step)
+        return recommendation_payload(gameid, actions, None, version)
+
+    @app.get('/api/branches/{branch_id}/recommendations')
+    def branch_recommendations(branch_id: int, version: str | None = None):
+        branch = branch_or_404(branch_id)
+        _, actions = branches.actions(repo, branch)
+        return recommendation_payload(branch['gameid'], actions, branch['fearless_override'], version)
 
     @app.get('/api/feedback')
     def list_feedback(version: str | None = None):

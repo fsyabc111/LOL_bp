@@ -1,0 +1,24 @@
+{
+  "auc": {
+    "damage_balance": 0.5119,
+    "frontline": 0.5001,
+    "habit": 0.4921,
+    "lane_strength": 0.5356,
+    "player_comfort": 0.4774
+  },
+  "games": 1795,
+  "labels": {
+    "damage_balance": "伤害均衡",
+    "frontline": "有前排",
+    "habit": "职业常见度",
+    "lane_strength": "对线强度",
+    "player_comfort": "选手熟练度"
+  },
+  "model": "v1",
+  "range": [
+    "2025-01-01",
+    "2026-03-31"
+  ],
+  "schema_version": 1,
+  "split": "train"
+}
