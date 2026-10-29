@@ -42,7 +42,7 @@ def competition_for_rules(game, context):
     return league
 
 # Leaguepedia tournament segment -> scope wording used in the rule's observed scope list.
-SCOPE_ALIASES={'Rounds 1-2':'regular rounds 1-2','Rounds 3-4':'regular rounds 3-4','Season Play-In':'season play-in',
+SCOPE_ALIASES={'Cup':'LCK Cup','Rounds 1-2':'regular rounds 1-2','Rounds 3-4':'regular rounds 3-4','Season Play-In':'season play-in',
                'Season Playoffs':'season playoffs','Road to MSI':'Road to MSI'}
 
 def in_rule_scope(rule, tournament):
@@ -59,9 +59,10 @@ def applicable_rules(game, context, rules):
         if isinstance(competitions,str): competitions=[competitions]
         if league not in competitions or rule.get('year')!=year: continue
         status=rule.get('applicability_status','unknown')
-        if rule.get('effective_from') and game['date_raw'][:10]<rule['effective_from']: status='not_applicable_before_effective_date'
         if rule['rule_id']=='lck_2024_summer_playoffs_candidate' and 'Summer Playoffs' not in context.get('tournament',''): status='unknown_stage'
-        if rule['rule_id']=='lck_2026_from_2026_07_29' and not in_rule_scope(rule,context.get('tournament','')): status='unknown_scope'
+        if 'scope' in rule and not in_rule_scope(rule,context.get('tournament','')): status='unknown_scope'
+        if rule.get('effective_from') and game['date_raw'][:10]<rule['effective_from']: status='not_applicable_before_effective_date'
+        if rule.get('effective_to') and game['date_raw'][:10]>rule['effective_to']: status='not_applicable_after_effective_date'
         unknown=[key for key in ['draft_template','cross_game_ban_scope','event_disabled_champions'] if rule.get(key,{}).get('status','unknown')=='unknown']
         output.append({'rule_id':rule['rule_id'],'applicability_status':status,'unknown_fields':unknown})
     return output

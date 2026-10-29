@@ -63,6 +63,17 @@ class SampleIndexTests(unittest.TestCase):
         self.assertEqual(status('LCK/2026 Season/Rounds 3-4'),'observed')
         self.assertEqual(status('LCK/2026 Season/Cup'),'unknown_scope')
         self.assertEqual(status(''),'unknown_scope')
+    def test_rule_window_and_cup_scope(self):
+        rule={'rule_id':'lck_2026_from_2026_01_14','competition':'LCK','year':2026,'effective_from':'2026-01-14','effective_to':'2026-07-28',
+              'applicability_status':'observed','scope':{'value':['LCK Cup','regular rounds 1-2'],'status':'observed'}}
+        game=self.fixture();game['league_raw']='LCK'
+        def status(date,t):
+            game['date_raw']=date;return m.applicable_rules(game,{'tournament':t},{'rules':[rule]})[0]['applicability_status']
+        self.assertEqual(status('2026-01-20','LCK/2026 Season/Cup'),'observed')
+        self.assertEqual(status('2026-07-28','LCK/2026 Season/Rounds 1-2'),'observed')
+        self.assertEqual(status('2026-08-01','LCK/2026 Season/Rounds 1-2'),'not_applicable_after_effective_date')
+        self.assertEqual(status('2026-01-10','LCK/2026 Season/Cup'),'not_applicable_before_effective_date')
+        self.assertEqual(status('2026-03-01','LCK/2026 Season/Rounds 3-4'),'unknown_scope')
     def test_unknown_rules_preserved(self):
         rule={'rule_id':'lpl_2026_unverified','competition':'LPL','year':2026,'applicability_status':'unknown'}
         r=m.assemble_record(self.fixture(),{}, {'rules':[rule]},{'patches':[]},{})

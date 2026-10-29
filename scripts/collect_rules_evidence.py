@@ -21,6 +21,13 @@ SOURCES={
 'riot_ddragon_docs':'https://developer.riotgames.com/docs/lol#data-dragon',
 'worlds_2025_rules':'https://cdn.sanity.io/files/dsfx7636/news_live/d3d5b3d1ad2d201d397818ca4209c99536182a18.pdf',
 'lck_2025_rules':'https://cdn.sanity.io/files/dsfx7636/news_live/3e74c542dd1efc5c07529772e4b978ab83c99352.pdf',
+# Earlier library versions, found through Wayback snapshots of the library page (2025-02-18, 2026-01-18).
+'lck_2025_rules_early':'https://cdn.sanity.io/files/dsfx7636/news/ae8e8532509b98835d538cfcf2e997668ffeb8af.pdf',
+'lck_2025_event_early':'https://cdn.sanity.io/files/dsfx7636/news/177a49dc7583ec41e884a30b6ccdf344c2fe0a4c.pdf',
+'lck_2026_rules_early':'https://cdn.sanity.io/files/dsfx7636/news_live/c14cf2672fb4f272815b466aff4d1dd7c24c3323.pdf',
+'lck_2026_event_early':'https://cdn.sanity.io/files/dsfx7636/news_live/2aec81b6e65c35bc0643a21130d8200cae3350b6.pdf',
+'lck_2025_format':'https://lolesports.com/ko-KR/news/2025-lck-new-format',
+'lck_2026_rulebook_update':'https://lolesports.com/ko-KR/news/2026-lck-rulebook-update',
 }
 def save_bytes(root, body, suffix):
  digest = hashlib.sha256(body).hexdigest()
