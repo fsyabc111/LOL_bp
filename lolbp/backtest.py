@@ -12,6 +12,7 @@ from . import draft
 from .predict import FEATURES, candidates, probabilities
 
 KS = (1, 3, 5, 10)
+PATCH_PROGRESS = ((0, 9), (10, 29), (30, 59), (60, None))  # same-patch games before the decision's game
 CALIBRATION_BINS = (0.0, 0.1, 0.2, 0.3, 0.5, 1.0)
 
 
@@ -98,7 +99,7 @@ def evaluate(predictor, models, gameids):
     """Per model: overall, by phase and by league tallies, top-1 calibration bins and skipped empty bans.
 
     Features are computed once per distinct statistics setting (the union its models use) and sliced per model."""
-    results = {m.version: {'overall': Tally(), 'by_phase': defaultdict(Tally), 'by_league': defaultdict(Tally),
+    results = {m.version: {'overall': Tally(), 'by_phase': defaultdict(Tally), 'by_league': defaultdict(Tally), 'by_patch_progress': defaultdict(Tally),
                            'calibration': [[0, 0.0, 0] for _ in CALIBRATION_BINS[1:]], 'empty_bans': 0} for m in models}
     groups = defaultdict(list)
     for m in models: groups[json.dumps(m.spec['stats'], sort_keys=True)].append(m)
@@ -106,13 +107,16 @@ def evaluate(predictor, models, gameids):
         features = [f for f in FEATURES if any(f in m.spec['features'] for m in group)]
         for record in decisions(predictor, gameids, json.loads(key), features):
             league = predictor.repo.games[record['gameid']]['league']
+            seen = predictor.context(record['gameid'], json.loads(key)).patch_games
+            progress = next(f"{lo}-{hi if hi is not None else ''}" for lo, hi in PATCH_PROGRESS if seen >= lo and (hi is None or seen <= hi))
             for m in group:
                 result = results[m.version]
                 if record['actual'] is None: result['empty_bans'] += 1; continue
                 index = [features.index(f) for f in m.spec['features']]
                 probs = probabilities(m.weights[record['phase']], m.spec['features'], [[row[i] for i in index] for row in record['rows']])
                 rank, prob = outcome(record['candidates'], probs, record['actual'], record['partner'])
-                for tally in (result['overall'], result['by_phase'][record['phase']], result['by_league'][league]): tally.add(rank, prob)
+                for tally in (result['overall'], result['by_phase'][record['phase']], result['by_league'][league],
+                              result['by_patch_progress'][progress]): tally.add(rank, prob)
                 top = max(probs, default=0.0)
                 b = next(i for i, edge in enumerate(CALIBRATION_BINS[1:]) if top <= edge)
                 result['calibration'][b][0] += 1; result['calibration'][b][1] += top; result['calibration'][b][2] += rank == 1
@@ -121,6 +125,8 @@ def evaluate(predictor, models, gameids):
         bins = [{'top1_probability': f'{lo:.1f}-{hi:.1f}', 'decisions': n, 'mean_probability': round(s / n, 4), 'hit_rate': round(h / n, 4)}
                 for (lo, hi), (n, s, h) in zip(zip(CALIBRATION_BINS, CALIBRATION_BINS[1:]), r['calibration']) if n]
         out[version] = {'overall': r['overall'].report(), 'by_phase': {k: v.report() for k, v in sorted(r['by_phase'].items())},
-                        'by_league': {k: v.report() for k, v in sorted(r['by_league'].items())}, 'calibration_top1': bins,
+                        'by_league': {k: v.report() for k, v in sorted(r['by_league'].items())},
+                        'by_patch_progress': {k: v.report() for k, v in sorted(r['by_patch_progress'].items(), key=lambda kv: int(kv[0].split('-')[0]))},
+                        'calibration_top1': bins,
                         'empty_bans_skipped': r['empty_bans']}
     return out

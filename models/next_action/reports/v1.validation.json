@@ -21,6 +21,48 @@
       "top5": 0.6181
     }
   },
+  "by_patch_progress": {
+    "0-9": {
+      "actual_not_candidate": 0,
+      "decisions": 1780,
+      "log_loss": 2.9781,
+      "mrr": 0.3517,
+      "top1": 0.1854,
+      "top10": 0.7478,
+      "top3": 0.4017,
+      "top5": 0.5455
+    },
+    "10-29": {
+      "actual_not_candidate": 0,
+      "decisions": 2499,
+      "log_loss": 2.7996,
+      "mrr": 0.3891,
+      "top1": 0.2133,
+      "top10": 0.8047,
+      "top3": 0.4554,
+      "top5": 0.6154
+    },
+    "30-59": {
+      "actual_not_candidate": 0,
+      "decisions": 3100,
+      "log_loss": 2.7094,
+      "mrr": 0.4007,
+      "top1": 0.2174,
+      "top10": 0.8203,
+      "top3": 0.4832,
+      "top5": 0.6335
+    },
+    "60-": {
+      "actual_not_candidate": 0,
+      "decisions": 3060,
+      "log_loss": 2.6389,
+      "mrr": 0.4107,
+      "top1": 0.2176,
+      "top10": 0.8425,
+      "top3": 0.5072,
+      "top5": 0.6559
+    }
+  },
   "by_phase": {
     "ban1": {
       "actual_not_candidate": 0,

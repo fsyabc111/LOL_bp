@@ -51,6 +51,18 @@ class PredictionTests(unittest.TestCase):
         self.assertEqual(context.sides['Blue']['players'][2]['raw'], 1)
         self.assertGreater(context.sides['Blue']['players'][2]['share'][mid], context.role_share[2][mid])
 
+    def test_patch_ramp_switches_from_earlier_patches_to_this_patch(self):
+        stats = self.predictor.version('v1').spec['stats']
+        plain = self.predictor.context('S1_game_1', stats)  # one same-patch game (H1) before S1_game_1
+        held = self.predictor.context('S1_game_1', {**stats, 'patch_ramp': {'min_games': 5, 'full_games': 10, 'max_weight': 1.0}})
+        full = self.predictor.context('S1_game_1', {**stats, 'patch_ramp': {'min_games': 1, 'full_games': 1, 'max_weight': 0.8}})
+        ziggs = self.predictor.history.column[self.cid('Ziggs')]  # picked in H1
+        self.assertEqual((held.patch_weight, full.patch_weight), (0.0, 0.8))
+        self.assertLess(held.meta_pick[ziggs], plain.meta_pick[ziggs])  # below min_games: earlier patches only
+        self.assertGreater(full.meta_pick[ziggs], 0.4)  # 0.8 x (1 pick + prior) / (1 game + 1) + 0.2 x prior
+        self.assertGreater(full.meta_pick[ziggs], plain.meta_pick[ziggs])
+        self.assertAlmostEqual(sum(full.role_share[2]), 1.0, places=6)
+
     def test_open_roles_keep_flex_picks_ambiguous(self):
         mid_only, flex = [0.01, 0.01, 0.96, 0.01, 0.01], [0.495, 0.495, 0.0, 0.005, 0.005]
         self.assertEqual(open_roles([mid_only], []), [1.0] * 5)

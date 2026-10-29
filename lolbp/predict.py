@@ -133,11 +133,24 @@ class Context:
         recent_role = [[(row[1 + n * (2 + r) + c] * scale + k / n) / (2 * games + k) for c in every] for r in range(len(ROLES))]
         self.role_prob = history.role_prob(self.cutoff, tau)
         p_games, self.patch_games, p_picks, p_bans, p_roles = history.patch(self.patch, self.cutoff, tau)
-        p_games *= scale; k = smooth['patch']
-        self.meta_pick = [(p_picks.get(c, 0.0) * scale + k * recent_pick[c]) / (p_games + k) for c in every]
-        self.meta_ban = [(p_bans.get(c, 0.0) * scale + k * recent_ban[c]) / (p_games + k) for c in every]
-        self.role_share = [[(p_roles[r].get(c, 0.0) * scale + k * recent_role[r][c]) / (2 * p_games + k) for c in every]
-                           for r in range(len(ROLES))]
+        p_games *= scale; k = smooth['patch']; ramp = stats.get('patch_ramp')
+        if ramp:
+            # Explicit schedule: minor patches change little, so earlier patches carry the estimate until this patch has
+            # min_games; its weight then rises linearly to max_weight at full_games.
+            a = 0.0 if self.patch_games < ramp['min_games'] else ramp['max_weight'] * min(
+                1.0, (self.patch_games - ramp['min_games'] + 1) / max(1, ramp['full_games'] - ramp['min_games'] + 1))
+            # The patch's own rate keeps one pseudo-game of the prior, so unseen champions never reach zero.
+            blend = lambda count, total, prior: (1 - a) * prior + a * (count * scale + prior) / (total + 1)
+            self.meta_pick = [blend(p_picks.get(c, 0.0), p_games, recent_pick[c]) for c in every]
+            self.meta_ban = [blend(p_bans.get(c, 0.0), p_games, recent_ban[c]) for c in every]
+            self.role_share = [[blend(p_roles[r].get(c, 0.0), 2 * p_games, recent_role[r][c]) for c in every] for r in range(len(ROLES))]
+            self.patch_weight = a
+        else:
+            self.meta_pick = [(p_picks.get(c, 0.0) * scale + k * recent_pick[c]) / (p_games + k) for c in every]
+            self.meta_ban = [(p_bans.get(c, 0.0) * scale + k * recent_ban[c]) / (p_games + k) for c in every]
+            self.role_share = [[(p_roles[r].get(c, 0.0) * scale + k * recent_role[r][c]) / (2 * p_games + k) for c in every]
+                               for r in range(len(ROLES))]
+            self.patch_weight = p_games / (p_games + k)
         lane = stats.get('lane')  # 15-minute lane averages, in thousands of gold, when the version uses lane features
         self.lane = lane and [[x / 1000 for x in row] for row in
                               history.lane_averages(self.cutoff, lane['half_life_days'] / math.log(2), lane['smoothing'])]
