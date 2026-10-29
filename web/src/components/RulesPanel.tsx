@@ -22,12 +22,14 @@ export function RulesPanel({ detail, rules, champions }: Props) {
         <dt>赛事禁用</dt><dd>{rules.disabled_champions.value.length ? rules.disabled_champions.value.map((n) => byName[n.toLowerCase()]?.name_zh ?? n).join('、') : (rules.disabled_champions.status === 'unknown' ? '未取得' : '无')} <Status field={rules.disabled_champions} /></dd>
         <dt>顺序来源</dt>
         <dd>
-          {source.type === 'leaguepedia'
+          {source.type === 'simulation'
+            ? <span title={source.reference}>模拟，无历史记录（赛事规则参照 {source.reference}）</span>
+            : source.type === 'leaguepedia'
             ? <span title={source.locator}>Leaguepedia 逐手表（rev {source.revid}）</span>
             : <span title={source.note}>OE 列按模板排布{source.measured_agreement ? `（实测一致率 ${(source.measured_agreement * 100).toFixed(2)}%）` : ''}</span>}
           {source.conflict && <span className="badge warn" title="Leaguepedia 与 OE 最终阵容不一致">来源冲突</span>}
         </dd>
-        <dt>系列赛</dt><dd>第 {detail.series.position} 局{detail.series.prior_status !== 'complete' && <span className="badge warn">前序局不全</span>}</dd>
+        <dt>系列赛</dt><dd>{source.type === 'simulation' ? '单局模拟，' : ''}第 {detail.series.position} 局{detail.series.prior_status !== 'complete' && <span className="badge warn">前序局不全</span>}</dd>
       </dl>
       {detail.series.consumed.length > 0 && (
         <>

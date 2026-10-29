@@ -33,7 +33,7 @@ h2 { margin: 0; font-size: 20px; } h3 { margin: 0 0 8px; font-size: 15px; } h4 {
 .filters input { grid-column: 1 / -1; }
 .series-list { list-style: none; margin: 0; padding: 0; overflow-y: auto; flex: 1; }
 .series { padding: 8px 12px; border-bottom: 1px solid var(--line); }
-.series-head { font-size: 12px; } .series-teams { font-weight: 600; margin: 2px 0 4px; }
+.series-head { font-size: 12px; display: flex; align-items: center; } .series-teams { font-weight: 600; margin: 2px 0 4px; }
 .series-games { display: flex; gap: 4px; flex-wrap: wrap; }
 .game-chip { padding: 1px 8px; font-size: 12px; }
 .game-chip.active { background: var(--accent); color: #fff; border-color: var(--accent); }
@@ -167,3 +167,12 @@ table.lanes tr.thin td { opacity: .6; }
   .comp-sides { grid-template-columns: minmax(0, 1fr); }
   .lane-bar { width: 48px; }
 }
+
+.modes { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; padding: 8px 12px 0; }
+.sim-form { display: grid; gap: 8px; padding: 12px; border-bottom: 1px solid var(--line); }
+.sim-form label { display: grid; gap: 4px; }
+.sim-form select { width: 100%; min-width: 0; }
+.lineup { display: flex; flex-wrap: wrap; gap: 4px 10px; margin: -4px 0 0; }
+.lineup-list { padding-left: 16px; margin: 8px 0 0; }
+.series.active { outline: 1px solid var(--accent); }
+.sidebar .series-head .link.danger { margin-left: auto; padding-left: 8px; }
