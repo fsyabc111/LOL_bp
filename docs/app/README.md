@@ -14,6 +14,16 @@ uv venv .venv --python 3.13 && uv pip install --python .venv/bin/python -r requi
 .venv/bin/uvicorn lolbp.api:app --host 127.0.0.1 --port 8000   # 打开 http://127.0.0.1:8000
 ```
 
+日常使用可以直接用仓库根目录的脚本：
+
+```sh
+./start.sh                 # 后台启动并打开浏览器；前端源码有改动时会先重新构建
+./stop.sh                  # 关闭
+PORT=8001 ./start.sh       # 换端口；OPEN=0 不自动打开浏览器
+```
+
+PID 和日志在 `data/app/server.pid`、`data/app/server.log`（不入库）。`start.sh` 会检查 `.venv`、本地数据库和端口占用；`stop.sh` 只会结束本应用的 uvicorn 进程。
+
 开发前端时另开 `cd web && npm run dev`，访问 5173 端口，`/api` 会代理到 8000。地址栏 hash 记录当前比赛、步数和分支（如 `#game=LOLTMNT02_463373&step=12`），可以收藏或分享。
 
 预测直接使用仓库里已训练的模型文件（`models/next_action/`），运行应用不需要 numpy；只有训练新版本才需要（见[下一手预测](../model/next-action.md)）。
